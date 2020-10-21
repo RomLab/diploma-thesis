@@ -1,2 +1,2 @@
-# diploma_thesis
+# Diploma thesis
 Smart floor heating control.
