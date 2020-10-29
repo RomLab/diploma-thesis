@@ -6,33 +6,35 @@
 % and a couple more: draft and oneside
 \documentclass[twoside]{ctuthesis}
 
+\usepackage[utf8]{inputenc}
+
 \ctusetup{
 	preprint = \ctuverlog,
 %	mainlanguage = english,
-%	titlelanguage = czech,
+	titlelanguage = czech,
 	mainlanguage = czech,
 	otherlanguages = {slovak,english},
-	title-czech = {Moje bakalářka se strašně, ale hrozně dlouhým předlouhým názvem},
-	title-english = {My Favourite Thesis; Just the Title is Soooooooo Looooong},
-	subtitle-czech = {Cesta do tajů kdovíčeho},
-	subtitle-english = {Journey to the who-knows-what wondeland},
+	title-czech = {Systém pro podlahové vytápění rodinného domu pomocí zónové regulace},
+	title-english = {System for underfloor heating of a family house using zone control},
+%	subtitle-czech = {Cesta do tajů kdovíčeho},
+%	subtitle-english = {Journey to the who-knows-what wondeland},
 	doctype = B,
-	faculty = F4,
-	department-czech = {Katedra matematiky},
-	department-english = {Department of Mathematics},
-	author = {Tomáš Hejda},
-	supervisor = {Prof. Krutoš Spravedlivý},
-	supervisor-address = {Ústav X, \\ Uliční 5, \\ Praha 99},
-	supervisor-specialist = {John Doe},
-	fieldofstudy-english = {Mathematical Engineering},
-	subfieldofstudy-english = {Mathematical Modelling},
-	fieldofstudy-czech = {Matematcké inženýrství},
-	subfieldofstudy-czech = {Matematické modelování},
+	faculty = F3,
+	department-czech = {Katedra mikroelektroniky},
+	department-english = {Department of Microelectronics},
+	author = {Bc. Roman Labovský},
+	supervisor = {Ing. Vladimír Janíček Ph.D.},
+	supervisor-address = {České vysoké učení technické v Praze, Elektrotechnická fakulta, Katedra mikroelektroniky\\ Technická 2, \\ Praha 6},
+%	supervisor-specialist = {John Doe},
+	fieldofstudy-english = {Electronics},
+	subfieldofstudy-english = {Electronics and Communication},
+	fieldofstudy-czech = {Elektronika},
+	subfieldofstudy-czech = {Elektronika a komunikace},
 	keywords-czech = {slovo, klíč},
 	keywords-english = {word, key},
 	day = 10,
-	month = 2,
-	year = 2017,
+	month = 1,
+	year = 2021,
 	specification-file = {ctutest-zadani.pdf},
 %	front-specification = true,
 %	front-list-of-figures = false,
@@ -118,64 +120,29 @@ V Praze, \ctufield{day}.~\monthinlanguage{title}~\ctufield{year}
 
 \maketitle
 
-\chapter{Introduction}
-
-This thesis shows that \ldots
-
-\begin{figure}[!h]
-\rule{3cm}{3cm}
-\caption{Test}
-\end{figure}
-
-\part{My Party}
-
-\input{ctutest-1}
-
-\input{ctutest-2}
+\chapter{Úvod}
 
 
-\part{Your Party}
+\part{Teoretická část}
 
-\blindmathtrue
+\input{search}
 
-\blinddocument
-
-\begin{table}
-\begin{ctucolortab}
-\begin{tabular}{cc}
-\bfseries Foo & \bfseries Bar \\\Midrule
-foo1 & bar1 \\
-foo2 & bar2
-\end{tabular}
-\end{ctucolortab}
-\caption{Foobar.}
-\label{tab:foobar}
-\end{table}
-
-\begin{figure}
-\includegraphics[width=0.4\textwidth]{ctu_logo_black}
-\caption{Black logo of the CTU in Pragueueue.}
-\end{figure}
-
-\begin{figure}[!t]
-\includegraphics[width=0.4\textwidth]{ctu_logo_blue}
-\caption{Blue logo of the CTU in Pragueueue.}
-\end{figure}
-
-\chapter{Conclusions}
-
-\section{Test --- this is just a little test of something in the table of contents}
-
-\subsection{Yes, table of contents}
-
-\begin{theorem}\begin{enumerate} \item Bla \item Blo \end{enumerate} \end{theorem}
+%\input{ctutest-2}
 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis interdum facilisis urna, at tincidunt leo consectetur non. Maecenas bibendum mi vitae libero pharetra, ac ullamcorper nulla pellentesque. Sed sit amet massa nunc. Aenean placerat a est sodales sagittis. Quisque purus nibh, auctor ut consectetur at, suscipit non erat. Donec condimentum porttitor risus, vitae fringilla lectus tincidunt nec. Nulla leo quam, commodo eu ornare non, iaculis sed nulla. Duis gravida lacus quis purus sodales, vitae malesuada justo ultricies. Vestibulum nisl nulla, commodo non pellentesque a, fringilla a risus. Ut quis magna nulla. Mauris vitae ultricies ante, in consectetur justo. 
+%\part{Your Party}
 
-\medskip
+%\blindmathtrue
 
-\begin{proof}\begin{enumerate} \item[8] Bla \item Blo \end{enumerate} \end{proof}
+%\blinddocument
+
+
+\chapter{Závěr}
+
+
+%\medskip
+
+%\begin{proof}\begin{enumerate} \item[8] Bla \item Blo \end{enumerate} \end{proof}
 
 \appendix
 
