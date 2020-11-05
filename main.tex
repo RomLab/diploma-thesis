@@ -118,6 +118,7 @@ V Praze, \ctufield{day}.~\monthinlanguage{title}~\ctufield{year}
 \usepackage{lipsum,blindtext}
 \usepackage{mathrsfs} % provides \mathscr used in the ridiculous examples
 
+
 \begin{document}
 
 \maketitle
@@ -142,19 +143,16 @@ V Praze, \ctufield{day}.~\monthinlanguage{title}~\ctufield{year}
 \chapter{Závěr}
 
 
-%\medskip
-
-%\begin{proof}\begin{enumerate} \item[8] Bla \item Blo \end{enumerate} \end{proof}
-
 \appendix
 
 \printindex
 
 \appendix
 
-\bibliographystyle{amsalpha}
-\bibliography{ctutest}
-
-\ctutemplate{specification.as.chapter}
+%\bibliographystyle{amsalpha}
+%\bibliography{ctutest}
+%\printbibliography
+\input{bibliography}
+%\ctutemplate{specification.as.chapter}
 
 \end{document}
