@@ -1,0 +1,91 @@
+%% Creator: Inkscape 1.0 (4035a4fb49, 2020-05-01), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'otopna-soustava-rez-domu.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{513bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,1.02923977)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{otopna-soustava-rez-domu.pdf}}%
+    \put(0.74780702,0.24034503){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily TUV\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{otopna-soustava-rez-domu.pdf}}%
+    \put(0.18494152,0.24103509){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Plynový\end{tabular}}}}%
+	\put(0.18494152,0.21903509){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily kondenzační\end{tabular}}}}%
+	\put(0.18494152,0.19703509){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily kotel\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{otopna-soustava-rez-domu.pdf}}%
+    \put(0.1630117,0.78004094){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Rozdělovač\end{tabular}}}}%
+	\put(0.1630117,0.75804094){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily podlahového\end{tabular}}}}%
+    \put(0.1630117,0.73604094){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily topení s pohony\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{otopna-soustava-rez-domu.pdf}}%
+	\put(0.1630117,0.45840351){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Rozdělovač\end{tabular}}}}%
+	\put(0.1630117,0.43640351){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily podlahového\end{tabular}}}}%
+    \put(0.1630117,0.41440351){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily topení s pohony\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{otopna-soustava-rez-domu.pdf}}%
+    \put(0.74780702,0.135){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Zásobník\end{tabular}}}}%
+	\put(0.74780702,0.115){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily otopné vody\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{otopna-soustava-rez-domu.pdf}}%
+    \put(0.12938596,0.33991228){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\small \sffamily Technická místnost\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{otopna-soustava-rez-domu.pdf}}%
+    \put(0.06944444,0.66154971){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\small \sffamily Přízemí\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{otopna-soustava-rez-domu.pdf}}%
+    \put(0.05774854,0.98318713){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\small \sffamily Patro\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{otopna-soustava-rez-domu.pdf}}%
+    \put(0.09576023,0.01919883){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Čerpadlo\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{otopna-soustava-rez-domu.pdf}}%
+    \put(0.32359649,0.02781287){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Manuální trojcestný\end{tabular}}}}%
+	\put(0.32359649,0.00881287){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily směšovací ventil\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{otopna-soustava-rez-domu.pdf}}%
+    \put(0.5524269,0.02781287){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Krb \end{tabular}}}}%
+	\put(0.5524269,0.00881287){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily s výměníkem \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{otopna-soustava-rez-domu.pdf}}%
+    \put(0.77324561,0.01919883){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily TUV – teplá užitková voda\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{otopna-soustava-rez-domu.pdf}}%
+  \end{picture}%
+\endgroup%

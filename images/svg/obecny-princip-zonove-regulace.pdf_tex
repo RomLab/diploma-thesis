@@ -1,0 +1,83 @@
+%% Creator: Inkscape 1.0 (4035a4fb49, 2020-05-01), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'obecny-princip-zonove-regulace.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{323.25bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.68677494)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{obecny-princip-zonove-regulace.pdf}}%
+    \put(0.35962877,0.29466357){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Zónový regulátor\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{obecny-princip-zonove-regulace.pdf}}%
+    \put(0.35730858,0.09512761){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Rozdělovač podlahové topení s N pohony pro N topných okruhů\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{obecny-princip-zonove-regulace.pdf}}%
+    \put(0.19953596,0.22273782){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily 1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{obecny-princip-zonove-regulace.pdf}}%
+    \put(0.48491879,0.22273782){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily N\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{obecny-princip-zonove-regulace.pdf}}%
+	\put(0.11600928,0.61468677){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Nástěnný \end{tabular}}}}%
+	\put(0.11600928,0.59468677){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily snímač \end{tabular}}}}%
+	\put(0.11600928,0.57468677){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily teploty \end{tabular}}}}%
+	\put(0.11600928,0.55468677){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily 1 \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{obecny-princip-zonove-regulace.pdf}}%
+	\put(0.3712297,0.61468677){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Nástěnný \end{tabular}}}}%
+	\put(0.3712297,0.59468677){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily snímač \end{tabular}}}}%
+	\put(0.3712297,0.57468677){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily teploty \end{tabular}}}}%
+	\put(0.3712297,0.55468677){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily N \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{obecny-princip-zonove-regulace.pdf}}%
+    \put(0.60324826,0.59700696){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Centrální\end{tabular}}}}%
+	\put(0.60324826,0.57700696){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily jednotka\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{obecny-princip-zonove-regulace.pdf}}%
+    \put(0.91647332,0.33946636){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Reléová\end{tabular}}}}%
+	\put(0.91647332,0.31946636){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily jednotka\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{obecny-princip-zonove-regulace.pdf}}%
+    \put(0.91647332,0.09976798){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Kotel\end{tabular}}}}%
+  \end{picture}%
+\endgroup%
