@@ -146,10 +146,110 @@ Mezi další ovládána zařízení při regulace vytápění mohou být čerpad
 
 
 \subsection{Dostupné komerční/nekomerční řešení zónové regulace podlahového vytápění}
-\subsection{PocketHome}
-\subsection{Jablotron}
-\subsection{Salus}
-\subsection{Honeywell Evohome}
+
+Optimální systém pro otopnou soustavu, kterou hodlám řídit z obrázku \ref{fig:otopna-soustava-rez-domu} se skládá z řízení ovládání kotle, spínání čerpadel v případě zatopení v krbech a následnou indikaci uživateli, jak moc je zásobník otopné vody natopen, dále z jednotlivých topných okruhů (12 pohonů pro 9 zón) a čerpadla podlahového topení. Pro zónovou regulaci se používá pouze patro.
+
+\subsection{Elektrobock}
+Česká firma Elektrobock nabízí bezdrátové řešení pro řízení podlahové topení.  Systém řízení je zastřešené pod aplikaci PocketHome. Jednotlivé zařízení systému mohou fungovat samostatně bez řídící jednotky nebo jsou ovládány přes centrální jednotku. Tato centrální jednotka je zastřešené pod aplikaci PocketHome. Řídící systém se skládá z centrální jednotky, lokálních termostatů pro jednotlivé místnosti a zónového regulátoru pro ovládání jednotlivých topných okruhů (celkově je možné ovládat 9 zón) a oběhového čerpadla, dále je k dispozici zařízení pro zapínání/vypínání kotle nebo komunikace pomocí protokolu OpenTherm. Na obrázku \ref{fig:elektrobock-pocket-home} jsou zobrazeny jednotlivé zařízení systému. Jistou nevýhodou může být bezdrátová komunikace na frekvenci 433,92 MHz, v případě delší vzdálenosti a především umístění na jiném patře centrální jednotky a lokální termostatů, zónového regulátoru může docházet ke špatnému signálu, zejména pokud se jedná o zástavbu z železobetonu, kde odrazivost a neprůchodnost signálu je poměrně značná. Jednotlivé prvky mohou pracovat samostatně bez centrální jednotky, na druhou stranu se tímto ztrácí přehled o celém systému a komfortu nastavování z jednoho místa. Systém se může nastavovat pomocí PC (systém Windows) nebo pomocí mobilní telefonu/tabletu (systém Android, iOS). Systém počítá s jedním zdrojem tepla, tedy kotlem (elektrickým, plynovým, automatickým), neuvažuje se s otopnou soustavu, kde je začleněn např. krb s tepelným výměníkem, jak z pohledu řízení čerpadel,tak i případnou indikaci o stavu natopení zásobníku s otopnou vodou. Další otázkou je využíti tohoto řídícího systému při použití centrální zásobníku na otopnou vodou, zejména při použití nízko teplotních zdrojů. Kde distribuce otopné vody pochází primárně z tohoto zásobníku, je nutné sledovat teplotu v tomto zásobníku a na základě toho spínat kotel pro dobíjení, případně jiných zdrojů tepla. Problém bezdrátového bateriového řešení je nutná výměna baterií po určité době.
+
+
+\begin{figure}[H]
+
+\centering
+\begin{picture}(370,226)
+\put(0,0){\includegraphics[width=\textwidth]{images/komercni-systemy/elektrobock-pocket-home/elektrobock-pocket-home.png}}
+\put(50,226){\scriptsize \sffamily a)}
+\put(180,190){\scriptsize \sffamily b)}
+\put(305,235){\scriptsize \sffamily c)}
+\put(180,8){\scriptsize \sffamily d)}
+	 \caption{Jednotlivá zařízení systému Elektrobock PocketHome. a) Lokální termostat. b) Centrální jednotka. c) Spínací jednotka kotle. d) Zónový regulátor. Upraveno z \cite{elektrobock-lokalni-termostat, elektrobock-centralni-jednotka, elektrobock-spinaci-jednotka-kotle, elektrobock-zonovy-regulator}.}
+	 \label{fig:elektrobock-pocket-home}
+\end{picture}
+
+\end{figure}
+
+\subsection{Honeywell}
+Honeywell nabízí bezdrátový systém regulace podlahové topení. Systém řízení je zastřešené pod aplikaci Evohome. Skládá se z centrální jednotky s dotykovým displejem, lokálních termostatů pro jednotlivé místnosti, zónového regulátoru pro ovládání jednotlivých topných okruhů (celkově je možné ovládat 5 zón, s rozšiřovacím modulem je možné se dostat na 8 zón). Systém je možné rozšířit o dobíjení TUV, pro sledování teploty na zásobníku je možné umístit teplotní čidlo, ze kterého je teplota odesílaná do centrální jednotky. Na obrázku \ref{fig:honeywell-evohome} jsou zobrazeny jednotlivé zařízení systému. Systém však při dobíjení zásobníku TUV počítá se zdrojem tepla pouze s kotlem, takže v případě využití krbů s výměníkem nastává problém. Dále je zde spínací jednotka pro ovládání dvoucestných ventilů pro přepínání mezi dobíjením TUV a topením. V neposlední řadě umožňuje zapojit směšovací ventil pro optimální teplotu do podlahového topení. Systém je možné ovládat lokálně nebo řídit vzdáleně odkudkoliv, je zapotřebí se zaregistrovat si účet a spárovat ho s  centrální jednotkou. Vzdálený server přijímá požadavky na změny režimů či nastavení teplot, a zasílá je do řídící jednotky. Server průběžně shromažďuje různá data o chování soustavy, a může je na základě žádosti poskytnout. Z toho vyplývá, že pro lepší řízení a nastavení vytápění je nutné zřídit vzdálený přístup a samotné vyhodnocení a dání povelů, pak dochází na vzdálením serveru, nemáme moc pod kontrolou data a životnost takového systému do budoucnosti. Otázka je i při využití pouze lokálního režimu, zda regulace nepřichází o výhody cloudového řešení. Problém bezdrátového řešení může být opět prostup signálu mezi zařízeními a centrální jednotkou (popsaný u předešlého systému), zejména prostup železobetonovými podlahami a to především při komunikace mezi centrální jednotkou umístěnou v patře a komunikací mezi se zařízeními ve sklepě (nutný průchod dvěma podlahami) a je nutná výměna baterií v zařízeních po určité době. Komunikace mezi zařízeními probíhá na frekvenci 868 MHz, připojení k centrální jednotce pomocí mobilní aplikace je pomocí WiFi (respektive centrální jednotka je připojena na domácí WiFi router, komunikace pak probíhá mezi aplikací, vzdáleným serverem a centrální jednotkou).
+
+\begin{figure}[H]
+
+\centering
+\begin{picture}(370,300)
+\put(0,0){\includegraphics[width=\textwidth]{images/komercni-systemy/honeywell-evohome/honeywell-evohome.png}}
+\put(60,240){\scriptsize \sffamily a)}
+\put(180,240){\scriptsize \sffamily b)}
+\put(305,240){\scriptsize \sffamily c)}
+\put(60,130){\scriptsize \sffamily d)}
+\put(250,130){\scriptsize \sffamily e)}
+\put(250,57){\scriptsize \sffamily f)}
+	 \caption{Jednotlivá zařízení systému Honeywell Evohome. a) Lokální termostat. b) Centrální jednotka. c) Spínací jednotka kotle. d) Řízení dobíjení TUV. e) Zónový regulátor. f) Rozšiřující modul pro  zónový regulátor. Upraveno z \cite{honeywell-lokalni-termostat, honeywell-centralni-jednotka, honeywell-spinaci-jednotka-kotle, honeywell-rizeni-dobijeni-tuv, honeywell-zonovy-regulator, honeywell-rozsirujici-modul-pro-zonovy-regulator}.}
+	 \label{fig:honeywell-evohome}
+\end{picture}
+
+\end{figure}
+
+\subsection{Danfoss}
+Danfoss nabízí bezdrátový systém regulace podlahové topení. Systém řízení je zastřešené pod aplikaci Danfoss link.  Řídící systém se skládá z centrální jednotky s dotykovým displejem, lokálních termostatů pro jednotlivé místnosti a zónového regulátoru pro ovládání jednotlivých topných okruhů (celkově je možné ovládat 10 zón), oběhového čerpadla a řízení kotle. Na obrázku \ref{fig:danfoss-danfoss-link} jsou zobrazeny jednotlivé zařízení systému. Obdobným problém jako u PocketHome je počítání pouze s jedním zdrojem tepla, nepočítání s centrálním zásobníkem teplé vody. Vzdálené ovládání umožněno přes mobilní aplikací pomocí cloudové řešení. Systém má absenci v řízení dobíjení TUV, respektive zásobníku na otopnou vodu a použít více zdrojů tepla (viz předchozích systémy). Opětovnými problémy může být šíření bezdrátového signálu mezi zařízeními (výrobce nabízí zesilovače/opakovače pro signál), problémy cloudového řešení a nutná výměna baterií po určité době (problémy více popsány u předešlých systémů). Komunikace mezi zařízeními probíhá na frekvenci 868 MHz, připojení k centrální jednotce pomocí mobilní aplikace je pomocí WiFi (respektive centrální jednotka je připojena na domácí WiFi router, komunikace pak probíhá mezi aplikací, vzdáleným serverem a centrální jednotkou).
+
+
+\begin{figure}[h]
+\centering
+\begin{picture}(370,180)
+\put(0,0){\includegraphics[width=\textwidth]{images/komercni-systemy/danfoss-danfoss-link/danfoss-danfoss-link.png}}
+\put(60,242){\scriptsize \sffamily a)}
+\put(180,242){\scriptsize \sffamily b)}
+\put(305,242){\scriptsize \sffamily c)}
+\put(180,102){\scriptsize \sffamily d)}
+	 \caption{Jednotlivá zařízení systému Danfoss Danfoss Link. a) Lokální termostat. b) Centrální jednotka. c) Spínací jednotka kotle. d) Zónový regulátor. Upraveno z \cite{danfoss-lokalni-termostat, danfoss-centralni-jednotka, danfoss-zonovy-regulator, danfoss-spinaci-jednotka-kotle}.}
+	 \label{fig:danfoss-danfoss-link}
+\end{picture}
+
+\end{figure}
+
+Pokud shrnu hlavní nedostatky zmíněných systému pro řízení podlahové systému, tak mezi ně patří bezdrátové ovládání, zejména tedy možný problém komunikace mezi centrální jednotkou a zařízeními, výměna baterií po určité době. Dále absence počítání s více zdroji tepla, s centrálním zásobníkem otopné vody, systém od firmy Honeywell počítá alespoň s ohřevem TUV. Další možným nedostatkem může být cloudové řešení z pohledu dlouhodobé garance fungování služby, další věcí pak je že vzdálené ovládání neprobíhá přímo s centrální jednotkou, ale se vzdáleným serverem. Další zjištěním bylo, že všechny systémy jsou nabízeny jako bezdrátové, což je samozřejmě pochopitelné jak z pohledu jednoduchého nainstalování již do stávajících obydlí, kde s takovým to systémem nebylo počítáno (zejména staré zástavby), též není nutné provádět žádné stavební úpravy. Firma Salus nabízí drátové řešení, ale není zde žádná centrální jednotka, ovládání probíhá přes drátové lokální termostaty připojené přímo na zónový regulátor, který následně ovládá jednotlivé topné okruhy. Tabulka \ref{tab:srovnani-vlastnosti-jednotlivych-komercnich-systemu} zobrazuje přehled možností systémů zmíněné výše.
+
+
+\begin{center}
+\begin{table}[H]
+\begin{threeparttable}
+\begin{tabular}{|c||c|c|c|} \hline
+\backslashbox[40mm]{Funkce}{Systém}
+& \thead{Elektrobock \\ (PocketHome)}  & \thead{Honeywell \\ (Evohome)} & \thead{Danfoss \\ (Danfoss Link)} \\
+
+
+\hline
+\thead{Napojení na více \\ zdrojů tepla} & Ne & Ne & Ne \\ 
+\hline
+\thead{Napojení na \\ centrální zásobník \\ topné vody} & \multirow{2}{*}{Ne} & \multirow{2}{*}{Ne} & \multirow{2}{*}{Ne} \\ 
+\hline
+\thead{Ohřev TUV} & Ne & Ano & Ne \\ 
+\hline
+\thead{Bezdrátové$\slash$drátové \\ řešení} & Ano & Ano & Ano \\ 
+\hline
+\thead{Možnosti ovládání} & \makecell{PC \\ chytrý telefon} & \makecell{dotykový displej \\ chytrý telefon } & chytrý telefon \\ 
+\hline
+\thead{Cloudové řešení} & Ne & Ano & Ano \\ 
+\hline
+Centrální jednotka & \makecell{(PH-CJ39-WIFI, 1×) \\ 3 678 Kč}  & \makecell{(ATC928G3026,  1×) \\ 5 994 Kč } & \makecell{(014G0288, 1×) \\ 8 694 Kč }\\
+Zónový regulátor & \makecell{(PH-BP1-P9, 1×) \\ 3 388 Kč} & \makecell{(HCE80, 1×) \\ 5 622 Kč} & \makecell{(088U1031, 1×) \\ 4 299 Kč} \\
+Lokální termostaty & \makecell{(PH-BP7-V, 9×) \\ 9 036 Kč} & \makecell{(T87RF2083, 9×) \\ 12 141 Kč} & \makecell{(088U1081, 9×) \\ 19 476 Kč} \\
+Spínací jednotka kotle & \makecell{(PH-PK20, 1×) \\ 1 498 Kč} & \makecell{(BDR91A1000, 1×) \\ 1 100 Kč} & \makecell{(014G0272, 1×) \\ 2 190 Kč}\\
+Řízení dobíjení TUV & & \makecell{(ATF500DHW, 1×) \\ 3 818 K}  & \\
+\makecell{Rozšiřující modul \\ pro zónový regulátor}  & & \makecell{(HCS80, 1×) \\ 1 897 Kč} & \\
+\thead{Celková cena \\ včetně DPH \tnote{a}} & 17 600 Kč & 30 572 Kč & 34 659 Kč\\ 
+\hline
+\end{tabular}
+
+	\begin{tablenotes}
+    	\item[a] Ceny stanoveny ke dni 26. 11. 2020.
+	\end{tablenotes}
+\end{threeparttable}
+
+ \label{tab:srovnani-vlastnosti-jednotlivych-komercnich-systemu}
+ \caption{Srovnání vlastností jednotlivých komerčních systémů.}
+\end{table}
+\end{center}
+
 
 
 

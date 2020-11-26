@@ -11,11 +11,17 @@
 \usepackage{subcaption}
 \usepackage{tikz}
 \usepackage[demo,abs]{overpic}
+% Pictures
 \usepackage{graphicx,import}
 \graphicspath{ {images/svg/} }
-%\import{images/svg}{<filename>.tex}
+% Table
+\usepackage{multirow}
+\usepackage{slashbox}
 
-%\usepackage{subfig}
+\usepackage{makecell}
+\renewcommand\theadfont{\bfseries}
+
+\usepackage{threeparttable}
 
 \ctusetup{
 	preprint = \ctuverlog,
@@ -27,12 +33,12 @@
 	title-english = {System for underfloor heating of a family house using zone control},
 %	subtitle-czech = {Cesta do tajů kdovíčeho},
 %	subtitle-english = {Journey to the who-knows-what wondeland},
-	doctype = B,
+	doctype = M,
 	faculty = F3,
 	department-czech = {Katedra mikroelektroniky},
 	department-english = {Department of Microelectronics},
 	author = {Bc. Roman Labovský},
-	supervisor = {Ing. Vladimír Janíček Ph.D.},
+	supervisor = {Ing. Vladimír Janíček, Ph.D.},
 	supervisor-address = {České vysoké učení technické v Praze, Elektrotechnická fakulta, Katedra mikroelektroniky\\ Technická 2, \\ Praha 6},
 %	supervisor-specialist = {John Doe},
 	fieldofstudy-english = {Electronics},

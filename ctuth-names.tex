@@ -107,7 +107,12 @@
 	% Setup doctypes
 	xdoctype .meta:n = { xdoctype-#1 },
 	xdoctype .groups:n = { dc, nopre, nopost },
-
+	
+	xdoctype-SemPro .meta:n = {
+		doctype-english = { Semestr ~ Project },
+		doctype-czech = { Semestrální ~ projekt },
+		doctype-slovak = { Semestrálne ~ projekt }
+	},
 	xdoctype-B .meta:n = {
 		doctype-english = { Bachelor ~ Project },
 		doctype-czech = { Bakalářská ~ práce },
