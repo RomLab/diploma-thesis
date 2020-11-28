@@ -113,23 +113,27 @@
     \put(0,0){\includegraphics[width=\unitlength,page=20]{navrh-hardwarove-casti.pdf}}%
     \put(0.14768806,0.2485176){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Indikátor stavů\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=21]{navrh-hardwarove-casti.pdf}}%
-    \put(0.74120083,0.88611456){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Lokální\end{tabular}}}}%
-    \put(0.74120083,0.86611456){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily termostat\end{tabular}}}}%
-	\put(0.74120083,0.84611456){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily N\end{tabular}}}}%
+    \put(0.74120083,0.89411456){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Nástěnný\end{tabular}}}}%
+    \put(0.74120083,0.87411456){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily snímač\end{tabular}}}}%
+	\put(0.74120083,0.85411456){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily prostorové\end{tabular}}}}%
+	\put(0.74120083,0.83411456){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily teploty N\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=22]{navrh-hardwarove-casti.pdf}}%
-    \put(0.40993789,0.88611456){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Lokální\end{tabular}}}}%
-    \put(0.40993789,0.86611456){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily termostat\end{tabular}}}}%
-	\put(0.40993789,0.84611456){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily N\end{tabular}}}}%
+    \put(0.40993789,0.89411456){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Nástěnný\end{tabular}}}}%
+    \put(0.40993789,0.87411456){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily snímač\end{tabular}}}}%
+	\put(0.40993789,0.85411456){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily prostorové\end{tabular}}}}%
+	\put(0.40993789,0.83411456){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily teploty N\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=23]{navrh-hardwarove-casti.pdf}}%
-    \put(0.25810904,0.88611456){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Lokální\end{tabular}}}}%
-    \put(0.25810904,0.86611456){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily termostat\end{tabular}}}}%
-	\put(0.25810904,0.84611456){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily 1\end{tabular}}}}%
+    \put(0.25810904,0.89411456){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Nástěnný\end{tabular}}}}%
+    \put(0.25810904,0.87411456){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily snímač\end{tabular}}}}%
+	\put(0.25910904,0.85411456){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily prostorové\end{tabular}}}}%
+	\put(0.25810904,0.83411456){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily teploty 1\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=24]{navrh-hardwarove-casti.pdf}}%
-    \put(0.58937198,0.88611456){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Lokální\end{tabular}}}}%
-    \put(0.58937198,0.86611456){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily termostat\end{tabular}}}}%
-	\put(0.58937198,0.84611456){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily 1\end{tabular}}}}%
+    \put(0.58937198,0.89411456){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Nástěnný\end{tabular}}}}%
+    \put(0.58937198,0.87411456){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily snímač\end{tabular}}}}%
+	\put(0.59037198,0.85411456){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily prostorové\end{tabular}}}}%
+	\put(0.58937198,0.83411456){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily teploty 1\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=25]{navrh-hardwarove-casti.pdf}}%
-    \put(0.49965493,0.2485176){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Spínač\end{tabular}}}}%
+    \put(0.49965493,0.2485176){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Spínací jednotka\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=26]{navrh-hardwarove-casti.pdf}}%
     \put(0.85714286,0.44565562){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily 1\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=27]{navrh-hardwarove-casti.pdf}}%

@@ -89,23 +89,27 @@
     \put(0.08350587,0.15299793){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Krb\end{tabular}}}}%
 	\put(0.08350587,0.13099793){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily 1\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=14]{navrh-softwarove-casti.pdf}}%
-    \put(0.7325107,0.58383713){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Lokální\end{tabular}}}}%
-	\put(0.7325107,0.56383713){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily termostat\end{tabular}}}}%
-	\put(0.7325107,0.54383713){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily N\end{tabular}}}}%
+    \put(0.7325107,0.58583713){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Nástěnný\end{tabular}}}}%
+	\put(0.7325107,0.56583713){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily snímač\end{tabular}}}}%
+    \put(0.7325107,0.54583713){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily prostorové\end{tabular}}}}%
+	\put(0.7325107,0.52583713){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily teploty N\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=15]{navrh-softwarove-casti.pdf}}%
-	\put(0.40524776,0.58383713){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Lokální\end{tabular}}}}%
-	\put(0.40524776,0.56383713){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily termostat\end{tabular}}}}%
-	\put(0.4054776,0.54383713){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily N\end{tabular}}}}%
+	\put(0.40524776,0.58583713){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Nástěnný\end{tabular}}}}%
+	\put(0.40524776,0.56583713){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily snímač\end{tabular}}}}%
+    \put(0.40524776,0.54583713){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily prostorové\end{tabular}}}}%
+	\put(0.4054776,0.52583713){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize  \sffamily teploty N\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=16]{navrh-softwarove-casti.pdf}}%
-    \put(0.25741891,0.58383713){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Lokální\end{tabular}}}}%
-	\put(0.25741891,0.56383713){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily termostat\end{tabular}}}}%
-	\put(0.25741891,0.54383713){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily 1\end{tabular}}}}%
+    \put(0.25741891,0.58583713){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Nástěnný\end{tabular}}}}%
+	\put(0.25741891,0.56583713){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily snímač\end{tabular}}}}%
+	\put(0.25741891,0.54583713){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily prostorové\end{tabular}}}}%
+	\put(0.25741891,0.52583713){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily teploty 1\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=17]{navrh-softwarove-casti.pdf}}%
-	\put(0.58268185,0.58383713){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Lokální\end{tabular}}}}%
-	\put(0.58268185,0.56383713){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily termostat\end{tabular}}}}%
-	\put(0.58268185,0.54383713){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily 1\end{tabular}}}}%
+	\put(0.58268185,0.58583713){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Nástěnný\end{tabular}}}}%
+	\put(0.58268185,0.56583713){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily snímač\end{tabular}}}}%
+	\put(0.58268185,0.54583713){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily prostorové\end{tabular}}}}%
+	\put(0.58268185,0.52583713){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily teplory 1\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=18]{navrh-softwarove-casti.pdf}}%
-    \put(0.48965493,0.2455176){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Spínač\end{tabular}}}}%
+    \put(0.48965493,0.2455176){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Spínací jednotka\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=19]{navrh-softwarove-casti.pdf}}%
     \put(0.3347136,0.45083851){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily MQTT\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=20]{navrh-softwarove-casti.pdf}}%
