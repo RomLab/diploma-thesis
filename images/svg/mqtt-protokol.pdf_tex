@@ -1,0 +1,97 @@
+%% Creator: Inkscape 1.0 (4035a4fb49, 2020-05-01), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'mqtt-protokol.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{480.75bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.53120125)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{mqtt-protokol.pdf}}%
+    \put(0.0624025,0.38455538){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Publisher \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{mqtt-protokol.pdf}}%
+    \put(0.71242554,0.16494451){\color[rgb]{0,0,0}\rotatebox{-19.5}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Subscribe: „dum/patro/\#“\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{mqtt-protokol.pdf}}%
+    \put(0.72331521,0.21643756){\color[rgb]{0,0,0}\rotatebox{-19.8}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Publish: Teplomer: 21 °C\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{mqtt-protokol.pdf}}%
+    \put(0.93603744,0.0725429){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Subscriber \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{mqtt-protokol.pdf}}%
+    \put(0.28019936,0.1307915){\color[rgb]{0,0,0}\rotatebox{23.7}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Topic: „dum/patro/loznice/vlhkost“\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{mqtt-protokol.pdf}}%
+    \put(0.28081123,0.25975039){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Topic: „dum/patro/pracovna/spinac“\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{mqtt-protokol.pdf}}%
+    \put(0.28148308,0.38349565){\color[rgb]{0,0,0}\rotatebox{-23.1}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Topic: „dum/patro/obyvaci-pokoj/teplota“\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{mqtt-protokol.pdf}}%
+    \put(0.72756331,0.34749022){\color[rgb]{0,0,0}\rotatebox{20}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Subscribe: „dum/patro/\#“\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{mqtt-protokol.pdf}}%
+    \put(0.71463502,0.25855925){\color[rgb]{0,0,0}\rotatebox{-19.8}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Publish: Spinac: ON\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{mqtt-protokol.pdf}}%
+    \put(0.93603744,0.32215289){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Subscriber\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{mqtt-protokol.pdf}}%
+    \put(0.28926337,0.41470548){\color[rgb]{0,0,0}\rotatebox{-23.3}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Publish: Teplomer: 21 °C\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{mqtt-protokol.pdf}}%
+    \put(0.2698908,0.29095164){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Publish: Spinac: ON\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{mqtt-protokol.pdf}}%
+    \put(0.27074893,0.16195405){\color[rgb]{0,0,0}\rotatebox{22.8}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Publish: Vlhkomer: 55 \%\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{mqtt-protokol.pdf}}%
+    \put(0.69788113,0.39427733){\color[rgb]{0,0,0}\rotatebox{19.6}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Publish: Teplomer: 21 °C\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{mqtt-protokol.pdf}}%
+    \put(0.66011982,0.43015877){\color[rgb]{0,0,0}\rotatebox{19.6}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Publish: Spinac: ON\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{mqtt-protokol.pdf}}%
+    \put(0.69008082,0.41455814){\color[rgb]{0,0,0}\rotatebox{19.6}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Publish: Vlhkomer: 55 \%\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{mqtt-protokol.pdf}}%
+    \put(0.72955546,0.23515831){\color[rgb]{0,0,0}\rotatebox{-19.8}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Publish: Vlhkomer: 55 \%\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{mqtt-protokol.pdf}}%
+    \put(0.49921997,0.18486739){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily MQTT broker\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{mqtt-protokol.pdf}}%
+    \put(0.0624025,0.19734789){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Publisher \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{mqtt-protokol.pdf}}%
+    \put(0.0624025,0.01014041){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Publisher \end{tabular}}}}%
+  \end{picture}%
+\endgroup% 

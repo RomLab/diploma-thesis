@@ -13,7 +13,7 @@ Otopná soustava domu je zobrazena na obrázku \ref{fig:otopna-soustava-rez-domu
     \label{fig:otopna-soustava-rez-domu}
 \end{figure}
 
-\section{Hardwarová část}
+\subsection{Hardwarová část}
 
 Centrální jednotka je jednodeskový počítač s periferiemi jako ethernetový port, USB, univerzálními vstupy/výstupy, případně s alternativní funkcí pinů jako sběrnice I$^2$C nebo dalšími typy periferií. Dále by měla disponovat dostatečnou velikostí RAM pamětí a relativně výkonným procesorem pro snadné zpracování vstupní/výstupních dat či povelů.
 
@@ -33,8 +33,6 @@ Teplotní senzory v zásobníku otopné vody jsou rozmístěné ve třech část
 
 Výše popsaný hardwarový koncept je nakreslen na obrázku \ref{fig:navrh-hardwarove-casti}.
 
-
-
 \begin{figure}[H]
     \centering
     \def\svgwidth{\columnwidth}
@@ -43,7 +41,14 @@ Výše popsaný hardwarový koncept je nakreslen na obrázku \ref{fig:navrh-hard
     \label{fig:navrh-hardwarove-casti}
 \end{figure}
 
-\section{Softwarová/komunikační část}
+\subsubsection{Teplotní čidla}
+Jak bylo zmíněno výše, teplotní čidla jsou potřebná na snímání teplot na kouřovodech krbů pro následné sepnutí oběhového čerpadla. Teplota na kouřovodech se může dosáhnout až 300 °C (optimální teplota se však pohybuje přibližně mezi 120 °C až 240 °C, kdy je nejvyšší účinnost kamen a hoření paliva), proto je nutné zvolit takové čidlo, které je na tyto teploty vhodné. Mezi takové teplotní čidlo patří odporové teplotní čidlo (teplotní rozsahy od -240~°C až 600 °C) nebo termočlánek (teplotní rozsahy od -260 °C až 2~300~°C). Pro zjištění teploty není nutná velmi velká přesnost, citlivost, jistým požadavkem je robustnost čidla (nejen ochrana čidla, ale i přívodních kabelů), vzhledem k umístění u krbu, kde je dosahováno vyšších teplot.
+
+Princip termočlánku spočívá v Seebeckově efektu, jsou-li spojeny dva vodiče z různých kovů, tak v místě spojení je generováno napětí. Velikost napětí je závislá na vnější teplotě a materiálu článku. Linearita výstupního napětí článku je závislá na typu termočlánku a rozsahu teplot.
+
+Další teplotní čidla jsou nutná pro nástěnné teplotní snímače pro každou místnost, zásobník otopné vody a venkovní čidlo. Teplotní rozsah těchto čidel nemusí být tak vysoký jako u měření teplot na kouřovodech. Teplotní rozsah stačí v řádů desítek stupňů jak pro kladné, tak i záporné hodnoty teploty. Vzhledem ke vzdálenostem teplotních čidel a centrální jednotky bude lepší zvolit digitální teplotní čidla, které výslednou změřenou teplotu zpracuje pošle po sběrnici v digitální podobě. Není pak nutná další elektronika pro zpracování hodnot teploty jako například u termočlánku či teplotně odporového čidla.
+
+\subsection{Softwarová/komunikační část}
 
 Komunikace mezi centrální řídicí jednotkou a bezdrátovými i kabelovými nástěnnými snímači prostorové teploty je zajištěny pomocí protokolu MQTT. Centrální jednotka dostává informace z jednotlivých nástěnných snímačů prostorové teploty, zároveň je možné některá parametry nastavovat přímo přes centrální jednotku, která následně dané nastavení pošle do daných zařízení.
 
@@ -59,6 +64,34 @@ Teplotní senzory umístěné v zásobníku otopné vody a na kouřovodech krbů
     \centering
     \def\svgwidth{\columnwidth}
     \input{images/svg/navrh-softwarove-casti.pdf_tex}
-    \caption{ Návrh softwarové části systému.}
+    \caption{Návrh softwarové části systému.}
     \label{fig:navrh-softwarove-casti}
 \end{figure}
+
+\subsubsection{MQTT protokol}
+
+MQTT (\textit{Message Queuing Telemetry Transport}) je jednoduchý a nenáročný M2M/„Internet Of Things“ komunikační protokol. Protokol je založen na principu předávání zpráv mezi klienty přes centrální server (broker). Centrální server přijímá zprávy od poskytovatele zprávy (tzv. publisher), které následně předává k přečtení čtenářům, kteří tuto zprávu odebírají (tzv. subscribers). Publisher obvykle představuje nějaký sensor či měřící jednotku, která vysílá naměřeného hodnoty na broker, zatímco subscriber obvykle tvoří nějaká řídící jednotka, která hodnoty odebírá (přijímá) a dále s nimi pracuje  nebo je zobrazuje.
+
+Přenášené zprávy jsou tříděny do témat (topic). Každá zpráva patří právě do jednoho tématu, přičemž témata definuje přímo publisher. Subscriber pak musí předem znát jméno (označení) tématu, aby se mohlo přihlásit u~brokeru k jeho odběru. Subscriber nemusí znát umístění ani komunikační adresu publisheru. Musí jen znát komunikační adresu (umístění) brokeru. Témata jsou hierarchická a oddělená lomítky. Příklad struktury tématu: „dum/patro/loznice/sensor/teplota“, lze tak přehledně roztřídit jednotlivá umístění zařízení a případné rozšiřování systému je pak snadné. Příklad schématu komunikace a struktury topiců je zobrazena na obrázku \ref{fig:mqtt-protokol}.
+
+\begin{figure}[H]
+    \centering
+    \def\svgwidth{\columnwidth}
+    \input{images/svg/mqtt-protokol.pdf_tex}
+    \caption{Základní funkční schéma MQTT komunikace. Příklad přenosu hodnot do koncových zařízení. Znak \# nahrazuje jednu či více úrovní, budou přijímány subscribers  všechny zprávy tykající se prvního patra domu.}
+    \label{fig:mqtt-protokol}
+\end{figure}
+
+Obsahem zprávy není přesně definován. Nejčastěji se používá formát (způsob zápisu) dat JSON (\textit{JavaScript Object Notation}), BSON (\textit{Binary JSON}) nebo textové zprávy. Velikost zprávy je pak v aktuální verzi protokolu omezena na necelých 256 MB, ale vzhledem k využití „Internet of Things“ bývá většina zpráv mnohem menší.
+
+Protokol MQTT popisuje jen samotný popis struktury přenášených zpráv, ale nedefinuje způsob přenosu. K tomu se využívá TCP/IP protokol. Protokol definuje tři úrovně potvrzování zpráv QoS (\textit{Quality of Service}). QoS 0 – Zpráva je odeslána bez potvrzení a není zaručeno její doručení. QoS 1 – Publisher zprávu odešle a přes broker je od odběratelů posláno potvrzení, broker může poslat potvrzení, aniž by měl potvrzení od všech odběratelů (závisí na implementaci). QoS 2 – Publisher zprávu odešle, broker pošle publisherovi potvrzení o přijetí na kterou publisher odpoví potvrzením, broker zprávu smaže a potvrdí zprávou, tím je komunikace mezi publisherem a brokerem uzavřena. Tato komunikace probíhá i mezi brokerem a odběrateli.
+
+
+V přihlašovací sekvenci se využívá identifikace klienta pomocí ID a pak volitelně i pomocí uživatelské jména a hesla. MQTT díky podpoře SSL/TLS umožňuje přihlášení pomocí klientského SSL certifikátu.
+\subsubsection{I$^2$C sběrnice}
+\subsubsection{1-Wire sběrnice}
+
+\subsubsection{Inteligentní část systému}
+Pro co největší využití centrálního řízení podlahového vytápění je vhodné využít různé metody pro její optimalizaci, což se následně promítne do nákladů energie, tak též i do teplotního konfortu uživatelů. Jednou z metod je využití předpovědi počasí, kdy dopředu víme teplotní předpověď, kterou můžeme začlenit do teplotních programů (časově definované úsek pro vytápění) definované uživatel a základě  předpovědi se rozhodnout, zda je nutné místnosti natápět dříve v případě snížení venkovní teploty nebo naopak s vytápěním počkat. Další možností 
+
+\subsubsection{Řídicí systémy}
