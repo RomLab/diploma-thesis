@@ -1,0 +1,106 @@
+%% Creator: Inkscape 1.0 (4035a4fb49, 2020-05-01), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'i2c-sbernice-datovy-paket-7bit-adresa.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{563.10811523bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.20409576)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{i2c-sbernice-datova-komunikace-7bit-adresa.pdf}}%
+    \put(0.29767602,0.15880922){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\tiny \sffamily A0\end{tabular}}}}%
+    \put(0.27103815,0.15880922){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\tiny \sffamily A1\end{tabular}}}}%
+    \put(0.24440028,0.15880922){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\tiny \sffamily A2\end{tabular}}}}%
+    \put(0.21776242,0.15880922){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\tiny \sffamily A3\end{tabular}}}}%
+    \put(0.19112455,0.15880922){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\tiny \sffamily A4\end{tabular}}}}%
+    \put(0.16448668,0.15880922){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\tiny \sffamily A5\end{tabular}}}}%
+    \put(0.13584881,0.15880922){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\tiny \sffamily A6\end{tabular}}}}%
+    \put(0.31227717,0.15880922){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\fontsize{3.8}{3} \selectfont \sffamily R/W\end{tabular}}}}%
+    \put(0.33932901,0.15880922){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\fontsize{3.8}{3} \selectfont \sffamily ACK\end{tabular}}}}%
+    \put(0.53708387,0.15880922){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\tiny \sffamily D1\end{tabular}}}}%
+    \put(0.510446,0.15880922){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\tiny \sffamily D2\end{tabular}}}}%
+    \put(0.48380813,0.15880922){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\tiny \sffamily D3\end{tabular}}}}%
+    \put(0.45717026,0.15880922){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\tiny \sffamily D4\end{tabular}}}}%
+    \put(0.43053239,0.15880922){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\tiny \sffamily D5\end{tabular}}}}%
+    \put(0.40389452,0.15880922){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\tiny \sffamily D6\end{tabular}}}}%
+    \put(0.37725665,0.15880922){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\tiny \sffamily D7\end{tabular}}}}%
+    \put(0.56372174,0.15880922){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\tiny \sffamily D0\end{tabular}}}}%
+    \put(0.57906983,0.15880922){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\fontsize{3.8}{3} \selectfont \sffamily ACK\end{tabular}}}}%
+    \put(0.77682468,0.15880922){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\tiny \sffamily D1\end{tabular}}}}%
+    \put(0.75018682,0.15880922){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\tiny \sffamily D2\end{tabular}}}}%
+    \put(0.72354895,0.15880922){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\tiny \sffamily D3\end{tabular}}}}%
+    \put(0.69691108,0.15880922){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\tiny \sffamily D4\end{tabular}}}}%
+    \put(0.67027321,0.15880922){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\tiny \sffamily D5\end{tabular}}}}%
+    \put(0.64363534,0.15880922){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\tiny \sffamily D6\end{tabular}}}}%
+    \put(0.61699747,0.15880922){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\tiny \sffamily D7\end{tabular}}}}%
+    \put(0.80346255,0.15880922){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\tiny \sffamily D0\end{tabular}}}}%
+    \put(0.8191064,0.15880922){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\fontsize{3.8}{3} \selectfont \sffamily ACK\end{tabular}}}}%
+    \put(0.31127717,0.04759828){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\fontsize{3.8}{3} \selectfont \sffamily R/W\end{tabular}}}}%
+    \put(0.15053383,0.04359828){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\scriptsize \sffamily 7-bitová adresa\end{tabular}}}}%
+    \put(0.09034233,0.04759828){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\tiny \sffamily S\end{tabular}}}}%
+    \put(0.43276925,0.04359828){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\scriptsize \sffamily byte data\end{tabular}}}}%
+    \put(0.6758398,0.04359828){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\scriptsize \sffamily byte data\end{tabular}}}}%
+    \put(0.33972966,0.04759828){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\fontsize{3.8}{3} \selectfont \sffamily ACK\end{tabular}}}}%
+    \put(0.57947047,0.04759828){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\fontsize{3.8}{3} \selectfont \sffamily ACK\end{tabular}}}}%
+    \put(0.81921129,0.04759828){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\fontsize{3.8}{3} \selectfont \sffamily ACK\end{tabular}}}}%
+    \put(0.88947839,0.04759828){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\tiny \sffamily S\end{tabular}}}}%
+    \put(0.00029302,0.18744709){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\scriptsize \sffamily SDA\end{tabular}}}}%
+    \put(0.00102556,0.13417135){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\scriptsize \sffamily SCL\end{tabular}}}}%
+    \put(0.95257522,0.18744709){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\scriptsize \sffamily SDA\end{tabular}}}}%
+    \put(0.95330776,0.13417135){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\scriptsize \sffamily SCL\end{tabular}}}}%
+    \put(0.26271238,0.00104688){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\scriptsize  \sffamily  Read/Write Bit\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{i2c-sbernice-datova-komunikace-7bit-adresa.pdf}}%
+    \put(0.05885277,0.00104688){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\scriptsize \sffamily START\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{i2c-sbernice-datova-komunikace-7bit-adresa.pdf}}%
+    \put(0.86234844,0.00104688){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\scriptsize \sffamily STOP\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{i2c-sbernice-datova-komunikace-7bit-adresa.pdf}}%
+    \put(0.51834521,0.00104688){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\scriptsize \sffamily ACK/NACK Bit\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{i2c-sbernice-datova-komunikace-7bit-adresa.pdf}}%
+  \end{picture}%
+\endgroup%

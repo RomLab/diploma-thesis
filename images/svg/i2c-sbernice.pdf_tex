@@ -1,0 +1,81 @@
+%% Creator: Inkscape 1.0 (4035a4fb49, 2020-05-01), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'i2c-sbernice.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{368.25bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.53564155)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{i2c-sbernice.pdf}}%
+    \put(0.0814664,0.28818737){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Master\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{i2c-sbernice.pdf}}%
+    \put(0.36659878,0.10488798){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Slave 1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{i2c-sbernice.pdf}}%
+    \put(0.61099796,0.10488798){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Slave 2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{i2c-sbernice.pdf}}%
+    \put(0.91649695,0.10488798){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Slave N\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{i2c-sbernice.pdf}}%
+    \put(0.23625255,0.40020367){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily R\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{i2c-sbernice.pdf}}%
+    \put(0.31771894,0.40020367){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily R\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{i2c-sbernice.pdf}}%
+    \put(0.25661914,0.50814664){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily VDD\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{i2c-sbernice.pdf}}%
+    \put(0.36863544,0.01323829){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily GND\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{i2c-sbernice.pdf}}%
+    \put(0.61099796,0.01323829){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily GND\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{i2c-sbernice.pdf}}%
+    \put(0.91649695,0.01323829){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily GND\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{i2c-sbernice.pdf}}%
+    \put(0.77393075,0.33299389){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily SDA\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{i2c-sbernice.pdf}}%
+    \put(0.77596741,0.27189409){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily SCL\end{tabular}}}}%
+  \end{picture}%
+\endgroup%

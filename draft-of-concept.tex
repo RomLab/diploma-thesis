@@ -89,6 +89,33 @@ Protokol MQTT popisuje jen samotný popis struktury přenášených zpráv, ale 
 
 V přihlašovací sekvenci se využívá identifikace klienta pomocí ID a pak volitelně i pomocí uživatelské jména a hesla. MQTT díky podpoře SSL/TLS umožňuje přihlášení pomocí klientského SSL certifikátu.
 \subsubsection{I$^2$C sběrnice}
+Jedná se o sériovou, synchronní sběrnici. Komunikace probíhá na dvou vodičích, jeden tvoří hodinový vodič (SCL – \textit{Synchronous Clock}) a datový vodiče (SDA – \textit{Synchronous Data}). Vodiče jsou sdílené mezi připojenými zařízeními, proto je možné aby kdokoliv komunikoval s kýmkoliv (komunikace je v této konfiguraci náročnější na zpracování). Typické zapojení sběrnice je v konfiguraci jeden Master, který veškerou komunikaci řídí, a několik zařízení Slave, viz obrázek \ref{fig:i2c-sbernice}. Nicméně existuje varianta s více Mastery, existuje sada pravidel, jak se musí chovat, aby mohli na sběrnici pracovat společně a neovlivňovali se. Na vodičích SCL a SDA je připojen „pull-up“ rezistor (R), v neutrálním stavu je na vodičích log. 1. Připojená zařízení po sběrnici komunikují pomocí otevřeného kolektoru (mohou sběrnici stáhnout k zemi (log. 0), po odpojení je na sběrnici opět log. 1).
+
+\begin{figure}[H]
+    \centering
+    \def\svgwidth{\columnwidth}
+    \input{images/svg/i2c-sbernice.pdf_tex}
+    \caption{Zapojení I$^2$C sběrnice. Jedno zařízení pracuje v režimu „master“, ostatní zařízení v režimu slave „slave“.}
+    \label{fig:i2c-sbernice}
+\end{figure}
+
+Komunikace vždy začíná START sekvencí (na SDA se vygeneruje sestupná hrana, na SCL je držena log. 1) a končí STOP sekvencí (na SDA se vygeneruje vzestupná hrana, na SCL je držena log.). SDA nesmí nikdy měnit svojí hodnotu, když je SCL v log. 1.  Přenos jednoho bitu zprávy probíhá, takže SCL je v log. 0, změní vysílač hodnotu SDA na takovou, jak potřebuje. Poté nastaví SCL do log. 1. Se vzestupnou hranou pak přijímač čte hodnotu na SDA. Vysílač opět vrátí SCL do log. 0 a celý proces se opakuje s dalším bitem zprávy. Zpráva se skládá z 9 bitů. Prvních 8 bitů je datových a devátý bit je potvrzovací (log. 0 pro potvrzení nebo log. 1 a vysílač z toho vyrozumí, že zpráva není potvrzená). Nejednodušší tvar zprávy se skládá ze START sekvence, 8 bitů, potvrzovací devátý bit a STOP sekvence. Prvních 7 bitů po START sekvenci tvoří adresu zařízení (každý Slave má unikátní adresu, jinak dojde ke kolizi) a osmí bit rozhoduje o směru toku dat (zda se bude zapisovat log. 1 či číst log. 0), každý byte se potvrzuje devátým bitem, buď potvrzuje Slave, když Master posílá data nebo naopak Master potvrzuje, když posílá Slave. Tak to se potvrzuje až na poslední byte, tím se zařízení dozví,že komunikace končí a~má uvolnit SDA linku. Poté se odešle STOP sekvence. Zobrazení komunikace je na obrázku \ref{fig:i2c-sbernice-datova-komunikace-7bit-adresa}.
+
+\begin{figure}[H]
+    \centering
+    \def\svgwidth{\columnwidth}
+    \input{images/svg/i2c-sbernice-datova-komunikace-7bit-adresa.pdf_tex}
+    \caption{Příklad I$^2$C datové komunikace se 7-bitovou adresací. Upraveno z~\cite{i2c-sbernice-datovy-paket-7bit-adresa}.}
+    \label{fig:i2c-sbernice-datova-komunikace-7bit-adresa}
+\end{figure}
+
+Adresace je možná pomocí 7 bitů (128 unikátních adres, číslo je však poníženo ještě o speciální adresy, např. broadcast adresa apod.) nebo 10 bitů (1024 unikátních adres), zde se pak adresy přenáší ve dvou bytech (pro první byte se používá vyhrazená adres, kde jsou uloženy dva nejvyšší bity adresy, v~druhém bytu je dolních osm bitů adresy).
+
+Podle verze sběrnice je frekvenci SCL 100 kHz, 400 kHz, 1 MHz nebo až 3,4 MHz. Rychlost je pak přizpůsobena nejpomalejšímu zařízení na sběrnici. Pull-up rezistory jsou v řádech jednotek kiloohmů, s rostoucí frekvencí nebo delší vzdálenosti sběrnice se jejich velikosti volí menší.
+
+
+
+
 \subsubsection{1-Wire sběrnice}
 
 \subsubsection{Inteligentní část systému}
