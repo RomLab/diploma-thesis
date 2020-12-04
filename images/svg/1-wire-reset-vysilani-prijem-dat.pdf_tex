@@ -1,0 +1,171 @@
+%% Creator: Inkscape 1.0 (4035a4fb49, 2020-05-01), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file '1-wire-reset-vysilani-prijem-dat.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{420.375bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,1.24888492)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.03479037,1.07671722){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily V$_{DD}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.03479037,1.00500000){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily GND\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.3220339,1.20295807){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily min. 480 µs\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.69669938,1.20295807){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily min. 480 µs\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.63074398,1.13202498){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\normalsize \sffamily 60–240 µs\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.55540143,1.13202498){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily 15–60 µs\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.32024978,0.98072703){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Master vysílá\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.73595004,0.98072703){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Master naslouchá\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.03479037,0.70005174){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}V$_{DD}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.03479037,0.63025513){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily GND\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.32024978,0.8281963){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily  60–120 µs\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.36485281,0.60706155){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Zařízení vzorkuje\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.83764496,0.60706155){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Zařízení vzorkuje\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.62176628,0.57851561){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily >1 µs\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.80196253,0.8281963){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily 60–120 µs\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.18465656,0.75714362){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily 15 µs\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.27564674,0.75714362){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily 15 µs\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.40945584,0.75714362){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily 30 µs\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.65031222,0.75714362){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily 15 µs\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.73951829,0.75714362){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily 15 µs\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.87332739,0.75714362){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily 30 µs\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=22]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.23104371,0.58051561){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily min\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=23]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.49866191,0.58051561){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily max\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=24]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.3220339,0.58051561){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily typ\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=25]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.69491525,0.58051561){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily min\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=26]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.96253345,0.58051561){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily max\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=27]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.78768956,0.58051561){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily typ\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=28]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.03479037,0.32738626){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily V$_{DD}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=29]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.03479037,0.25458965){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily GND\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=30]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.32738626,0.45335415){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily 60–120 µs\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=31]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.36485281,0.23139607){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Zařízení vzorkuje\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=32]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.83764496,0.23139607){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Zařízení vzorkuje\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=33]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.62176628,0.20406601){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily >1 µs\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=34]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.79125781,0.45335415){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily 60–120 µs\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=35]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.18465656,0.38226227){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily 15 µs\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=36]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.36485281,0.38226227){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily 45 µs\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=37]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.65031222,0.38226227){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily 15 µs\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=38]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.82872435,0.38226227){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily 45 µs\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=39]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.23104371,0.20585013){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily min\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=40]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.49866191,0.20585013){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily max\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=41]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.3220339,0.20585013){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily typ\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=42]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.69491525,0.20585013){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily min\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=43]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.96253345,0.20585013){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily max\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=44]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.78768956,0.20585013){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily typ\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=45]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.15789474,0.20406601){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily >1 µs\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=46]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.37236396,0.14814237){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Master vzorkuje\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=47]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.83445138,0.14814237){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Master vzorkuje\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=48]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.06155219,1.23371989){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily a)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=49]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.06155219,0.87689563){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily b)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=50]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.06155219,0.52185549){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily c)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=51]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.34597681,0.07717752){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Master stahuje sběrnici k log. 0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=52]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.35097681,0.03949509){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Zařízení stahuje sběrnici k log. 0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=53]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.39297681,0.00569679){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Pull-up rezistor zdvihá sběrnici k log. 1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=54]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.32024978,0.87689563){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Slot pro zápis log. 0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=55]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.78412132,0.87689563){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Slot pro zápis log. 1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=56]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.32024978,0.52185549){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Slot pro čtení log. 0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=57]{1-wire-reset-vysilani-prijem-dat.pdf}}%
+    \put(0.7823372,0.52185549){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Slot pro čtení log. 1\end{tabular}}}}%
+  \end{picture}%
+\endgroup%

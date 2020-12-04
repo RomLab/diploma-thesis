@@ -117,6 +117,43 @@ Podle verze sběrnice je frekvenci SCL 100 kHz, 400 kHz, 1 MHz nebo až 3,4 MHz.
 
 
 \subsubsection{1-Wire sběrnice}
+Jedná se o sériovou sběrnici. Komunikace probíhá na jednom vodiči, dalšími vodiči jsou napájení (V$_{DD}$) zem (GND) to je v případě konfigurace pomocí tří vodičů (obrázek \ref{fig:1-wire-sbernice-tri-vodice}), další typ konfigurace sběrnice je pomocí jen dvou vodičů, kde napájení a komunikace probíhá na jednom vodiči, druhý vodič je zem (obrázek \ref{fig:1-wire-sbernice-dva-vodice}), během neutrálního stavu na sběrnici (log. 1) dochází k~nabíjení interního kondenzátoru, který se následně chová jako zdroj energie při log. 0 na sběrnici (komunikace), v tomto režimu je nutné splnit vhodné podmínky pro napájení a časování pro správnou komunikaci. Sběrnice se skládá z řídícího obvodu master a jednoho či více připojených zařízení slave. Na vodiči data je připojen „pull-up“ rezistor (R), v neutrálním stavu je na vodiči log. 1. Připojená zařízení po sběrnici komunikují pomocí otevřeného kolektoru (mohou sběrnici stáhnout k zemi (log. 0), po odpojení je na sběrnici opět log. 1).
+
+Komunikaci zahajuje vždy master reset pulsem. Dojde ke vygenerování sestupné hrany na datovém vodiči na log. 0 po dobu minimálně 480 µs. Pak master sběrnici uvolní (opět se objeví log. 1) a naslouchá. Pokud je na sběrnici připojené zařízení, tak detekuje tuto vzestupnou hranu a po prodlevě (15–60~µs) stáhne sběrnici na 60–240 µs k log. 0. Průběh komunikace je zobrazena na obrázku \ref{fig:1-wire-reset-vysilani-prijem-dat}a. Pokud se zařízení správně ohlásí, může master začít vysílat a přijímat data, která jsou vysílána v tzv. time slotech. Slot je dlouhý 60–120~µs a během jednoho slotu je vyslán nebo přijat jeden bit informace. Mezi jednotlivými sloty musí být minimálně 1 µs mezera, kdy je sběrnice v klidu. 
+
+Existují 4 ruhy slotů: zápis 1, zápis 0, čtení 1 a čtení 0. Sloty pro zápis slouží k tomu, aby master vyslal data do zařízení. Zápis 1 probíhá tak, že master stáhne sběrnici k log. 0 minimálně na 1 µs a nejpozději do 15 µs od začátku ji opět uvolní a ponechá volnou. Zápis 0 probíhá tak, že master stáhne sběrnici k log. 0 a ponechá ji tak po celý slot, tedy minimálně 60 µs. Zařízení vzorkuje stav na datovém vodiči zhruba 30 µs po začátek time slotu. Průběh komunikace je zobrazena na obrázku \ref{fig:1-wire-reset-vysilani-prijem-dat}b.
+
+Čtecí sloty inicializuje master, stáhne sběrnici k log. 0 na minimálně 1~µs a~opět ji uvolní. Po tomto zahájení může zařízení vyslat 1 bit, ponechá sběrnici v~klidu (log. 1) nebo je stáhne k zemi (log. 0). Průběh komunikace je zobrazena na obrázku \ref{fig:1-wire-reset-vysilani-prijem-dat}c.
+
+Každé zařízení má v sobě paměť ROM, která obsahuje 64bitové unikátní číslo, která slouží k odlišení jednotlivých zařízení na sběrnici. Po RESET pulsu je třeba vyslat příkaz Match ROM, pak 64bitový kód zařízení, se kterým se má pracovat, a teprve poté se posílá příkaz.
+
+
+\begin{figure}[H]
+    \centering
+    \def\svgwidth{\columnwidth}
+    \input{images/svg/1-wire-sbernice-tri-vodice.pdf_tex}
+    \caption{Zapojení 1-Wire sběrnice ve trojvodičovém provedení.}
+    \label{fig:1-wire-sbernice-tri-vodice}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \def\svgwidth{\columnwidth}
+    \input{images/svg/1-wire-sbernice-dva-vodice.pdf_tex}
+    \caption{Zapojení 1-Wire sběrnice ve dvouvodičovém provedení.}
+    \label{fig:1-wire-sbernice-dva-vodice}
+\end{figure}
+
+
+
+\begin{figure}[H]
+    \centering
+    \def\svgwidth{\columnwidth}
+    \input{images/svg/1-wire-reset-vysilani-prijem-dat.pdf_tex}
+    \caption{Průběhy na sběrnici 1-Wire. \\ 
+    a) Reset. b) Zápis dat. c) Čtení dat. Upraveno z \cite{1-wire-sbernice-prubehy}.}
+    \label{fig:1-wire-reset-vysilani-prijem-dat}
+\end{figure}
 
 \subsubsection{Inteligentní část systému}
 Pro co největší využití centrálního řízení podlahového vytápění je vhodné využít různé metody pro její optimalizaci, což se následně promítne do nákladů energie, tak též i do teplotního konfortu uživatelů. Jednou z metod je využití předpovědi počasí, kdy dopředu víme teplotní předpověď, kterou můžeme začlenit do teplotních programů (časově definované úsek pro vytápění) definované uživatel a základě  předpovědi se rozhodnout, zda je nutné místnosti natápět dříve v případě snížení venkovní teploty nebo naopak s vytápěním počkat. Další možností 
