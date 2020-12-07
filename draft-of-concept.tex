@@ -78,7 +78,7 @@ Přenášené zprávy jsou tříděny do témat (topic). Každá zpráva patří
     \centering
     \def\svgwidth{\columnwidth}
     \input{images/svg/mqtt-protokol.pdf_tex}
-    \caption{Základní funkční schéma MQTT komunikace. Příklad přenosu hodnot do koncových zařízení. Znak \# nahrazuje jednu či více úrovní, budou přijímány subscribers  všechny zprávy tykající se prvního patra domu.}
+    \caption[Základní funkční schéma MQTT komunikace.]{Základní funkční schéma MQTT komunikace. Příklad přenosu hodnot do koncových zařízení. Znak \# nahrazuje jednu či více úrovní, budou přijímány subscribers  všechny zprávy tykající se prvního patra domu.}
     \label{fig:mqtt-protokol}
 \end{figure}
 
@@ -95,7 +95,7 @@ Jedná se o sériovou, synchronní sběrnici. Komunikace probíhá na dvou vodi�
     \centering
     \def\svgwidth{\columnwidth}
     \input{images/svg/i2c-sbernice.pdf_tex}
-    \caption{Zapojení I$^2$C sběrnice. Jedno zařízení pracuje v režimu „master“, ostatní zařízení v režimu slave „slave“.}
+    \caption[Zapojení I$^2$C sběrnice.]{Zapojení I$^2$C sběrnice. Jedno zařízení pracuje v režimu „master“, ostatní zařízení v režimu slave „slave“.}
     \label{fig:i2c-sbernice}
 \end{figure}
 
@@ -105,7 +105,7 @@ Komunikace vždy začíná START sekvencí (na SDA se vygeneruje sestupná hrana
     \centering
     \def\svgwidth{\columnwidth}
     \input{images/svg/i2c-sbernice-datova-komunikace-7bit-adresa.pdf_tex}
-    \caption{Příklad I$^2$C datové komunikace se 7-bitovou adresací. Upraveno z~\cite{i2c-sbernice-datovy-paket-7bit-adresa}.}
+    \caption[Příklad I$^2$C datové komunikace se 7-bitovou adresací.]{Příklad I$^2$C datové komunikace se 7-bitovou adresací. Upraveno z~\cite{i2c-sbernice-datovy-paket-7bit-adresa}.}
     \label{fig:i2c-sbernice-datova-komunikace-7bit-adresa}
 \end{figure}
 
@@ -148,9 +148,9 @@ Každé zařízení má v sobě paměť ROM, která obsahuje 64bitové unikátn�
 
 \begin{figure}[H]
     \centering
-    \def\svgwidth{\columnwidth}
+    \def\svgwidth{0.99\columnwidth}
     \input{images/svg/1-wire-reset-vysilani-prijem-dat.pdf_tex}
-    \caption{Průběhy na sběrnici 1-Wire. \\ 
+    \caption[Průběhy na sběrnici 1-Wire.]{Průběhy na sběrnici 1-Wire.
     a) Reset. b) Zápis dat. c) Čtení dat. Upraveno z \cite{1-wire-sbernice-prubehy}.}
     \label{fig:1-wire-reset-vysilani-prijem-dat}
 \end{figure}
@@ -182,7 +182,7 @@ Výše popsaný z přehled řízení domácí automatizace HA je na obrázku \re
     \centering
     \def\svgwidth{\columnwidth}
     \input{images/svg/ha-prehled-domaci-autmatizace.pdf_tex}
-    \caption{Přehled řízení domácí automatizace HA. Upraveno z \cite{home-assistant-architektura}.}
+    \caption[Přehled řízení domácí automatizace HA.]{Přehled řízení domácí automatizace HA. Upraveno z \cite{home-assistant-architektura}.}
     \label{fig:ha-prehled-domaci-autmatizace}
 \end{figure}
 
@@ -200,7 +200,7 @@ Jádro HA odpovídá za domácí řízení. HA se skládá ze čtyř části, kt
     \centering
     \def\svgwidth{\columnwidth}
     \input{images/svg/ha-jadro-architektury.pdf_tex}
-    \caption{Jádro architektury HA. Upraveno z \cite{home-assistant-architektura}.}
+    \caption[Jádro architektury HA.]{Jádro architektury HA. Upraveno z \cite{home-assistant-architektura}.}
     \label{fig:ha-jadro-architektury}
 \end{figure}
 
@@ -211,7 +211,7 @@ HA je možné rozšiřovat přes tzv. komponenty. Každá komponenta odpovídá 
     \centering
     \def\svgwidth{\columnwidth}
     \input{images/svg/ha-architektura-komponent.pdf_tex}
-    \caption{Znázornění využití komponent v HA. Upraveno z \cite{home-assistant-architektura}.}
+    \caption[Znázornění využití komponent v HA.]{Znázornění využití komponent v HA. Upraveno z \cite{home-assistant-architektura}.}
     \label{fig:ha-architektura-komponent}
 \end{figure}
 

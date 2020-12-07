@@ -69,7 +69,7 @@ Důležitým parametrem pro příjemný pobyt v místnosti je prostorové rozlo�
 \put(338,33){\fontsize{5}{5} \sffamily 22}
 \put(345,33){\fontsize{5}{5} \sffamily 24}
 \end{picture}
-	 \caption{Vertikální průběh teploty vzduchu ve vytápěné místnosti při různém způsobu vytápění. Upraveno z \cite{vertikalni-prubehy-teplot-pro-ruzne-druhy-vytapeni}. \\ a) Ideální požadovaný průběh, b) Podlahové vytápění, c) Vytápění radiátory (vnitřní stěna), d) Vytápění radiátory (venkovní stěna), e) Teplovzdušné vytápění (podlahové konvektory), f) Stropní vytápění }
+	 \caption[Vertikální průběh teploty vzduchu u podlahové topení.]{Vertikální průběh teploty vzduchu ve vytápěné místnosti při různém způsobu vytápění. \\ a) Ideální požadovaný průběh. b) Podlahové vytápění. c) Vytápění radiátory (vnitřní stěna). d) Vytápění radiátory (venkovní stěna). e) Teplovzdušné vytápění (podlahové konvektory). f) Stropní vytápění. Upraveno z \cite{vertikalni-prubehy-teplot-pro-ruzne-druhy-vytapeni}. }
 	 \label{fig:vertikalni-prubehy-teplot-pro-ruzne-druhy-vytapeni}
 \end{figure}
 
@@ -96,7 +96,7 @@ Důležitým parametrem pro příjemný pobyt v místnosti je prostorové rozlo�
          \put(42,117){\scriptsize \sffamily 23 °C}
        \end{overpic}
      }
-     \caption{Porovnání rozložení teplot při použití podlahové topení a radiátorů. Upraveno z \cite{rozlozeni-teplot-podlahove-vytapeni-a-radiatory}.}\label{fig:porovnani-rozlozeni-teplot}
+     \caption[Porovnání rozložení teplot při použití podlahové topení a radiátorů.]{Porovnání rozložení teplot při použití podlahové topení a radiátorů. Upraveno z \cite{rozlozeni-teplot-podlahove-vytapeni-a-radiatory}.}\label{fig:porovnani-rozlozeni-teplot}
    \end{figure}
    
 
@@ -119,7 +119,6 @@ Důležitým parametrem pro příjemný pobyt v místnosti je prostorové rozlo�
   \item Vyšší nároky na řízení podlahové otopné plochy (zejména hlídání maximální vstupní otopné vody).
 \end{itemize}
 
-
 \section{Zónová regulace vytápění}
 
 Význam zónové regulace spočívá v systému umožňující individuální vytápění v~jednotlivých místnostech (každá místnost nebo spojení více místností označuje zónu) na požadovanou teplotu.  Základ zónové regulace je centrální řídicí jednotka, která přijímá data od jednotlivých místností (zejména jejich aktuální teplotu) a dává povely na zařízení, které ovládá (otevírání/zavírání pohonů u jednotlivých topných okruhů apod.). Přístup k řídicí jednotce je nejčastěji pomocí displeje, webového rozhraní nebo jejich kombinace. V řídicí jednotce se dá celý systém vytápění nastavit (nastavení časových a teplotních programů pro jednotlivé zóny a mnohé další). 
@@ -127,12 +126,10 @@ Význam zónové regulace spočívá v systému umožňující individuální vy
 Zónové systémy vytápění se rozdělují na dvě hlavní skupiny. První tvoří zónové systémy propojené pomocí vodičů a druhou skupinu tvoří bezdrátová technologie propojující centrální řídicí jednotku a jednotlivé zóny. 
 
 Hlavní částí zónového systému je centrální řídící jednotka. Mezi další komponenty patří, nástěnné snímače vnitřní teploty, snímač venkovní teploty, termoelektrické pohony, elektronické regulátory otopných těles, reléová spínací jednotka. Mezi komponenty, které přispívají ke komfortu zónové regulace jako senzor intenzity slunečního záření, senzor rychlosti větru, různé spínací jednotky, jednotky pro ovládání žaluzií, moduly pro dálkové ovládání pomocí GSM a další.
+
 \subsection{Principy zónové regulace}
+
 Jak již bylo řečeno, základem celého systému je centrální řídicí jednotka. Další důležitou komponentou je zónový regulátor, který slouží pro ovládání komponent, které jsou k zónovému regulátoru připojeny. Mezi hlavní komponenty, který zónový regulátor ovládá jsou termoelektrické pohony. Termoelektrický pohon je podobný termostatické hlavici, která se nasazuje na radiátorový ventil, ale je jej možné ovládat elektrickým napětím. Samotná regulace vytápění probíhá tak, že řídicí jednotka je propojena se zónovým regulátorem. K~zónovému regulátoru jsou připojeny jednotlivé nástěnné snímače  prostorové teploty a termoelektrické pohony, které jsou nasazeny na termostatický ventilech otopných okruhů/těles. V centrální jednotce jsou nastaveny časové programy (různé požadované teploty pro různé časové úseky). Centrální jednotka posílá do zónového regulátoru požadované teploty pro všechny zóny. Tyto  teploty jsou v zónovém regulátoru porovnávány s aktuálními prostorovými teplotami měřenými nástěnnými jednotkami. V případě, že je prostorová teplota příslušné zóny nižší než požadovaná teplota (nastavená v centrální jednotce), ovládá zónový regulátor odpovídající pohon, který otevírá/zavírá daný ventil a umožňuje proudění otopné vody do topného okruhu/tělesa, čím dochází ke změně teploty v místnosti. Pokud je připojen například kotel, je pak hořák kotle ovládán při požadavku vytápění v jakékoliv místnosti. Princip zónové regulace je zobrazen na obrázku \ref{fig:obecny-princip-zonove-regulace}.
-
-Další možné zapojení může být takové, že jednotlivé nástěnné snímače prostorové teploty jsou přímo propojeny s centrální jednotkou, která následně podle časového programu posílá zónovému regulátoru požadavky na ovládání jednotlivých pohonů. 
-
-Mezi další ovládána zařízení při regulace vytápění mohou být čerpadla, směšovací ventily zejména pro podlahové vytápění, kde je nutné udržovat teplotu otopné vody v daných mezích.
 
 \begin{figure}[H]
     \centering
@@ -142,8 +139,9 @@ Mezi další ovládána zařízení při regulace vytápění mohou být čerpad
     \label{fig:obecny-princip-zonove-regulace}
 \end{figure}
 
+Další možné zapojení může být takové, že jednotlivé nástěnné snímače prostorové teploty jsou přímo propojeny s centrální jednotkou, která následně podle časového programu posílá zónovému regulátoru požadavky na ovládání jednotlivých pohonů. 
 
-
+Mezi další ovládána zařízení při regulace vytápění mohou být čerpadla, směšovací ventily zejména pro podlahové vytápění, kde je nutné udržovat teplotu otopné vody v daných mezích.
 
 \subsection{Dostupné komerční řešení zónové regulace podlahového vytápění}
 
@@ -162,7 +160,8 @@ Optimální systém pro otopnou soustavu, kterou hodlám řídit z obrázku \ref
 \put(180,190){\scriptsize \sffamily b)}
 \put(305,235){\scriptsize \sffamily c)}
 \put(180,8){\scriptsize \sffamily d)}
-	 \caption{Jednotlivá zařízení systému Elektrobock PocketHome. a) Nástěnný snímač prostorové teploty. b) Centrální jednotka. c) Spínací jednotka kotle. d) Zónový regulátor. Upraveno z \cite{elektrobock-lokalni-termostat, elektrobock-centralni-jednotka, elektrobock-spinaci-jednotka-kotle, elektrobock-zonovy-regulator}.}
+	 \caption[Jednotlivá zařízení systému Elektrobock PocketHome.]{Jednotlivá zařízení systému Elektrobock PocketHome. \\ 
+	 a) Nástěnný snímač prostorové teploty. b) Centrální jednotka. c) Spínací jednotka kotle. d) Zónový regulátor. Upraveno z \cite{elektrobock-lokalni-termostat, elektrobock-centralni-jednotka, elektrobock-spinaci-jednotka-kotle, elektrobock-zonovy-regulator}.}
 	 \label{fig:elektrobock-pocket-home}
 \end{picture}
 
@@ -182,7 +181,8 @@ Honeywell nabízí bezdrátový systém regulace podlahové topení. Systém ř�
 \put(60,130){\scriptsize \sffamily d)}
 \put(250,130){\scriptsize \sffamily e)}
 \put(250,57){\scriptsize \sffamily f)}
-	 \caption{Jednotlivá zařízení systému Honeywell Evohome. a) Nástěnný snímač prostorové teploty. b) Centrální jednotka. c) Spínací jednotka kotle. d) Řízení dobíjení TUV. e) Zónový regulátor. f) Rozšiřující modul pro  zónový regulátor. Upraveno z \cite{honeywell-lokalni-termostat, honeywell-centralni-jednotka, honeywell-spinaci-jednotka-kotle, honeywell-rizeni-dobijeni-tuv, honeywell-zonovy-regulator, honeywell-rozsirujici-modul-pro-zonovy-regulator}.}
+	 \caption[Jednotlivá zařízení systému Honeywell Evohome.]{Jednotlivá zařízení systému Honeywell Evohome.  \\
+	 a) Nástěnný snímač prostorové teploty. b) Centrální jednotka. c) Spínací jednotka kotle. d) Řízení dobíjení TUV. e) Zónový regulátor. f) Rozšiřující modul pro  zónový regulátor. Upraveno z \cite{honeywell-lokalni-termostat, honeywell-centralni-jednotka, honeywell-spinaci-jednotka-kotle, honeywell-rizeni-dobijeni-tuv, honeywell-zonovy-regulator, honeywell-rozsirujici-modul-pro-zonovy-regulator}.}
 	 \label{fig:honeywell-evohome}
 \end{picture}
 
@@ -199,7 +199,8 @@ Danfoss nabízí bezdrátový systém regulace podlahové topení. Systém říz
 \put(180,242){\scriptsize \sffamily b)}
 \put(305,242){\scriptsize \sffamily c)}
 \put(180,102){\scriptsize \sffamily d)}
-	 \caption{Jednotlivá zařízení systému Danfoss Danfoss Link. a) Nástěnný snímač prostorové teploty. b) Centrální jednotka. c) Spínací jednotka kotle. d) Zónový regulátor. Upraveno z \cite{danfoss-lokalni-termostat, danfoss-centralni-jednotka, danfoss-zonovy-regulator, danfoss-spinaci-jednotka-kotle}.}
+	 \caption[Jednotlivá zařízení systému Danfoss Danfoss Link.]{Jednotlivá zařízení systému Danfoss Danfoss Link. \\
+	 a) Nástěnný snímač prostorové teploty. b) Centrální jednotka. c) Spínací jednotka kotle. d) Zónový regulátor. Upraveno z \cite{danfoss-lokalni-termostat, danfoss-centralni-jednotka, danfoss-zonovy-regulator, danfoss-spinaci-jednotka-kotle}.}
 	 \label{fig:danfoss-danfoss-link}
 \end{picture}
 
