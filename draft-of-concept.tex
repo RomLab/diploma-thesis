@@ -155,7 +155,69 @@ Každé zařízení má v sobě paměť ROM, která obsahuje 64bitové unikátn�
     \label{fig:1-wire-reset-vysilani-prijem-dat}
 \end{figure}
 
-\subsubsection{Inteligentní část systému}
-Pro co největší využití centrálního řízení podlahového vytápění je vhodné využít různé metody pro její optimalizaci, což se následně promítne do nákladů energie, tak též i do teplotního konfortu uživatelů. Jednou z metod je využití předpovědi počasí, kdy dopředu víme teplotní předpověď, kterou můžeme začlenit do teplotních programů (časově definované úsek pro vytápění) definované uživatel a základě  předpovědi se rozhodnout, zda je nutné místnosti natápět dříve v případě snížení venkovní teploty nebo naopak s vytápěním počkat. Další možností 
+\section{Řídicí systém}
+V současné době existuje poměrně dost open-source projektů pro monitorování a ovládání domácí automatizaci. Do které lze zařadit inteligentní řízení vytápění. Mezi velké projekty lze jmenovat systém Home Assistant a OpenHab. Oba jsi jsou poměrně podobní, liší programovacím jazykem, který je použit pro jejich systémové jádro, dále syntaxí pro zápis automatizací, množství integrovatelných zařízení (např. zařízení z IKEi, Google, …), množství vydávaných aktualizací, složitostí vytváření či přidávání zařízení do systému, přehlednou a dostupnou dokumentací a uživatelskou základnou, případně dalšími vlastnostmi. Na základě zkušenosti se systémem Home Assistant jak z pohledu dobré zkušenosti ze strany komunity, široké nabídky možnosti nastavení a relativně rychlou tvorbou automatizace jsem tento systém zvolil pro řízení vytápění rodinného domu.
 
-\subsubsection{Řídicí systémy}
+\subsection{Home Assistant}
+Home Assistant (dále jen HA) je systém naprogramovaný v jazyce Python 3 a~podporuje mnoho technologií používaných v oblasti domácí automatizace. HA podporuje několik stovek zařízení či služeb (obecně komponent) od desítek velkých firem (např. Nest, Ikea, Google, …). Přesněji sdružuje jejich společné ovládání a vzájemnou propojenost automatizací. Vše je tak na
+jednom místě a možné ovládat přes jednoduché grafické rozhraní.
+
+Všechna data jsou uložena na vlastním úložišti, tedy vlastní počítač, nas, Raspberry Pi apod. Není tedy potřeba zakládat účet pro využívání služeb (některé služby však potřebují internetové připojení pro stahování informací např. předpověď počasí) a posílat data třetím stranám.
+
+Systém se skládá ze samotné aplikace HA a z operačního systému na kterém HA běží. HA je možné nainstalovat na systém Linux, Windows, macOS. Též je přímá oficiální podpora pro Raspberry Pi, Asus Tinkerboard, Odroid a~Intel NUC nicméně lze najít varianty pro další podobná zařízení. Existují čtyři varianty instalace systému, liší nutnými zkušenostmi pro správu HA tak i~operačního systému, možnostmi správy aktualizací či obnovování, vracení nastavení, dále způsoby zálohování, možnostmi operačního systému (zda je předinstalován omezený OS nebo se jedná o plnohodnotnou verzi) v~neposlední řadě zda je využit kontejner Docker či je HA nainstalován přímo v operačním systému nebo lépe při využití virtuálního prostředí.
+
+\subsubsection{Architektura Home Assistantu}
+Obecně není stanoven otevřený standard pro komunikaci inteligentních zařízení. Tato skutečnost zamezuje vzájemnou komunikaci mezi zařízeními a~především většina zařízení není určena k řízení jiných zařízení. V HA se takové zařízení, která spravuje všechny ostatní nazývá \textbf{rozbočovač}.
+
+Minimum, co by rozbočovač měl umět, je sledovat stav připojených zařízení a schopnost je řídit. Například u světel nás zajímá informace, zda jsou rozsvícená či nikoliv a umožnit změnit jejich stav. U senzoru sledujeme jeho hodnotu. Rozbočovač s~těmito možnostmi umožňuje \textbf{řízení domácnosti}.
+
+Jistým krokem k domácí automatizaci je spuštění \textbf{uživatelsky nadefinovaných nastavení} na základě informací z domácí vrstvy řízení (například zatažení žaluzií při nadměrném osvícení slunečními paprsky). Rozbočovač s~těmito schopnostmi je schopný \textbf{domácí automatizace}.
+
+Poslední kategorie, která je stále v budoucnu se nazývá \textbf{chytrý domov}. Samoučící a adoptivní systém, který rozhoduje, která událost by měla ovlivnit jiná zařízení.
+
+Výše popsaný z přehled řízení domácí automatizace HA je na obrázku \ref{fig:ha-prehled-domaci-autmatizace}.
+
+
+\begin{figure}[H]
+    \centering
+    \def\svgwidth{\columnwidth}
+    \input{images/svg/ha-prehled-domaci-autmatizace.pdf_tex}
+    \caption{Přehled řízení domácí automatizace HA. Upraveno z \cite{home-assistant-architektura}.}
+    \label{fig:ha-prehled-domaci-autmatizace}
+\end{figure}
+
+\subsubsection{Jádro architektury Home Assistant}
+Jádro HA odpovídá za domácí řízení. HA se skládá ze čtyř části, které to umožňují (obrázek \ref{fig:ha-jadro-architektury}):
+
+\begin{itemize}
+\item Sběrnice událostí – umožňuje vyvolání a poslech událostí – „srdce“ HA.
+\item Stavový stroj – sleduje stave zařízení a spustí \textbf{změnu stavu} událostí, pokud došlo ke změně.
+\item  Registr služeb – poslouchá sběrnici událostí pro \textbf{volání služby} událostí a umožňuje jinému kódu registrovat služby.
+\item Časovač – posílá události \textbf{změny času} každou jednu sekundu na sběrnici událostí.
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \def\svgwidth{\columnwidth}
+    \input{images/svg/ha-jadro-architektury.pdf_tex}
+    \caption{Jádro architektury HA. Upraveno z \cite{home-assistant-architektura}.}
+    \label{fig:ha-jadro-architektury}
+\end{figure}
+
+\subsubsection{Architektury komponent}
+HA je možné rozšiřovat přes tzv. komponenty. Každá komponenta odpovídá za určitou oblast v rámci HA. Komponenty mohou poslat spouštěcí události, nabízet služby a řídit/měnit stavy (obrázek \ref{fig:ha-architektura-komponent}). Komponenty jsou napsány v Pythonu. Sám HA nabízí několik stovek takovýchto komponent k použití.
+
+\begin{figure}[H]
+    \centering
+    \def\svgwidth{\columnwidth}
+    \input{images/svg/ha-architektura-komponent.pdf_tex}
+    \caption{Znázornění využití komponent v HA. Upraveno z \cite{home-assistant-architektura}.}
+    \label{fig:ha-architektura-komponent}
+\end{figure}
+
+Jsou zde dva typy komponent v rámci HA. První typ komponent, které interagují se zařízeními „Internet of Things“ (například inteligentní žárovky). Druhý typem jsou komponenty, které reagují na událost ke kterým dojde v~HA (například nastavená automatizace).
+
+
+\subsubsection{Inteligentní část systému}
+Pro co největší využití centrálního řízení podlahového vytápění je vhodné využít různé metody pro její optimalizaci, což se následně promítne do nákladů energie, tak též i do teplotního komfortu uživatelů. Jednou z metod je využití předpovědi počasí, kdy dopředu víme teplotní předpověď, kterou můžeme začlenit do teplotních programů (časově definované úsek pro vytápění) definované uživatel a základě  předpovědi se rozhodnout, zda je nutné místnosti natápět dříve v případě snížení venkovní teploty nebo naopak s vytápěním počkat. Další možností 
+

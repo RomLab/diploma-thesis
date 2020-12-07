@@ -1,0 +1,105 @@
+%% Creator: Inkscape 1.0 (4035a4fb49, 2020-05-01), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'ha-jadro-architektury.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{375.75bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.54296485)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{ha-jadro-architektury.pdf}}%
+    \put(0.0998004,0.44416246){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Světlo\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{ha-jadro-architektury.pdf}}%
+    \put(0.0998004,0.32240597){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Vypínač\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{ha-jadro-architektury.pdf}}%
+    \put(0.0998004,0.21561355){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Sledovač\end{tabular}}}}%
+    \put(0.0998004,0.18666944){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily zařízení\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{ha-jadro-architektury.pdf}}%
+    \put(0.0998004,0.08288501){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Další …\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{ha-jadro-architektury.pdf}}%
+    \put(0.08784431,0.50402274){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Komponenty\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{ha-jadro-architektury.pdf}}%
+    \put(0.28542914,0.50005068){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily nastav stav\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{ha-jadro-architektury.pdf}}%
+    \put(0.26946108,0.02998481){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily zavolání\end{tabular}}}}%
+    \put(0.26946108,0.0020407){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily služby\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{ha-jadro-architektury.pdf}}%
+    \put(0.27744511,0.12280517){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily publikovat\end{tabular}}}}%
+    \put(0.27744511,0.09486106){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily službu\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{ha-jadro-architektury.pdf}}%
+    \put(0.33832335,0.32839399){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily poslouchání událostí/\end{tabular}}}}%
+    \put(0.33832335,0.30044988){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily vyvolání události\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{ha-jadro-architektury.pdf}}%
+    \put(0.30139721,0.22658561){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily volání události\end{tabular}}}}%
+    \put(0.30139721,0.2006415){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily posluchačů\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{ha-jadro-architektury.pdf}}%
+    \put(0.62576248,0.39825427){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily změna stavu\end{tabular}}}}%
+    \put(0.62576248,0.37031016){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily událostí\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{ha-jadro-architektury.pdf}}%
+    \put(0.73453094,0.30843391){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily události\end{tabular}}}}%
+    \put(0.73453094,0.2804898){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily změny času\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{ha-jadro-architektury.pdf}}%
+    \put(0.53892216,0.49508262){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Stavový \end{tabular}}}}%
+	\put(0.53892216,0.47308262){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily stroj\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{ha-jadro-architektury.pdf}}%
+    \put(0.53892216,0.27649779){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Sběrnice\end{tabular}}}}%
+    \put(0.53892216,0.24855367){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily událostí\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{ha-jadro-architektury.pdf}}%
+    \put(0.91816367,0.26252573){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Časovač\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{ha-jadro-architektury.pdf}}%
+    \put(0.53892216,0.077893){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Registrace\end{tabular}}}}%
+    \put(0.53892216,0.04994888){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily služby\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{ha-jadro-architektury.pdf}}%
+    \put(0.489002,0.19066944){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily volání služby\end{tabular}}}}%
+	\put(0.489002,0.16272533){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily událostí\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{ha-jadro-architektury.pdf}}%
+    \put(0.68664671,0.19066944){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily zavolaná služba\end{tabular}}}}%
+    \put(0.68664671,0.16272533){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily událostí\end{tabular}}}}%
+  \end{picture}%
+\endgroup%
