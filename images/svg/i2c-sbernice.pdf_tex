@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{368.25bp}%
+    \setlength{\unitlength}{300.75bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,32 +50,34 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.53564155)%
+  \begin{picture}(1,0.56483791)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{i2c-sbernice.pdf}}%
-    \put(0.0814664,0.28818737){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Master\end{tabular}}}}%
+    \put(0.42394015,0.11221945){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Slave 1\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{i2c-sbernice.pdf}}%
-    \put(0.36659878,0.10488798){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Slave 1\end{tabular}}}}%
+    \put(0.67331671,0.11471322){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Slave 2\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{i2c-sbernice.pdf}}%
-    \put(0.61099796,0.10488798){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Slave 2\end{tabular}}}}%
+    \put(0.92269327,0.11471322){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Slave N\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{i2c-sbernice.pdf}}%
-    \put(0.91649695,0.10488798){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Slave N\end{tabular}}}}%
+    \put(0.26933915,0.38902743){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily R\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{i2c-sbernice.pdf}}%
-    \put(0.23625255,0.40020367){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily R\end{tabular}}}}%
+    \put(0.36908978,0.38902743){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily R\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=6]{i2c-sbernice.pdf}}%
-    \put(0.31771894,0.40020367){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily R\end{tabular}}}}%
+    \put(0.28927681,0.53117207){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily V$_{DD}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=7]{i2c-sbernice.pdf}}%
-    \put(0.25661914,0.50814664){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily VDD\end{tabular}}}}%
+    \put(0.42643392,0.01585636){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily GND\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=8]{i2c-sbernice.pdf}}%
-    \put(0.36863544,0.01323829){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily GND\end{tabular}}}}%
+    \put(0.67331671,0.01585636){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily GND\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=9]{i2c-sbernice.pdf}}%
-    \put(0.61099796,0.01323829){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily GND\end{tabular}}}}%
+    \put(0.92269327,0.01585636){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily GND\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=10]{i2c-sbernice.pdf}}%
-    \put(0.91649695,0.01323829){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily GND\end{tabular}}}}%
+    \put(0.13216958,0.27680798){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily SDA\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=11]{i2c-sbernice.pdf}}%
-    \put(0.77393075,0.33299389){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily SDA\end{tabular}}}}%
+    \put(0.13216958,0.22942643){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily SCL\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=12]{i2c-sbernice.pdf}}%
-    \put(0.77596741,0.27189409){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily SCL\end{tabular}}}}%
+    \put(0.0872818,0.41147132){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily I$^2$C \end{tabular}}}}%
+	\put(0.0872818,0.38147132){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily master \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{i2c-sbernice.pdf}}%
   \end{picture}%
 \endgroup%
