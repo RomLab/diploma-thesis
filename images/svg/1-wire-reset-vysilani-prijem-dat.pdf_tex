@@ -154,9 +154,9 @@
     \put(0,0){\includegraphics[width=\unitlength,page=50]{1-wire-reset-vysilani-prijem-dat.pdf}}%
     \put(0.06155219,0.52185549){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily c)\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=51]{1-wire-reset-vysilani-prijem-dat.pdf}}%
-    \put(0.34597681,0.07717752){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Master stahuje sběrnici k log. 0\end{tabular}}}}%
+    \put(0.37597681,0.07717752){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Master vygeneruje na sběrnici log. 0\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=52]{1-wire-reset-vysilani-prijem-dat.pdf}}%
-    \put(0.35097681,0.03949509){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Zařízení stahuje sběrnici k log. 0\end{tabular}}}}%
+    \put(0.38297681,0.03949509){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Zařízení vygeneruje na sběrnici log. 0\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=53]{1-wire-reset-vysilani-prijem-dat.pdf}}%
     \put(0.39297681,0.00569679){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Pull-up rezistor zdvihá sběrnici k log. 1\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=54]{1-wire-reset-vysilani-prijem-dat.pdf}}%

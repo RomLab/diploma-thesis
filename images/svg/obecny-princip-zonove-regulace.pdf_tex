@@ -56,7 +56,7 @@
     \put(0,0){\includegraphics[width=\unitlength,page=1]{obecny-princip-zonove-regulace.pdf}}%
     \put(0.35962877,0.29466357){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Zónový regulátor\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{obecny-princip-zonove-regulace.pdf}}%
-    \put(0.35730858,0.09512761){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Rozdělovač podlahové topení s N pohony pro N topných okruhů\end{tabular}}}}%
+    \put(0.35730858,0.09512761){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Rozdělovač podlahové topení s N pohony pro N otopných okruhů\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{obecny-princip-zonove-regulace.pdf}}%
     \put(0.19953596,0.22273782){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily 1\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{obecny-princip-zonove-regulace.pdf}}%
