@@ -21,11 +21,18 @@
 \usepackage{makecell}
 \renewcommand\theadfont{\bfseries}
 
+% Notes
 \usepackage{threeparttable}
+
+% List of terms and abbreviations
+\usepackage[automake,acronym,nonumberlist]{glossaries}
 
 % Bibtex
 % Zalomeni dlouheho url
 \usepackage{xurl}
+
+
+
 
 \ctusetup{
 	%preprint = \ctuverlog,
@@ -124,9 +131,20 @@
 
 % Declaration / Prohlaseni
 \begin{declaration}
-%Prohlašuji, že jsem předloženou práci vypracoval samostatně, a že jsem uvedl veškerou použitou literaturu.
+Prohlašuji, že jsem předloženou práci vypracoval samostatně a že jsem uvedl veškeré použité informační zdroje v souladu s Metodickým pokynem o dodržování etických principů při přípravě vysokoškolských závěrečných prací.
+
 
 %V Praze, \ctufield{day}.~\monthinlanguage{title}~\ctufield{year}
+
+% Podpis pod prohlasenim
+\begin{flushright}
+	\parbox{5cm}
+	{
+		\begin{center}
+			\dotfill \\ Bc. Roman Labovský
+		\end{center}
+	}
+\end{flushright}
 \end{declaration}
 
 % Only for testing purposes
@@ -137,9 +155,39 @@
 
 
 
+\newacronym{mqtt}{MQTT}{Message Queuing Telemetry Transport}
+\newacronym{usb}{USB}{Universal Serial Bus}
+\newacronym{i2c}{I$^2$C}{Inter-Integrated Circuit}
+\newacronym{ram}{RAM}{Random Access Memory}
+\newacronym{led}{LED}{Light-Emitting Diode}
+\newacronym{lcd}{LCD}{Liquid Crystal Display}
+\newacronym{pwm}{PWM}{Pulse Width Modulation}
+\newacronym{poe}{POE}{Power Over Ethernet}
+\newacronym{m2m}{M2M}{Machine To Machine}
+\newacronym{json}{JSON}{JavaScript Object Notation}
+\newacronym{bjson}{BJSON}{Binary JavaScript Object Notation}
+\newacronym{tcp/ip}{TCP/IP}{Transmission Control Protocol/Internet Protocol}
+\newacronym{qos}{QoS}{Quality of Service}
+\newacronym{ssl}{SSL}{Secure Sockets Layer}
+\newacronym{tls}{TLS}{Transport Layer Security}
+\newacronym{scl}{SCL}{Synchronous Clock}
+\newacronym{sda}{SDA}{Synchronous Data}
+\newacronym{rom}{ROM}{Read Only Memory}
+\newacronym{api}{API}{Application Programming Interface}
+\newacronym{ha}{HA}{Home Assistant}
+
+\newacronym{tuv}{TUV}{Teplá užitková voda}
+
+\makeglossaries
+\renewcommand{\acronymname}{Seznam použitých termínů a zkratek}
+
+
 \begin{document}
 
 \maketitle
+
+\printglossaries
+
 
 \input{introduction}
 
