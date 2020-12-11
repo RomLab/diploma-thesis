@@ -174,9 +174,9 @@ Minimum, co by rozbočovač měl umět, je sledovat stav připojených zařízen
 
 Jistým krokem k domácí automatizaci je spuštění \textbf{uživatelsky nadefinovaných nastavení} na základě informací z domácí vrstvy řízení (například zatažení žaluzií při nadměrném osvícení slunečními paprsky). Rozbočovač s~těmito schopnostmi je schopný \textbf{domácí automatizace}.
 
-Poslední kategorie, která je stále v budoucnu se nazývá \textbf{chytrý domov}. Samoučící a adoptivní systém, který rozhoduje, která událost by měla ovlivnit jiná zařízení.
+Poslední kategorie, která je stále v budoucnu se nazývá \textbf{chytrý domov}. Samoučící a adaptivní systém, který rozhoduje, která událost by měla ovlivnit jiná zařízení.
 
-Výše popsaný z přehled řízení domácí automatizace HA je na obrázku \ref{fig:ha-prehled-domaci-autmatizace}.
+Výše popsaný přehled řízení domácí automatizace HA je na obrázku \ref{fig:ha-prehled-domaci-autmatizace}.
 
 
 \begin{figure}[H]
@@ -188,11 +188,11 @@ Výše popsaný z přehled řízení domácí automatizace HA je na obrázku \re
 \end{figure}
 
 \subsubsection{Jádro architektury Home Assistant}
-Jádro HA odpovídá za řízení domácnosti. HA se skládá ze čtyř části, které to umožňují (obrázek \ref{fig:ha-jadro-architektury}):
+Jádro HA odpovídá za řízení domácnosti. Skládá ze čtyř části, které to umožňují (obrázek \ref{fig:ha-jadro-architektury}):
 
 \begin{itemize}
 \item Sběrnice událostí – umožňuje vyvolání a poslech událostí – „srdce“ HA.
-\item Stavový stroj – sleduje stave zařízení a spustí \textbf{změnu stavu} událostí, pokud došlo ke změně.
+\item Stavový stroj – sleduje stav zařízení a spustí \textbf{změnu stavu} událostí, pokud došlo ke změně.
 \item  Registr služeb – poslouchá sběrnici událostí pro \textbf{volání služby} událostí a umožňuje jinému kódu registrovat služby.
 \item Časovač – posílá události \textbf{změny času} každou jednu sekundu na sběrnici událostí.
 \end{itemize}
@@ -206,7 +206,7 @@ Jádro HA odpovídá za řízení domácnosti. HA se skládá ze čtyř části,
 \end{figure}
 
 \subsubsection{Architektury komponent}
-HA je možné rozšiřovat přes tzv. komponenty. Každá komponenta odpovídá za určitou oblast v rámci HA. Komponenty mohou poslat spouštěcí události, nabízet služby a řídit/měnit stavy (obrázek \ref{fig:ha-architektura-komponent}). Komponenty jsou napsány v Pythonu. Sám HA nabízí několik stovek takovýchto komponent k použití.
+HA je možné rozšiřovat přes tzv. komponenty. Každá komponenta odpovídá za určitou oblast v rámci HA. Komponenty mohou poslat spouštěcí události, nabízet služby a řídit/měnit stavy. Komponenty jsou napsány v Pythonu. Sám HA nabízí několik stovek takovýchto komponent k použití. Znázornění využití komponent je na obrázku \ref{fig:ha-architektura-komponent}.
 
 \begin{figure}[H]
     \centering
@@ -216,21 +216,21 @@ HA je možné rozšiřovat přes tzv. komponenty. Každá komponenta odpovídá 
     \label{fig:ha-architektura-komponent}
 \end{figure}
 
-Jsou zde dva typy komponent v rámci HA. První typ komponent, které interagují se zařízeními „Internet of Things“ (například inteligentní žárovky). Druhý typem jsou komponenty, které reagují na událost ke kterým dojde v~HA (například nastavená automatizace).
+Jsou zde dva typy komponent. První typ, které interagují se zařízeními „Internet of Things“ (například inteligentní žárovky). Druhý typem jsou komponenty, které reagují na událost ke kterým dojde v~HA (například nastavená automatizace).
 
 
 \subsection{Inteligentní část systému}
-Pro co největší využití centrálního řízení podlahového vytápění je vhodné využít různé metody pro její optimalizaci, což se následně promítne do nákladů energie, tak též i do teplotního komfortu uživatelů. Velmi častá situace je, že domy jsou vytápění podle momentální teploty. Toto řešení není ideální, zejména v zateplených domech, případně s podlahovým topením. Problémem jsou hlavně podzimní a zimní dny, kdy teplota nad ránem prudce klesne. Reakce vytápěcího systému je poměrně rychlá a začne přitápět. Vzhledem k setrvačnosti otopné soustavy a to především u podlahového topení dojde k pomalé teplotní změně, což v případě ranní mrazíku se projeví tak, že může být dávno pryč nebo opačný problém, odpoledne začne pražit slunce do oken, čímž máme nepříjemně přetopeno. Výsledkem je nepříjemný uživatelský komfort a zbytečná platba za energie.
+Pro co největší využití centrálního řízení podlahového vytápění je vhodné využít různé metody pro její optimalizaci, což se následně promítne do nákladů energie, tak též i do teplotního komfortu uživatelů. Velmi častá situace je, že domy jsou vytápění podle momentální teploty. Toto řešení není ideální, zejména v zateplených domech, případně s podlahovým topením. Problémem jsou hlavně podzimní a zimní dny, kdy teplota nad ránem prudce klesne. Reakce vytápěcího systému je poměrně rychlá a začne přitápět. Vzhledem k~setrvačnosti otopné soustavy a to především u podlahového topení dojde k~pomalé teplotní změně, než se dané nastaví projeví, ranní mrazík mezitím zmizí. Opačný problém může nastat odpoledne, kdy začnou sluneční paprsky pražit do oken, čímž máme nepříjemně přetopeno. Výsledkem je nepříjemný uživatelský komfort a zbytečná platba za energie.
 
-Jednou z metod je využití předpovědi počasí, kdy dopředu víme teplotní předpověď, kterou můžeme začlenit do teplotních programů (časově definované úsek pro vytápění) definované uživatel a základě  předpovědi se rozhodnout, zda je nutné v místnosti přitápět dříve v případě snížení venkovní teploty nebo naopak s vytápěním počkat. 
+Jednou z metod je využití předpovědi počasí, kdy dopředu víme teplotní předpověď, kterou můžeme začlenit do teplotních programů (časově nastavený úsek pro vytápění) definované uživatel a na základě  předpovědi se rozhodnout, zda je nutné v místnosti přitápět dříve v případě snížení venkovní teploty nebo naopak s vytápěním počkat. 
 
 Samoučící funkcí lze dosáhnout pro každou místnost optimální zahájení vytápění, kdy systém si danou místnost „osahá“ a rozhodne, jak dlouho bude vytápění trvat na danou teplotu. Tím lze eliminovat nepříjemný uživatelský komfort, kdy v daný čas není nastavena požadovaná teplota.
 
-Výhodnou funkcí je detekce otevřeného okna. V případě otevření okna, dojde k poklesu vnitřní teploty místnosti, tento pokles lze vyhodnotit a~lze tak zakázat vytápění pro danou místnost, dojde  tak k úspoře zbytečně vynaložených nákladů za energii.
+Výhodnou funkcí je detekce otevřeného okna. V případě otevření okna, dojde k poklesu vnitřní teploty místnosti, tento pokles lze vyhodnotit a~lze tak zakázat vytápění pro danou místnost, dojde  tak k úspoře zbytečně vynaložených nákladů.
 
-Co se týče nastavení teplot pro vytápění. Jsou zde dvě možnosti, využití takzvaného manuálního režimu, kdy na základě nastavené teploty se vytápění jednotlivé místnosti, uživatel si musí vytápění zapínat na základě svých potřeb (tím se značně eliminuje inteligentní část vytápění), lze daný režim rozšířit o zapínání  v daný čas a topit po definovanou dobu. Druhou možností je vytápění podle uživatelsky definovaných časových pásmech po celý týden, tím lze zajistit optimální vytápění pro konkrétní hodiny, kdy se v domě někdo nachází, vše je automatizované podle všedních zvyklostí. Tento režim je možné rozšířit o možnosti popsané výše. Dalšími možnostmi je například snížení teploty v noci na uživatelsky komfortní teplotu, kdy dochází k temperování teploty po celou noc na nižší teploty, čím lze v ranních hodinách  zajistit poměrně rychlé vytopení na danou teplotu pro ranní vstávání a zajistit, tak příjemný ranní teplotní komfort. V období, kdy dům po určitou dobu nikdo neobývá, zejména v období dovolené, lze nastavit režim dovolená a temperovat dům na nižší teploty po návratu opět dojde k přenastavení do klasického režimu. 
+Co se týče nastavení teplot pro vytápění. Jsou zde dvě možnosti, využití takzvaného manuálního režimu, kdy na základě nastavené teploty se vytápění jednotlivé místnosti, uživatel si musí vytápění zapínat na základě svých potřeb (tím se značně eliminuje inteligentní část vytápění), lze daný režim rozšířit o zapínání  v daný čas a topit po definovanou dobu. Druhou možností je vytápění podle uživatelsky definovaných časových pásmech po celý týden, tím lze zajistit optimální vytápění pro konkrétní hodiny, kdy se v domě někdo nachází, vše je automatizované podle všedních zvyklostí. Dalšími možnostmi je například snížení teploty v noci na uživatelsky komfortní teplotu, kdy dochází k temperování teploty po celou noc na nižší teploty, čím lze v ranních hodinách  zajistit poměrně rychlé vytopení na danou teplotu pro ranní vstávání a zajistit, tak příjemný ranní teplotní komfort. V období, kdy dům po určitou dobu nikdo neobývá, zejména v období dovolené, lze nastavit režim dovolená a temperovat dům na nižší teploty, po návratu opět dojde k přenastavení do klasického režimu. 
 
-Další nutným prvkem pro řízení je dobíjení TUV. Tato volba se hlavně týká teplých měsíců, kdy většinou je v nádrži otopné vody zásobník TUV. Proto je nutné mít podobné režimy pro dobíjení jako výše.
+Další nutná funkce pro řízení je dobíjení TUV. Tato volba se hlavně týká teplých měsíců. Proto je nutné mít podobné režimy pro dobíjení jako výše popsané pro vytápění.
 
-Pokud je v domě více zdrojů tepla, pak je nutné přihlídnout k provozní ceně těchto zdrojů, zejména tedy použitého paliva. V mém případě se jedné o plynový kondenzační kotel (zatím ještě nepořízen) a krby s teplovodním výměníkem. Je nutné optimalizovat, kdy se jaký má použít. Primárním cílem je použití krbů, kvůli současné cenně dřeva. Proto je nutné upozorňovat uživatele, zda je nutné topit například podle teplotních plánů či naopak přestat topit kvůli natopení celého zásobníku otopné vody. V případech kdy uživatel nezačal topit (z důvodu, že není přítomen nebo jedná se o noc), pak systém by měl rozhodnout, zda použije plynový kondenzační kotel, který je samoobslužný.
+Pokud je v domě více zdrojů tepla, pak je nutné přihlídnout k provozní ceně těchto zdrojů, zejména tedy použitého paliva. V mém případě se jedné o plynový kondenzační kotel (zatím ještě nepořízen) a krby s teplovodním výměníkem. Je nutné optimalizovat, kdy se jaký zdroj má použít. Primárním cílem je použití krbů, kvůli současné cenně dřeva. Proto je nutné upozorňovat uživatele, zda je nutné topit, například podle teplotních plánů či naopak přestat topit kvůli naakumulovaní celého zásobníku otopné vody. V případech, kdy uživatel nezačal topit (z důvodu, že není přítomen nebo se jedná o noc), pak systém by měl rozhodnout, zda použije plynový kondenzační kotel, který je samoobslužný.
 
