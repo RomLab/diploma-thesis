@@ -62,15 +62,17 @@
     \put(0,0){\includegraphics[width=\unitlength,page=4]{obecny-princip-zonove-regulace.pdf}}%
     \put(0.48491879,0.22273782){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily N\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{obecny-princip-zonove-regulace.pdf}}%
-	\put(0.11600928,0.61468677){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Nástěnný \end{tabular}}}}%
-	\put(0.11600928,0.59468677){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily snímač \end{tabular}}}}%
-	\put(0.11600928,0.57468677){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily teploty \end{tabular}}}}%
-	\put(0.11600928,0.55468677){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily 1 \end{tabular}}}}%
+	\put(0.11600928,0.62468677){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Nástěnný \end{tabular}}}}%
+	\put(0.11600928,0.60468677){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily snímač \end{tabular}}}}%
+	\put(0.11600928,0.58468677){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily prostorové \end{tabular}}}}%
+	\put(0.11600928,0.56468677){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily teploty \end{tabular}}}}%
+	\put(0.11600928,0.54468677){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily 1 \end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=6]{obecny-princip-zonove-regulace.pdf}}%
-	\put(0.3712297,0.61468677){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Nástěnný \end{tabular}}}}%
-	\put(0.3712297,0.59468677){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily snímač \end{tabular}}}}%
-	\put(0.3712297,0.57468677){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily teploty \end{tabular}}}}%
-	\put(0.3712297,0.55468677){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily N \end{tabular}}}}%
+	\put(0.3712297,0.62468677){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Nástěnný \end{tabular}}}}%
+	\put(0.3712297,0.60468677){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily snímač \end{tabular}}}}%
+	\put(0.3712297,0.58468677){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily prostorové \end{tabular}}}}%
+	\put(0.3712297,0.56468677){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily teploty \end{tabular}}}}%
+	\put(0.3712297,0.54468677){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily N \end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=7]{obecny-princip-zonove-regulace.pdf}}%
     \put(0.60324826,0.59700696){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Centrální\end{tabular}}}}%
 	\put(0.60324826,0.57700696){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily jednotka\end{tabular}}}}%

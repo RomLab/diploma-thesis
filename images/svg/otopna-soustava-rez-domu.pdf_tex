@@ -60,13 +60,15 @@
 	\put(0.18494152,0.21903509){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily kondenzační\end{tabular}}}}%
 	\put(0.18494152,0.19703509){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily kotel\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{otopna-soustava-rez-domu.pdf}}%
-    \put(0.1630117,0.78004094){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Rozdělovač\end{tabular}}}}%
-	\put(0.1630117,0.75804094){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily podlahového\end{tabular}}}}%
-    \put(0.1630117,0.73604094){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily topení s pohony\end{tabular}}}}%
+    \put(0.1630117,0.79004094){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Rozdělovač\end{tabular}}}}%
+	\put(0.1630117,0.76804094){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily podlahového\end{tabular}}}}%
+    \put(0.1630117,0.74604094){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily vytápění\end{tabular}}}}%
+	\put(0.1630117,0.72604094){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily s pohony\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{otopna-soustava-rez-domu.pdf}}%
-	\put(0.1630117,0.45840351){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Rozdělovač\end{tabular}}}}%
-	\put(0.1630117,0.43640351){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily podlahového\end{tabular}}}}%
-    \put(0.1630117,0.41440351){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily topení s pohony\end{tabular}}}}%
+	\put(0.1630117,0.46840351){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Rozdělovač\end{tabular}}}}%
+	\put(0.1630117,0.44640351){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily podlahového\end{tabular}}}}%
+    \put(0.1630117,0.42440351){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily vytápění \end{tabular}}}}%
+	\put(0.1630117,0.40440351){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily s pohony\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{otopna-soustava-rez-domu.pdf}}%
     \put(0.74780702,0.135){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Zásobník\end{tabular}}}}%
 	\put(0.74780702,0.115){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily otopné vody\end{tabular}}}}%
