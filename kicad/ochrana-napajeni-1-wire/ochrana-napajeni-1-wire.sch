@@ -1,0 +1,373 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	5100 2200 5100 2250
+$Comp
+L esd_protection_1_wire_rpi-rescue:GND-power-esd_protection_1_wire_rpi-rescue #PWR014
+U 1 1 5E6CB351
+P 5200 2300
+F 0 "#PWR014" H 5200 2050 50  0001 C CNN
+F 1 "GND" H 5205 2127 50  0000 C CNN
+F 2 "" H 5200 2300 50  0001 C CNN
+F 3 "" H 5200 2300 50  0001 C CNN
+	1    5200 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L esd_protection_1_wire_rpi-rescue:+5V-power-esd_protection_1_wire_rpi-rescue #PWR012
+U 1 1 5E6CBFBD
+P 7100 2750
+F 0 "#PWR012" H 7100 2600 50  0001 C CNN
+F 1 "+5V" H 7115 2923 50  0000 C CNN
+F 2 "" H 7100 2750 50  0001 C CNN
+F 3 "" H 7100 2750 50  0001 C CNN
+	1    7100 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L connectors_rl:1x2_screw_term_block J1
+U 1 1 5E7774D7
+P 5150 2000
+F 0 "J1" V 5114 1862 50  0000 R CNN
+F 1 "1x2_screw_term_block" V 5023 1862 50  0000 R CNN
+F 2 "terminal_blocks_th_rl:xy301v_a_5_2p_rl" H 5150 2000 50  0001 C CNN
+F 3 "" H 5150 2000 50  0001 C CNN
+	1    5150 2000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5750 3000 6050 3000
+Wire Wire Line
+	6050 2900 6050 3000
+Wire Wire Line
+	7450 2900 7450 2750
+Wire Wire Line
+	4550 2250 5100 2250
+Wire Wire Line
+	3700 2700 3700 2250
+Wire Wire Line
+	4850 3300 4550 3300
+Wire Wire Line
+	4550 3300 4550 3550
+Wire Wire Line
+	3700 3500 3700 3550
+Connection ~ 3700 3550
+Wire Wire Line
+	3700 3550 3700 3650
+Wire Wire Line
+	5750 3400 6100 3400
+$Comp
+L passive_components_rl:capacitor_rl C1
+U 1 1 5F1AD2F7
+P 4300 2700
+F 0 "C1" V 4250 2500 50  0000 L CNN
+F 1 "1u" V 4350 2500 50  0000 L CNN
+F 2 "capacitors_smd_rl:c_1206_rl" H 4300 2700 50  0001 C CNN
+F 3 "" H 4300 2700 50  0001 C CNN
+	1    4300 2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3700 3000 3700 3100
+$Comp
+L power:GND #PWR0125
+U 1 1 5F1AFED3
+P 4300 2850
+F 0 "#PWR0125" H 4300 2600 50  0001 C CNN
+F 1 "GND" H 4305 2677 50  0000 C CNN
+F 2 "" H 4300 2850 50  0001 C CNN
+F 3 "" H 4300 2850 50  0001 C CNN
+	1    4300 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 2900 4550 2900
+Wire Wire Line
+	4550 2900 4550 2500
+Connection ~ 4550 2500
+Wire Wire Line
+	4550 2500 4300 2500
+Wire Wire Line
+	4850 3000 4550 3000
+Wire Wire Line
+	4550 3000 4550 2900
+Connection ~ 4550 2900
+$Comp
+L passive_components_rl:capacitor_rl C3
+U 1 1 5F1DD9A0
+P 7550 3100
+F 0 "C3" V 7504 3210 50  0000 L CNN
+F 1 "1u" V 7595 3210 50  0000 L CNN
+F 2 "capacitors_smd_rl:c_1206_rl" H 7550 3100 50  0001 C CNN
+F 3 "" H 7550 3100 50  0001 C CNN
+	1    7550 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7450 2900 7550 2900
+Wire Wire Line
+	7550 2900 7550 2950
+Connection ~ 7450 2900
+$Comp
+L power:GND #PWR0129
+U 1 1 5F1F8786
+P 7550 3350
+F 0 "#PWR0129" H 7550 3100 50  0001 C CNN
+F 1 "GND" H 7555 3177 50  0000 C CNN
+F 2 "" H 7550 3350 50  0001 C CNN
+F 3 "" H 7550 3350 50  0001 C CNN
+	1    7550 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 3350 7550 3250
+Wire Wire Line
+	3700 2250 4550 2250
+Connection ~ 4550 2250
+Wire Wire Line
+	4550 2250 4550 2500
+Wire Wire Line
+	3700 3550 4550 3550
+Wire Wire Line
+	6050 2900 7050 2900
+$Comp
+L passive_components_rl:capacitor_rl C2
+U 1 1 5F24E72A
+P 6650 3850
+F 0 "C2" V 6604 3960 50  0000 L CNN
+F 1 "1,2n" V 6695 3960 50  0000 L CNN
+F 2 "capacitors_smd_rl:c_1206_rl" H 6650 3850 50  0001 C CNN
+F 3 "" H 6650 3850 50  0001 C CNN
+	1    6650 3850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5750 3300 6650 3300
+Wire Wire Line
+	6650 3300 6650 3700
+$Comp
+L power:GND #PWR0130
+U 1 1 5F2683A4
+P 5800 3700
+F 0 "#PWR0130" H 5800 3450 50  0001 C CNN
+F 1 "GND" H 5805 3527 50  0000 C CNN
+F 2 "" H 5800 3700 50  0001 C CNN
+F 3 "" H 5800 3700 50  0001 C CNN
+	1    5800 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 3600 5800 3600
+Wire Wire Line
+	5800 3600 5800 3700
+Wire Wire Line
+	7050 3000 7050 2900
+Connection ~ 7050 2900
+Wire Wire Line
+	6950 3350 6950 3100
+Wire Wire Line
+	6950 3100 5750 3100
+$Comp
+L connectors_rl:1x2_pins_header_rl P3
+U 1 1 5F29F6AB
+P 7000 3500
+F 0 "P3" H 6750 3500 50  0000 L CNN
+F 1 "1x2_pins_header_rl" H 6600 3600 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7050 3500 50  0001 C CNN
+F 3 "" H 7050 3500 50  0001 C CNN
+	1    7000 3500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7050 3300 7050 3350
+Text Notes 7100 3400 0    50   ~ 0
+red LED
+Wire Wire Line
+	6100 3400 6100 3650
+Wire Wire Line
+	6100 3950 6100 4050
+Wire Wire Line
+	6000 3950 6000 4050
+Wire Wire Line
+	6000 4050 6100 4050
+Connection ~ 6100 4050
+Wire Wire Line
+	6100 4050 6100 4150
+Wire Wire Line
+	6100 4450 6100 4650
+Wire Wire Line
+	6100 4650 6650 4650
+Wire Wire Line
+	6650 4000 6650 4650
+Connection ~ 6100 4650
+Wire Wire Line
+	7100 2750 7100 2900
+Wire Wire Line
+	7050 2900 7100 2900
+Connection ~ 7100 2900
+Wire Wire Line
+	7100 2900 7450 2900
+Text Notes 5400 4400 0    50   ~ 0
+max. limitation\nI=2,21 A
+Text Notes 5300 4150 0    50   ~ 0
+max. I = 0,073 A\n114,64k
+Wire Wire Line
+	3700 3950 3700 4150
+Wire Wire Line
+	3700 4450 3700 4650
+Connection ~ 3700 3100
+Wire Wire Line
+	3700 3100 3700 3200
+Wire Wire Line
+	6050 2900 5750 2900
+Connection ~ 6050 2900
+Wire Wire Line
+	5200 2200 5200 2250
+Wire Wire Line
+	5200 2250 5500 2250
+Wire Wire Line
+	5500 2250 5500 2300
+Connection ~ 5200 2250
+Wire Wire Line
+	5200 2250 5200 2300
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5F186AD5
+P 7450 2750
+F 0 "#FLG0101" H 7450 2825 50  0001 C CNN
+F 1 "PWR_FLAG" H 7450 2923 50  0000 C CNN
+F 2 "" H 7450 2750 50  0001 C CNN
+F 3 "~" H 7450 2750 50  0001 C CNN
+	1    7450 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5F186ECD
+P 5500 2300
+F 0 "#FLG0102" H 5500 2375 50  0001 C CNN
+F 1 "PWR_FLAG" H 5500 2473 50  0000 C CNN
+F 2 "" H 5500 2300 50  0001 C CNN
+F 3 "~" H 5500 2300 50  0001 C CNN
+	1    5500 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L esd_protection_1_wire_rpi-rescue:TPS26600-power_management_rl U1
+U 1 1 5F1898F2
+P 5300 3100
+F 0 "U1" H 5300 3525 50  0000 C CNN
+F 1 "TPS26600" H 5300 3434 50  0000 C CNN
+F 2 "packages_htssop_rl:htssop_16_6,6mm×5,1mm" H 5300 3100 50  0001 C CNN
+F 3 "" H 5300 3100 50  0001 C CNN
+	1    5300 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 4650 4750 4650
+Wire Wire Line
+	4750 3600 4750 4650
+Wire Wire Line
+	4750 3600 4850 3600
+Connection ~ 4750 4650
+Wire Wire Line
+	4750 4650 6100 4650
+Wire Wire Line
+	4300 2550 4300 2500
+Wire Wire Line
+	3700 3100 4850 3100
+Text Notes 4500 2100 0    50   ~ 0
+input\nvoltage +5 V
+Text Notes 7500 2850 0    50   ~ 0
+output\nvoltage +5 V
+$Comp
+L Device:R R5
+U 1 1 5FE0B473
+P 3700 2850
+F 0 "R5" H 3770 2896 50  0000 L CNN
+F 1 "100k" H 3770 2805 50  0000 L CNN
+F 2 "" V 3630 2850 50  0001 C CNN
+F 3 "~" H 3700 2850 50  0001 C CNN
+	1    3700 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 5FE0BC0E
+P 3700 3800
+F 0 "R11" H 3770 3846 50  0000 L CNN
+F 1 "30k" H 3770 3755 50  0000 L CNN
+F 2 "" V 3630 3800 50  0001 C CNN
+F 3 "~" H 3700 3800 50  0001 C CNN
+	1    3700 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 5FE0C1F5
+P 3700 4300
+F 0 "R12" H 3770 4346 50  0000 L CNN
+F 1 "200" H 3770 4255 50  0000 L CNN
+F 2 "" V 3630 4300 50  0001 C CNN
+F 3 "~" H 3700 4300 50  0001 C CNN
+	1    3700 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 5FE0B8C3
+P 3700 3350
+F 0 "R10" H 3770 3396 50  0000 L CNN
+F 1 "3k16" H 3770 3305 50  0000 L CNN
+F 2 "" V 3630 3350 50  0001 C CNN
+F 3 "~" H 3700 3350 50  0001 C CNN
+	1    3700 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R18
+U 1 1 5FE12566
+P 6100 4300
+F 0 "R18" H 6170 4346 50  0000 L CNN
+F 1 "5k36" H 6170 4255 50  0000 L CNN
+F 2 "" V 6030 4300 50  0001 C CNN
+F 3 "~" H 6100 4300 50  0001 C CNN
+	1    6100 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R21
+U 1 1 5FE12B5D
+P 7050 3150
+F 0 "R21" H 7120 3196 50  0000 L CNN
+F 1 "604" H 7120 3105 50  0000 L CNN
+F 2 "" V 6980 3150 50  0001 C CNN
+F 3 "~" H 7050 3150 50  0001 C CNN
+	1    7050 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L passive_components_rl:resisitor_variable_eu_rl R17
+U 1 1 5FE1E7CE
+P 6100 3800
+F 0 "R17" V 6054 3928 50  0000 L CNN
+F 1 "200k" V 6145 3928 50  0000 L CNN
+F 2 "" H 6100 3800 50  0001 C CNN
+F 3 "" H 6100 3800 50  0001 C CNN
+	1    6100 3800
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC
