@@ -49,17 +49,6 @@ Connection ~ 4300 2100
 Wire Wire Line
 	4300 2100 4300 2200
 $Comp
-L esd_protection_1_wire_rpi-rescue:DS9503_rl-diodes_rl-esd_protection_1_wire_rpi-rescue D5
-U 1 1 5E6F8E83
-P 6050 2700
-F 0 "D5" H 6100 2950 50  0000 L CNN
-F 1 "DS9503" H 6000 2450 50  0000 L CNN
-F 2 "packages_tsoc_rl:tsoc_6_rl" H 6050 2700 50  0001 C CNN
-F 3 "https://datasheets.maximintegrated.com/en/ds/DS9503.pdf" H 6050 2700 50  0001 C CNN
-	1    6050 2700
-	1    0    0    -1  
-$EndComp
-$Comp
 L esd_protection_1_wire_rpi-rescue:Q_NMOS_GSD-Device-esd_protection_1_wire_rpi-rescue Q1
 U 1 1 5E70AFBD
 P 4650 2500
@@ -93,7 +82,7 @@ L esd_protection_1_wire_rpi-rescue:undir_transil-diodes_rl-esd_protection_1_wire
 U 1 1 5E7C4F60
 P 5150 2800
 F 0 "D7" H 5244 2846 50  0000 L CNN
-F 1 "undir_transil" H 5244 2755 50  0000 L CNN
+F 1 "ESD9L5.0ST5G" H 5244 2755 50  0000 L CNN
 F 2 "diodes_smd_rl:sod_923_rl" H 5150 2800 50  0001 C CNN
 F 3 "" H 5150 2800 50  0001 C CNN
 	1    5150 2800
@@ -148,17 +137,6 @@ Connection ~ 4300 3700
 Wire Wire Line
 	4300 3700 4300 3800
 $Comp
-L esd_protection_1_wire_rpi-rescue:DS9503_rl-diodes_rl-esd_protection_1_wire_rpi-rescue D15
-U 1 1 5EE25305
-P 6050 4300
-F 0 "D15" H 6050 4550 50  0000 L CNN
-F 1 "DS9503" H 6000 4050 50  0000 L CNN
-F 2 "packages_tsoc_rl:tsoc_6_rl" H 6050 4300 50  0001 C CNN
-F 3 "https://datasheets.maximintegrated.com/en/ds/DS9503.pdf" H 6050 4300 50  0001 C CNN
-	1    6050 4300
-	1    0    0    -1  
-$EndComp
-$Comp
 L connectors_rl:1x2_pins_header_rl P5
 U 1 1 5EE25312
 P 3800 4250
@@ -181,7 +159,7 @@ L esd_protection_1_wire_rpi-rescue:undir_transil-diodes_rl-esd_protection_1_wire
 U 1 1 5EE25329
 P 5150 4400
 F 0 "D16" H 5244 4446 50  0000 L CNN
-F 1 "undir_transil" H 5244 4355 50  0000 L CNN
+F 1 "ESD9L5.0ST5G" H 5244 4355 50  0000 L CNN
 F 2 "diodes_smd_rl:sod_923_rl" H 5150 4400 50  0001 C CNN
 F 3 "" H 5150 4400 50  0001 C CNN
 	1    5150 4400
@@ -390,6 +368,28 @@ F 1 "+3,3V" H 4300 3773 50  0000 C CNN
 F 2 "" H 4300 3600 50  0001 C CNN
 F 3 "" H 4300 3600 50  0001 C CNN
 	1    4300 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L diodes_rl:DS9503_eu_rl D5
+U 1 1 5FE0BC8E
+P 6150 2700
+F 0 "D5" H 6150 2950 50  0000 C CNN
+F 1 "DS9503" H 6150 2450 50  0000 C CNN
+F 2 "" H 6150 2700 50  0001 C CNN
+F 3 "" H 6150 2700 50  0001 C CNN
+	1    6150 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L diodes_rl:DS9503_eu_rl D15
+U 1 1 5FE0C859
+P 6150 4300
+F 0 "D15" H 6150 4550 50  0000 C CNN
+F 1 "DS9503" H 6150 4050 50  0000 C CNN
+F 2 "" H 6150 4300 50  0001 C CNN
+F 3 "" H 6150 4300 50  0001 C CNN
+	1    6150 4300
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

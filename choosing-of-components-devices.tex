@@ -55,7 +55,8 @@ Gigabit Ethernet \\
     \label{fig:raspberry-pi-4-model-b}
 \end{figure}
 
-\section{Teplotní senzory pro krby}
+\section{Teplotní senzory}
+\subsubsection{Teplotní senzory pro krby}
 \label{sec:teplotni-senzory-pro-krby}
 Pro snímání teploty z kouřovodů u krbů slouží termočlánek typu K od výrobce Guenther. Teplotní rozsah je od -100 °C do 400 °C, takže je dostatečná teplotní rezerva. Průměr kovové ochranné trubičky je 4 mm s délkou 60 mm. Přívodní kabel je dlouhý 3 m se skelným opletením. Termočlánek je zobrazen na obrázku \ref{fig:termoclanek-72-21301041-k}.
 
@@ -66,22 +67,22 @@ Pro snímání teploty z kouřovodů u krbů slouží termočlánek typu K od v�
     \label{fig:termoclanek-72-21301041-k}
 \end{figure}
 
-\section{Teplotní senzory na 1-Wire sběrnici}
+\subsubsection{Teplotní senzory na 1-Wire sběrnici}
 Pro snímání teplot z centrálního zásobníku otopné vody, venkovní teploty a~prostorových teplot z jednotlivých místností slouží teplotní senzor DS18B20 od výrobce Maxim. Umožňuje měřit
 v teplotním rozsahu od -+55 °C do +125~°C. V rozsahu od -10 °C do +85 °C měří s přesností ±0,5 °C. Senzor umožňuje měřit teplotu s přesností 12 bitů. Pro komunikaci využívá 1-Wire sběrnici (způsob komunikace je popsán v \ref{sec:1-wire-sbernice} v části 1-Wire sběrnice). Ve svém konkrétním řešením využívám senzory v pouzdře TO-92 pro nástěnné teplotní snímače prostorové teploty, pro centrální zásobník otopné vody a~venkovní teplotu je senzor zapouzdřen do ochranného pouzdra.
 
 
-\section{DPS se vstupy/výstupu pro Raspberry Pi}
+\section{\acrshort{dps} se vstupy/výstupu pro Raspberry Pi}
 
-\subsection{Datová část 1-Wire sběrnici}
+\subsubsection{Datová část 1-Wire sběrnici}
 \label{sec:datova-cast-1-wire-sbernice}
 Pro zmíněnou 1-Wire sběrnici jsou realizované ESD ochrany spočívající použití Zenerovy diody a  5 $\Omega$ rezistorů, všechny součástky jsou zaintegrované v~jednom pouzdře TSOC, integrovaný obvod je od výrobce Maxim s označením DS9503. Integrovaná Zenerova dioda má nízkou kapacitu desítky pF, tím pádem nepřispívá k nadměrnému kapacitnímu zatěžování sběrnice. Omezovací rezistory slouží k omezení proudu při přepěťovém napěťovém impulzu pro ochranu Zenerovy diody (když je otevřena) před nadměrným proudem během ESD události, při běžné komunikace jsou zanedbatelné. Upínací napětí Zenerovy diody je 5,5 V při 0,9 A (průrazné napětí je přibližně 11 V) během ESD události. Dále je zde zařazena TVS dioda (ESD9L5.0ST5G) s upínacím napětí maximálně 9,8 V při 1 A, slouží jako sekundární ochrana pokud by selhala část s DS9503. 
 
 Další možností je použití galvanického oddělení především pomocí optočlenu. Zde však nastává problém s obousměrnou poloduplexní komunikací, je potřeba zajistit komunikaci oběma směry. Optočleny vkládání zpoždění, které by podle specifikace 1-Wire sběrnice nemělo přesáhnout 1 $\mu$ s. Dále je potřeba oddělený převodník napětí či samotný zdroj pro napájení oddělených částí optočlenu a~další potřebné externí součástky. V neposlední řadě je nutné, alespoň podle výrobce Maxim použít převodník UART na 1-Wire či I$^2$C na 1-Wire sběrnici. Řešení pomocí galvanického oddělení ve výsledku zesložiťuje řešení a též prodražuje. Vzhledem k domácímu nasazení jsem se rozhodl zvolit variantu podle obrázku~\ref{fig:ochrany-1-wire}.
 
-Vzhledem k toleranci napěťové úrovně 3,3 V pro piny u Raspberry Pi, je navržen obousměrný převodník napěťových úrovní z 3,3 V na 5~V a opačně, realizovaný pomocí MOSFET tranzistoru (BSS138P,215), pull-up rezistorů.
+Vzhledem k toleranci napěťové úrovně 3,3 V pro piny u Raspberry Pi, je navržen obousměrný převodník napěťových úrovní z 3,3 V na 5~V a opačně, realizovaný pomocí MOSFET tranzistoru (BSS138P), pull-up rezistorů.
 
-Na obrázku \ref{fig:ochrany-1-wire} jsou vidět dvě větve pro 1-Wire sběrnici, je to z důvodu dvou typů zařízení, teplotních čidel DS18B20 a  zesilovače s termočlánkem, které mají různé časové, popsáno více níže. Sběrnici, lze sdružit do jedné pomocí propojky P6.
+Na obrázku \ref{fig:ochrany-1-wire} jsou vidět dvě větve pro 1-Wire sběrnici, je to z důvodu dvou typů zařízení, teplotních čidel DS18B20 a  zesilovače s termočlánkem, které mají různé časování, popsáno více níže. Sběrnici, lze sdružit do jedné pomocí propojky P6.
 
 \begin{figure}[H]
     \centering
@@ -91,7 +92,7 @@ Na obrázku \ref{fig:ochrany-1-wire} jsou vidět dvě větve pro 1-Wire sběrnic
 \end{figure}
 
 
-\subsection{Napájení 1-Wire sběrnice}
+\subsubsection{Napájení 1-Wire sběrnice}
 \label{napajeni-1-wire-sbernice}
 Pro ochranu napájení 1-Wire sběrnice (5 V) jsou veškerá koncové teplotní senzory napájené přes elektronickou pojistku od Texas Instrumenst s označením TPS2600, obrázek \ref{fig:ochrana-napajeni-1-wire}. Která zajišťuje ochranu pro vstupní napětí, hlídá maximální hodnotu vstupního napětí do nastavené meze 5,25 V (maximální hranice je 60 V), minimální vstupní napětí do nastavené meze 4,75 V (minimální hranice je -60 V). Vstupní omezení napětí je pomocí rezistorů R5, R10, R11 a R12. Omezovací proud je nastaven na přibližně 73 mA (hodnotu lze změnit přes potenciometr R17), při jeho překročení dojde k odpojení výstupu pod dobu dokud nedojde k odstranění závady. Kondenzátor C2 nastavuje rychlost náběhu výstupního napětí. Pro indikaci chyb napájení je zde červená LED.
 
@@ -102,11 +103,11 @@ Pro ochranu napájení 1-Wire sběrnice (5 V) jsou veškerá koncové teplotní 
     \label{fig:ochrana-napajeni-1-wire}
 \end{figure}
 
-\subsection{Ochrana pro chodbové nástěnné snímače prostorové teploty}
-Obdobně jako v části \ref{sec:datova-cast-1-wire-sbernice} je stejná ochrana pro snímání log. úrovně z~chodbových nástěnných snímačů prostorové teploty.
+\subsubsection{Ochrana pro chodbové nástěnné termostaty}
+Obdobně jako v části \ref{sec:datova-cast-1-wire-sbernice} (Datová část 1-Wire sběrnice) je stejná ochrana pro snímání logické úrovně z~chodbových nástěnných termostatů. Při sepnutí chodbového termostatu na daném patře je detekována log. 0 (požadavek na vytápění) v opačném případě je zde log. 1 (zastavení vytápění). Chodbové nástěnné termostaty jsou popsány v sekci \ref{digitalni-chodbove-termostaty}.
 
-\subsection{Ochrana napájení 3,3 V}
-Přímo z Raspberry Pi je využito napětí 3,3 V pro převodník napětí, popsaný v části \ref{sec:datova-cast-1-wire-sbernice}. Zde je použita vratná pojistka polymerový PTC se spínacím proudem 100 mA, pro omezení proudu v případě poruchy, dále je zde transilová dioda pro ochranu při přepětí (s upínacím napětí max. 6,5 V (při 25 A, 10/1000~µs), průrazné napětí 3,6 V). Na obrázku \ref{fig:ochrana-napajeni-3_3-v} je zobrazena popsaná ochrana.
+\subsubsection{Ochrana napájení 3,3 V}
+Přímo z Raspberry Pi je využito napětí 3,3 V pro převodník napětí, popsaný v~části \ref{sec:datova-cast-1-wire-sbernice} (datová část 1-Wire sběrnice). Zde je použita vratná pojistka polymerový PTC (RXEF005) se spínacím proudem 100 mA, pro omezení proudu v~případě poruchy, dále je zde transilová dioda (SM2T3V3A) pro ochranu při přepětí (s~upínacím napětí max. 6,5 V (při 25 A, 10/1000~µs), průrazné napětí 3,6 V). Na obrázku \ref{fig:ochrana-napajeni-3_3-v} je zobrazena popsaná ochrana.
 
 \begin{figure}[H]
     \centering
@@ -115,16 +116,16 @@ Přímo z Raspberry Pi je využito napětí 3,3 V pro převodník napětí, pops
     \label{fig:ochrana-napajeni-3_3-v}
 \end{figure}
 
-\subsection{Způsob realizace 1-Wire sběrnice}
-Samotná 1-Wire sběrnice je realizovaná pomocí UTP kabelu kategorie cat5e. Na pinu číslo 4 jsou DATA, na pinu 5 je zem (GND) a na pinu 3 je napájení 5 V. Ze samotné DPS je sběrnice vyvedena pomocí konektorů RJ45, 4 konektory pro teplotní senzory DS18B20 a 4 pro termočlánky s MAX31850K.
+\subsubsection{Způsob realizace 1-Wire sběrnice}
+Samotná 1-Wire sběrnice je realizovaná pomocí UTP kabelu kategorie Cat5e. Na pinu číslo 4 jsou DATA, na pinu 5 je zem (GND) a na pinu 3 je napájení 5~V. Ze samotné DPS je sběrnice vyvedena pomocí konektorů RJ45, čtyři konektory pro teplotní senzory DS18B20 a čtyři pro termočlánky s MAX31850K.
 
-\subsection{Realizovaná DPS ochran pro centrální jednotku Raspberry Pi}
-Na obrázku \ref{fig:dps-rpi-1-wire-termostaty-ochrany-spodek} a \ref{fig:dps-rpi-1-wire-termostaty-ochrany-vrsek} je realizovaná deska plošných spojů pro vstupy/výstupů pro centrální jednotku Raspberry Pi. Deska byla vlastnoručně navržena, vyrobena a osazena. Je aplikován ochranný lak, na vrchní propojky byl též aplikován ochranný lak a následně zakryty tavnou plastovou hmotou.
+\subsubsection{Realizovaná DPS ochran pro centrální jednotku Raspberry Pi}
+Na obrázku \ref{fig:dps-rpi-1-wire-termostaty-ochrany-spodek} a \ref{fig:dps-rpi-1-wire-termostaty-ochrany-vrsek} je realizovaná DPS vstupů/výstupů pro centrální jednotku Raspberry Pi. Deska byla vlastnoručně navržena, vyrobena a osazena. Je aplikován ochranný lak, na vrchní propojky byl též aplikován ochranný lak a následně zakryty tavnou plastovou hmotou.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{images/dps-rpi-1-wire-termostaty-ochrany-spodek.png}
-    \caption[Spodní část DPS pro ochranu vstupů/výstupů pro Raspberry Pi.]{Spodní část DPS pro ochranu vstupů/výstupů pro Raspberry Pi.}
+    \caption[Spodní část DPS pro ochranu vstupů/výstupů pro centrální jednotku Raspberry Pi.]{Spodní část DPS pro ochranu vstupů/výstupů pro centrální jednotku Raspberry Pi.}
     \label{fig:dps-rpi-1-wire-termostaty-ochrany-spodek}
 \end{figure}
 
@@ -136,7 +137,7 @@ Na obrázku \ref{fig:dps-rpi-1-wire-termostaty-ochrany-spodek} a \ref{fig:dps-rp
 \end{figure}
 
 \section{DPS u krbů}
-Navržená DPS se skládá z části elektronické pojistky TPS2600, zapojení je obdobné jako v \ref{napajeni-1-wire-sbernice}, navíc je na vstupu připojena transilová dioda (ESD9L5.0ST5G). Napěťové meze jsou nastaveny stejně, tedy minimální napětí je 4,75 V, maximální 5,25 V, proud je omezen na maximální hodnotu 100 mA. Dále je zde přivedena 1-Wire sběrnice přes konektor RJ45 s obdobnými ochranami jako v \ref{sec:datova-cast-1-wire-sbernice}, včetně stejných ochran pro napájení, pro připojení MAX31850K přes svorkovnici. V neposlední řadě je zde vstupy pro ovládání třech LED pro signalizaci (obrázek \ref{fig:ochrana-krby-lcd-teplotni-senzor}), jak je moc naakumulovaná zásobník otopné vody, modrá led signalizuje stav horní části zásobníku, oranžová LED je pro střední část, červená je pro signalizaci spodní části. Vstupní část je chráněná přes DS9503 a transilovou diodou (ESD9L5.0ST5G). Sepnutí LED je přes tranzistor BSS138P,215. Obdobně jsou řešené i oranžová a modrá LED.
+Navržená DPS se skládá z části elektronické pojistky TPS2600, zapojení je obdobné jako v \ref{napajeni-1-wire-sbernice} (napájení 1-Wire sběrnice), navíc je na vstupu připojena transilová dioda (ESD9L5.0ST5G). Napěťové meze jsou nastaveny stejně, tedy minimální napětí je 4,75 V, maximální 5,25 V, proud je omezen na maximální hodnotu 100 mA. Dále je zde přivedena 1-Wire sběrnice přes konektor RJ45 s~obdobnými ochranami jako v \ref{sec:datova-cast-1-wire-sbernice} (datová část 1-Wire sběrnice), včetně stejných ochran pro napájení, pro připojení MAX31850K přes svorkovnici. V neposlední řadě jsou zde vstupy pro ovládání třech LED pro signalizaci (obrázek \ref{fig:ochrana-krby-lcd-teplotni-senzor}) naakumulovaného zásobníku otopné vody, modrá led signalizuje stav horní části zásobníku, oranžová LED je pro střední část, červená je pro signalizaci spodní části. Vstupní část je chráněná přes DS9503 a transilovou diodou (ESD9L5.0ST5G). Sepnutí LED je přes tranzistor (BSS138P). Obdobně jsou řešeny oranžová a modrá LED.
 
 \begin{figure}[H]
     \centering
@@ -145,8 +146,9 @@ Navržená DPS se skládá z části elektronické pojistky TPS2600, zapojení j
     \label{fig:ochrana-krby-lcd-teplotni-senzor}
 \end{figure}
 
-\subsection{I$^2$C sběrnice}
-Sběrnice I$^2$C je realizovaná pomocí zakoupeného modulu (obrázek \ref{fig:modul-pca9615-i2c-sbernice}) s obvodem PCA9615 do firmy  NXP Semiconductors. Vstupní signál SCL a SDA je veden přímo z~centrální jednotky na vstupu obovodu PCA9615, napájení je s 3,3 V logikou. Výstup z PCA9615 je pomocí diferenciální vedení, pro každý signál SCL a~SDA jsou použity dva vodiče. Napájení na této straně je pomocí 5 V. Sběrnice je realizovaná pomocí UTP cat5E, výstup z modulu je realizován pomocí konektoru RJ45. Jeden modul se nalézá na straně centrální jednotky a pak na straně krbů. Napájení pomocí 5 V je realizováno pomocí samostatných kabelů, není tedy součástí UTP kabelu. Z důvodu omezení kabeláže je sběrnice realizována v jednom UTP kabelu s 1-Wire sběrnicí, tedy přesněji jsou využity volné vodiče s číslem 1,2 pro SCL a 7, 8 pro SDA. Zařízení lze zapojovat jak na straně před PCA9615, tak i na diferenciální straně, je však výhodné připojené uzly udržet co v nejkratší vzdálenosti kvůli degradování výkonu. Blokové schéma je na obrázku \ref{fig:blokove-schema-pca9615-i2c-sbernice} včetně napojení uzlů. Schéma zapojení modulu je na obrázku \ref{fig:zapojeni-pca9615-i2c-sbernice}.
+\subsubsection{I$^2$C sběrnice}
+\label{ses:i2c-sbernice}
+Sběrnice I$^2$C je realizovaná pomocí zakoupeného modulu (obrázek \ref{fig:modul-pca9615-i2c-sbernice}) s~obvodem PCA9615 do firmy  NXP Semiconductors. Vstupní signál SCL a~SDA je veden přímo z~centrální jednotky na vstupu obovodu PCA9615, napájení je s 3,3 V logikou. Výstup z PCA9615 je pomocí diferenciální vedení, pro každý signál SCL a~SDA jsou použity dva vodiče. Napájení na této straně je pomocí 5 V. Sběrnice je realizovaná pomocí UTP Cat5e, výstup z~modulu je realizován pomocí konektoru RJ45. Vzhledem k použití UTP kabelu a diferenciálnímu přenosu je možné dosáhnout velké vzdálenosti sběrnice. Nejdelší bod dosahuje přibližně 30 m, je tedy možné použít I$^2$C sběrnici na vzdálenost pro kterou není standartě dělána. Použitá frekvence je 100~kHz. Jedná se tedy o plnohodnotnou I$^2$C sběrnici. Důvodem pro zvolení této varianty bylo na základě výběru displeje s I$^2$C sběrnicí (jednoduché a~levné řešení), dále jedná se o klasické zapojení displeje jako by se nalézal v~krátké vzdálenosti od centrální jednotky a není tak nutný převod jako při využít např. RS485 na UART a následně na I$^2$C sběrnici, v neposlední řadě komunikace je definována podle protokolu I$^2$C.  Jeden modul se nalézá na straně centrální jednotky a pak na straně krbů. Napájení 5 V je realizováno pomocí samostatných kabelů, není tedy součástí UTP kabelu. Z důvodu omezení kabeláže je sběrnice realizována v jednom UTP kabelu s 1-Wire sběrnicí, tedy přesněji jsou využity volné vodiče s číslem 1,2 pro SCL a 7,~8 pro SDA. Zařízení lze zapojovat jak na straně před PCA9615, tak i~na diferenciální straně, je však výhodné připojené uzly udržet co v nejkratší vzdálenosti kvůli degradování výkonu. Blokové schéma je na obrázku \ref{fig:blokove-schema-pca9615-i2c-sbernice} včetně napojení uzlů. Schéma zapojení modulu je na obrázku \ref{fig:zapojeni-pca9615-i2c-sbernice}.
 
 \begin{figure}[H]
     \centering
@@ -163,7 +165,7 @@ Sběrnice I$^2$C je realizovaná pomocí zakoupeného modulu (obrázek \ref{fig:
     \label{fig:zapojeni-pca9615-i2c-sbernice}
 \end{figure}
 
-Výhodou PCA9615 je automatický výběr směru komunikace, není potřeba externího ovládání pro ovládání směru komunikace. Komunikace je možná až do rychlosti 1 MHz (přibližně pro 3 m), se zvýšenou délkou je však nutné rychlost snížit. Komunikace využívá standardního protokolu I$^2$C. ESD ochrana, v případě naindukování přepětí po cestě. Nezávislost napájení, je možné napájet koncová zařízení z jiného zdroje než Master. V neposlední řadě se jedná o jednoduché řešení bez nutných další zařízení na straně Slave, stačí pouze zapojit koncové zařízení s podporou I$^2$C.
+Výhodou PCA9615 je automatický výběr směru komunikace, není potřeba externího ovládání. Komunikace je možná až do rychlosti 1 MHz (přibližně pro 3 m), se zvýšenou délkou je však nutné rychlost snížit. Komunikace využívá standardního protokolu I$^2$C. ESD ochrana, v případě naindukování přepětí po cestě. Nezávislost napájení, je možné napájet koncová zařízení z jiného zdroje než Master. V neposlední řadě se jedná o jednoduché řešení bez nutných další zařízení na straně Slave, stačí pouze zapojit koncové zařízení s podporou I$^2$C.
 
 \begin{figure}[H]
     \centering
@@ -172,8 +174,8 @@ Výhodou PCA9615 je automatický výběr směru komunikace, není potřeba exter
     \label{fig:modul-pca9615-i2c-sbernice}
 \end{figure}
 
-\subsection{Měření teploty pomocí termočlánku a převodníku MAX31850K}
-Teplotní senzory připojené na kouřovody krbů realizované pomocí termočlánku z \ref{sec:teplotni-senzory-pro-krby} jsou připojené k zakoupenému modulu (obrázek \ref{fig:modul-max31850k-1-wire-prevodnik-termoclanku}) se zesilovačem napětí generované termočlánkem, hodnota napětí je následně převedena do digitální podoby včetně teplotní kompenzace studeného konce termočlánku a~tato hodnota je posílaná po 1-Wire sběrnici. Je možné připojit termočlánky typu K, J, N, S, R nebo E. Převodník umožňuje měřit teplotu s převodem pomocí AD převodníku až na 14 bitů. Rozlišení teploty činí 0,25 °C. Při teplotách -200 °C až 700 °C činí přesnost měřené teploty ±2 °C. Obvod disponuje detekcí zkratu (na GND nebo napájení) na vstupu pro termočlánku. Dále je zde detekci odpojeného termočlánku. Schéma zapojení modulu je na obrázku \ref{fig:zapojeni-max31850k-1-wire-prevodnik-termoclanku}.
+\subsubsection{Měření teploty pomocí termočlánku a převodníku MAX31850K}
+Teplotní senzory připojené na kouřovody krbů jsou realizované pomocí termočlánku z \ref{sec:teplotni-senzory-pro-krby}. Termočlánky jsou připojené k zakoupenému modulu (obrázek~\ref{fig:modul-max31850k-1-wire-prevodnik-termoclanku}) se zesilovačem napětí generované termočlánkem, hodnota napětí je následně převedena do digitální podoby včetně teplotní kompenzace studeného konce termočlánku a~tato hodnota je posílaná po 1-Wire sběrnici. Je možné připojit termočlánky typu K, J, N, S, R nebo E. Převodník umožňuje měřit teplotu s převodem pomocí AD převodníku až na 14 bitů. Rozlišení teploty činí 0,25 °C. Při teplotách -200 °C až 700 °C činí přesnost měřené teploty ±2~°C. Obvod disponuje detekcí zkratu (na GND nebo napájení) na vstupu pro termočlánek. Dále je zde detekci odpojeného termočlánku. Schéma zapojení modulu je na obrázku \ref{fig:zapojeni-max31850k-1-wire-prevodnik-termoclanku}.
 
 \begin{figure}[H]
     \centering
@@ -189,6 +191,113 @@ Teplotní senzory připojené na kouřovody krbů realizované pomocí termočl�
     \label{fig:modul-max31850k-1-wire-prevodnik-termoclanku}
 \end{figure}
 
-\subsection{LCD displej}
-Pro zobrazování teplot ze střední a spodní části zásobníku otopné vody byl zvolen 16 znakový a 2 řádkový LCD displej s modrým podsvícením  a řadičem HD44780. K řadiči je připojen I$^2$C expandér PCF8574 s osmi výstupy.
+\subsubsection{LCD displej}
+Pro zobrazování teplot ze střední a spodní části zásobníku otopné vody byl zvolen 16 znakový a 2 řádkový LCD displej s modrým podsvícením a~bílými písmeny (obrázek ). Po obsluhu displeje slouží řadič HD44780. K~řadiči je připojen I$^2$C expandér PCF8574 s osmi výstupy, které jsou připojená na datovou sběrnici pro ovládání respektive zobrazování znaků na displeji. Displej je zapojen za modulem popsaným v části \ref{ses:i2c-sbernice} (I$^2$C). Každý displej, respektive expandér PCF8574 umožňuje nastavit pomocí propojek A0, A1, A2 unikátní adresu zařízení na sběrnici.
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\linewidth]{images/predni-cast-lcd-displeje.png}
+  \caption{Přední část displeje.}
+  \label{fig:predni-cast-lcd-displeje}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\linewidth]{images/zadni-cast-lcd-displeje-s-expanderem-pcf8574.png}
+  \caption{Zadní část displeje s I$^2$C expandérem PCF8574.}
+  \label{fig:zadni-cast-lcd-displeje-s-expanderem-pcf857}
+\end{subfigure}
+\caption{LCD displej pro zobrazování teplot ze zásobníku otopné vody \cite{lcd-displej}.}
+\label{fig:lcd-displej}
+\end{figure}
+
+\subsubsection{Realizovaná DPS ochran a signalizace u krbů}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{images/dps-led-ochrany-u-krbu-spodek.png}
+    \caption[Spodní část DPS.]{Spodní část DPS.}
+    \label{fig:dps-led-ochrany-u-krbu-spodek}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{images/dps-led-ochrany-u-krbu-vrsek.png}
+    \caption[Horní část DPS.]{Horní část DPS.}
+    \label{fig:dps-led-ochrany-u-krbu-vrsek}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{images/dps-led-ochrany-u-krbu-kabely.png}
+    \caption[DPS včetně signalizačních LED.]{DPS včetně signalizačních LED.}
+    \label{fig:dps-led-ochrany-u-krbu-kabely}
+\end{figure}
+
+\subsubsection{Instalační krabice}
+Všechna elektronika je umístěna do ochranné instalační krabice (obrázek \ref{fig:instalacni-krabice-vnitrek-krb}). Do krabice vstupují dva vodiče pro napětí 5 V a zem, tři kabely pro ovládání signalizačních LED, UTP kabel se sběrnicí 1-Wire pro teplotní senzor (termočlánek) a I$^2$C sběrnicí. Na obrázku \ref{fig:zadni-cast-krytu-vika-instalacni-krabice-krb} je zobrazena zadní část víka instalační krabice s uchycením signalizačních LED a LCD displeje. Na obrázku \ref{fig:predni-cast-krytu-vika-instalacni-krabice-krb} je přední část víka instalační krabice.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{images/instalacni-krabice-vnitrek-krb.png}
+    \caption[Instalační krabice s jednotlivými moduly.]{Instalační krabice s jednotlivými moduly.}
+    \label{fig:instalacni-krabice-vnitrek-krb}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{images/zadni-cast-krytu-vika-instalacni-krabice-krb.png}
+    \caption[Zadní část instalační krabice.]{Zadní část instalační krabice.}
+    \label{fig:zadni-cast-krytu-vika-instalacni-krabice-krb}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{images/predni-cast-krytu-vika-instalacni-krabice-krb.png}
+    \caption[Víko instalační krabice.]{Víko instalační krabice. Osazený LCD displej, signalizačních LED (zleva modrá, oranžová a červená) a LED pro aktivování elektronické pojistky (červená LED vlevo od displeje).}
+    \label{fig:predni-cast-krytu-vika-instalacni-krabice-krb}
+\end{figure}
+
+\section{Digitální chodbové termostaty}
+\label{digitalni-chodbove-termostaty}
+Pro snímání teplot z jednotlivých pater na chodbách slouží digitální termostat s označením W3230. Termostat disponuje jedním spínací výstupem (v případě potřeby vytápění se výstup sepne, jinak je rozepnut). Je možné nastavit hysterezi, časové zpoždění, kalibraci teploty a rozsah maximálních teplot. Lze také aktivovat signalizaci, která se spustí po dosažení maximální přípustné teploty. Pro napájení je potřeba stejnosměrné napětí 12 V. Pro snímání teploty slouží NTC termistor. Rozsah teplot je -40 °C až 120 °C. Přesnost měření je $\pm$ 0,1 °C. Termostat lze nahradit za jakýkoliv jiný, který disponuje spínacím výstupem.
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/digitalni-termostat-w3230.png}
+    \caption[Digitální termostat W3230.]{Digitální termostat W3230 \cite{digitalni-termostat-w3230}.}
+    \label{fig:digitalni-termostat-w3230}
+\end{figure}
+
+
+\section{Spínací jednotka}
+Pro spínání čerpadel a signalizačních LED slouží dva zakoupené relé moduly po čtyrech kanálech. Relé umožňují spínat výkony 250 VAC při max. 10~A a 30 V DC při max. 10~A. Jednotlivé kanály jsou oddělené galvanicky (dále je vyfrézovaná část DPS mezi výkonovou částí a spínací částí), též je možné využít různých zdrojů pro napájení spínací části a napájení relé. Zapojení jednoho kanálu je obrázku \ref{fig:rele-modul-jeden-kanal}. Celý relé modul je na obrázku \ref{fig:ctyr-kanalovy-rele-modul}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{images/svg/kicad/rele-modul-jeden-kanal.eps}
+    \caption[Zapojení jednoho kanálu relé modulu.]{Zapojení jednoho kanálu relé modulu.}
+    \label{fig:rele-modul-jeden-kanal}
+\end{figure}
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/ctyr-kanalovy-rele-modul.png}
+    \caption[Čtyř kanálový relé modul.]{Čtyř kanálový relé modul \cite{ctyr-kanalovy-rele-modul}.}
+    \label{fig:ctyr-kanalovy-rele-modul}
+\end{figure}
+
+\section{Realizovaný rozvaděč s elektronikou}
+
+V realizovaném rozvaděči na obrázku \ref{fig:rozvadec-ve-sklepe-s-elektronikou} je umístěn 5 V zdroj pro napájení centrální jednotky, relé modulů, I$^2$C diferenciální sběrnice, napájení 1-Wire sběrnice a napájení elektroniky u krbů. Dále je zde 12 V zdroj pro napájení dvou lokálních chodbových termostatů. V  neposlední době jsou zde jističe pro jednotlivé zdroje a čerpadla včetně proudového chrániče.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.99\textwidth]{images/rozvadec-ve-sklepe-s-elektronikou.png}
+    \caption[Realizovaný rozvaděč s elektronikou.]{Realizovaný rozvaděč s elektronikou.}
+    \label{fig:rozvadec-ve-sklepe-s-elektronikou}
+\end{figure}
 

@@ -29,22 +29,11 @@ L diodes_rl:undir_transil D6
 U 1 1 5E8F4FAB
 P 4700 3100
 F 0 "D6" H 4794 3146 50  0000 L CNN
-F 1 "undir_transil" H 4794 3055 50  0000 L CNN
+F 1 "ESD9L5.0ST5G" H 4794 3055 50  0000 L CNN
 F 2 "diodes_smd_rl:sod_323_rl" H 4700 3100 50  0001 C CNN
 F 3 "" H 4700 3100 50  0001 C CNN
 	1    4700 3100
 	1    0    0    -1  
-$EndComp
-$Comp
-L diodes_rl:DS9503_rl D1
-U 1 1 5E928FD6
-P 4200 3000
-F 0 "D1" H 4300 3335 50  0000 C CNN
-F 1 "DS9503_rl" H 4300 3244 50  0000 C CNN
-F 2 "packages_tsoc_rl:tsoc_6_rl" H 4250 3050 50  0001 C CNN
-F 3 "https://datasheets.maximintegrated.com/en/ds/DS9503.pdf" H 4250 3050 50  0001 C CNN
-	1    4200 3000
-	-1   0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR03
@@ -171,5 +160,16 @@ F 2 "" V 6080 1950 50  0001 C CNN
 F 3 "~" H 6150 1950 50  0001 C CNN
 	1    6150 1950
 	1    0    0    -1  
+$EndComp
+$Comp
+L diodes_rl:DS9503_eu_rl D1
+U 1 1 5FE1040C
+P 4100 3000
+F 0 "D1" H 4100 3335 50  0000 C CNN
+F 1 "DS9503" H 4100 3244 50  0000 C CNN
+F 2 "" H 4100 3000 50  0001 C CNN
+F 3 "" H 4100 3000 50  0001 C CNN
+	1    4100 3000
+	-1   0    0    -1  
 $EndComp
 $EndSCHEMATC

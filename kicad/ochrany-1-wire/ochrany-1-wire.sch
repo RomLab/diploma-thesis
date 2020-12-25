@@ -82,7 +82,7 @@ L esd_protection_1_wire_rpi-rescue:undir_transil-diodes_rl-esd_protection_1_wire
 U 1 1 5E7C4F60
 P 5150 2800
 F 0 "D7" H 5244 2846 50  0000 L CNN
-F 1 "undir_transil" H 5244 2755 50  0000 L CNN
+F 1 "ESD9L5.0ST5G" H 5244 2755 50  0000 L CNN
 F 2 "diodes_smd_rl:sod_923_rl" H 5150 2800 50  0001 C CNN
 F 3 "" H 5150 2800 50  0001 C CNN
 	1    5150 2800
@@ -159,7 +159,7 @@ L esd_protection_1_wire_rpi-rescue:undir_transil-diodes_rl-esd_protection_1_wire
 U 1 1 5EE25329
 P 5150 4400
 F 0 "D16" H 5244 4446 50  0000 L CNN
-F 1 "undir_transil" H 5244 4355 50  0000 L CNN
+F 1 "ESD9L5.0ST5G" H 5244 4355 50  0000 L CNN
 F 2 "diodes_smd_rl:sod_923_rl" H 5150 4400 50  0001 C CNN
 F 3 "" H 5150 4400 50  0001 C CNN
 	1    5150 4400
@@ -215,11 +215,11 @@ Wire Wire Line
 Wire Wire Line
 	5150 2950 5150 3000
 Wire Wire Line
-	5150 3000 5750 3000
+	5150 3000 5800 3000
 Wire Wire Line
-	5750 3000 5750 2700
+	5800 3000 5800 2700
 Wire Wire Line
-	5750 2700 5850 2700
+	5800 2700 5850 2700
 $Comp
 L esd_protection_1_wire_rpi-rescue:GND-power-esd_protection_1_wire_rpi-rescue #PWR016
 U 1 1 5E6C64BF
@@ -256,7 +256,7 @@ Connection ~ 5150 4600
 Wire Wire Line
 	5150 4600 5150 4550
 Wire Wire Line
-	5150 4600 5750 4600
+	5150 4600 5800 4600
 $Comp
 L esd_protection_1_wire_rpi-rescue:GND-power-esd_protection_1_wire_rpi-rescue #PWR0131
 U 1 1 5F4792A6
@@ -280,9 +280,9 @@ Wire Wire Line
 Wire Wire Line
 	5150 4200 5850 4200
 Wire Wire Line
-	5750 4600 5750 4300
+	5800 4600 5800 4300
 Wire Wire Line
-	5750 4300 5850 4300
+	5800 4300 5850 4300
 Wire Wire Line
 	4900 2600 5150 2600
 Connection ~ 4900 2600

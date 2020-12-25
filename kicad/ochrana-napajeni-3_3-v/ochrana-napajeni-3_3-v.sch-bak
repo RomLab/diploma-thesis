@@ -27,16 +27,16 @@ $EndComp
 Wire Wire Line
 	5150 2450 5150 2650
 Wire Wire Line
-	5250 2450 5250 2650
+	5250 2450 5250 3150
 $Comp
 L esd_protection_1_wire_rpi-rescue:GND-power-esd_protection_1_wire_rpi-rescue #PWR04
 U 1 1 5E771C46
-P 5250 2650
-F 0 "#PWR04" H 5250 2400 50  0001 C CNN
-F 1 "GND" H 5255 2477 50  0000 C CNN
-F 2 "" H 5250 2650 50  0001 C CNN
-F 3 "" H 5250 2650 50  0001 C CNN
-	1    5250 2650
+P 5250 3150
+F 0 "#PWR04" H 5250 2900 50  0001 C CNN
+F 1 "GND" H 5255 2977 50  0000 C CNN
+F 2 "" H 5250 3150 50  0001 C CNN
+F 3 "" H 5250 3150 50  0001 C CNN
+	1    5250 3150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -77,7 +77,7 @@ L esd_protection_1_wire_rpi-rescue:undir_transil-diodes_rl-esd_protection_1_wire
 U 1 1 5F5A7E0E
 P 4500 2900
 F 0 "D17" H 4594 2946 50  0000 L CNN
-F 1 "undir_transil" H 4594 2855 50  0000 L CNN
+F 1 "SM2T3V3A" H 4594 2855 50  0000 L CNN
 F 2 "diodes_smd_rl:do_216aa" H 4500 2900 50  0001 C CNN
 F 3 "" H 4500 2900 50  0001 C CNN
 	1    4500 2900

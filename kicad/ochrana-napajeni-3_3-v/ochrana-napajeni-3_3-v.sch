@@ -57,7 +57,7 @@ L Device:Polyfuse F1
 U 1 1 5F2AE698
 P 4950 2650
 F 0 "F1" V 4725 2650 50  0000 C CNN
-F 1 "Polyfuse" V 4816 2650 50  0000 C CNN
+F 1 "RXEF005" V 4816 2650 50  0000 C CNN
 F 2 "fuses_tht_rl:fuse_littelfuse_rxef_series" H 5000 2450 50  0001 L CNN
 F 3 "~" H 4950 2650 50  0001 C CNN
 	1    4950 2650
@@ -77,7 +77,7 @@ L esd_protection_1_wire_rpi-rescue:undir_transil-diodes_rl-esd_protection_1_wire
 U 1 1 5F5A7E0E
 P 4500 2900
 F 0 "D17" H 4594 2946 50  0000 L CNN
-F 1 "undir_transil" H 4594 2855 50  0000 L CNN
+F 1 "SM2T3V3A" H 4594 2855 50  0000 L CNN
 F 2 "diodes_smd_rl:do_216aa" H 4500 2900 50  0001 C CNN
 F 3 "" H 4500 2900 50  0001 C CNN
 	1    4500 2900
