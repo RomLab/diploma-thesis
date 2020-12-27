@@ -1,6 +1,6 @@
 \chapter{Výběr komponent/zařízení}
 
-Na obrázku \ref{fig:otopna-soustava-a-elektronika-rez-domu} je nákres otopné soustavy včetně jednotlivých zařízení pro ovládání této soustavy. Nyní popíši jednotlivá vybraná či navržená zařízení z~nákresu.
+Na obrázku \ref{fig:otopna-soustava-a-elektronika-rez-domu} je nákres otopné soustavy včetně jednotlivých zařízení pro ovládání této soustavy. Vzhledem k teoretické části, kdy popisuji princip zónové regulace vytápění, tak v samotné realizaci je pouze regulace vytápění na základě prostorové teploty z lokálních termostatů umístěných na chodbách. Nastíním vývoj realizace nástěnných snímačů prostorové teploty a software pro zónovou regulaci. Nyní popíši jednotlivá vybraná či navržená zařízení z~nákresu. 
 
 \newpage
 
@@ -83,6 +83,7 @@ v teplotním rozsahu od -+55 °C do +125~°C. V rozsahu od -10 °C do +85 °C m�
 
 
 \section{\acrshort{dps} se vstupy/výstupu pro Raspberry Pi}
+\label{sec:dps-se-vstupy-vystupy-pro-raspberry-pi}
 
 \subsubsection{Datová část 1-Wire sběrnici}
 \label{sec:datova-cast-1-wire-sbernice}
@@ -200,6 +201,38 @@ Teplotní senzory připojené na kouřovody krbů jsou realizované pomocí term
     \caption[Modul s obvodem MAX31850K.]{Modul s obvodem MAX31850K \cite{prevodnik-max31850k}.}
     \label{fig:modul-max31850k-1-wire-prevodnik-termoclanku}
 \end{figure}
+
+\subsubsection{Realizace 1-Wire sběrnice u zásobníku otopné vody}
+Na obrázku \ref{fig:dps-1-wire-sbernice-u-zasobniku-otopne-vody} je realizovaná DPS pro teplotní senzory u zásobníku otopné vody. Princip zapojení včetně ochrana na napájecí i datové části je popsán v části \ref{sec:dps-se-vstupy-vystupy-pro-raspberry-pi} (datová část 1-Wire sběrnice). Na obrázku \ref{fig:instalacni-krabice-cidla-u-zasobniku-otopne-vody} je vidět horní část DPS vložená do instalační krabice. Celkově je zde k dispozici 6 pozic pro upevnění přes svorkovnice teplotní senzory. V současnosti jsou zde napojeny pouze 3 teplotní senzory (pro snímání teplot z horní, střední a spodní části zásobníku otopné vody). Na obrázku \ref{fig:ds18b20-ochrana} je teplotní senzor DS18B20 v pouzdře TO-92 připevněn na UTP kabel a zataven plastovou hmotou na níž je následně nanesena smršťovací ochranná bužírka. Na obrázku \ref{fig:zasobnik-otopné-vody} jsou vyznačená místa s umístěním teplotních senzorů.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{images/dps-1-wire-sbernice-u-zasobniku-otopne-vody.png}
+    \caption{Realizovaná DPS pro teplotní senzory 1-Wire sběrnice u zásobníku otopné vody.}
+    \label{fig:dps-1-wire-sbernice-u-zasobniku-otopne-vody}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{images/instalacni-krabice-cidla-u-zasobniku-otopne-vody.png}
+    \caption{Horní části DPS vložená do instalační krabice.}
+    \label{fig:instalacni-krabice-cidla-u-zasobniku-otopne-vody}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{images/ds18b20-ochrana.png}
+    \caption{Teplotní senzor DS18B20 v ochranném pouzdře.}
+    \label{fig:ds18b20-ochrana}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{images/zasobnik-otopné-vody.png}
+    \caption[Zásobník otopné vody.]{Zásobník otopné vody. Červené kroužky označují místa teplotních senzorů.}
+    \label{fig:zasobnik-otopné-vody}
+\end{figure}
+
 
 \subsubsection{LCD displej}
 Pro zobrazování teplot ze střední a spodní části zásobníku otopné vody byl zvolen 16 znakový a 2 řádkový LCD displej s modrým podsvícením a~bílými písmeny (obrázek ). Po obsluhu displeje slouží řadič HD44780. K~řadiči je připojen I$^2$C expandér PCF8574 s osmi výstupy, které jsou připojená na datovou sběrnici pro ovládání respektive zobrazování znaků na displeji. Displej je zapojen za modulem popsaným v části \ref{ses:i2c-sbernice} (I$^2$C). Každý displej, respektive expandér PCF8574 umožňuje nastavit pomocí propojek A0, A1, A2 unikátní adresu zařízení na sběrnici.
