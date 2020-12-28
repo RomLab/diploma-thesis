@@ -52,7 +52,7 @@ Gigabit Ethernet \\
 (minimum 3 A, bez vstupních ochran)} \\ 
 \hline
 \end{tabular}
-\caption{Přehled vybavení Raspberry Pi 4 modelu B \cite{raspberry-pi-4-model-b-specifikace}.}
+\caption[Přehled vybavení Raspberry Pi 4 modelu B.]{Přehled vybavení Raspberry Pi 4 modelu B \cite{raspberry-pi-4-model-b-specifikace}.}
 \label{tab:prehled-vybaveni-raspberry-pi-4-model-b} 
 \end{table}
 \end{center}
@@ -61,7 +61,7 @@ Gigabit Ethernet \\
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{images/raspberry-pi-4-model-b.png}
-    \caption{Raspberry Pi 4 model B. Upraveno z \cite{raspberry-pi-4-model-b}.}
+    \caption[Raspberry Pi 4 model B.]{Raspberry Pi 4 model B. Upraveno z \cite{raspberry-pi-4-model-b}.}
     \label{fig:raspberry-pi-4-model-b}
 \end{figure}
 
@@ -73,7 +73,7 @@ Pro snímání teploty z kouřovodů u krbů slouží termočlánek typu K od v�
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{images/termoclanek-72-21301041-k.png}
-    \caption{Termočlánek 72-21301041 typu K \cite{termoclanek-k}.}
+    \caption[Termočlánek 72-21301041 typu K.]{Termočlánek 72-21301041 typu K \cite{termoclanek-k}.}
     \label{fig:termoclanek-72-21301041-k}
 \end{figure}
 
@@ -98,7 +98,7 @@ Na obrázku \ref{fig:ochrany-1-wire} jsou vidět dvě větve pro 1-Wire sběrnic
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{images/svg/kicad/ochrany-1-wire.eps}
-    \caption[ESD ochrany pro 1-Wire sběrnici s převodním napěťových úrovní]{ESD ochrany pro 1-Wire sběrnici s převodním napěťových úrovní. Kolíková lišta P1, P5 je připojena na Raspberry Pi.}
+    \caption[ESD ochrany pro 1-Wire sběrnici s~převodním napěťových úrovní]{ESD ochrany pro 1-Wire sběrnici s převodním napěťových úrovní. Kolíková lišta P1, P5 je připojena na Raspberry Pi.}
     \label{fig:ochrany-1-wire}
 \end{figure}
 
@@ -110,7 +110,7 @@ Pro ochranu napájení 1-Wire sběrnice (5 V) jsou veškerá koncové teplotní 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{images/svg/kicad/ochrana-napajeni-1-wire.eps}
-    \caption[Obvod TPS26600 pro ochranu napájení 1-Wire sběrnice.]{Obvod TPS26600 pro ochranu napájení 1-Wire sběrnice.}
+    \caption{Obvod TPS26600 pro ochranu napájení 1-Wire sběrnice.}
     \label{fig:ochrana-napajeni-1-wire}
 \end{figure}
 
@@ -123,7 +123,7 @@ Přímo z Raspberry Pi je využito napětí 3,3 V pro převodník napětí, pops
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{images/svg/kicad/ochrana-napajeni-3_3-v.eps}
-    \caption[Ochrana pro napájení 3,3 V z Raspberry Pi.]{Ochrana pro napájení 3,3 V z Raspberry Pi.}
+    \caption{Ochrana pro napájení 3,3 V z~Raspberry Pi.}
     \label{fig:ochrana-napajeni-3_3-v}
 \end{figure}
 
@@ -136,14 +136,14 @@ Na obrázku \ref{fig:dps-rpi-1-wire-termostaty-ochrany-spodek} a \ref{fig:dps-rp
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{images/dps-rpi-1-wire-termostaty-ochrany-spodek.png}
-    \caption[Spodní část DPS pro ochranu vstupů/výstupů pro centrální jednotku Raspberry Pi.]{Spodní část DPS pro ochranu vstupů/výstupů pro centrální jednotku Raspberry Pi.}
+    \caption{Spodní část DPS pro ochranu vstupů/výstupů pro centrální jednotku Raspberry Pi.}
     \label{fig:dps-rpi-1-wire-termostaty-ochrany-spodek}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{images/dps-rpi-1-wire-termostaty-ochrany-vrsek.png}
-    \caption[Vrchní část DPS pro ochranu vstupů/výstupů pro Raspberry Pi.]{Vrchní část DPS pro ochranu vstupů/výstupů pro Raspberry Pi.}
+    \caption{Vrchní část DPS pro ochranu vstupů/výstupů pro Raspberry Pi.}
     \label{fig:dps-rpi-1-wire-termostaty-ochrany-vrsek}
 \end{figure}
 
@@ -153,7 +153,7 @@ Navržená DPS se skládá z části elektronické pojistky TPS2600, zapojení j
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{images/svg/kicad/ochrana-krby-lcd-teplotni-senzor.eps}
-    \caption[Zapojení pro ovládání signalizační červené LED.]{Zapojení pro ovládání signalizační červené LED.}
+    \caption{Zapojení pro ovládání signalizační červené LED.}
     \label{fig:ochrana-krby-lcd-teplotni-senzor}
 \end{figure}
 
@@ -165,18 +165,18 @@ Sběrnice I$^2$C je realizovaná pomocí zakoupeného modulu (obrázek \ref{fig:
     \centering
     \def\svgwidth{\columnwidth}
     \input{images/svg/blokove-schema-pca9615-i2c-sbernice.pdf_tex}
-    \caption{Blokové schéma zapojení obvodu PCA9615 s impedančním zakončením sběrnice a možnostmi napojení uzlů. Upraveno z \cite{pca9615-schema-zapojeni}.}
+    \caption[Blokové schéma zapojení obvodu PCA9615.]{Blokové schéma zapojení obvodu PCA9615 s impedančním zakončením sběrnice a možnostmi napojení uzlů. Upraveno z \cite{pca9615-schema-zapojeni}.}
     \label{fig:blokove-schema-pca9615-i2c-sbernice}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{images/svg/kicad/zapojeni-pca9615-i2c-sbernice.eps}
-    \caption{Zapojení PCA9615 v modulu. Upraveno z \cite{pca9615-schema-zapojeni}.}
+    \caption[Zapojení PCA9615 v modulu.]{Zapojení PCA9615 v modulu. Upraveno z \cite{pca9615-schema-zapojeni}.}
     \label{fig:zapojeni-pca9615-i2c-sbernice}
 \end{figure}
 
-Výhodou PCA9615 je automatický výběr směru komunikace, není potřeba externího ovládání. Komunikace je možná až do rychlosti 1 MHz (přibližně pro 3 m), se zvýšenou délkou je však nutné rychlost snížit. Komunikace využívá standardního protokolu I$^2$C. ESD ochrana, v případě naindukování přepětí po cestě. Nezávislost napájení, je možné napájet koncová zařízení z jiného zdroje než Master. V neposlední řadě se jedná o jednoduché řešení bez nutných další zařízení na straně Slave, stačí pouze zapojit koncové zařízení s podporou I$^2$C.
+Výhodou PCA9615 je automatický výběr směru komunikace, není potřeba externího ovládání. Komunikace je možná až do rychlosti 1 MHz (přibližně pro 3 m), se zvýšenou délkou je však nutné rychlost snížit. Komunikace využívá standardního protokolu I$^2$C. ESD ochrana, v případě naindukování přepětí po cestě. Nezávislost napájení, je možné napájet koncová zařízení z jiného zdroje než Master. V neposlední řadě se jedná o jednoduché řešení bez nutných další zařízení na straně Slave, stačí pouze zapojit koncové zařízení s~podporou I$^2$C.
 
 \begin{figure}[H]
     \centering
@@ -203,7 +203,7 @@ Teplotní senzory připojené na kouřovody krbů jsou realizované pomocí term
 \end{figure}
 
 \subsubsection{Realizace 1-Wire sběrnice u zásobníku otopné vody}
-Na obrázku \ref{fig:dps-1-wire-sbernice-u-zasobniku-otopne-vody} je realizovaná DPS pro teplotní senzory u zásobníku otopné vody. Princip zapojení včetně ochrana na napájecí i datové části je popsán v části \ref{sec:dps-se-vstupy-vystupy-pro-raspberry-pi} (datová část 1-Wire sběrnice). Na obrázku \ref{fig:instalacni-krabice-cidla-u-zasobniku-otopne-vody} je vidět horní část DPS vložená do instalační krabice. Celkově je zde k dispozici 6 pozic pro upevnění přes svorkovnice teplotní senzory. V současnosti jsou zde napojeny pouze 3 teplotní senzory (pro snímání teplot z horní, střední a spodní části zásobníku otopné vody). Na obrázku \ref{fig:ds18b20-ochrana} je teplotní senzor DS18B20 v pouzdře TO-92 připevněn na UTP kabel a zataven plastovou hmotou na níž je následně nanesena smršťovací ochranná bužírka. Na obrázku \ref{fig:zasobnik-otopné-vody} jsou vyznačená místa s umístěním teplotních senzorů.
+Na obrázku \ref{fig:dps-1-wire-sbernice-u-zasobniku-otopne-vody} je realizovaná DPS pro teplotní senzory u zásobníku otopné vody. Princip zapojení včetně ochrana na napájecí i datové části je popsán v~části \ref{sec:dps-se-vstupy-vystupy-pro-raspberry-pi} (datová část 1-Wire sběrnice). Na obrázku \ref{fig:instalacni-krabice-cidla-u-zasobniku-otopne-vody} je vidět horní část DPS vložená do instalační krabice. Celkově je zde k dispozici 6 pozic pro upevnění přes svorkovnice teplotní senzory. V současnosti jsou zde napojeny pouze 3 teplotní senzory (pro snímání teplot z horní, střední a spodní části zásobníku otopné vody). Na obrázku \ref{fig:ds18b20-ochrana} je teplotní senzor DS18B20 v~pouzdře TO-92 připevněn na UTP kabel a zataven plastovou hmotou na níž je následně nanesena smršťovací ochranná bužírka. Na obrázku \ref{fig:zasobnik-otopné-vody} jsou vyznačená místa s umístěním teplotních senzorů.
 
 \begin{figure}[H]
     \centering
@@ -222,7 +222,7 @@ Na obrázku \ref{fig:dps-1-wire-sbernice-u-zasobniku-otopne-vody} je realizovan�
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{images/ds18b20-ochrana.png}
-    \caption{Teplotní senzor DS18B20 v ochranném pouzdře.}
+    \caption{Teplotní senzor DS18B20 v~ochranném pouzdře.}
     \label{fig:ds18b20-ochrana}
 \end{figure}
 
@@ -251,7 +251,7 @@ Pro zobrazování teplot ze střední a spodní části zásobníku otopné vody
   \caption{Zadní část displeje s I$^2$C expandérem PCF8574.}
   \label{fig:zadni-cast-lcd-displeje-s-expanderem-pcf857}
 \end{subfigure}
-\caption{LCD displej pro zobrazování teplot ze zásobníku otopné vody \cite{lcd-displej}.}
+\caption[LCD displej pro zobrazování teplot ze zásobníku otopné vody.]{LCD displej pro zobrazování teplot ze zásobníku otopné vody \cite{lcd-displej}.}
 \label{fig:lcd-displej}
 \end{figure}
 
@@ -260,21 +260,21 @@ Pro zobrazování teplot ze střední a spodní části zásobníku otopné vody
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{images/dps-led-ochrany-u-krbu-spodek.png}
-    \caption[Spodní část DPS.]{Spodní část DPS.}
+    \caption{Spodní část DPS.}
     \label{fig:dps-led-ochrany-u-krbu-spodek}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{images/dps-led-ochrany-u-krbu-vrsek.png}
-    \caption[Horní část DPS.]{Horní část DPS.}
+    \caption{Horní část DPS.}
     \label{fig:dps-led-ochrany-u-krbu-vrsek}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.95\textwidth]{images/dps-led-ochrany-u-krbu-kabely.png}
-    \caption[DPS včetně signalizačních LED.]{DPS včetně signalizačních LED.}
+    \caption{DPS včetně signalizačních LED.}
     \label{fig:dps-led-ochrany-u-krbu-kabely}
 \end{figure}
 
@@ -284,14 +284,14 @@ Všechna elektronika je umístěna do ochranné instalační krabice (obrázek \
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{images/instalacni-krabice-vnitrek-krb.png}
-    \caption[Instalační krabice s jednotlivými moduly.]{Instalační krabice s jednotlivými moduly.}
+    \caption{Instalační krabice s jednotlivými moduly.}
     \label{fig:instalacni-krabice-vnitrek-krb}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{images/zadni-cast-krytu-vika-instalacni-krabice-krb.png}
-    \caption[Zadní část instalační krabice.]{Zadní část instalační krabice.}
+    \caption{Zadní část instalační krabice.}
     \label{fig:zadni-cast-krytu-vika-instalacni-krabice-krb}
 \end{figure}
 
@@ -306,7 +306,7 @@ Všechna elektronika je umístěna do ochranné instalační krabice (obrázek \
 Zónový regulátor se skládá s modulu PCA9615 (viz část \label{ses:i2c-sbernice} (I$^2$C)) pro realizaci I$^2$C sběrnice pomocí diferenciálních párů. Na modul je následně napojen zakoupený modul s obvodem PCA9685 od firmy NXP Semiconductors. Výstupy z modulu jsou napojeny na DPS, která zapíná/vypíná (respektive ke PWM regulaci) jednotlivé termoelektrické pohony (celkově 12 pohonů, každý je řízen samostatně), čímž dochází k regulaci otopné vody do otopných okruhů.
 
 \subsubsection{Modul s PCA9685}
-Modul s obvodem PCA9685 umožňuje pomocí I$^2$C sběrnice ovládat 16 výstupů se stejnou individuální hodnotou PWM (se střídou 0\% až 100 \%), frekvence je programovatelná od 24 Hz do 1\,526 Hz. Každý kanál navíc může dodat 10~mA jako source, případně 25 mA jako sink (což je 160 mA respektive 400 mA celkově).
+Modul s obvodem PCA9685 umožňuje pomocí I$^2$C sběrnice ovládat 16 výstupů se stejnou individuální hodnotou PWM (se střídou 0\% až 100 \%), frekvence je programovatelná od 24 Hz do 1\,526 Hz. Každý kanál navíc může dodat 10~mA jako source, případně 25 mA jako sink (což je 160 mA respektive 400~mA celkově).
 
 \begin{figure}[H]
     \centering
@@ -321,7 +321,7 @@ Termoelektrické pohony jsou ovládány na základě hodnoty PWM z modulu PCA968
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{images/svg/kicad/zonovy-regulator-mosfet-pwm.eps}
-    \caption[Zapojení jednoho kanálu pro ovládání termoelektrického pohonu.]{Zapojení jednoho kanálu pro ovládání termoelektrického pohonu.}
+    \caption{Zapojení jednoho kanálu pro ovládání termoelektrického pohonu.}
     \label{fig:zonovy-regulator-mosfet-pwm}
 \end{figure}
 
@@ -329,7 +329,7 @@ Termoelektrické pohony jsou ovládány na základě hodnoty PWM z modulu PCA968
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{images/svg/kicad/dps-zonovy-regulator.eps}
-    \caption[Navržená DPS pro zónový regulátor.]{Navržená DPS pro zónový regulátor. Rozměry jsou 151 mm × 90 mm.}
+    \caption[Navržená DPS pro zónový regulátor.]{Navržená DPS pro zónový regulátor. Rozměry jsou 151~mm~×~90~mm.}
     \label{fig:dps-zonovy-regulator}
 \end{figure}
 
@@ -362,7 +362,7 @@ Pro spínání čerpadel a signalizačních LED slouží dva zakoupené relé mo
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{images/svg/kicad/rele-modul-jeden-kanal.eps}
-    \caption[Zapojení jednoho kanálu relé modulu.]{Zapojení jednoho kanálu relé modulu.}
+    \caption{Zapojení jednoho kanálu relé modulu.}
     \label{fig:rele-modul-jeden-kanal}
 \end{figure}
 
@@ -374,14 +374,16 @@ Pro spínání čerpadel a signalizačních LED slouží dva zakoupené relé mo
     \label{fig:ctyr-kanalovy-rele-modul}
 \end{figure}
 
-\section{Realizovaný rozvaděč s elektronikou}
+\section{Realizovaný rozvaděč s~elektronikou}
 
 V realizovaném rozvaděči na obrázku \ref{fig:rozvadec-ve-sklepe-s-elektronikou} je umístěn 5 V zdroj pro napájení centrální jednotky, relé modulů, I$^2$C diferenciální sběrnice, napájení 1-Wire sběrnice a napájení elektroniky u krbů. Dále je zde 12 V zdroj pro napájení dvou lokálních chodbových termostatů. V  neposlední době jsou zde jističe pro jednotlivé zdroje a čerpadla včetně proudového chrániče.
+
+\newpage
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.99\textwidth]{images/rozvadec-ve-sklepe-s-elektronikou.png}
-    \caption[Realizovaný rozvaděč s elektronikou.]{Realizovaný rozvaděč s elektronikou.}
+    \caption{Realizovaný rozvaděč s~elektronikou.}
     \label{fig:rozvadec-ve-sklepe-s-elektronikou}
 \end{figure}
 
@@ -398,10 +400,11 @@ Pro přehlednost jsou jednotlivé teploty zobrazeny v části „jednotlivé tep
 
 Výše popsané části jsou zobrazená na obrázku \ref{fig:ha-nastaveni}.
 
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{images/software-ha/ha-nastaveni.png}
-    \caption{Záložka nastavení v Ha.}
+    \caption{Záložka nastavení v HA.}
     \label{fig:ha-nastaveni}
 \end{figure}
 
@@ -414,10 +417,11 @@ V části „ovládání čerpadel – vodní kámen“ slouží ke spínání �
 
 Výše popsané části jsou zobrazená na obrázku \ref{fig:ha-zarizeni}.
 
+
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{images/software-ha/ha-zarizeni.png}
-    \caption{Záložka zařízení v Ha.}
+    \includegraphics[width=0.90\textwidth]{images/software-ha/ha-zarizeni.png}
+    \caption{Záložka zařízení v HA.}
     \label{fig:ha-zarizeni}
 \end{figure}
 
