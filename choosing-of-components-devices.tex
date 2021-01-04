@@ -387,6 +387,42 @@ V realizovaném rozvaděči na obrázku \ref{fig:rozvadec-ve-sklepe-s-elektronik
     \label{fig:rozvadec-ve-sklepe-s-elektronikou}
 \end{figure}
 
+
+\section{Vývoj nástěnného snímače prostorové teploty}
+V současné době je ve vývoji nástěnný snímač prostorové teploty. Skládající se z modulu LilyGO TTGO T8 V1.7 s čipem ESP32 obstarávající veškerou obsluhu. Dále z TFT displeje pro zobrazení aktuální naměřené teploty a~požadované teploty. Pro kabelové připojení je zde síťový Ethernet modul W5500. V neposlední řadě je zde teplotní senzor DS18B20 pro měření aktuální teploty v místnosti. Jedná se o prototyp. výsledné zařízení bude uděláno na jednotné DPS s POE napájením.
+
+Modul  LilyGO TTGO T8 V1.7 (obrázek \ref{fig:lilygo-ttgo-v1_7-eps32}) s čipem ESP32, samotný modul obsahuje wifi část, četně miniaturní 3D antény, bluetooth, 4MB Flash, 4MB PSRAM, převodník USB na UART pro programování. Pro zobrazování používám TFT displej (obrázek \ref{fig:predni-cast-tft-lcd-320x240-ili9341}) s rozlišením 320 × 240 px s řadičem ILI9341. Připojení k ESP32 je realizované pomocí SPI sběrnice. Pro  připojení UTP kabelu je použit modul s kontrolérem W5500 pro Ethernet (obrázek~\ref{fig:modul-w5500}), připojení k ESP32 je realizované pomocí SPI sběrnice. 
+
+V současné době nástěnných snímač prostorové teploty snímání okolní teplotu a posílá jí do centrální jednotku, též se zobrazuje na displeji. Nástěnný snímač kontroluje a v případě výpadku se periodicky snaží připojit na centrální jednotku, indikace připojení k centrální jednotce je zobrazena pomocí ikony (zelená ikona WiFi je stav připojeno, červená je stav nepřipojeno). Dále je zde tlačítko pro nastavení požadované teploty, která se dá nastavovat po 0,5 °C, zadaná hodnota se zobrazuje na displeji, též se přenese do centrální jednotky (tam se též zobrazuje pro danou místnost). Každá místnost v patře domu bude osazeno tímto nástěnným snímačem teploty. Místnosti, které jsou bez kabelového připojení. Využívání bezdrátovou komunikační sít WiFi, napájení je pak provedeno přes lokální napájecí adaptér.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.3\textwidth]{images/lilygo-ttgo-v1_7-eps32.png}
+    \caption[Modul  LilyGO TTGO T8 V1.7.]{Modul  LilyGO TTGO T8 V1.7 \cite{lilygo-ttgo-v1_7-eps32}.}
+    \label{fig:lilygo-ttgo-v1_7-eps32}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{images/predni-cast-tft-lcd-320x240-ili9341.png}
+    \caption[TFT displej s řadičem ILI9341.]{TFT displej s řadičem ILI9341 \cite{tft-lcd-320x240-ili9341}.}
+    \label{fig:predni-cast-tft-lcd-320x240-ili9341}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{images/modul-w5500.png}
+    \caption[Modul pro připojení Ethernetu.]{Modul pro připojení Ethernetu. \cite{modul-w5500}.}
+    \label{fig:modul-w5500}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/prototyp-nasteneho-snimace-teploty.png}
+    \caption{Zapojení jednotlivých částí přes nepájivé pole.}
+    \label{fig:prototyp-nasteneho-snimace-teploty}
+\end{figure}
+
 \section{Softwarová část}
 
 \subsection{Záložka nastavení}
@@ -394,7 +430,7 @@ V části „módy řízení“ se nachází výběr módů a to zimní, letní 
 
 V části nastavení „krby – spínání čerpadel“ se definují minimální hranice teploty, kdy dojde k sepnutí oběhových čerpadel pro krbové výměníky, tedy při jaké teplotě se má brát v potaz, zda někdo v krbu zatopit a mají se spustit čerpadla pro nahřívání zásobníku otopné vody. Toto nastavení je poměrně důležité a kontrola těchto teplot je zcela nezávislá na dalších nastaveních (automatizaci) v systému, je potřeba vždy při zatopení spustit čerpadla, jinak dojde k přehřátí vody ve výměníku krbu. V případě přehřátí se aktivuje ochrana přímo u krbů a dojde k ke zvukové signalizaci přehřátí, pokud teplota neklesne za určitou dobu, dojde k aktivování ochranných ventilů a vypuštění přehřáté vody.
 
-V části „LED indikace – mezní parametry zásobníku teplé vody“ se definují mezní teploty pro horní, střední a spodní část zásobníku otopné vody. Tato signalizace se zejména týká pro krby, aby uživatel věděl, zda může topit a jak je moc zásobník nahřátý. U modré LED se definuje mezní minimální teplota, kterou by zásobníku ve horní části měl mít (povolení pro topení). U oranžové LED se definuje mezní maximální teplota, kdy ve střední části zásobníku dochází k dostatečnému nahřátí otopné vody (oznámení, že za chvilku by se mělo přestat topit). U červené LED se definuje mezní maximální teplota, kdy ve spodní části zásobníku je plně ohřátá(okamžitě přestat topit.). Aktivace červené LED předchází v dostatečném předstihu před aktivováním ochrany u~krbů pro přehřátí otopné vody, popsáno v předchozím odstavci.
+V části „LED indikace – mezní parametry zásobníku teplé vody se definují mezní teploty pro horní, střední a spodní část zásobníku otopné vody. Tato signalizace se zejména týká pro krby, aby uživatel věděl, zda může topit a jak je moc zásobník nahřátý. U modré LED se definuje mezní minimální teplota, kterou by zásobníku ve horní části měl mít (povolení pro topení). U oranžové LED se definuje mezní maximální teplota, kdy ve střední části zásobníku dochází k dostatečnému nahřátí otopné vody (oznámení, že za chvilku by se mělo přestat topit). U červené LED se definuje mezní maximální teplota, kdy ve spodní části zásobníku je plně ohřátá(okamžitě přestat topit.). Aktivace červené LED předchází v dostatečném předstihu před aktivováním ochrany u~krbů pro přehřátí otopné vody, popsáno v předchozím odstavci.
 
 Pro přehlednost jsou jednotlivé teploty zobrazeny v části „jednotlivé teploty“, jsou zde všechny teploty snímané v zásobníku otopné vody, teploty na kouřovodech v přízemí a patře, v neposlední řadě jez zde i venkovní teplota. V části „porovnání teploty“ jsou zmíněné teploty zobrazeny v jednom grafu.
 
@@ -418,11 +454,33 @@ V části „ovládání čerpadel – vodní kámen“ slouží ke spínání �
 Výše popsané části jsou zobrazená na obrázku \ref{fig:ha-zarizeni}.
 
 
+
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.90\textwidth]{images/software-ha/ha-zarizeni.png}
     \caption{Záložka zařízení v HA.}
     \label{fig:ha-zarizeni}
+\end{figure}
+
+\subsection{Vývoj pro zónovou regulaci}
+
+Na obrázku \ref{fig:teplotni-plan} je zobrazen možný nastavitelný teplotní plán pro celý den. Lze tak nastavit všechny dny v týdnu. Pro každý zvolený teplotní úsek je možné si zvolit požadovanou teplotu.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.90\textwidth]{images/software-ha/teplotni-plan.png}
+    \caption{Nastavitelný teplotní plán pro danou hodinu v celém dni.}
+    \label{fig:teplotni-plan}
+\end{figure}
+
+Na obrázku \ref{fig:termostat-v-mistnosti} je nastavení aktuální teploty pro požadovanou místnost. Každá místnost má svoje vlastní nastavení. Zobrazuje se zde aktuálně naměřená teplota v dané místnosti a požadovaná teplota. Pokud dojde k~přenastavení požadované teploty, dojde k přenesení této teploty do nástěnného snímače prostorové teploty, přenos funguje i opačně.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.90\textwidth]{images/software-ha/termostat-v-mistnosti.png}
+    \caption{Zobrazení aktuální teploty z dané místnosti, možnost nastavit požadovanou teplotu.}
+    \label{fig:termostat-v-mistnosti}
 \end{figure}
 
 
