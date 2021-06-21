@@ -1,0 +1,155 @@
+%% Creator: Inkscape 1.0 (4035a4fb49, 2020-05-01), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'blokove-schema-pca9615-i2c-sbernice.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{851.625bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.41831792)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.14090709,0.20583796){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Slave\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.05284016,0.20583796){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Master\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.75777895,0.06240819){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\fontsize{4}{4} \sffamily Slave\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.68632541,0.06240819){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\fontsize{4}{4} \sffamily Master\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.76530163,0.11236768){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily PCA9615\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.80081242,0.03503347){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\fontsize{4}{4} \sffamily RN\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.85777191,0.03503347){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\fontsize{4}{4} \sffamily RN + 1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.82582915,0.01026803){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\fontsize{4}{4} \sffamily VDD(A)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.73800088,0.01849406){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Zařízení N\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.87126596,0.06253421){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\fontsize{4}{4} \sffamily GND\_SN\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.72255218,0.04491413){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\fontsize{4}{4} \sffamily GND\_SN\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.32525099,0.10215764){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\fontsize{4}{4} \sffamily GND\_M\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.21888331,0.2553941){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily PCA9615\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.28097886,0.33817701){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\fontsize{4}{4} \sffamily RSCL1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.28097886,0.29414355){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\fontsize{4}{4} \sffamily RSCL2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.28097886,0.16204315){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\fontsize{4}{4} \sffamily RSCL3\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.37220379,0.33817701){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\fontsize{4}{4} \sffamily RSDA1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.37220379,0.20695729){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\fontsize{4}{4} \sffamily RSDA2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.37220379,0.16204315){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\fontsize{4}{4} \sffamily RSDA3\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.33025099,0.39630119){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\fontsize{4}{4} \sffamily VDD(B)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.24834875,0.32496697){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\fontsize{4}{4} \sffamily DSCLP\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=22]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.24922941,0.28093351){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\fontsize{4}{4} \sffamily DSCLM\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=23]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.24922941,0.23690004){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\fontsize{4}{4} \sffamily DSDAP\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=24]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.25011008,0.19286658){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\fontsize{4}{4} \sffamily DSDAM\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=25]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.17477587,0.25011008){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\fontsize{4}{4} \sffamily SDA\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=26]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.17477587,0.26772347){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\fontsize{4}{4} \sffamily SCL\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=27]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.51131088,0.06240819){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\fontsize{4}{4} \sffamily Slave\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=28]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.43985733,0.06240819){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\fontsize{4}{4} \sffamily Master\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=29]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.51607221,0.11236768){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily PCA9615\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=30]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.55510568,0.03503347){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\fontsize{4}{4} \sffamily R1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=31]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.59649714,0.03503347){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\fontsize{4}{4} \sffamily R2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=32]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.57836107,0.01026803){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\fontsize{4}{4} \sffamily VDD(A)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=33]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.4905328,0.01849406){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Zařízení 1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=34]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.62087186,0.06457288){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\fontsize{4}{4} \selectfont \sffamily GND\_S1\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=35]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.93791281,0.10215764){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\fontsize{4}{4} \sffamily GND\_SN\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=36]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.88576002,0.33905768){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\fontsize{4}{4} \sffamily RSCL4\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=37]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.88576002,0.29590489){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\fontsize{4}{4} \sffamily RSCL5\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=38]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.88576002,0.16380449){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\fontsize{4}{4} \sffamily RSCL6\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=39]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.98194628,0.33817701){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\fontsize{4}{4} \sffamily RSDA4\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=40]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.98194628,0.20607662){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\fontsize{4}{4} \sffamily RSDA5\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=41]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.98194628,0.16292382){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\fontsize{4}{4} \sffamily RSDA6\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=42]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.93315148,0.39618186){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\fontsize{4}{4} \sffamily VDD(B)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=43]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.04934016,0.34862572){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\fontsize{4}{4} \sffamily VDD(A)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=44]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.03763012,0.29038221){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\fontsize{4}{4} \sffamily R\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=45]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.08166358,0.29038221){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\fontsize{4}{4} \sffamily R\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=46]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.20636063,0.10215764){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\fontsize{4}{4} \sffamily GND\_M\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=47]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.13590709,0.17261118){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\fontsize{4}{4} \sffamily GND\_M\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=48]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.04784016,0.17261118){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\fontsize{4}{4} \sffamily GND\_M\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=49]{blokove-schema-pca9615-i2c-sbernice.pdf}}%
+    \put(0.4750841,0.04491413){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\fontsize{4}{4} \sffamily GND\_S1\end{tabular}}}}%
+  \end{picture}%
+\endgroup%
