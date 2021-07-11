@@ -1,0 +1,212 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A2 23386 16535
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	11000 5850 11000 5800
+Connection ~ 11000 5800
+Wire Wire Line
+	11000 6300 11000 6250
+Connection ~ 11000 6300
+Wire Wire Line
+	11000 6650 11000 6300
+Wire Wire Line
+	11000 5550 11000 5500
+$Comp
+L connector_rl:1x2_screw_term_block J1
+U 1 1 5FA20064
+P 11200 5600
+F 0 "J1" H 11280 5642 50  0000 L CNN
+F 1 "EBBA-02-C-SS-BU" H 11280 5551 50  0000 L CNN
+F 2 "terminal_blocks_th_rl:xy301v_a_5_2p_rl" H 11200 5600 50  0001 C CNN
+F 3 "" H 11200 5600 50  0001 C CNN
+	1    11200 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10450 6650 10450 6550
+Wire Wire Line
+	10450 6050 10450 6250
+Connection ~ 10450 6050
+Wire Wire Line
+	10700 6050 10450 6050
+$Comp
+L passive_component_rl:resistor_eu R10
+U 1 1 5FA0DE9E
+P 10450 6400
+F 0 "R10" V 10404 6468 50  0000 L CNN
+F 1 "10k" V 10495 6468 50  0000 L CNN
+F 2 "resistors_smd_rl:r_1206_rl" H 10450 6400 50  0001 C CNN
+F 3 "" H 10450 6400 50  0001 C CNN
+	1    10450 6400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_NMOS_GSD Q1
+U 1 1 5FA08F52
+P 10900 6050
+F 0 "Q1" H 11104 6096 50  0000 L CNN
+F 1 "DMN3023L-7" H 11104 6005 50  0000 L CNN
+F 2 "packages_to_sot_smd_rl:sot_23_rl" H 11100 6150 50  0001 C CNN
+F 3 "~" H 10900 6050 50  0001 C CNN
+	1    10900 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPDT SW1
+U 1 1 5FB408F3
+P 11800 6050
+F 0 "SW1" V 11800 6000 50  0000 R CNN
+F 1 "B144" V 11450 6000 50  0000 R CNN
+F 2 "switches_tht_rl:b144_rl" H 11800 6050 50  0001 C CNN
+F 3 "~" H 11800 6050 50  0001 C CNN
+	1    11800 6050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	11800 6300 11800 6250
+Wire Wire Line
+	11000 6300 11800 6300
+Wire Wire Line
+	11700 5850 11700 5800
+Wire Wire Line
+	11900 5850 11900 5800
+Wire Wire Line
+	11900 5800 12050 5800
+Wire Wire Line
+	12050 5800 12050 6300
+Wire Wire Line
+	12050 6300 11800 6300
+Connection ~ 11800 6300
+$Comp
+L passive_component_rl:resistor_eu R1
+U 1 1 5FC7A4B9
+P 12700 5950
+F 0 "R1" V 12654 6018 50  0000 L CNN
+F 1 "2,2k" V 12745 6018 50  0000 L CNN
+F 2 "resistors_smd_rl:r_1206_rl" H 12700 5950 50  0001 C CNN
+F 3 "" H 12700 5950 50  0001 C CNN
+	1    12700 5950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12700 5800 12700 5750
+$Comp
+L diode_rl:LED D1
+U 1 1 5FC918CE
+P 12700 6300
+F 0 "D1" V 12739 6182 50  0000 R CNN
+F 1 "LTL-42NGY8D " V 12648 6182 50  0000 R CNN
+F 2 "leds_tht_rl:led_d3.0mm_rl" H 12700 6300 50  0001 C CNN
+F 3 "~" H 12700 6300 50  0001 C CNN
+	1    12700 6300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	12700 6150 12700 6100
+Wire Wire Line
+	12700 6450 12700 6550
+Text Label 10200 6050 2    50   ~ 0
+kanal0
+$Comp
+L power:GND #PWR07
+U 1 1 61FA5C42
+P 10450 6650
+F 0 "#PWR07" H 10450 6400 50  0001 C CNN
+F 1 "GND" H 10455 6477 50  0000 C CNN
+F 2 "" H 10450 6650 50  0001 C CNN
+F 3 "" H 10450 6650 50  0001 C CNN
+	1    10450 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 604307DB
+P 12550 6850
+F 0 "H1" H 12650 6899 50  0000 L CNN
+F 1 "MountingHole_Pad" H 12650 6808 50  0000 L CNN
+F 2 "mounting_hole_rl:mountig_hole_3mm_1,6mm_pad" H 12550 6850 50  0001 C CNN
+F 3 "~" H 12550 6850 50  0001 C CNN
+	1    12550 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth_Protective #PWR0103
+U 1 1 6058F3E5
+P 12550 7000
+F 0 "#PWR0103" H 12800 6750 50  0001 C CNN
+F 1 "Earth_Protective" H 13000 6850 50  0001 C CNN
+F 2 "" H 12550 6900 50  0001 C CNN
+F 3 "~" H 12550 6900 50  0001 C CNN
+	1    12550 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12550 7000 12550 6950
+$Comp
+L power_rl:+24V_A #PWR0118
+U 1 1 605B4783
+P 11000 5500
+F 0 "#PWR0118" H 11000 5400 50  0001 C CNN
+F 1 "+24V_A" H 11000 5673 50  0000 C CNN
+F 2 "" H 11000 5500 50  0001 C CNN
+F 3 "" H 11000 5500 50  0001 C CNN
+	1    11000 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0130
+U 1 1 607A9F1B
+P 11000 6650
+F 0 "#PWR0130" H 11000 6400 50  0001 C CNN
+F 1 "GND" H 11005 6477 50  0000 C CNN
+F 2 "" H 11000 6650 50  0001 C CNN
+F 3 "" H 11000 6650 50  0001 C CNN
+	1    11000 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 6050 10450 6050
+Text Notes 13100 6150 0    50   ~ 0
+Zelená LED\nLTL-42NGY8D\nUf = 2 V\nIf = 10 mA
+Wire Wire Line
+	12700 6550 12400 6550
+Wire Wire Line
+	11000 5650 11000 5800
+$Comp
+L power_rl:+24V_A #PWR?
+U 1 1 61FCA9E0
+P 12700 5750
+F 0 "#PWR?" H 12700 5650 50  0001 C CNN
+F 1 "+24V_A" H 12700 5923 50  0000 C CNN
+F 2 "" H 12700 5750 50  0001 C CNN
+F 3 "" H 12700 5750 50  0001 C CNN
+	1    12700 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11000 5800 11550 5800
+Wire Wire Line
+	11550 5800 11550 5750
+Wire Wire Line
+	11550 5750 12400 5750
+Wire Wire Line
+	12400 5750 12400 6550
+Connection ~ 11550 5800
+Wire Wire Line
+	11550 5800 11700 5800
+Text Notes 12100 6950 0    50   ~ 0
+Pouzdro\npřepínače
+NoConn ~ 11900 5950
+$EndSCHEMATC

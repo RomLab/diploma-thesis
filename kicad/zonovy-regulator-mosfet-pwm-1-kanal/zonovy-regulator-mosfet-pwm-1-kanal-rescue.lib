@@ -1,0 +1,322 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# +24V_A-power_rl
+#
+DEF +24V_A-power_rl #PWR 0 0 N Y 1 F P
+F0 "#PWR" 0 -100 50 H I C CNN
+F1 "+24V_A-power_rl" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 1 0 -30 50 0 100 N
+P 2 1 1 0 0 0 0 100 N
+P 2 1 1 0 0 100 30 50 N
+X VDD_A 1 0 0 0 R 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# +24V_B-power_rl
+#
+DEF +24V_B-power_rl #PWR 0 0 N Y 1 F P
+F0 "#PWR" 0 -100 50 H I C CNN
+F1 "+24V_B-power_rl" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 1 0 -30 50 0 100 N
+P 2 1 1 0 0 0 0 100 N
+P 2 1 1 0 0 100 30 50 N
+X VDD_A 1 0 0 0 R 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# 1x2_screw_term_block-connectors_rl
+#
+DEF 1x2_screw_term_block-connectors_rl J 0 40 Y N 1 F N
+F0 "J" 0 150 50 H V C CNN
+F1 "1x2_screw_term_block-connectors_rl" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C 0 -50 25 1 1 6 N
+C 0 50 25 1 1 6 N
+S -50 100 50 -100 1 1 10 f
+P 2 1 1 6 -21 -37 13 -70 N
+P 2 1 1 6 -21 63 13 30 N
+P 2 1 1 6 -14 -30 20 -63 N
+P 2 1 1 6 -14 70 20 37 N
+X 1 1 -200 50 150 R 50 50 1 1 P
+X 2 2 -200 -50 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# 1x4_pins_header_rl-connectors_rl
+#
+DEF 1x4_pins_header_rl-connectors_rl P 0 40 Y N 1 F N
+F0 "P" 0 100 50 H V C CNN
+F1 "1x4_pins_header_rl-connectors_rl" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C -50 -10 10 1 1 18 N
+C 50 -10 10 1 1 18 N
+C 150 -10 10 1 1 18 N
+C 250 -10 10 1 1 18 N
+P 4 0 1 10 100 -50 300 -50 300 30 -100 30 N
+P 2 1 1 10 -100 -50 -100 30 N
+P 2 1 1 10 -100 -50 100 -50 N
+P 2 1 1 6 -50 -50 -50 -10 N
+P 2 1 1 6 50 -50 50 -10 N
+P 2 1 1 6 150 -50 150 -10 N
+P 2 1 1 6 250 -50 250 -10 N
+X 1 1 -50 -150 100 U 50 50 1 1 P
+X 2 2 50 -150 100 U 50 50 1 1 P
+X 3 3 150 -150 100 U 50 50 1 1 P
+X 4 4 250 -150 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# GND_A-power_rl
+#
+DEF GND_A-power_rl #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "GND_A-power_rl" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# GND_B-power_rl
+#
+DEF GND_B-power_rl #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "GND_B-power_rl" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# LED-diodes_rl
+#
+DEF LED-diodes_rl D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "LED-diodes_rl" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ LED*
+ LED_SMD:*
+ LED_THT:*
+$ENDFPLIST
+DRAW
+P 2 0 1 10 -50 -50 -50 50 N
+P 2 0 1 0 -50 0 50 0 N
+P 4 0 1 10 50 -50 50 50 -50 0 50 -50 N
+P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
+P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# PCA9685PW-drivers_LED_rl
+#
+DEF PCA9685PW-drivers_LED_rl U 0 20 Y Y 1 F N
+F0 "U" -500 875 50 H V L CNN
+F1 "PCA9685PW-drivers_LED_rl" 50 875 50 H V L CNN
+F2 "Package_SO:TSSOP-28_4.4x9.7mm_P0.65mm" 25 -975 50 H I L CNN
+F3 "" -400 700 50 H I C CNN
+$FPLIST
+ TSSOP*4.4x9.7mm*P0.65mm*
+$ENDFPLIST
+DRAW
+S -500 800 500 -900 0 1 10 f
+X A0 1 -700 -200 200 R 50 50 1 1 I
+X LED4 10 700 300 200 L 50 50 1 1 O
+X LED5 11 700 200 200 L 50 50 1 1 O
+X LED6 12 700 100 200 L 50 50 1 1 O
+X LED7 13 700 0 200 L 50 50 1 1 O
+X VSS 14 0 -1100 200 U 50 50 1 1 W
+X LED8 15 700 -100 200 L 50 50 1 1 O
+X LED9 16 700 -200 200 L 50 50 1 1 O
+X LED10 17 700 -300 200 L 50 50 1 1 O
+X LED11 18 700 -400 200 L 50 50 1 1 O
+X LED12 19 700 -500 200 L 50 50 1 1 O
+X A1 2 -700 -300 200 R 50 50 1 1 I
+X LED13 20 700 -600 200 L 50 50 1 1 O
+X LED14 21 700 -700 200 L 50 50 1 1 O
+X LED15 22 700 -800 200 L 50 50 1 1 O
+X ~OE 23 -700 400 200 R 50 50 1 1 I
+X A5 24 -700 -700 200 R 50 50 1 1 I
+X EXTCLK 25 -700 500 200 R 50 50 1 1 I
+X SCL 26 -700 700 200 R 50 50 1 1 I
+X SDA 27 -700 600 200 R 50 50 1 1 B
+X VDD 28 0 1000 200 D 50 50 1 1 W
+X A2 3 -700 -400 200 R 50 50 1 1 I
+X A3 4 -700 -500 200 R 50 50 1 1 I
+X A4 5 -700 -600 200 R 50 50 1 1 I
+X LED0 6 700 700 200 L 50 50 1 1 O
+X LED1 7 700 600 200 L 50 50 1 1 O
+X LED2 8 700 500 200 L 50 50 1 1 O
+X LED3 9 700 400 200 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# TPS26600-power_management
+#
+DEF TPS26600-power_management U 0 40 Y Y 1 F N
+F0 "U" -300 300 50 H V C CNN
+F1 "TPS26600-power_management" 0 -600 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -350 250 350 -550 1 1 0 f
+X IN 1 -450 200 100 R 50 50 1 1 W
+X IMON 10 450 -400 100 L 50 50 1 1 O
+X ILIM 11 450 -300 100 L 50 50 1 1 B
+X dVdT 12 450 -200 100 L 50 50 1 1 B
+X NC 13 450 -100 100 L 50 50 1 1 N X
+X FLT 14 450 0 100 L 50 50 1 1 O I
+X OUT 15 450 100 100 L 50 50 1 1 w
+X OUT 16 450 200 100 L 50 50 1 1 w
+X IN 2 -450 100 100 R 50 50 1 1 W
+X UVLO 3 -450 0 100 R 50 50 1 1 I
+X NC 4 -450 -100 100 R 50 50 1 1 N X
+X OVP 5 -450 -200 100 R 50 50 1 1 I
+X MODE 6 -450 -300 100 R 50 50 1 1 I
+X SHDN 7 -450 -400 100 R 50 50 1 1 I I
+X PowerPad 8 50 -600 100 L 50 50 1 1 U NX
+X RTN 8 -450 -500 100 R 50 50 1 1 w
+X GND 9 450 -500 100 L 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# capacitor_rl-passive_components_rl
+#
+DEF capacitor_rl-passive_components_rl C 0 40 N N 1 F N
+F0 "C" 0 150 50 H V C CNN
+F1 "capacitor_rl-passive_components_rl" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 1 1 10 -30 -80 -30 80 N
+P 2 1 1 10 30 -80 30 80 N
+X ~ 1 -150 0 114 R 50 50 1 1 P
+X ~ 2 150 0 114 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# resistor_rl-passive_components_rl
+#
+DEF resistor_rl-passive_components_rl R 0 20 N N 1 F N
+F0 "R" 0 80 50 H V C CNN
+F1 "resistor_rl-passive_components_rl" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+P 2 1 1 0 -90 0 -100 0 N
+P 2 1 1 0 90 0 100 0 N
+P 5 1 1 0 -90 0 -75 40 -60 0 -45 -40 -30 0 N
+P 5 1 1 0 -30 0 -15 40 0 0 15 -40 30 0 N
+P 5 1 1 0 30 0 45 40 60 0 75 -40 90 0 N
+X ~ 1 -150 0 50 R 50 50 1 1 P
+X ~ 2 150 0 50 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# resistor_variable_rl-passive_components_rl
+#
+DEF resistor_variable_rl-passive_components_rl R 0 40 Y Y 1 F N
+F0 "R" 0 100 50 H V C CNN
+F1 "resistor_variable_rl-passive_components_rl" 50 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -80 110 -80 70 N
+P 2 0 1 0 -80 110 -40 90 N
+P 2 0 1 0 50 -100 -80 110 N
+P 2 1 1 0 -90 0 -100 0 N
+P 2 1 1 0 90 0 100 0 N
+P 5 1 1 6 -90 0 -75 40 -60 0 -45 -40 -30 0 N
+P 5 1 1 0 -30 0 -15 40 0 0 15 -40 30 0 N
+P 5 1 1 0 30 0 45 40 60 0 75 -40 90 0 N
+X ~ 1 -150 0 50 R 50 50 1 1 P
+X ~ 2 150 -100 100 L 50 50 1 1 P
+X ~ 3 150 0 50 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# resistor_variable_us_rl-passive_components_rl
+#
+DEF resistor_variable_us_rl-passive_components_rl R 0 40 Y N 1 F N
+F0 "R" -20 135 50 H V C CNN
+F1 "resistor_variable_us_rl-passive_components_rl" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 1 0 -90 0 -100 0 N
+P 2 1 1 0 90 0 100 0 N
+P 5 1 1 6 -90 0 -75 40 -60 0 -45 -40 -30 0 N
+P 5 1 1 6 -60 90 -100 100 -90 60 -100 100 100 -100 N
+P 5 1 1 0 -30 0 -15 40 0 0 15 -40 30 0 N
+P 5 1 1 0 30 0 45 40 60 0 75 -40 90 0 N
+X ~ 1 -150 0 50 R 50 50 1 1 P
+X ~ 2 150 -100 50 L 50 50 1 1 P
+X ~ 3 150 0 50 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# solder_jumper_2_open-solder_jumpers_rl
+#
+DEF solder_jumper_2_open-solder_jumpers_rl JP 0 0 Y N 1 F N
+F0 "JP" 0 80 50 H V C CNN
+F1 "solder_jumper_2_open-solder_jumpers_rl" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ SolderJumper*Open*
+$ENDFPLIST
+DRAW
+A -10 0 40 901 -901 0 1 0 N -10 40 -10 -40
+A -10 0 40 901 -901 0 1 0 F -10 40 -10 -40
+A 10 0 40 -899 899 0 1 0 N 10 -40 10 40
+A 10 0 40 -899 899 0 1 0 F 10 -40 10 40
+P 2 0 1 0 -10 40 -10 -40 N
+P 2 0 1 0 10 40 10 -40 N
+X A 1 -150 0 100 R 50 50 1 1 P
+X B 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# undir_transil-diodes_rl
+#
+DEF undir_transil-diodes_rl D 0 40 N N 1 F N
+F0 "D" -50 150 50 H V C CNN
+F1 "undir_transil-diodes_rl" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 8 -50 50 -65 35 N
+P 2 0 1 8 50 50 65 65 N
+P 2 1 1 0 0 -50 0 50 N
+P 2 1 1 8 50 50 -50 50 N
+P 4 1 1 8 50 -50 -50 -50 0 50 50 -50 N
+X K 1 0 150 100 D 50 50 1 1 P
+X A 2 0 -150 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library

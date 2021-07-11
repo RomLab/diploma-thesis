@@ -36,7 +36,7 @@ F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 3050 3150 50  00
 	1    0    0    -1  
 $EndComp
 $Comp
-L connectors_rl:1x6_pins_header_rl P1
+L rele-modul-jeden-kanal-rescue:1x6_pins_header_rl-connectors_rl P1
 U 1 1 5FE617FF
 P 1700 2700
 F 0 "P1" V 2100 2650 50  0000 C CNN
@@ -80,7 +80,7 @@ F 3 "~" H 2700 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L connectors_rl:1x2_pins_header_rl P2
+L rele-modul-jeden-kanal-rescue:1x2_pins_header_rl-connectors_rl P2
 U 1 1 5FE638DA
 P 3150 1950
 F 0 "P2" H 3288 1929 50  0000 L CNN
@@ -143,7 +143,7 @@ Wire Wire Line
 Wire Wire Line
 	3100 2100 3100 2200
 $Comp
-L diodes_rl:LED D1
+L rele-modul-jeden-kanal-rescue:LED-diodes_rl D1
 U 1 1 5FE6A2E7
 P 2500 3250
 F 0 "D1" H 2493 3467 50  0000 C CNN
@@ -238,8 +238,8 @@ Wire Wire Line
 	2350 3250 2250 3250
 Text Label 2250 3250 2    50   ~ 0
 in1
-Text Notes 1700 2100 0    50   ~ 0
-input\ncontrol\nsignal
+Text Notes 1700 2050 0    50   ~ 0
+Vstupní\nřídicí\nsignál
 $Comp
 L power:+5V #PWR0103
 U 1 1 5FE7BCFB
@@ -252,7 +252,7 @@ F 3 "" H 3600 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power_rl:+3,3V #PWR2
+L rele-modul-jeden-kanal-rescue:+3,3V-power_rl #PWR2
 U 1 1 5FE7C30E
 P 2700 2100
 F 0 "#PWR2" H 2710 2040 50  0001 C CNN
@@ -277,7 +277,7 @@ F 3 "~" H 2350 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power_rl:+3,3V #PWR1
+L rele-modul-jeden-kanal-rescue:+3,3V-power_rl #PWR1
 U 1 1 5FE7B7FD
 P 2000 2350
 F 0 "#PWR1" H 2010 2290 50  0001 C CNN
@@ -316,6 +316,6 @@ Wire Wire Line
 Connection ~ 3900 2200
 Wire Wire Line
 	3900 2200 4150 2200
-Text Notes 2950 1900 0    50   ~ 0
-power supply
+Text Notes 5800 2200 0    50   ~ 0
+Zátěž
 $EndSCHEMATC

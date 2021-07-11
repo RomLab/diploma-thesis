@@ -18,46 +18,6 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# connectors_rl_1x2_pins_header_rl
-#
-DEF connectors_rl_1x2_pins_header_rl P 0 40 Y N 1 F N
-F0 "P" 0 100 50 H V C CNN
-F1 "connectors_rl_1x2_pins_header_rl" 50 -200 50 H V C CNN
-F2 "" 50 0 50 H I C CNN
-F3 "" 50 0 50 H I C CNN
-DRAW
-C -50 -10 10 0 1 18 N
-C 50 -10 10 0 1 18 N
-P 2 0 1 10 -100 -50 -100 30 N
-P 2 0 1 10 -100 -50 100 -50 N
-P 2 0 1 6 -50 -50 -50 -10 N
-P 2 0 1 6 50 -50 50 -10 N
-P 3 0 1 10 100 -50 100 30 -100 30 N
-X 1 1 -50 -150 100 U 50 50 1 1 P
-X 2 2 50 -150 100 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# connectors_rl_1x2_screw_term_block
-#
-DEF connectors_rl_1x2_screw_term_block J 0 40 Y N 1 F N
-F0 "J" 0 150 50 H V C CNN
-F1 "connectors_rl_1x2_screw_term_block" 0 -150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-C 0 -50 25 1 1 6 N
-C 0 50 25 1 1 6 N
-S -50 100 50 -100 1 1 10 f
-P 2 1 1 6 -21 -37 13 -70 N
-P 2 1 1 6 -21 63 13 30 N
-P 2 1 1 6 -14 -30 20 -63 N
-P 2 1 1 6 -14 70 20 37 N
-X 1 1 -200 50 150 R 50 50 1 1 P
-X 2 2 -200 -50 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # esd_protection_1_wire_rpi-rescue_+5V-power-esd_protection_1_wire_rpi-rescue
 #
 DEF esd_protection_1_wire_rpi-rescue_+5V-power-esd_protection_1_wire_rpi-rescue #PWR 0 0 Y Y 1 F P
@@ -115,11 +75,51 @@ X GND 9 450 -500 100 L 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# passive_components_rl_capacitor_rl
+# ochrana-napajeni-1-wire-rescue_1x2_pins_header_rl-connectors_rl
 #
-DEF passive_components_rl_capacitor_rl C 0 40 N N 1 F N
+DEF ochrana-napajeni-1-wire-rescue_1x2_pins_header_rl-connectors_rl P 0 40 Y N 1 F N
+F0 "P" 0 100 50 H V C CNN
+F1 "ochrana-napajeni-1-wire-rescue_1x2_pins_header_rl-connectors_rl" 50 -200 50 H V C CNN
+F2 "" 50 0 50 H I C CNN
+F3 "" 50 0 50 H I C CNN
+DRAW
+C -50 -10 10 0 1 18 N
+C 50 -10 10 0 1 18 N
+P 2 0 1 10 -100 -50 -100 30 N
+P 2 0 1 10 -100 -50 100 -50 N
+P 2 0 1 6 -50 -50 -50 -10 N
+P 2 0 1 6 50 -50 50 -10 N
+P 3 0 1 10 100 -50 100 30 -100 30 N
+X 1 1 -50 -150 100 U 50 50 1 1 P
+X 2 2 50 -150 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# ochrana-napajeni-1-wire-rescue_1x2_screw_term_block-connectors_rl
+#
+DEF ochrana-napajeni-1-wire-rescue_1x2_screw_term_block-connectors_rl J 0 40 Y N 1 F N
+F0 "J" 0 150 50 H V C CNN
+F1 "ochrana-napajeni-1-wire-rescue_1x2_screw_term_block-connectors_rl" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C 0 -50 25 1 1 6 N
+C 0 50 25 1 1 6 N
+S -50 100 50 -100 1 1 10 f
+P 2 1 1 6 -21 -37 13 -70 N
+P 2 1 1 6 -21 63 13 30 N
+P 2 1 1 6 -14 -30 20 -63 N
+P 2 1 1 6 -14 70 20 37 N
+X 1 1 -200 50 150 R 50 50 1 1 P
+X 2 2 -200 -50 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# ochrana-napajeni-1-wire-rescue_capacitor_rl-passive_components_rl
+#
+DEF ochrana-napajeni-1-wire-rescue_capacitor_rl-passive_components_rl C 0 40 N N 1 F N
 F0 "C" 0 150 50 H V C CNN
-F1 "passive_components_rl_capacitor_rl" 0 -150 50 H V C CNN
+F1 "ochrana-napajeni-1-wire-rescue_capacitor_rl-passive_components_rl" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -133,11 +133,11 @@ X ~ 2 150 0 114 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# passive_components_rl_resisitor_variable_eu_rl
+# ochrana-napajeni-1-wire-rescue_resisitor_variable_eu_rl-passive_components_rl
 #
-DEF passive_components_rl_resisitor_variable_eu_rl R 0 40 Y N 1 F N
+DEF ochrana-napajeni-1-wire-rescue_resisitor_variable_eu_rl-passive_components_rl R 0 40 Y N 1 F N
 F0 "R" -20 135 50 H V C CNN
-F1 "passive_components_rl_resisitor_variable_eu_rl" 0 -150 50 H V C CNN
+F1 "ochrana-napajeni-1-wire-rescue_resisitor_variable_eu_rl-passive_components_rl" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW

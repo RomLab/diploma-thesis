@@ -1,0 +1,1 @@
+Umístění na vrchní víko krabičky. PCA9685 je součástí DPS.

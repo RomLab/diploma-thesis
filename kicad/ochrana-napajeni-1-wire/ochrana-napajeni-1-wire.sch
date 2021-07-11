@@ -38,7 +38,7 @@ F 3 "" H 7100 2750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L connectors_rl:1x2_screw_term_block J1
+L ochrana-napajeni-1-wire-rescue:1x2_screw_term_block-connectors_rl J1
 U 1 1 5E7774D7
 P 5150 2000
 F 0 "J1" V 5114 1862 50  0000 R CNN
@@ -70,7 +70,7 @@ Wire Wire Line
 Wire Wire Line
 	5750 3400 6100 3400
 $Comp
-L passive_components_rl:capacitor_rl C1
+L ochrana-napajeni-1-wire-rescue:capacitor_rl-passive_components_rl C1
 U 1 1 5F1AD2F7
 P 4300 2700
 F 0 "C1" V 4250 2500 50  0000 L CNN
@@ -106,7 +106,7 @@ Wire Wire Line
 	4550 3000 4550 2900
 Connection ~ 4550 2900
 $Comp
-L passive_components_rl:capacitor_rl C3
+L ochrana-napajeni-1-wire-rescue:capacitor_rl-passive_components_rl C3
 U 1 1 5F1DD9A0
 P 7550 3100
 F 0 "C3" V 7504 3210 50  0000 L CNN
@@ -144,7 +144,7 @@ Wire Wire Line
 Wire Wire Line
 	6050 2900 7050 2900
 $Comp
-L passive_components_rl:capacitor_rl C2
+L ochrana-napajeni-1-wire-rescue:capacitor_rl-passive_components_rl C2
 U 1 1 5F24E72A
 P 6650 3850
 F 0 "C2" V 6604 3960 50  0000 L CNN
@@ -181,7 +181,7 @@ Wire Wire Line
 Wire Wire Line
 	6950 3100 5750 3100
 $Comp
-L connectors_rl:1x2_pins_header_rl P3
+L ochrana-napajeni-1-wire-rescue:1x2_pins_header_rl-connectors_rl P3
 U 1 1 5F29F6AB
 P 7000 3500
 F 0 "P3" H 6750 3500 50  0000 L CNN
@@ -193,8 +193,8 @@ F 3 "" H 7050 3500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7050 3300 7050 3350
-Text Notes 7100 3400 0    50   ~ 0
-red LED
+Text Notes 7000 3750 0    50   ~ 0
+Červená LED
 Wire Wire Line
 	6100 3400 6100 3650
 Wire Wire Line
@@ -220,9 +220,7 @@ Wire Wire Line
 Connection ~ 7100 2900
 Wire Wire Line
 	7100 2900 7450 2900
-Text Notes 5400 4400 0    50   ~ 0
-max. limitation\nI=2,21 A
-Text Notes 5300 4150 0    50   ~ 0
+Text Notes 5300 4250 0    50   ~ 0
 max. I = 0,073 A\n114,64k
 Wire Wire Line
 	3700 3950 3700 4150
@@ -289,10 +287,10 @@ Wire Wire Line
 	4300 2550 4300 2500
 Wire Wire Line
 	3700 3100 4850 3100
-Text Notes 4500 2100 0    50   ~ 0
-input\nvoltage +5 V
+Text Notes 5000 1900 0    50   ~ 0
+Vstup 5 V
 Text Notes 7500 2850 0    50   ~ 0
-output\nvoltage +5 V
+Výstup 5 V
 $Comp
 L Device:R R5
 U 1 1 5FE0B473
@@ -360,7 +358,7 @@ F 3 "~" H 7050 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L passive_components_rl:resisitor_variable_eu_rl R17
+L ochrana-napajeni-1-wire-rescue:resisitor_variable_eu_rl-passive_components_rl R17
 U 1 1 5FE1E7CE
 P 6100 3800
 F 0 "R17" V 6054 3928 50  0000 L CNN

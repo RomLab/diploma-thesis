@@ -25,7 +25,7 @@ F 3 "~" H 2800 3000 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L diodes_rl:undir_transil D6
+L ochrana-krby-lcd-teplotni-senzor-rescue:undir_transil-diodes_rl D6
 U 1 1 5E8F4FAB
 P 4700 3100
 F 0 "D6" H 4794 3146 50  0000 L CNN
@@ -91,7 +91,7 @@ Wire Wire Line
 Wire Wire Line
 	5850 2900 5500 2900
 $Comp
-L connectors_rl:1x2_pins_header_rl P1
+L ochrana-krby-lcd-teplotni-senzor-rescue:1x2_pins_header_rl-connectors_rl P1
 U 1 1 5F44F2DA
 P 6300 2400
 F 0 "P1" V 6258 2460 50  0000 L CNN
@@ -120,15 +120,15 @@ Wire Wire Line
 Connection ~ 4700 3300
 Connection ~ 5500 3300
 Text Notes 6250 2250 0    50   ~ 0
-red LED
-Text Notes 3000 2850 0    50   ~ 0
-input\ncontrol\nsignal
-Text Notes 2550 3150 0    50   ~ 0
-blue
-Text Notes 2460 3030 0    50   ~ 0
-orange
-Text Notes 2600 2900 0    50   ~ 0
-red
+Červená LED
+Text Notes 2950 2800 0    50   ~ 0
+Vstupní řídicí signál
+Text Notes 2300 3200 0    50   ~ 0
+Modrá LED
+Text Notes 2200 3050 0    50   ~ 0
+Oranžová LED
+Text Notes 2250 2900 0    50   ~ 0
+Červená LED
 Wire Wire Line
 	3000 2900 3800 2900
 Wire Wire Line
@@ -162,7 +162,7 @@ F 3 "~" H 6150 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L diodes_rl:DS9503_eu_rl D1
+L ochrana-krby-lcd-teplotni-senzor-rescue:DS9503_eu_rl-diodes_rl D1
 U 1 1 5FE1040C
 P 4100 3000
 F 0 "D1" H 4100 3250 50  0000 C CNN

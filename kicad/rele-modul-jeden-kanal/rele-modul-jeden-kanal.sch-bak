@@ -238,8 +238,6 @@ Wire Wire Line
 	2350 3250 2250 3250
 Text Label 2250 3250 2    50   ~ 0
 in1
-Text Notes 2950 1900 0    50   ~ 0
-power supply
 Text Notes 1700 2100 0    50   ~ 0
 input\ncontrol\nsignal
 $Comp
@@ -318,4 +316,6 @@ Wire Wire Line
 Connection ~ 3900 2200
 Wire Wire Line
 	3900 2200 4150 2200
+Text Notes 2950 1900 0    50   ~ 0
+power supply
 $EndSCHEMATC

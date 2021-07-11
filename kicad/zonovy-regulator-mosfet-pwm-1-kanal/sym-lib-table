@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name esd_protection_1_wire_rpi-rescue)(type Legacy)(uri D:/kicad/thomas_thermostat/esd_protection_1_wire_rpi/esd_protection_1_wire_rpi_v6/esd_protection_1_wire_rpi-rescue.lib)(options "")(descr ""))
+  (lib (name mosfet_pwm-rescue)(type Legacy)(uri ${KIPRJMOD}/mosfet_pwm-rescue.lib)(options "")(descr ""))
+  (lib (name distributor_electronic_fuse-rescue)(type Legacy)(uri D:/kicad/thomas_thermostat/distributor_electronic_fuse/distributor_electronic_fuse-rescue.lib)(options "")(descr ""))
+)

@@ -1,4 +1,4 @@
-update=25.12.2020 12:04:02
+update=10.07.2021 20:29:46
 version=1
 last_client=kicad
 [general]
@@ -34,7 +34,7 @@ LibDir=
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=D:/ČVUT/Magistr/3. semestr/Elektronické zabezpečovací systémy/term_project_ess/images/svg/kicad/
+PlotDirectoryName=C:/Users/Roman Labovský/Desktop/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=

@@ -57,7 +57,7 @@ L Device:Polyfuse F1
 U 1 1 5F2AE698
 P 4950 2650
 F 0 "F1" V 4725 2650 50  0000 C CNN
-F 1 "Polyfuse" V 4816 2650 50  0000 C CNN
+F 1 "RXEF005" V 4816 2650 50  0000 C CNN
 F 2 "fuses_tht_rl:fuse_littelfuse_rxef_series" H 5000 2450 50  0001 L CNN
 F 3 "~" H 4950 2650 50  0001 C CNN
 	1    4950 2650

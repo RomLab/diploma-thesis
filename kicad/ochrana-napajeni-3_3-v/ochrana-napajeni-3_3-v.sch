@@ -42,7 +42,7 @@ $EndComp
 Wire Wire Line
 	4350 2400 4350 2650
 $Comp
-L connectors_rl:1x2_screw_term_block J6
+L ochrana-napajeni-3_3-v-rescue:1x2_screw_term_block-connectors_rl J6
 U 1 1 5F2AB78D
 P 5200 2250
 F 0 "J6" V 5164 2112 50  0000 R CNN
@@ -113,7 +113,7 @@ F 3 "~" H 4350 2400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 5000 2150 0    50   ~ 0
-input voltage\nfrom RPI +3,3 V
-Text Notes 4000 2700 0    50   ~ 0
-output \nvoltage\n+3,3 V
+Vstup 3,3 V z RPI
+Text Notes 3800 2700 0    50   ~ 0
+Výstup 3,3 V
 $EndSCHEMATC

@@ -1,0 +1,121 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# +3,3V-power_rl
+#
+DEF +3,3V-power_rl #PWR 0 0 N Y 1 F N
+F0 "#PWR" 10 -60 50 H I C CNN
+F1 "+3,3V-power_rl" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 1 0 -30 50 0 100 N
+P 2 1 1 0 0 0 0 100 N
+P 2 1 1 0 0 100 30 50 N
+X +3V3 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# 1x4_pins_grove_rl-connectors_rl
+#
+DEF 1x4_pins_grove_rl-connectors_rl J 0 40 Y N 1 F N
+F0 "J" -250 -50 50 H V C CNN
+F1 "1x4_pins_grove_rl-connectors_rl" 50 100 50 H V C CNN
+F2 "" -100 0 50 H I C CNN
+F3 "" -100 0 50 H I C CNN
+DRAW
+C -150 -50 22 0 1 0 N
+C -50 -50 22 0 1 0 N
+C 50 -50 22 0 1 0 N
+C 150 -50 22 0 1 0 N
+S -210 20 210 -100 0 1 0 N
+P 2 0 1 0 -190 -30 -150 0 N
+P 2 0 1 0 -150 -100 -150 -75 N
+P 2 0 1 0 -150 0 -110 -30 N
+P 2 0 1 0 -50 -100 -50 -75 N
+P 2 0 1 0 50 -75 50 -100 N
+P 2 0 1 0 150 -100 150 -75 N
+X 1 1 -150 -200 100 U 50 50 1 1 P
+X 2 2 -50 -200 100 U 50 50 1 1 P
+X 3 3 50 -200 100 U 50 50 1 1 P
+X 4 4 150 -200 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# DG390-5.0_rl-connectors_rl
+#
+DEF DG390-5.0_rl-connectors_rl J 0 40 Y N 1 F N
+F0 "J" 0 140 50 H V C CNN
+F1 "DG390-5.0_rl-connectors_rl" 0 -160 50 H V C CNN
+F2 "" 120 40 50 H I C CNN
+F3 "" 120 40 50 H I C CNN
+DRAW
+S -40 -30 40 -70 0 1 0 N
+S -40 70 40 30 0 1 0 N
+S -50 100 50 -100 1 1 10 f
+P 2 0 1 0 0 -30 0 -70 N
+P 2 0 1 0 0 70 0 30 N
+X 1 1 -200 50 150 R 50 50 1 1 P
+X 2 2 -200 -50 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# MAX31850K_rl-thermocouples_rl
+#
+DEF MAX31850K_rl-thermocouples_rl U 0 40 Y Y 1 F N
+F0 "U" -300 300 50 H V C CNN
+F1 "MAX31850K_rl-thermocouples_rl" 100 300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -350 250 350 -250 1 1 0 f
+X GND 1 -450 200 100 R 50 50 1 1 W
+X DNC 10 450 200 100 L 50 50 1 1 N
+X EP 11 0 -350 100 U 50 50 1 1 w
+X T- 2 -450 100 100 R 50 50 1 1 I
+X T+ 3 -450 0 100 R 50 50 1 1 I
+X VDD 4 -450 -100 100 R 50 50 1 1 W
+X DQ 5 -450 -200 100 R 50 50 1 1 B
+X AD0 6 450 -200 100 L 50 50 1 1 I
+X AD1 7 450 -100 100 L 50 50 1 1 I
+X AD2 8 450 0 100 L 50 50 1 1 I
+X AD3 9 450 100 100 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# capacitor_rl-passive_components_rl
+#
+DEF capacitor_rl-passive_components_rl C 0 40 N N 1 F N
+F0 "C" 0 150 50 H V C CNN
+F1 "capacitor_rl-passive_components_rl" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 1 1 10 -30 -80 -30 80 N
+P 2 1 1 10 30 -80 30 80 N
+X ~ 1 -150 0 114 R 50 50 1 1 P
+X ~ 2 150 0 114 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# inductor_rl-passive_components_rl
+#
+DEF inductor_rl-passive_components_rl L 0 40 N N 1 F N
+F0 "L" 0 100 50 H V C CNN
+F1 "inductor_rl-passive_components_rl" 0 -50 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+A -75 0 25 1 1799 1 1 0 N -50 0 -100 0
+A -25 0 25 1 1799 1 1 0 N 0 0 -50 0
+A 25 0 25 1 1799 1 1 0 N 50 0 0 0
+A 75 0 25 1 1799 1 1 0 N 100 0 50 0
+X 1 1 -150 0 50 R 50 50 1 1 P
+X 2 2 150 0 50 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library

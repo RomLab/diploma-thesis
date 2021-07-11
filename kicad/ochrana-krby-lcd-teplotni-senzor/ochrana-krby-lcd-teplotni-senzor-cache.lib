@@ -73,11 +73,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# connectors_rl_1x2_pins_header_rl
+# ochrana-krby-lcd-teplotni-senzor-rescue_1x2_pins_header_rl-connectors_rl
 #
-DEF connectors_rl_1x2_pins_header_rl P 0 40 Y N 1 F N
+DEF ochrana-krby-lcd-teplotni-senzor-rescue_1x2_pins_header_rl-connectors_rl P 0 40 Y N 1 F N
 F0 "P" 0 100 50 H V C CNN
-F1 "connectors_rl_1x2_pins_header_rl" 50 -200 50 H V C CNN
+F1 "ochrana-krby-lcd-teplotni-senzor-rescue_1x2_pins_header_rl-connectors_rl" 50 -200 50 H V C CNN
 F2 "" 50 0 50 H I C CNN
 F3 "" 50 0 50 H I C CNN
 DRAW
@@ -93,11 +93,11 @@ X 2 2 50 -150 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# diodes_rl_DS9503_eu_rl
+# ochrana-krby-lcd-teplotni-senzor-rescue_DS9503_eu_rl-diodes_rl
 #
-DEF diodes_rl_DS9503_eu_rl D 0 40 Y N 1 F N
+DEF ochrana-krby-lcd-teplotni-senzor-rescue_DS9503_eu_rl-diodes_rl D 0 40 Y N 1 F N
 F0 "D" -100 250 50 H V C CNN
-F1 "diodes_rl_DS9503_eu_rl" 0 -250 50 H V C CNN
+F1 "ochrana-krby-lcd-teplotni-senzor-rescue_DS9503_eu_rl-diodes_rl" 0 -250 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -137,11 +137,11 @@ X K 6 300 100 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# diodes_rl_undir_transil
+# ochrana-krby-lcd-teplotni-senzor-rescue_undir_transil-diodes_rl
 #
-DEF diodes_rl_undir_transil D 0 40 N N 1 F N
+DEF ochrana-krby-lcd-teplotni-senzor-rescue_undir_transil-diodes_rl D 0 40 N N 1 F N
 F0 "D" -50 150 50 H V C CNN
-F1 "diodes_rl_undir_transil" 0 -200 50 H V C CNN
+F1 "ochrana-krby-lcd-teplotni-senzor-rescue_undir_transil-diodes_rl" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW

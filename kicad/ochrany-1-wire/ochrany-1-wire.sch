@@ -60,7 +60,7 @@ F 3 "~" H 4650 2500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L connectors_rl:1x2_pins_header_rl P1
+L ochrany-1-wire-rescue:1x2_pins_header_rl-connectors_rl P1
 U 1 1 5E76B5E1
 P 3800 2650
 F 0 "P1" V 4075 2583 50  0000 C CNN
@@ -137,7 +137,7 @@ Connection ~ 4300 3700
 Wire Wire Line
 	4300 3700 4300 3800
 $Comp
-L connectors_rl:1x2_pins_header_rl P5
+L ochrany-1-wire-rescue:1x2_pins_header_rl-connectors_rl P5
 U 1 1 5EE25312
 P 3800 4250
 F 0 "P5" V 4075 4183 50  0000 C CNN
@@ -168,7 +168,7 @@ $EndComp
 Text Label 7150 4200 0    50   ~ 0
 data_max31850k
 $Comp
-L connectors_rl:1x2_pins_header_rl P6
+L ochrany-1-wire-rescue:1x2_pins_header_rl-connectors_rl P6
 U 1 1 5EE4C5C1
 P 7000 3450
 F 0 "P6" V 7150 3450 50  0000 C CNN
@@ -183,7 +183,7 @@ Wire Wire Line
 Wire Wire Line
 	7150 3500 7150 4200
 $Comp
-L connectors_rl:1x2_pins_header_rl P7
+L ochrany-1-wire-rescue:1x2_pins_header_rl-connectors_rl P7
 U 1 1 5F094A85
 P 6750 2450
 F 0 "P7" H 6950 2450 50  0000 C CNN
@@ -196,7 +196,7 @@ $EndComp
 Wire Wire Line
 	6800 2600 7150 2600
 $Comp
-L connectors_rl:1x2_pins_header_rl P8
+L ochrany-1-wire-rescue:1x2_pins_header_rl-connectors_rl P8
 U 1 1 5F0992AD
 P 6750 4350
 F 0 "P8" H 6550 4350 50  0000 C CNN
@@ -346,10 +346,10 @@ F 3 "~" H 4650 4100 50  0001 C CNN
 	1    4650 4100
 	0    1    1    0   
 $EndComp
-Text Notes 4350 3250 0    50   ~ 0
-level shifter
+Text Notes 4100 3200 0    50   ~ 0
+Převodník log. úrovně
 $Comp
-L power_rl:+3,3V #PWR?
+L ochrany-1-wire-rescue:+3,3V-power_rl #PWR?
 U 1 1 5FE0F44B
 P 4300 2000
 F 0 "#PWR?" H 4310 1940 50  0001 C CNN
@@ -360,7 +360,7 @@ F 3 "" H 4300 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power_rl:+3,3V #PWR?
+L ochrany-1-wire-rescue:+3,3V-power_rl #PWR?
 U 1 1 5FE0FC9F
 P 4300 3600
 F 0 "#PWR?" H 4310 3540 50  0001 C CNN
@@ -371,7 +371,7 @@ F 3 "" H 4300 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L diodes_rl:DS9503_eu_rl D5
+L ochrany-1-wire-rescue:DS9503_eu_rl-diodes_rl D5
 U 1 1 5FE0BC8E
 P 6150 2700
 F 0 "D5" H 6150 2950 50  0000 C CNN
@@ -382,7 +382,7 @@ F 3 "" H 6150 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L diodes_rl:DS9503_eu_rl D15
+L ochrany-1-wire-rescue:DS9503_eu_rl-diodes_rl D15
 U 1 1 5FE0C859
 P 6150 4300
 F 0 "D15" H 6150 4550 50  0000 C CNN

@@ -1,0 +1,83 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# +3,3V-power_rl
+#
+DEF +3,3V-power_rl #PWR 0 0 N Y 1 F N
+F0 "#PWR" 10 -60 50 H I C CNN
+F1 "+3,3V-power_rl" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 1 0 -30 50 0 100 N
+P 2 1 1 0 0 0 0 100 N
+P 2 1 1 0 0 100 30 50 N
+X +3V3 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# 1x2_pins_header_rl-connectors_rl
+#
+DEF 1x2_pins_header_rl-connectors_rl P 0 40 Y N 1 F N
+F0 "P" 0 100 50 H V C CNN
+F1 "1x2_pins_header_rl-connectors_rl" 50 -200 50 H V C CNN
+F2 "" 50 0 50 H I C CNN
+F3 "" 50 0 50 H I C CNN
+DRAW
+C -50 -10 10 0 1 18 N
+C 50 -10 10 0 1 18 N
+P 2 0 1 10 -100 -50 -100 30 N
+P 2 0 1 10 -100 -50 100 -50 N
+P 2 0 1 6 -50 -50 -50 -10 N
+P 2 0 1 6 50 -50 50 -10 N
+P 3 0 1 10 100 -50 100 30 -100 30 N
+X 1 1 -50 -150 100 U 50 50 1 1 P
+X 2 2 50 -150 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# DS9503_eu_rl-diodes_rl
+#
+DEF DS9503_eu_rl-diodes_rl D 0 40 Y N 1 F N
+F0 "D" -100 250 50 H V C CNN
+F1 "DS9503_eu_rl-diodes_rl" 0 -250 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C -50 -120 10 1 1 0 F
+C -50 100 10 1 1 0 F
+S -10 -90 120 -150 0 1 0 N
+S -10 130 120 70 0 1 0 N
+S 200 170 -200 170 1 1 0 N
+P 2 1 1 0 -210 100 -180 100 N
+P 2 1 1 0 -200 -190 -200 170 N
+P 2 1 1 0 -100 60 0 60 N
+P 2 1 1 0 -50 -50 -50 50 N
+P 2 1 1 0 -50 100 -190 100 N
+P 2 1 1 0 -50 100 -50 60 N
+P 2 1 1 8 -50 100 -50 100 N
+P 2 1 1 8 -50 100 -50 100 N
+P 2 1 1 0 -20 -120 -10 -120 N
+P 2 1 1 0 -10 100 -70 100 N
+P 2 1 1 0 0 50 -100 50 N
+P 2 1 1 0 0 50 10 40 N
+P 2 1 1 0 120 -120 150 -120 N
+P 2 1 1 0 120 100 150 100 N
+P 2 1 1 0 150 100 200 100 N
+P 2 1 1 0 200 -190 -200 -190 N
+P 2 1 1 0 200 -190 200 170 N
+P 3 1 1 0 0 60 5 60 15 50 N
+P 3 1 1 0 150 -120 150 0 200 0 N
+P 4 1 1 0 -50 -20 -50 -120 -40 -120 -20 -120 N
+P 4 1 1 0 0 -50 -100 -50 -50 50 0 -50 N
+P 5 1 1 0 -50 -120 -80 -120 -150 -120 -150 0 -200 0 N
+X K 1 -300 100 100 R 50 50 1 1 P
+X A 2 -300 0 100 R 50 50 1 1 P
+X ~ 3 -300 -100 100 R 50 50 1 1 N N
+X ~ 4 300 -100 100 L 50 50 1 1 N N
+X A 5 300 0 100 L 50 50 1 1 P
+X K 6 300 100 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library

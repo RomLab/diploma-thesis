@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name rele-modul-jeden-kanal-rescue)(type Legacy)(uri ${KIPRJMOD}/rele-modul-jeden-kanal-rescue.lib)(options "")(descr ""))
+)
