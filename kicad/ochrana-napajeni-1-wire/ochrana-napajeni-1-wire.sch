@@ -148,7 +148,7 @@ L ochrana-napajeni-1-wire-rescue:capacitor_rl-passive_components_rl C2
 U 1 1 5F24E72A
 P 6650 3850
 F 0 "C2" V 6604 3960 50  0000 L CNN
-F 1 "1,2n" V 6695 3960 50  0000 L CNN
+F 1 "1n2" V 6695 3960 50  0000 L CNN
 F 2 "capacitors_smd_rl:c_1206_rl" H 6650 3850 50  0001 C CNN
 F 3 "" H 6650 3850 50  0001 C CNN
 	1    6650 3850
@@ -185,7 +185,7 @@ L ochrana-napajeni-1-wire-rescue:1x2_pins_header_rl-connectors_rl P3
 U 1 1 5F29F6AB
 P 7000 3500
 F 0 "P3" H 6750 3500 50  0000 L CNN
-F 1 "1x2_pins_header_rl" H 6600 3600 50  0000 L CNN
+F 1 "1x2_pins_header" H 6600 3600 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7050 3500 50  0001 C CNN
 F 3 "" H 7050 3500 50  0001 C CNN
 	1    7000 3500
@@ -193,8 +193,8 @@ F 3 "" H 7050 3500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7050 3300 7050 3350
-Text Notes 7000 3750 0    50   ~ 0
-Červená LED
+Text Notes 7000 3850 0    50   ~ 0
+Červená LED\nLTL-42NEW8D
 Wire Wire Line
 	6100 3400 6100 3650
 Wire Wire Line
@@ -221,7 +221,7 @@ Connection ~ 7100 2900
 Wire Wire Line
 	7100 2900 7450 2900
 Text Notes 5300 4250 0    50   ~ 0
-max. I = 0,073 A\n114,64k
+max. I = 0,073 A\n114k64
 Wire Wire Line
 	3700 3950 3700 4150
 Wire Wire Line
@@ -318,7 +318,7 @@ L Device:R R12
 U 1 1 5FE0C1F5
 P 3700 4300
 F 0 "R12" H 3770 4346 50  0000 L CNN
-F 1 "200" H 3770 4255 50  0000 L CNN
+F 1 "200R" H 3770 4255 50  0000 L CNN
 F 2 "" V 3630 4300 50  0001 C CNN
 F 3 "~" H 3700 4300 50  0001 C CNN
 	1    3700 4300
@@ -351,7 +351,7 @@ L Device:R R21
 U 1 1 5FE12B5D
 P 7050 3150
 F 0 "R21" H 7120 3196 50  0000 L CNN
-F 1 "604" H 7120 3105 50  0000 L CNN
+F 1 "604R" H 7120 3105 50  0000 L CNN
 F 2 "" V 6980 3150 50  0001 C CNN
 F 3 "~" H 7050 3150 50  0001 C CNN
 	1    7050 3150
@@ -368,4 +368,7 @@ F 3 "" H 6100 3800 50  0001 C CNN
 	1    6100 3800
 	0    1    1    0   
 $EndComp
+NoConn ~ 5750 3500
+NoConn ~ 4850 3500
+NoConn ~ 4850 3400
 $EndSCHEMATC

@@ -1,4 +1,0 @@
-(sym_lib_table
-  (lib (name fireplace__lcd__temp_sensor__esd_protection-rescue)(type Legacy)(uri D:/kicad/thomas_thermostat/fireplace__lcd__temp_sensor__esd_protection/fireplace__lcd__temp_sensor__esd_protection_v3/fireplace__lcd__temp_sensor__esd_protection-rescue.lib)(options "")(descr ""))
-  (lib (name ochrana-krby-lcd-teplotni-senzor-rescue)(type Legacy)(uri ${KIPRJMOD}/ochrana-krby-lcd-teplotni-senzor-rescue.lib)(options "")(descr ""))
-)

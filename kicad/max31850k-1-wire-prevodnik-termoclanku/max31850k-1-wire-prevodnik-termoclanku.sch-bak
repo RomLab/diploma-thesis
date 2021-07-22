@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L thermocouples_rl:MAX31850K_rl U2
+L max31850k-1-wire-prevodnik-termoclanku-rescue:MAX31850K_rl-thermocouples_rl U2
 U 1 1 5FE095CF
 P 4850 3450
 F 0 "U2" H 4850 3875 50  0000 C CNN
@@ -64,7 +64,7 @@ Wire Wire Line
 Wire Wire Line
 	4850 3800 4850 4100
 $Comp
-L passive_components_rl:capacitor_rl C5
+L max31850k-1-wire-prevodnik-termoclanku-rescue:capacitor_rl-passive_components_rl C5
 U 1 1 5FE0D623
 P 3400 3000
 F 0 "C5" V 3354 3110 50  0000 L CNN
@@ -75,7 +75,7 @@ F 3 "" H 3400 3000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L passive_components_rl:capacitor_rl C6
+L max31850k-1-wire-prevodnik-termoclanku-rescue:capacitor_rl-passive_components_rl C6
 U 1 1 5FE0E09B
 P 3400 3400
 F 0 "C6" V 3354 3510 50  0000 L CNN
@@ -86,7 +86,7 @@ F 3 "" H 3400 3400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L passive_components_rl:capacitor_rl C7
+L max31850k-1-wire-prevodnik-termoclanku-rescue:capacitor_rl-passive_components_rl C7
 U 1 1 5FE0E717
 P 3400 3800
 F 0 "C7" V 3354 3910 50  0000 L CNN
@@ -162,7 +162,7 @@ Wire Wire Line
 Wire Wire Line
 	2650 3200 3400 3200
 $Comp
-L passive_components_rl:inductor_rl L1
+L max31850k-1-wire-prevodnik-termoclanku-rescue:inductor_rl-passive_components_rl L1
 U 1 1 5FE1AEF9
 P 2150 3200
 F 0 "L1" H 2150 3390 50  0000 C CNN
@@ -173,7 +173,7 @@ F 3 "" H 2150 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L passive_components_rl:inductor_rl L2
+L max31850k-1-wire-prevodnik-termoclanku-rescue:inductor_rl-passive_components_rl L2
 U 1 1 5FE1BFAF
 P 2150 3600
 F 0 "L2" H 2150 3790 50  0000 C CNN
@@ -192,7 +192,7 @@ Wire Wire Line
 	2650 3200 2300 3200
 Connection ~ 2650 3200
 $Comp
-L connectors_rl:DG390-5.0_rl J1
+L max31850k-1-wire-prevodnik-termoclanku-rescue:DG390-5.0_rl-connectors_rl J1
 U 1 1 5FE1FE3F
 P 1600 3400
 F 0 "J1" H 1600 3150 50  0000 C CNN
@@ -232,7 +232,7 @@ $EndComp
 Wire Wire Line
 	2550 4100 2550 4050
 $Comp
-L passive_components_rl:capacitor_rl C8
+L max31850k-1-wire-prevodnik-termoclanku-rescue:capacitor_rl-passive_components_rl C8
 U 1 1 5FE31334
 P 4050 3800
 F 0 "C8" V 4004 3910 50  0000 L CNN
@@ -267,7 +267,7 @@ Wire Wire Line
 Text Label 4250 3650 2    50   ~ 0
 dq
 $Comp
-L passive_components_rl:capacitor_rl C2
+L max31850k-1-wire-prevodnik-termoclanku-rescue:capacitor_rl-passive_components_rl C2
 U 1 1 5FE387C4
 P 2100 2200
 F 0 "C2" V 2054 2310 50  0000 L CNN
@@ -278,7 +278,7 @@ F 3 "" H 2100 2200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L passive_components_rl:capacitor_rl C1
+L max31850k-1-wire-prevodnik-termoclanku-rescue:capacitor_rl-passive_components_rl C1
 U 1 1 5FE399C9
 P 1650 2200
 F 0 "C1" V 1604 2310 50  0000 L CNN
@@ -296,7 +296,7 @@ Connection ~ 2100 2000
 Wire Wire Line
 	2100 2000 2250 2000
 $Comp
-L passive_components_rl:capacitor_rl C3
+L max31850k-1-wire-prevodnik-termoclanku-rescue:capacitor_rl-passive_components_rl C3
 U 1 1 5FE3C738
 P 3000 2200
 F 0 "C3" V 2954 2310 50  0000 L CNN
@@ -307,7 +307,7 @@ F 3 "" H 3000 2200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L passive_components_rl:capacitor_rl C4
+L max31850k-1-wire-prevodnik-termoclanku-rescue:capacitor_rl-passive_components_rl C4
 U 1 1 5FE3D2ED
 P 3400 2200
 F 0 "C4" V 3354 2310 50  0000 L CNN
@@ -510,7 +510,7 @@ Connection ~ 1900 4700
 Wire Wire Line
 	1900 4300 1900 4250
 $Comp
-L connectors_rl:1x4_pins_grove_rl J2
+L max31850k-1-wire-prevodnik-termoclanku-rescue:1x4_pins_grove_rl-connectors_rl J2
 U 1 1 5FEA3614
 P 6450 3500
 F 0 "J2" V 6150 3400 50  0000 L CNN
@@ -553,13 +553,13 @@ ad1
 Text Label 5450 3650 0    50   ~ 0
 ad0
 Text Notes 1400 3700 0    50   ~ 0
-thermocouple
+Termočlánek
 Text Notes 6150 3900 0    50   ~ 0
-input/output
+Vstup/výstup
 Text Notes 2850 4550 0    50   ~ 0
-adresses
+Adresace
 $Comp
-L power_rl:+3,3V #PWR1
+L max31850k-1-wire-prevodnik-termoclanku-rescue:+3,3V-power_rl #PWR1
 U 1 1 5FEC5542
 P 3400 1950
 F 0 "#PWR1" H 3410 1890 50  0001 C CNN
@@ -585,7 +585,7 @@ Wire Wire Line
 Wire Wire Line
 	3400 2000 3800 2000
 $Comp
-L power_rl:+3,3V #PWR3
+L max31850k-1-wire-prevodnik-termoclanku-rescue:+3,3V-power_rl #PWR3
 U 1 1 5FECC748
 P 4500 1950
 F 0 "#PWR3" H 4510 1890 50  0001 C CNN
@@ -596,7 +596,7 @@ F 3 "" H 4500 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power_rl:+3,3V #PWR4
+L max31850k-1-wire-prevodnik-termoclanku-rescue:+3,3V-power_rl #PWR4
 U 1 1 5FECD33A
 P 1900 4250
 F 0 "#PWR4" H 1910 4190 50  0001 C CNN
@@ -607,7 +607,7 @@ F 3 "" H 1900 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power_rl:+3,3V #PWR2
+L max31850k-1-wire-prevodnik-termoclanku-rescue:+3,3V-power_rl #PWR2
 U 1 1 5FECFF7B
 P 4050 3100
 F 0 "#PWR2" H 4060 3040 50  0001 C CNN
@@ -617,10 +617,10 @@ F 3 "" H 4050 3100 50  0001 C CNN
 	1    4050 3100
 	1    0    0    -1  
 $EndComp
-Text Notes 2300 1700 0    50   ~ 0
-power supply
+Text Notes 2500 1650 0    50   ~ 0
+LDO
 Text Notes 4750 1750 0    50   ~ 0
-level shifter
+Převodník log. úrovně
 $Comp
 L Device:R R3
 U 1 1 5FEFB788

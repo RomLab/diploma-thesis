@@ -514,7 +514,7 @@ L max31850k-1-wire-prevodnik-termoclanku-rescue:1x4_pins_grove_rl-connectors_rl 
 U 1 1 5FEA3614
 P 6450 3500
 F 0 "J2" V 6150 3400 50  0000 L CNN
-F 1 "1x4_pins_grove_rl" V 6700 3150 50  0000 L CNN
+F 1 "1x4_pins_grove" V 6700 3150 50  0000 L CNN
 F 2 "" H 6350 3500 50  0001 C CNN
 F 3 "" H 6350 3500 50  0001 C CNN
 	1    6450 3500

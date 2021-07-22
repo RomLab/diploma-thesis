@@ -70,11 +70,25 @@ X B 3 200 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# connectors_rl_1x2_screw_term_block
+# passive_component_rl_resistor_eu
 #
-DEF connectors_rl_1x2_screw_term_block J 0 40 Y N 1 F N
+DEF passive_component_rl_resistor_eu R 0 40 N Y 1 F N
+F0 "R" 0 100 50 H V C CNN
+F1 "passive_component_rl_resistor_eu" 0 -100 50 H V C CNN
+F2 "" 0 0 50 V I C CNN
+F3 "" 0 0 50 V I C CNN
+DRAW
+S 100 -40 -100 40 1 1 10 N
+X ~ 1 -150 0 50 R 50 50 1 1 P
+X ~ 2 150 0 50 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# pca9615-i2-sbernice-rescue_1x2_screw_term_block-connectors_rl
+#
+DEF pca9615-i2-sbernice-rescue_1x2_screw_term_block-connectors_rl J 0 40 Y N 1 F N
 F0 "J" 0 150 50 H V C CNN
-F1 "connectors_rl_1x2_screw_term_block" 0 -150 50 H V C CNN
+F1 "pca9615-i2-sbernice-rescue_1x2_screw_term_block-connectors_rl" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -90,11 +104,11 @@ X 2 2 -200 -50 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# connectors_rl_1x5_pins_header_rl
+# pca9615-i2-sbernice-rescue_1x5_pins_header_rl-connectors_rl
 #
-DEF connectors_rl_1x5_pins_header_rl P 0 40 Y N 1 F N
+DEF pca9615-i2-sbernice-rescue_1x5_pins_header_rl-connectors_rl P 0 40 Y N 1 F N
 F0 "P" -200 100 50 H V C CNN
-F1 "connectors_rl_1x5_pins_header_rl" 0 -200 50 H V C CNN
+F1 "pca9615-i2-sbernice-rescue_1x5_pins_header_rl-connectors_rl" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -117,11 +131,52 @@ X 5 5 200 -150 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# connectors_rl_rj45_rl
+# pca9615-i2-sbernice-rescue_PCA9615_RL-interface_i2c_rl
 #
-DEF connectors_rl_rj45_rl J 0 40 Y Y 1 F N
+DEF pca9615-i2-sbernice-rescue_PCA9615_RL-interface_i2c_rl U? 0 40 Y Y 1 F N
+F0 "U?" -300 300 50 H V C CNN
+F1 "pca9615-i2-sbernice-rescue_PCA9615_RL-interface_i2c_rl" 100 300 50 H V C CNN
+F2 "" -200 400 50 H I C CNN
+F3 "" -200 400 50 H I C CNN
+F4 "NXP Semiconductors" 0 0 50 H I C CNN "Manufacture"
+DRAW
+S -350 250 350 -250 0 1 0 f
+X VDD(A) 1 -450 200 100 R 50 50 1 1 W
+X VDD(B) 10 450 200 100 L 50 50 1 1 W
+X SDA 2 -450 100 100 R 50 50 1 1 B
+X EN 3 -450 0 100 R 50 50 1 1 I
+X SCL 4 -450 -100 100 R 50 50 1 1 B
+X GND 5 -450 -200 100 R 50 50 1 1 W
+X DSCLM 6 450 -200 100 L 50 50 1 1 B
+X DSCLP 7 450 -100 100 L 50 50 1 1 B
+X DSDAP 8 450 0 100 L 50 50 1 1 B
+X DSDAM 9 450 100 100 L 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# pca9615-i2-sbernice-rescue_capacitor_rl-passive_components_rl
+#
+DEF pca9615-i2-sbernice-rescue_capacitor_rl-passive_components_rl C 0 40 N N 1 F N
+F0 "C" 0 150 50 H V C CNN
+F1 "pca9615-i2-sbernice-rescue_capacitor_rl-passive_components_rl" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 1 1 10 -30 -80 -30 80 N
+P 2 1 1 10 30 -80 30 80 N
+X ~ 1 -150 0 114 R 50 50 1 1 P
+X ~ 2 150 0 114 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# pca9615-i2-sbernice-rescue_rj45_rl-connectors_rl
+#
+DEF pca9615-i2-sbernice-rescue_rj45_rl-connectors_rl J 0 40 Y Y 1 F N
 F0 "J" -250 600 50 H V C CNN
-F1 "connectors_rl_rj45_rl" 0 -500 50 H V C CNN
+F1 "pca9615-i2-sbernice-rescue_rj45_rl-connectors_rl" 0 -500 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -143,68 +198,6 @@ X ~ 5 400 100 100 L 50 50 1 1 P
 X ~ 6 400 200 100 L 50 50 1 1 P
 X ~ 7 400 300 100 L 50 50 1 1 P
 X ~ 8 400 400 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# interface_i2c_rl_PCA9615_RL
-#
-DEF interface_i2c_rl_PCA9615_RL U? 0 40 Y Y 1 F N
-F0 "U?" -300 300 50 H V C CNN
-F1 "interface_i2c_rl_PCA9615_RL" 100 300 50 H V C CNN
-F2 "" -200 400 50 H I C CNN
-F3 "" -200 400 50 H I C CNN
-F4 "NXP Semiconductors" 0 0 50 H I C CNN "Manufacture"
-DRAW
-S -350 250 350 -250 0 1 0 f
-X VDD(A) 1 -450 200 100 R 50 50 1 1 W
-X VDD(B) 10 450 200 100 L 50 50 1 1 W
-X SDA 2 -450 100 100 R 50 50 1 1 B
-X EN 3 -450 0 100 R 50 50 1 1 I
-X SCL 4 -450 -100 100 R 50 50 1 1 B
-X GND 5 -450 -200 100 R 50 50 1 1 W
-X DSCLM 6 450 -200 100 L 50 50 1 1 B
-X DSCLP 7 450 -100 100 L 50 50 1 1 B
-X DSDAP 8 450 0 100 L 50 50 1 1 B
-X DSDAM 9 450 100 100 L 50 50 1 1 B
-ENDDRAW
-ENDDEF
-#
-# passive_components_rl_capacitor_rl
-#
-DEF passive_components_rl_capacitor_rl C 0 40 N N 1 F N
-F0 "C" 0 150 50 H V C CNN
-F1 "passive_components_rl_capacitor_rl" 0 -150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- C_*
-$ENDFPLIST
-DRAW
-P 2 1 1 10 -30 -80 -30 80 N
-P 2 1 1 10 30 -80 30 80 N
-X ~ 1 -150 0 114 R 50 50 1 1 P
-X ~ 2 150 0 114 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# passive_components_rl_resistor_rl
-#
-DEF passive_components_rl_resistor_rl R 0 20 N N 1 F N
-F0 "R" 0 80 50 H V C CNN
-F1 "passive_components_rl_resistor_rl" 0 -100 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- R_*
-$ENDFPLIST
-DRAW
-P 2 1 1 0 -90 0 -100 0 N
-P 2 1 1 0 90 0 100 0 N
-P 5 1 1 0 -90 0 -75 40 -60 0 -45 -40 -30 0 N
-P 5 1 1 0 -30 0 -15 40 0 0 15 -40 30 0 N
-P 5 1 1 0 30 0 45 40 60 0 75 -40 90 0 N
-X ~ 1 -150 0 50 R 50 50 1 1 P
-X ~ 2 150 0 50 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #

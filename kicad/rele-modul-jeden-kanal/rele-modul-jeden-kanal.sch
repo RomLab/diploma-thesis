@@ -14,11 +14,11 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:Screw_Terminal_01x03 J1
+L connector_rl:1x3_screw_term_block J1
 U 1 1 5FE602A7
 P 5900 2550
 F 0 "J1" H 5850 2750 50  0000 L CNN
-F 1 "Screw_Terminal_01x03" V 5900 1500 50  0000 L CNN
+F 1 "1x3_screw_term_block" V 5900 1500 50  0000 L CNN
 F 2 "" H 5900 2550 50  0001 C CNN
 F 3 "~" H 5900 2550 50  0001 C CNN
 	1    5900 2550
@@ -62,7 +62,7 @@ L Device:R R2
 U 1 1 5FE6311D
 P 3600 3250
 F 0 "R2" V 3500 3250 50  0000 C CNN
-F 1 "510" V 3700 3250 50  0000 C CNN
+F 1 "510R" V 3700 3250 50  0000 C CNN
 F 2 "" V 3530 3250 50  0001 C CNN
 F 3 "~" H 3600 3250 50  0001 C CNN
 	1    3600 3250
@@ -147,7 +147,7 @@ L rele-modul-jeden-kanal-rescue:LED-diodes_rl D1
 U 1 1 5FE6A2E7
 P 2500 3250
 F 0 "D1" H 2493 3467 50  0000 C CNN
-F 1 "red LED" H 2493 3376 50  0000 C CNN
+F 1 "Červená LED" H 2493 3376 50  0000 C CNN
 F 2 "" H 2500 3250 50  0001 C CNN
 F 3 "~" H 2500 3250 50  0001 C CNN
 	1    2500 3250

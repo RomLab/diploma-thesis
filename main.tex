@@ -39,8 +39,9 @@
 
 % Balicek na posunuti cislovani stranek u PDF prilohy
 \usepackage{fancyhdr}
-
+% Importovani text souboru z podslozek
 \usepackage{import}
+
 
 
 
@@ -204,6 +205,8 @@ Prohlašuji, že jsem předloženou práci vypracoval samostatně a že jsem uve
 \newacronym{ldo}{LDO}{Low-dropout regulator}
 \newacronym{rmii}{RMII}{Reduced Media­-Independent Interface}
 \newacronym{pet-g}{PET-G}{Polyethylentereftalát, „G“ znamená modifikovaný glykol}
+\newacronym{dtr}{DTR}{Data Terminal Ready}
+\newacronym{rts}{RTS}{Request To Send}
 
 
 \makeglossaries
@@ -229,6 +232,7 @@ Prohlašuji, že jsem předloženou práci vypracoval samostatně a že jsem uve
 \part{Praktická část}
 
 \input{choosing-of-components-devices}
+\input{software-part}
 %\part{Your Party}
 
 %\blindmathtrue
@@ -242,23 +246,38 @@ Prohlašuji, že jsem předloženou práci vypracoval samostatně a že jsem uve
 
 %\printindex
 
-\chapter{Nástěnný snímač prostorové teploty – Ethernet}
+\chapter{Schéma – Nástěnný snímač prostorové teploty – Ethernet}
 \label{app:nastenny-snimac-prostorove-teploty-ethernet}
 \includepdf[pages=-,angle=90,pagecommand={\thispagestyle{includedpages}}]{appendix/nastenny-snimac-prostorove-teploty-ethernet/esp32-periferie.pdf}
 \includepdf[pages=-,angle=90,pagecommand={\thispagestyle{includedpages}}]{appendix/nastenny-snimac-prostorove-teploty-ethernet/ethernet.pdf}
 \includepdf[pages=-,angle=90,pagecommand={\thispagestyle{includedpages}}]{appendix/nastenny-snimac-prostorove-teploty-ethernet/napajeni.pdf}
 
 
-\chapter{Nástěnný snímač prostorové teploty – WiFi}
+\chapter{Schéma – Nástěnný snímač prostorové teploty – WiFi}
 \label{app:nastenny-snimac-prostorove-teploty-wifi}
 \includepdf[pages=-,angle=90,pagecommand={\thispagestyle{includedpages}}]{appendix/nastenny-snimac-prostorove-teploty-wifi/esp32-periferie.pdf}
 \includepdf[pages=-,angle=90,pagecommand={\thispagestyle{includedpages}}]{appendix/nastenny-snimac-prostorove-teploty-wifi/napajeni.pdf}
+
+
+
+
+\chapter{Schéma - Ostatní}
+\label{app:schemata-ostatni}
+\includepdf[pages=-,angle=90,pagecommand={\thispagestyle{includedpages}}]{appendix/vstupy-vystupy-rpi.pdf}
+\includepdf[pages=-,angle=90,pagecommand={\thispagestyle{includedpages}}]{appendix/prevodnik-usb-uart.pdf}
+\includepdf[pages=-,angle=90,pagecommand={\thispagestyle{includedpages}}]{appendix/krbova-indikace-1-wire-ochrana-napajeni.pdf}
+
+
 
 \chapter{Krabička pro nástěnný snímač prostorové teploty}
 \label{app:krabicka-pro-nastenny-snimac-prostorove-teploty}
 
 %\input{/appendix/box-wall-sensor-of-room-temperature}
 \subimport{appendix}{box-wall-sensor-of-room-temperature.tex}
+
+\chapter{Rozdělovač podlahové vytápění}
+\label{app:rozdelovac-podlahoveho-vytapeni}
+\subimport{appendix}{distributor-first-floor.tex}
 
 %\bibliographystyle{amsalpha}
 %\bibliography{ctutest}

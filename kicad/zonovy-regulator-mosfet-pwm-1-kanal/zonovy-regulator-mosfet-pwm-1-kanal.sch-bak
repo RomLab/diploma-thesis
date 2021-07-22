@@ -28,7 +28,7 @@ L connector_rl:1x2_screw_term_block J1
 U 1 1 5FA20064
 P 11200 5600
 F 0 "J1" H 11280 5642 50  0000 L CNN
-F 1 "EBBA-02-C-SS-BU" H 11280 5551 50  0000 L CNN
+F 1 "1x2_screw_term_block" H 11280 5551 50  0000 L CNN
 F 2 "terminal_blocks_th_rl:xy301v_a_5_2p_rl" H 11200 5600 50  0001 C CNN
 F 3 "" H 11200 5600 50  0001 C CNN
 	1    11200 5600
@@ -94,7 +94,7 @@ L passive_component_rl:resistor_eu R1
 U 1 1 5FC7A4B9
 P 12700 5950
 F 0 "R1" V 12654 6018 50  0000 L CNN
-F 1 "2,2k" V 12745 6018 50  0000 L CNN
+F 1 "2k2" V 12745 6018 50  0000 L CNN
 F 2 "resistors_smd_rl:r_1206_rl" H 12700 5950 50  0001 C CNN
 F 3 "" H 12700 5950 50  0001 C CNN
 	1    12700 5950
@@ -178,8 +178,8 @@ F 3 "" H 11000 6650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10200 6050 10450 6050
-Text Notes 13100 6150 0    50   ~ 0
-Zelená LED\nLTL-42NGY8D\nUf = 2 V\nUf = 10 mA
+Text Notes 12950 6200 0    50   ~ 0
+Zelená LED
 Wire Wire Line
 	12700 6550 12400 6550
 Wire Wire Line
@@ -209,4 +209,6 @@ Wire Wire Line
 Text Notes 12100 6950 0    50   ~ 0
 Pouzdro\npřepínače
 NoConn ~ 11900 5950
+Text Notes 12700 7150 0    50   ~ 0
+PE
 $EndSCHEMATC

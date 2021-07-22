@@ -1,4 +1,4 @@
-update=10.07.2021 20:22:29
+update=22.07.2021 22:33:14
 version=1
 last_client=kicad
 [general]
@@ -34,7 +34,7 @@ LibDir=
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=C:/Users/Roman Labovský/Desktop/
+PlotDirectoryName=D:/ČVUT/Magistr/Diplomová práce/Práce Tex/diploma_thesis/images/svg/kicad/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=
