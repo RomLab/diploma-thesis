@@ -1,8 +1,8 @@
 \section{Zónový regulátor}
-Zónový regulátor se skládá s modulu PCA9615 (viz část \label{ses:i2c-sbernice} (I$^2$C)) pro realizaci I$^2$C sběrnice pomocí diferenciálních párů. Na modul je následně napojen zakoupený modul s obvodem PCA9685 od firmy NXP Semiconductors. Výstupy z modulu jsou napojeny na DPS, která zapíná/vypíná (respektive ke PWM regulaci) jednotlivé termoelektrické pohony (celkově 12 pohonů, každý je řízen samostatně), čímž dochází k regulaci otopné vody do otopných okruhů. Zonové regulátory jsou umístěny u rozdělovače otopných okruhů v přízemí a patře domu, celkově se jedná o dvě vyrobená zařízení.
+Zónový regulátor se skládá s modulu PCA9615 (viz část \label{ses:i2c-sbernice} (I$^2$C)) pro realizaci I$^2$C sběrnice pomocí diferenciálních párů. Na modul je následně napojen zakoupený modul s obvodem PCA9685 od firmy NXP Semiconductors. Výstupy z modulu jsou napojeny na DPS, která zapíná/vypíná (respektive PWM regulace) jednotlivé termoelektrické pohony (celkově 12 pohonů, každý je řízen samostatně), čímž dochází k regulaci otopné vody do otopných okruhů. Zonové regulátory jsou umístěny u rozdělovače otopných okruhů v přízemí a~patře domu, celkově se jedná o dvě vyrobená zařízení.
 
 \subsubsection{PCA9685}
-Modul s obvodem PCA9685 umožňuje pomocí I$^2$C sběrnice ovládat 16 výstupů se stejnou individuální hodnotou PWM (se střídou 0\% až 100 \%), frekvence je programovatelná od 24 Hz do 1\,526 Hz. Každý kanál navíc může dodat 10~mA jako source, případně 25 mA jako sink (což je 160 mA respektive 400~mA celkově).
+Modul s obvodem PCA9685 umožňuje pomocí I$^2$C sběrnice ovládat 16 výstupů se stejnou individuální hodnotou PWM (se střídou 0 \% až 100 \%), frekvence je programovatelná od 24 Hz do 1\,526 Hz. Každý kanál navíc může dodat 10~mA jako source, případně 25 mA jako sink (což je 160 mA respektive 400~mA celkově).
 
 \subsubsection{DPS pro ovládání termoelektrických pohonů}
 Termoelektrické pohony jsou ovládány na základě hodnoty PWM z modulu PCA9685 (viz předchozí bod), každý výstupu ovládá jednotlivý pohon. Vzhledem k tomu, že termoelektrické pohony jsou na stejnosměrné napětí 24 V, je nutné využít napěťový převodník z 5 V na 24 V. K tomu slouží tranzistor MOSFET (DMN3023L-7). V závislosti na hodnotě PWM na jeho vstupu (gate) je otevírán/zavírán a dochází tak k regulaci napětí/proudu v~termoelektrickém pohonu, který je zapojen jako zátěž (přes drain). Paralelně k~tranzistoru se nachází přepínač, který slouží v případě poruchy k manuálnímu zapnutí/vypnutí pohonu. Přepínač má jmenovitý proud 0,5~A, což je dostatečné pro termoelektrický pohon, kterým při zapnutí teče maximální proud 250 mA (následně dochází ke snižování a saturaci proudu). Každý kanál obsahuje zelenou LED pro signalizaci, zda dochází k ovládání. Jak již bylo řečeno pohony jsou napájeny pomocí 24 V, jsou vytvořené dvě napájecí větve s obvodem TPC26600 (popsaný v části \ref{sec:napajeni-1-wire-sbernice}), rozdíl spočívá ve vstupním napájení, které činí 24 V. Jsou tedy rozdílné i~maximální a~minimální povolené meze, které činí max. 24,25 V a min. 10~V. Dále každá větev má nastavený maximální proud 1,5 A (každý pohon má maximální hodnotu proudu při zapnutí 250 mA pro celkově 6 pohonů na větev). Vzhledem k jednoduchosti obvodu TPS26600 a k jeho vlastnostem (především pro automatickou detekci odstranění závady, bez nutnosti restartu zařízení) bylo raději zvoleno zapojení se dvěma větvemi (maximální proud pro TPS26600 činí 2,21 A) než využití jiného integrovaného obvodu pro sloučení do jedné větve. Na obrázku \ref{fig:zonovy-regulator-mosfet-pwm-1-kanal} je zapojení jednoho kanálu pro ovládání termoelektrického pohonu.  Na obrázku \ref{fig:dps-zonovy-regulator-spodni-strana} spodní strana realizované DPS a na obrázku \ref{fig:zonovy-regulator-vrchni-strana} je vrchní strana, včetně osazeného modulu s obvodem PCA9615. Na obrázku \ref{fig:zonovy-regulator-spodni-strana} je spodní část panelu s DPS zonového regulátoru a na obrázku \ref{fig:zonovy-regulator-vrchni-strana} je čelní část panelu.  Celkové schéma zapojení je v příloze \ref{app:schemata-ostatni}. Umístění DPS v samotném rozdělovači pro přízemí je v příloze \ref{app:rozdelovac-podlahoveho-vytapeni}.
@@ -32,15 +32,15 @@ Termoelektrické pohony jsou ovládány na základě hodnoty PWM z modulu PCA968
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{images/zonovy-regulator/zonovy-regulator-spodni-strana.png}
+    \includegraphics[width=0.95\textwidth]{images/zonovy-regulator/zonovy-regulator-spodni-strana.png}
     \caption{Zadní část panelu zónového regulátoru.}
     \label{fig:zonovy-regulator-spodni-strana}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{images/zonovy-regulator/zonovy-regulator-vrchni-strana.png}
-    \caption[Čelní část panelu zónového regulátoru.]{Čelní část panelu zónového regulátoru se signalizačními LED a manuálním ovládáním pomocí spínačů.}
+    \includegraphics[width=0.95\textwidth]{images/zonovy-regulator/zonovy-regulator-vrchni-strana.png}
+    \caption[Čelní část panelu zónového regulátoru.]{Čelní část panelu zónového regulátoru se signalizačními LED a~manuálním ovládáním pomocí spínačů.}
     \label{fig:zonovy-regulator-vrchni-strana}
 \end{figure}
 

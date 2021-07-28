@@ -6,14 +6,14 @@ V rámci řídicího systému existují tyto typy řízení:
 
 \begin{itemize}
   \item Řízení vytápění podle chodbových termostatů.
-  \item Řízení vytápění podle nástěnných snímačů prostorových teplot.
+  \item Řízení vytápění podle nástěnných snímačů prostorové teploty.
   \item Řízení vytápění podle teplotních plánů.
   \item Řízení vytápění podle teplotních plánů s úpravou podle předpovědi počasí.
 \end{itemize}
 
 Předpokládá se, že centrální zásobník otopné vody je průběžně ohříván během dne pomocí přebytků energie přes výměníky u krb. Tím se tedy předpokládá, že zásobník je nahřán pro případné potřeby vytápění. Je kladena priorita na získávání ohřáté otopné vody ze zdroje tepla zmíněná dříve. Uživatelé jsou upozorňováni signalizací na displejích jak u krbů, tak i na nástěnných snímačích prostorové teploty, přímo v řídícím systému (možné i notifikace na mobil, e-mail) či LED diodami (rozsvícení všech) u krbů, že je potřeba zatopit v krbech, pokud systém vyhodnotí, že je potřeb vytápět. V případě, že tomu k tomu nedojde využívá se plynový kondenzační kotel, který dohřívá zásobník (ten je možný ovládat automaticky).
 
-Na obrázku \ref{} je rozhraní pro nastavení vytápění. V levém menu jsou jednotlivé patra s termostaty a teplotními plány (popsáno níže). V záložce záznamy, historie jsou zaznamenány jednotlivé stavy ovládacích prvků a~samotná historie dat, především teplotních senzorů. Dále se zde nachází nastavení uživatelské profilu, tak i celého systému. V horním menu jsou další záložky pro nastavení vytápění, též popsány níže v textu.
+Na obrázku \ref{fig:prehled-ha} je rozhraní pro nastavení vytápění. V levém menu jsou jednotlivé patra s termostaty a teplotními plány (popsáno níže). V záložce záznamy, historie jsou zaznamenány jednotlivé stavy ovládacích prvků a~samotná historie dat, především teplotních senzorů. Dále se zde nachází nastavení uživatelské profilu, tak i celého systému. V horním menu jsou další záložky pro nastavení vytápění, též popsány níže v textu.
 
 \begin{figure}[H]
     \centering
@@ -26,7 +26,7 @@ V záložce \textbf{přehled} (obrázek \ref{fig:zalozka-prehled}) je pro přehl
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{images/software-ha/zalozka-prehled.png}
+    \includegraphics[width=0.8\textwidth]{images/software-ha/zalozka-prehled.png}
     \caption{Záložka přehled v HA.}
     \label{fig:zalozka-prehled}
 \end{figure}
@@ -72,8 +72,8 @@ V záložce \textbf{ostatní} je v části „ovládání čerpadel – vodní k
 \subsubsection{Řízení vytápění podle chodbových termostatů}
 V přízemí a v patře je na chodbě umístěn jeden lokání termostat popsaný v~části \ref{sec:digitalni-chodbove-termostaty}. Tento termostat na základě lokálního nastavení (není součástí řídicího systému) spínání/rozpínání výstupní relé při požadavku na vytápění. Tento požadavek se následně vyhodnotí v centrálním systému (popsáno v části \ref{sec:typy-rizeni-vytapeni} v části zařízení) a dojde k sepnutí nebo rozepnutí daného chodbového oběhového čerpadlo pro podlahové vytápění a~otevření všech okruhů podlahové vytápění. Dochází tedy k řízení vytápění všech místností na patře podle jednoho centrálního termostatu. 
 
-\subsection{Řízení vytápění podle nástěnných snímačů prostorových teplot}
-\label{sec:rizeni-vytapeni-podle-nastennych-snimacu-prostorovych-teplot}
+\subsection{Řízení vytápění podle nástěnných snímačů prostorové teploty}
+\label{sec:rizeni-vytapeni-podle-nastennych-snimacu-prostorove-teploty}
 Podle aktuální teploty naměřenou z každé místnosti je ovládán daný otopný okruh pro vytápění. Na základě požadované teploty, kterou je možné zadat přímo v systému HA (viz obrázek \ref{fig:lokalni-termostat-ha}) nebo je možné teplotu nastavit přímo v~místnosti pomocí tlačítek na nástěnném snímači prostorové teploty, tím dojde k přenesené požadované teploty do systému a zobrazení na daném termostatu, nastavení funguje i opačně. Řízení vytápění místnosti je dáno hysterezí 0,5~°C. Regulace vytápění tedy reaguje na aktuální naměřenou teplotu.
 
 \begin{figure}[H]
@@ -96,7 +96,7 @@ Zamyslet se nad osaháváním místností a aplikování predikce
 
 \subsection{Řízení vytápění podle teplotních plánů} 
 \label{sec:rizeni-vytapeni-podle-teplotnich-planu}
-Další možností řízení vytápění jednotlivých místností je podle nadefinovaných časových plánů. Uživatel má možnost si pro každou místnost v rámci 24 hodin nadefinovat časové úseky s danou požadovanou teplotou. Takto nastavené časové plány se průběžně kontrolují systémem a nastavuje aktuálně požadovanou teplotu do lokálního nástěnného snímače teploty i se objeví na termostatu v HA (viz obrázek \ref{fig:lokalni-termostat-ha}). Následně tedy dochází k regulaci vytápění podle popisu v části \ref{sec:rizeni-vytapeni-podle-nastennych-snimacu-prostorovych-teplo}. rozhraní pro nastavení časových úseků je na obrázku \ref{fig:teplotni-plan-ha}. Uživatel si může jednotlivé úseky přidávat nebo odebírat (min. počet časových úseků jsou dva). Uživatel má na výběr zda se časové úseky aplikují na všechny v dny v týdnu nebo jen pracovní dny, víkend či výběr jen konkrétních dnů v týdnu. Dále je možné nadefinovat, zda se pro daný úsek má vytápět nebo naopak se topit nemá.
+Další možností řízení vytápění jednotlivých místností je podle nadefinovaných časových plánů. Uživatel má možnost si pro každou místnost v rámci 24 hodin nadefinovat časové úseky s danou požadovanou teplotou. Takto nastavené časové plány se průběžně kontrolují systémem a nastavuje aktuálně požadovanou teplotu do lokálního nástěnného snímače teploty i se objeví na termostatu v HA (viz obrázek \ref{fig:lokalni-termostat-ha}). Následně tedy dochází k regulaci vytápění podle popisu v části \ref{sec:rizeni-vytapeni-podle-nastennych-snimacu-prostorove-teploty}. Rozhraní pro nastavení časových úseků je na obrázku \ref{fig:teplotni-plan-ha}. Uživatel si může jednotlivé úseky přidávat nebo odebírat (min. počet časových úseků jsou dva). Uživatel má na výběr zda se časové úseky aplikují na všechny v dny v týdnu nebo jen pracovní dny, víkend či výběr konkrétních dnů v týdnu. Dále je možné nadefinovat, zda se pro daný úsek má vytápět nebo naopak se topit nemá.
 
 \begin{figure}[H]
     \centering

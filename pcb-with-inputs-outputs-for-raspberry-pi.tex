@@ -21,7 +21,7 @@ Na obrázku \ref{fig:ochrany-1-wire} jsou vidět dvě větve pro 1-Wire sběrnic
 
 \subsubsection{Napájení 1-Wire sběrnice}
 \label{sec:napajeni-1-wire-sbernice}
-Pro ochranu napájení 1-Wire sběrnice (5 V) jsou veškerá koncové teplotní senzory napájené přes elektronickou pojistku od Texas Instrumenst s označením TPS2600, obrázek \ref{fig:ochrana-napajeni-1-wire}. Která zajišťuje ochranu pro vstupní napětí, hlídá maximální hodnotu vstupního napětí do nastavené meze 5,25 V (maximální hranice je 60 V), minimální vstupní napětí do nastavené meze 4,75 V (minimální hranice je -60 V). Vstupní omezení napětí je pomocí rezistorů R5, R10, R11 a R12. Omezovací proud je nastaven na přibližně 73 mA (hodnotu lze změnit přes potenciometr R17), při jeho překročení dojde k odpojení výstupu pod dobu dokud nedojde k odstranění závady. Kondenzátor C2 nastavuje rychlost náběhu výstupního napětí. Pro indikaci chyb napájení je zde červená LED.
+Pro ochranu napájení 1-Wire sběrnice (5 V) jsou veškerá koncové teplotní senzory napájené přes elektronickou pojistku od Texas Instrumenst s označením TPS2600, obrázek \ref{fig:ochrana-napajeni-1-wire}. Která zajišťuje ochranu pro vstupní napětí, hlídá maximální hodnotu vstupního napětí do nastavené meze 5,25 V (maximální hranice je 60 V), minimální vstupní napětí do nastavené meze 4,75 V (minimální hranice je -60 V). Vstupní omezení napětí je pomocí rezistorů R5, R10, R11 a R12. Omezovací proud je nastaven na přibližně 73 mA (hodnotu lze změnit přes potenciometr R17), při jeho překročení dojde k odpojení výstupu pod dobu dokud nedojde k odstranění závady. Kondenzátor C2 nastavuje rychlost náběhu výstupního napětí. Pro indikaci chyb napájení je červená LED.
 
 \begin{figure}[H]
     \centering
@@ -31,7 +31,7 @@ Pro ochranu napájení 1-Wire sběrnice (5 V) jsou veškerá koncové teplotní 
 \end{figure}
 
 \subsubsection{Ochrana pro chodbové nástěnné termostaty}
-Obdobně jako v části \ref{sec:datova-cast-1-wire-sbernice} (Datová část 1-Wire sběrnice) je stejná ochrana pro snímání logické úrovně z~chodbových nástěnných termostatů. Při sepnutí chodbového termostatu na daném patře je detekována log. 0 (požadavek na vytápění) v opačném případě je zde log. 1 (zastavení vytápění). Chodbové nástěnné termostaty jsou popsány v sekci \ref{digitalni-chodbove-termostaty}.
+Obdobně jako v části \ref{sec:datova-cast-1-wire-sbernice} (datová část 1-Wire sběrnice) je stejná ochrana pro snímání logické úrovně z~chodbových nástěnných termostatů. Při sepnutí chodbového termostatu na daném patře je detekována log. 0 (požadavek na vytápění) v opačném případě je zde log. 1 (zastavení vytápění). Chodbové nástěnné termostaty jsou popsány v sekci \ref{sec:digitalni-chodbove-termostaty}.
 
 \subsubsection{Ochrana napájení 3,3 V}
 Přímo z Raspberry Pi je využito napětí 3,3 V pro převodník napětí, popsaný v~části \ref{sec:datova-cast-1-wire-sbernice} (datová část 1-Wire sběrnice). Zde je použita vratná pojistka polymerový PTC (RXEF005) se spínacím proudem 100 mA, pro omezení proudu v~případě poruchy, dále je zde transilová dioda (SM2T3V3A) pro ochranu při přepětí (s~upínacím napětí max. 6,5 V (při 25 A, 10/1000~µs), průrazné napětí 3,6 V). Na obrázku \ref{fig:ochrana-napajeni-3_3-v} je zobrazena popsaná ochrana.
