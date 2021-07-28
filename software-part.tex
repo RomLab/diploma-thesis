@@ -1,6 +1,7 @@
 \section{Softwarová část}
 
 \subsection{Typy řízení vytápění}
+\label{sec:typy-rizeni-vytapeni}
 V rámci řídicího systému existují tyto typy řízení:
 
 \begin{itemize}
@@ -12,54 +13,121 @@ V rámci řídicího systému existují tyto typy řízení:
 
 Předpokládá se, že centrální zásobník otopné vody je průběžně ohříván během dne pomocí přebytků energie přes výměníky u krb. Tím se tedy předpokládá, že zásobník je nahřán pro případné potřeby vytápění. Je kladena priorita na získávání ohřáté otopné vody ze zdroje tepla zmíněná dříve. Uživatelé jsou upozorňováni signalizací na displejích jak u krbů, tak i na nástěnných snímačích prostorové teploty, přímo v řídícím systému (možné i notifikace na mobil, e-mail) či LED diodami (rozsvícení všech) u krbů, že je potřeba zatopit v krbech, pokud systém vyhodnotí, že je potřeb vytápět. V případě, že tomu k tomu nedojde využívá se plynový kondenzační kotel, který dohřívá zásobník (ten je možný ovládat automaticky).
 
-V části \textbf{přehled} je pro přehlednost jsou jednotlivé teploty zobrazeny v části „jednotlivé teploty“, jsou zde všechny teploty snímané v zásobníku otopné vody, teploty na kouřovodech v přízemí a patře, v neposlední řadě jez zde i venkovní teplota. V části „porovnání teploty“ jsou zmíněné teploty zobrazeny v jednom grafu.
+Na obrázku \ref{} je rozhraní pro nastavení vytápění. V levém menu jsou jednotlivé patra s termostaty a teplotními plány (popsáno níže). V záložce záznamy, historie jsou zaznamenány jednotlivé stavy ovládacích prvků a~samotná historie dat, především teplotních senzorů. Dále se zde nachází nastavení uživatelské profilu, tak i celého systému. V horním menu jsou další záložky pro nastavení vytápění, též popsány níže v textu.
 
-V části \textbf{nastavení} je možné v \textit{řízení teploty} vybrat jeden typ řízení vytápění (viz výše). Dále v \textit{módy řízení} je výběr módů a to zimní, letní nebo výběr podle venkovní teploty. Výběr módu má vliv na výběr mezních teplot pro spínání plynového kondenzačního kotle. Dané teplotní meze se dají nastavit v~části \textit{spínání plynového kotle} (teplotní meze pro léto a zimu). Tyto nastavené meze se berou pro kontrolu s teplotou v horní části zásobníku otopné vody. Pokud teplota v~horní části zásobníku je menší než teplota definovaná v části „min. zapnutí“ dojde k zapnutí kotle pro nahřátí otopné vody, kotel se vypíná při teplota definované v části „max. vypnutí“. Při porovnávání teplot se též bere v potaz nastavená hystereze v části \textit{ostatní nastavení}. Při výběru módu podle venkovní teploty dochází k automatickému výběru letního nebo zimního módu. Teplotní mez pro výběr letního módu (v rámci módu podle venkovní teploty) je definovaná v části „min. venkovní teplota pro letní mód“. Toto spínání kotle nastává v momentě, kdy po upozornění uživatelů nedojde k zatopení v krbech.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{images/software-ha/prehled-ha.png}
+    \caption{Rozhraní HA.}
+    \label{fig:prehled-ha}
+\end{figure}
+
+V záložce \textbf{přehled} (obrázek \ref{fig:zalozka-prehled}) je pro přehlednost jsou jednotlivé teploty zobrazeny v části „jednotlivé teploty“, jsou zde všechny teploty snímané v~zásobníku otopné vody, teploty na kouřovodech v přízemí a patře, v neposlední řadě jez zde i~venkovní teplota. V části „porovnání teploty“ jsou zmíněné teploty zobrazeny v jednom grafu.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{images/software-ha/zalozka-prehled.png}
+    \caption{Záložka přehled v HA.}
+    \label{fig:zalozka-prehled}
+\end{figure}
+
+V záložce \textbf{nastavení} (obrázek \ref{fig:zalozka-nastaveni}) je možné v \textit{řízení teploty} vybrat jeden typ řízení vytápění (viz výše). Dále v \textit{módy řízení} je výběr módů a to zimní, letní nebo výběr podle venkovní teploty. Výběr módu má vliv na výběr mezních teplot pro spínání plynového kondenzačního kotle. Dané teplotní meze se dají nastavit v~části \textit{spínání plynového kotle} (teplotní meze pro léto a zimu). Tyto nastavené meze se berou pro kontrolu s teplotou v horní části zásobníku otopné vody. Pokud teplota v~horní části zásobníku je menší než teplota definovaná v části „min. zapnutí“ dojde k zapnutí kotle pro nahřátí otopné vody, kotel se vypíná při teplota definované v části „max. vypnutí“. Při porovnávání teplot se též bere v potaz nastavená hystereze v~části \textit{ostatní nastavení}. Při výběru módu podle venkovní teploty dochází k~automatickému výběru letního nebo zimního módu. Teplotní mez pro výběr letního módu (v rámci módu podle venkovní teploty) je definovaná v části „min. venkovní teplota pro letní mód“. Toto spínání kotle nastává v momentě, kdy po upozornění uživatelů nedojde k~zatopení v krbech.
+
 
 V části nastavení \textit{krby – spínání čerpadel} se definují minimální hranice teploty, kdy dojde k sepnutí oběhových čerpadel pro krbové výměníky, tedy při jaké teplotě se má brát v potaz, zda někdo v krbu zatopit a mají se spustit čerpadla pro nahřívání zásobníku otopné vody. Toto nastavení je poměrně důležité a kontrola těchto teplot je zcela nezávislá na dalších nastaveních (automatizaci) v systému, je potřeba vždy při zatopení spustit čerpadla, jinak dojde k přehřátí vody ve výměníku krbu. V případě přehřátí se aktivuje ochrana přímo u krbů a dojde k ke zvukové signalizaci přehřátí, pokud teplota neklesne za určitou dobu, dojde k aktivování ochranných ventilů a vypuštění přehřáté vody.
 
 
 V části \textit{LED indikace – mezní parametry zásobníku otopné vody} se definují mezní teploty pro horní, střední a spodní část zásobníku otopné vody. Tato signalizace se zejména týká pro krby, aby uživatel věděl, zda může topit a jak je moc zásobník nahřátý. U modré LED se definuje mezní minimální teplota, kterou by zásobníku ve horní části měl mít (povolení pro topení). U oranžové LED se definuje mezní maximální teplota, kdy ve střední části zásobníku dochází k dostatečnému nahřátí otopné vody (oznámení, že za chvilku by se mělo přestat topit). U červené LED se definuje mezní maximální teplota, kdy ve spodní části zásobníku je plně ohřátá(okamžitě přestat topit.). Aktivace červené LED předchází v dostatečném předstihu před aktivováním ochrany u~krbů pro přehřátí otopné vody, popsáno v předchozím odstavci.
-\subsubsection{Řízení vytápění podle chodbových termostatů}
-V přízemí a v patře je na chodbě umístěn jeden lokání termostat popsaný v části \ref{sec:digitalni-chodbove-termostaty}. Tento termostat na základě lokálního nastavení (není součástí řídicího systému) spínání/rozpínání výstupní relé při požadavku na vytápění. Tento požadavek se následně vyhodnotí v centrálním systému a dojde k sepnutí nebo rozepnutí daného chodbového oběhového čerpadlo pro podlahové vytápění a otevření všech okruhů podlahové vytápění. Dochází tedy k řízení vytápění všech místností na patře podle jednoho centrálního termostatu. 
 
-\subsection{Záložka zařízení}
-V části „koncová zařízení“ se zobrazují jednotlivá ovládána (zapnuto/vypnuto) zařízení otopné soustavy, tedy plynový kondenzační kotel, čerpadla pro krby s výměníkem, čerpadla pro podlahové vytápění a zapnutí signalizačních LED u krbů. Je možné samotnou automatizaci respektive ovládání zmíněných zařízení řídit podle vlastního uvážení, proto slouží přepínač „manuální ovládání zařízení“, zde si pak uživatel může libovolně jednotlivá zařízení ovládat bez ohledu na nastavenou automatizaci.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{images/software-ha/zalozka-nastaveni.png}
+    \caption{Záložka nastavení v HA.}
+    \label{fig:zalozka-nastaveni}
+\end{figure}
+
+V záložce \textbf{zařízení} (obrázek \ref{fig:zalozka-zarizeni}) se zobrazují jednotlivá ovládána (zapnuto/vypnuto) zařízení otopné soustavy, tedy plynový kondenzační kotel, čerpadla pro krby s výměníkem, čerpadla pro podlahové vytápění a zapnutí signalizačních LED u krbů. Je možné samotnou automatizaci respektive ovládání zmíněných zařízení řídit podle vlastního uvážení, proto slouží přepínač „manuální ovládání zařízení“, zde si pak uživatel může libovolně jednotlivá zařízení ovládat bez ohledu na nastavenou automatizaci.
 
 V části „termostaty chodby – požadavek topení“, zde se zobrazuje zda dochází k vytápění v přízemí či patře na základě nastavení lokálních termostatů na chodbách.
 
-V části „ovládání čerpadel – vodní kámen“ slouží ke spínání čerpadel pro ochranu před zatuhnutím lopatek. Vzhledem k místní dosti tvrdé vodě, došlo při netopení v přízemí, tedy při nevyužívání daných čerpadel k zatuhnutí lopatek v důsledku nánosu vodního kamene. Pro se zde nachází nastavení, kde si uživatel může pro konkrétní den, hodinu a definovanou délku nastavit spínání čerpadel pro odstranění nánosu na lopatách. Ideální volbou je otopnou vodu zbavit minerálů nebo vyměnit za destilovanou vodu, nicméně k některým méně kvalitnějším provedením spojům trubek otopné soustavy, by docházelo k průsaku otopné vody. Proto je otopná vody z řádu s vyšším podílem minerálů jedním z řešení, jak docílit zaslepení průsaku především vápníkem bez nutnosti, alespoň prozatím, spoje opravovat.
+V části „patro/přízemí – otopné okruhy (ventily)“ se zobrazuje v procentech úroveň otevření každého ventilu pro daný otopný okruh.
 
-Výše popsané části jsou zobrazená na obrázku \ref{fig:ha-zarizeni}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{images/software-ha/zalozka-zarizeni.png}
+    \caption{Záložka nastavení v HA.}
+    \label{fig:zalozka-zarizeni}
+\end{figure}
+
+V záložce \textbf{ostatní} je v části „ovládání čerpadel – vodní kámen“ (obrázek \ref{fig:zalozka-ostatni}) slouží ke spínání čerpadel pro ochranu před zatuhnutím lopatek. Vzhledem k místní dosti tvrdé vodě, došlo při netopení v přízemí, tedy při nevyužívání daných čerpadel k zatuhnutí lopatek v důsledku nánosu vodního kamene. Pro se zde nachází nastavení, kde si uživatel může pro konkrétní den, hodinu a definovanou délku nastavit spínání čerpadel pro odstranění nánosu na lopatách. Ideální volbou je otopnou vodu zbavit minerálů nebo vyměnit za destilovanou vodu, nicméně k některým méně kvalitnějším provedením spojům trubek otopné soustavy, by docházelo k průsaku otopné vody. Proto je otopná vody z řádu s vyšším podílem minerálů jedním z řešení, jak docílit zaslepení průsaku především vápníkem bez nutnosti, alespoň prozatím, spoje opravovat.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{images/software-ha/zalozka-ostatni.png}
+    \caption{Záložka ostatní v HA.}
+    \label{fig:zalozka-ostatni}
+\end{figure}
 
 
+\subsubsection{Řízení vytápění podle chodbových termostatů}
+V přízemí a v patře je na chodbě umístěn jeden lokání termostat popsaný v~části \ref{sec:digitalni-chodbove-termostaty}. Tento termostat na základě lokálního nastavení (není součástí řídicího systému) spínání/rozpínání výstupní relé při požadavku na vytápění. Tento požadavek se následně vyhodnotí v centrálním systému (popsáno v části \ref{sec:typy-rizeni-vytapeni} v části zařízení) a dojde k sepnutí nebo rozepnutí daného chodbového oběhového čerpadlo pro podlahové vytápění a~otevření všech okruhů podlahové vytápění. Dochází tedy k řízení vytápění všech místností na patře podle jednoho centrálního termostatu. 
+
+\subsection{Řízení vytápění podle nástěnných snímačů prostorových teplot}
+\label{sec:rizeni-vytapeni-podle-nastennych-snimacu-prostorovych-teplot}
+Podle aktuální teploty naměřenou z každé místnosti je ovládán daný otopný okruh pro vytápění. Na základě požadované teploty, kterou je možné zadat přímo v systému HA (viz obrázek \ref{fig:lokalni-termostat-ha}) nebo je možné teplotu nastavit přímo v~místnosti pomocí tlačítek na nástěnném snímači prostorové teploty, tím dojde k přenesené požadované teploty do systému a zobrazení na daném termostatu, nastavení funguje i opačně. Řízení vytápění místnosti je dáno hysterezí 0,5~°C. Regulace vytápění tedy reaguje na aktuální naměřenou teplotu.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{images/software-ha/lokalni-termostat-ha.png}
+    \caption{Lokální termostat v HA.}
+    \label{fig:lokalni-termostat-ha}
+\end{figure}
+
+Lokální termostaty jsou roztříděny do skupiny podle daného patra, kde se nalezení, tedy termostaty pro přízemí a patro (obrázek \ref{fig:prehled-lokalnich-termostaty-patro}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{images/software-ha/prehled-lokalnich-termostaty-patro.png}
+    \caption{Přehled lokálních termostatů v HA pro patro.}
+    \label{fig:prehled-lokalnich-termostaty-patro}
+\end{figure}
+
+Zamyslet se nad osaháváním místností a aplikování predikce 
+
+\subsection{Řízení vytápění podle teplotních plánů} 
+\label{sec:rizeni-vytapeni-podle-teplotnich-planu}
+Další možností řízení vytápění jednotlivých místností je podle nadefinovaných časových plánů. Uživatel má možnost si pro každou místnost v rámci 24 hodin nadefinovat časové úseky s danou požadovanou teplotou. Takto nastavené časové plány se průběžně kontrolují systémem a nastavuje aktuálně požadovanou teplotu do lokálního nástěnného snímače teploty i se objeví na termostatu v HA (viz obrázek \ref{fig:lokalni-termostat-ha}). Následně tedy dochází k regulaci vytápění podle popisu v části \ref{sec:rizeni-vytapeni-podle-nastennych-snimacu-prostorovych-teplo}. rozhraní pro nastavení časových úseků je na obrázku \ref{fig:teplotni-plan-ha}. Uživatel si může jednotlivé úseky přidávat nebo odebírat (min. počet časových úseků jsou dva). Uživatel má na výběr zda se časové úseky aplikují na všechny v dny v týdnu nebo jen pracovní dny, víkend či výběr jen konkrétních dnů v týdnu. Dále je možné nadefinovat, zda se pro daný úsek má vytápět nebo naopak se topit nemá.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{images/software-ha/teplotni-plan-ha.png}
+    \caption{Rozhraní pro nastavení teplotního plánu.}
+    \label{fig:teplotni-plan-ha}
+\end{figure}
+
+Pro každou místnost je možné nadefinovat libovolný počet časových plánů. Přehled jednotlivých plánů je zobrazen pod každým dnem, viz obrázek \ref{fig:teplotni-plany-ha}. Jednotlivé plány je také možné pozastavit pomocí posuvného tlačítka vpravo. Celkový přehled pro dané patro je vidět na obrázku \ref{fig:teplotni-plany-prehled-ha}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{images/software-ha/teplotni-plany-ha.png}
+    \caption{Jednotlivé plány pro danou místnost.}
+    \label{fig:teplotni-plany-ha}
+\end{figure}
 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.90\textwidth]{images/software-ha/ha-zarizeni.png}
-    \caption{Záložka zařízení v HA.}
-    \label{fig:ha-zarizeni}
+    \includegraphics[width=\textwidth]{images/software-ha/teplotni-plany-prehled-ha.png}
+    \caption{Přehled teplotních plánů pro patro.}
+    \label{fig:teplotni-plany-prehled-ha}
 \end{figure}
 
-\subsection{Vývoj pro zónovou regulaci}
+Podívat se na další možnosti plánů.
 
-Na obrázku \ref{fig:teplotni-plan} je zobrazen možný nastavitelný teplotní plán pro celý den. Lze tak nastavit všechny dny v týdnu. Pro každý zvolený teplotní úsek je možné si zvolit požadovanou teplotu.
+%\subsection{Řízení vytápění podle teplotních plánů s úpravou podle předpovědi počasí} 
+%Řízení vytápění podle teplotních plánů s úpravou podle předpovědi počasí probíhá obdobně jak v případě popisu v části \ref{sec:rizeni-vytapeni-podle-teplotnich-planu}. Rozdílem je, že jednou týdně si systém „ošahá“ místnost a učí si přepočítávací koeficient, daný dobou než dojde ke změně teploty o 1 °C při dané venkovní teplotě. Tento koeficient se následně vezme a aplikuje se na teplotu danou předpovědí počasí pro danou oblast. Tím se predikuje časových úsek na 1 °C.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.90\textwidth]{images/software-ha/teplotni-plan.png}
-    \caption{Nastavitelný teplotní plán pro danou hodinu v celém dni.}
-    \label{fig:teplotni-plan}
-\end{figure}
 
-Na obrázku \ref{fig:termostat-v-mistnosti} je nastavení aktuální teploty pro požadovanou místnost. Každá místnost má svoje vlastní nastavení. Zobrazuje se zde aktuálně naměřená teplota v dané místnosti a požadovaná teplota. Pokud dojde k~přenastavení požadované teploty, dojde k přenesení této teploty do nástěnného snímače prostorové teploty, přenos funguje i opačně.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.90\textwidth]{images/software-ha/termostat-v-mistnosti.png}
-    \caption{Zobrazení aktuální teploty z dané místnosti, možnost nastavit požadovanou teplotu.}
-    \label{fig:termostat-v-mistnosti}
-\end{figure}
 
 
