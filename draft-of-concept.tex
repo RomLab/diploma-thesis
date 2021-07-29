@@ -71,6 +71,7 @@ Výše popsaný komunikační koncept je nakreslen na obrázku \ref{fig:navrh-so
 \end{figure}
 
 \subsubsection{MQTT protokol}
+\label{sec:mqtt-protokol}
 
 \acrshort{mqtt} (\textit{\acrlong{mqtt}}) je jednoduchý a nenáročný \acrshort{m2m} (\textit{\acrlong{m2m}})/„Internet of Things“ komunikační protokol. Protokol je založen na principu předávání zpráv mezi klienty přes centrální server (broker). Centrální server přijímá zprávy od poskytovatele zprávy (tzv. publisher), které následně předává k přečtení čtenářům, kteří tuto zprávu odebírají (tzv. subscribers). Poskytovatel zprávy obvykle představuje nějaký senzor či měřící jednotku, která vysílá naměřeného hodnoty na centrální server, zatímco odběratel obvykle tvoří nějaká řídící jednotka, která hodnoty odebírá (přijímá) a dále s nimi pracuje nebo je zobrazuje.
 

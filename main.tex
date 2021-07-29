@@ -21,6 +21,7 @@
 \usepackage{makecell}
 \renewcommand\theadfont{\bfseries}
 
+
 % Notes
 \usepackage{threeparttable}
 
@@ -41,6 +42,7 @@
 \usepackage{fancyhdr}
 % Importovani text souboru z podslozek
 \usepackage{import}
+
 
 
 
@@ -78,6 +80,7 @@
 %	front-list-of-tables = false,
 %	monochrome = true,
 %	layout-short = true,
+	pkg-listings = true,
 }
 
 \ctuprocess
@@ -104,6 +107,49 @@
   \renewcommand{\headrulewidth}{0pt}%
   \setlength{\footskip}{100pt}
   \fancyfoot[C]{\thepage}%
+}
+
+% Seznam prilohy
+\newcommand\listappendixname{Seznam příloh}
+\newcommand\appcaption[1]{%
+   \addcontentsline{app}{chapter}{#1}}
+\makeatletter
+\newcommand\listofappendices{%
+   \section*{\listappendixname}\@starttoc{app}}
+
+% Diakritika pro listings (zapis kodu)
+\lstset{
+     literate=%
+         {á}{{\'a}}1
+         {í}{{\'i}}1
+         {é}{{\'e}}1
+         {ý}{{\'y}}1
+         {ú}{{\'u}}1
+         {ó}{{\'o}}1
+         {ě}{{\v{e}}}1
+         {š}{{\v{s}}}1
+         {č}{{\v{c}}}1
+         {ř}{{\v{r}}}1
+         {ž}{{\v{z}}}1
+         {ď}{{\v{d}}}1
+         {ť}{{\v{t}}}1
+         {ň}{{\v{n}}}1                
+         {ů}{{\r{u}}}1
+         {Á}{{\'A}}1
+         {Í}{{\'I}}1
+         {É}{{\'E}}1
+         {Ý}{{\'Y}}1
+         {Ú}{{\'U}}1
+         {Ó}{{\'O}}1
+         {Ě}{{\v{E}}}1
+         {Š}{{\v{S}}}1
+         {Č}{{\v{C}}}1
+         {Ř}{{\v{R}}}1
+         {Ž}{{\v{Z}}}1
+         {Ď}{{\v{D}}}1
+         {Ť}{{\v{T}}}1
+         {Ň}{{\v{N}}}1                
+         {Ů}{{\r{U}}}1    
 }
 
 % Theorem declarations, this is the reasonable default, anybody can do what they wish.
@@ -207,6 +253,8 @@ Prohlašuji, že jsem předloženou práci vypracoval samostatně a že jsem uve
 \newacronym{pet-g}{PET-G}{Polyethylentereftalát, „G“ znamená modifikovaný glykol}
 \newacronym{dtr}{DTR}{Data Terminal Ready}
 \newacronym{rts}{RTS}{Request To Send}
+\newacronym{yaml}{YAML}{YAML Ain't Markup Language }
+
 
 
 \makeglossaries
@@ -245,12 +293,14 @@ Prohlašuji, že jsem předloženou práci vypracoval samostatně a že jsem uve
 
 \input{conclusion}
 
+\input{bibliography}
 
 \appendix
+\listofappendices
 
 %\printindex
 
-\chapter{Schéma -- Nástěnný snímač prostorové teploty s Ethernetem}
+\chapter{Schéma -- Nástěnný snímač prostorové teploty s Ethernetem}\appcaption{A Schéma -- Nástěnný snímač prostorové teploty s Ethernetem}
 \label{app:nastenny-snimac-prostorove-teploty-ethernet}
 \includepdf[pages=-,angle=90,pagecommand={\thispagestyle{includedpages}}]{appendix/nastenny-snimac-prostorove-teploty-ethernet/esp32-periferie.pdf}
 \includepdf[pages=-,angle=90,pagecommand={\thispagestyle{includedpages}}]{appendix/nastenny-snimac-prostorove-teploty-ethernet/ethernet.pdf}
@@ -258,6 +308,7 @@ Prohlašuji, že jsem předloženou práci vypracoval samostatně a že jsem uve
 
 
 \chapter{Schéma -- Nástěnný snímač prostorové teploty s WiFi}
+\appcaption{B Schéma -- Nástěnný snímač prostorové teploty s WiFi}
 \label{app:nastenny-snimac-prostorove-teploty-wifi}
 \includepdf[pages=-,angle=90,pagecommand={\thispagestyle{includedpages}}]{appendix/nastenny-snimac-prostorove-teploty-wifi/esp32-periferie.pdf}
 \includepdf[pages=-,angle=90,pagecommand={\thispagestyle{includedpages}}]{appendix/nastenny-snimac-prostorove-teploty-wifi/napajeni.pdf}
@@ -266,6 +317,7 @@ Prohlašuji, že jsem předloženou práci vypracoval samostatně a že jsem uve
 
 
 \chapter{Schéma -- Ostatní}
+\appcaption{C Schéma -- Ostatní}
 \label{app:schemata-ostatni}
 \includepdf[pages=-,angle=90,pagecommand={\thispagestyle{includedpages}}]{appendix/vstupy-vystupy-rpi.pdf}
 \includepdf[pages=-,angle=90,pagecommand={\thispagestyle{includedpages}}]{appendix/prevodnik-usb-uart.pdf}
@@ -282,19 +334,25 @@ Prohlašuji, že jsem předloženou práci vypracoval samostatně a že jsem uve
 
 
 \chapter{Krabička pro nástěnný snímač prostorové teploty}
+\appcaption{D Krabička pro nástěnný snímač prostorové teploty}
 \label{app:krabicka-pro-nastenny-snimac-prostorove-teploty}
 
 %\input{/appendix/box-wall-sensor-of-room-temperature}
 \subimport{appendix}{box-wall-sensor-of-room-temperature.tex}
 
 \chapter{Rozdělovač podlahového vytápění}
+\appcaption{E Rozdělovač podlahového vytápění}
 \label{app:rozdelovac-podlahoveho-vytapeni}
 \subimport{appendix}{distributor-first-floor.tex}
+
+\chapter{Obsah CD}
+\appcaption{F Obsah CD}
+\subimport{appendix}{content-of-cd.tex}
 
 %\bibliographystyle{amsalpha}
 %\bibliography{ctutest}
 %\printbibliography
-\input{bibliography}
+
 
 
 \end{document}
