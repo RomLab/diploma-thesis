@@ -105,6 +105,6 @@
     \put(0.88274071,0.07847549){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\small \sffamily Teplotní\end{tabular}}}}%
 	\put(0.88274071,0.05947549){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\small \sffamily senzor\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=21]{blokove-schema-nastenny-snimac-teploty-wifi.pdf}}%
-    \put(0.78766562,0.19331937){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily 1-Wire\end{tabular}}}}%
+    \put(0.74766562,0.08547549){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily 1-Wire\end{tabular}}}}%
   \end{picture}%
 \endgroup%

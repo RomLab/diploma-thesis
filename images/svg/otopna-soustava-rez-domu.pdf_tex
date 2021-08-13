@@ -56,9 +56,9 @@
     \put(0,0){\includegraphics[width=\unitlength,page=1]{otopna-soustava-rez-domu.pdf}}%
     \put(0.74780702,0.24034503){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily TUV\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{otopna-soustava-rez-domu.pdf}}%
-    \put(0.18494152,0.24103509){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Plynový\end{tabular}}}}%
-	\put(0.18494152,0.21903509){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily kondenzační\end{tabular}}}}%
-	\put(0.18494152,0.19703509){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily kotel\end{tabular}}}}%
+    \put(0.38857602,0.24103509){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Plynový\end{tabular}}}}%
+	\put(0.38857602,0.21903509){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily kondenzační\end{tabular}}}}%
+	\put(0.38857602,0.19703509){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily kotel\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{otopna-soustava-rez-domu.pdf}}%
     \put(0.1630117,0.79004094){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Rozdělovač\end{tabular}}}}%
 	\put(0.1630117,0.76804094){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily podlahového\end{tabular}}}}%
@@ -73,7 +73,7 @@
     \put(0.74780702,0.135){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Zásobník\end{tabular}}}}%
 	\put(0.74780702,0.115){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily otopné vody\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=6]{otopna-soustava-rez-domu.pdf}}%
-    \put(0.12938596,0.33991228){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\small \sffamily Technická místnost\end{tabular}}}}%
+    \put(0.37807602,0.33991228){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\small \sffamily Technická místnost\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=7]{otopna-soustava-rez-domu.pdf}}%
     \put(0.06944444,0.66154971){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\small \sffamily Přízemí\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=8]{otopna-soustava-rez-domu.pdf}}%
@@ -89,5 +89,7 @@
     \put(0,0){\includegraphics[width=\unitlength,page=12]{otopna-soustava-rez-domu.pdf}}%
     \put(0.77324561,0.01919883){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily TUV – teplá užitková voda\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=13]{otopna-soustava-rez-domu.pdf}}%
+    \put(0.05724854,0.33991228){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\small \sffamily Sklep\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{otopna-soustava-rez-domu.pdf}}%
   \end{picture}%
 \endgroup%
