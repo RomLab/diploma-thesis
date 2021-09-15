@@ -16,7 +16,7 @@ Otopná soustava domu je zobrazena na obrázku \ref{fig:otopna-soustava-rez-domu
 
 \newpage
 
-\subsection{Část hardware}
+\subsection{Hadwarová část}
 
 Na obrázku \ref{fig:navrh-hardwarove-casti} je nakreslen hardwarový koncept, který je níže v textu popsán.
 
@@ -30,42 +30,32 @@ Na obrázku \ref{fig:navrh-hardwarove-casti} je nakreslen hardwarový koncept, k
 
 Centrální jednotka je jednodeskový počítač s periferiemi jako ethernetový port, \acrshort{usb} (\textit{\acrlong{usb}}), univerzálními vstupy/výstupy, případně s alternativní funkcí pinů jako sběrnice \acrshort{i2c} (\textit{\acrlong{i2c}}) nebo dalšími typy periferií. Dále by měla disponovat dostatečnou velikostí \acrshort{ram} (\textit{\acrlong{ram}}) pamětí a relativně výkonným procesorem pro snadné zpracování vstupních/výstupních dat či povelů.
 
-Bezdrátové nástěnné snímače prostorové teploty jsou napájeny z lokálních síťových adaptérů, každý modul má své napájení. Nástěnný snímač prostorové teploty se skládá z displeje pro zobrazení aktuální a požadované teploty a~dalších nastavení. Dále ze tří tlačítek pro vstup do menu a tlačítek pro zvýšení/snížení požadované teploty a teplotního senzoru. Komunikace s~centrální jednotkou je zajištěna pomocí WiFi modulu.
+Bezdrátové nástěnné snímače prostorové teploty jsou napájeny z lokálních síťových adaptérů, každý modul má své napájení. Nástěnný snímač prostorové teploty se skládá z displeje pro zobrazení aktuální a požadované teploty a~dalších nastavení. Dále ze tří tlačítek pro vstup do menu a tlačítek pro zvýšení/snížení požadované teploty a teplotního senzoru. Komunikace s~centrální jednotkou je zajištěna pomocí WiFi modulu komunikující s WiFi routerem.
 
-Kabelové nástěnné snímače prostorové teploty jsou napájeny pomocí switche s  \acrshort{poe} (\textit{\acrlong{poe}}). Nástěnný snímač prostorové teploty se skládá z~displeje pro zobrazení aktuální a požadované teploty a dalších nastavení. Dále ze tří tlačítek pro vstup do menu a tlačítek pro zvýšení/snížení požadované teploty a teplotního senzoru. Komunikace s centrální jednotkou je zajištěna pomocí zmíněného switche.
+Kabelové nástěnné snímače prostorové teploty jsou napájeny pomocí switche s  \acrshort{poe} (\textit{\acrlong{poe}}). Další části jsou obdobné jako u bezdrátového řešení. Komunikace s centrální jednotkou je zajištěna pomocí zmíněného switche.
 
-Indikátor stavů je propojen přímo s centrální jednotkou, skládá z části indikující stavy pomocí \acrshort{led} (\textit{\acrlong{led}}) pro jednotlivé teploty měřené v zásobníku otopné vody rozmístěné v jednotlivých částech nádrže. Dále je zde sběrnice pro komunikaci \acrshort{lcd} (\textit{\acrlong{lcd}}) displejem a~centrální jednotkou pro zobrazení teplot ze zásobníku, respektive dvou teplot ze spodní části. LED diody a LCD displej jsou umístěny u krbů.
+Indikátor stavů je propojen s centrální jednotkou, skládá z části indikující stavy pomocí \acrshort{led} (\textit{\acrlong{led}}) pro jednotlivé teploty naměřené v zásobníku otopné vody rozmístěné v jednotlivých částech nádrže. Dále je zde sběrnice pro komunikaci \acrshort{lcd} (\textit{\acrlong{lcd}}) displejem a~centrální jednotkou pro zobrazení teplot ze zásobníku, respektive dvou teplot ze spodní části. LED diody a LCD displej jsou umístěny u krbů.
 
 Spínací jednotka se skládá z relé modulů pro ovládání jednotlivých čerpadel pro oběh otopné vody do otopných okruhů podlahové vytápění v jednotlivých patrech. Dále jsou zde ovládána čerpadla pro cirkulaci vody z krbových výměníků. V neposlední řadě je zde případné ovládání plynového kondenzačního kotle.
 
-Zónový regulátor je umístěn v přízemí a v patře v rozdělovači pro jednotlivé otopné okruhy. Komunikace mezi zónovým regulátorem a centrální jednotkou je pomocí sběrnice. Zónový regulátor ovládá jednotlivé pohony. Pohony jsou přímo připojené na zónový regulátor.
+Zónový regulátor je umístěn v přízemí a v patře v rozdělovači pro jednotlivé otopné okruhy. Komunikace mezi zónovým regulátorem a centrální jednotkou je pomocí sběrnice. Zónový regulátor ovládá jednotlivé pohony, ty následně jednotlivé otopné okruhy. Pohony jsou přímo připojené na zónový regulátor.
 
-Síťové prvky se skládají z centrálního switche, switche s POE a domácího WiFi routeru. Centrální switch sdružuje veškerou komunikaci jak z kabelových nástěnných snímačů prostorové teploty, tak i bezdrátových. Bezdrátové nástěnné snímače prostorové teploty jsou připojeny pomocí WiFi routeru a~ten následně do centrální switche Kabelové nástěnné snímače prostorové teploty jsou připojeny přes switch s POE, který zařízení napájí a přeposílá komunikaci do centrálního switche.
+Síťové prvky se skládají z centrálního switche, switche s POE a domácího WiFi routeru. Centrální switch sdružuje veškerou komunikaci jak z kabelových nástěnných snímačů prostorové teploty (pomocí POE switche), tak i bezdrátových (pomocí WiFi routeru). 
 
-Teplotní senzory v zásobníku otopné vody jsou rozmístěné ve třech částech zásobníku (horní, střední a spodní část). Dále jsou teplotní senzory na kouřovodech u jednotlivých krbů pro detekci topení. Všechny senzory jsou napojeny na jednu sběrnici.
+Teplotní senzory v zásobníku otopné vody jsou rozmístěné ve třech částech zásobníku (horní, střední a spodní část). Dále jsou teplotní senzory na kouřovodech u jednotlivých krbů pro detekci zatopení. Všechny senzory jsou napojeny na jednu sběrnici.
 
 
 
 \subsubsection{Teplotní čidla}
-Jak bylo zmíněno výše, teplotní čidla jsou potřebná na snímání teplot na kouřovodech krbů pro následné sepnutí oběhového čerpadla. Teplota na kouřovodech se může dosáhnout až 300 °C (optimální teplota se však pohybuje přibližně mezi 120 °C až 240 °C, kdy je nejvyšší účinnost kamen a hoření paliva), proto je nutné zvolit takové čidlo, které je na tyto teploty vhodné. Mezi takové teplotní čidlo patří odporový teplotní senzor (teplotní rozsahy od -240~°C až 600 °C) nebo termočlánek (teplotní rozsahy od -260 °C až 2~300~°C). Pro zjištění teploty není nutná velmi velká přesnost, citlivost, jistým požadavkem je robustnost čidla (nejen ochrana čidla, ale i přívodních kabelů), vzhledem k umístění u krbu, kde je dosahováno vyšších teplot.
+Jak bylo zmíněno výše, teplotní čidla jsou potřebná na snímání teplot na kouřovodech krbů pro následné sepnutí oběhového čerpadla. Teplota na kouřovodech se může dosáhnout až 300 °C (optimální teplota se však pohybuje přibližně mezi 120 °C až 240 °C, kdy je nejvyšší účinnost krbu a hoření paliva), proto je nutné zvolit takové čidlo, které je na tyto teploty vhodné. Mezi takové teplotní čidlo patří odporový teplotní senzor (teplotní rozsahy od -240~°C až 600 °C) nebo termočlánek (teplotní rozsahy od -260 °C až 2~300~°C). %Pro zjištění teploty není nutná velmi velká přesnost, citlivost, jistým požadavkem je robustnost čidla (nejen ochrana čidla, ale i přívodních kabelů), vzhledem k umístění u krbu, kde je dosahováno vyšších teplot.
 
 %Princip termočlánku spočívá v Seebeckově efektu, jsou-li spojeny dva vodiče z různých kovů, tak v místě spojení je generováno napětí. Velikost napětí je závislá na vnější teplotě a materiálu článku. Linearita výstupního napětí článku je závislá na typu termočlánku a rozsahu teplot.
 
-Další teplotní senzory jsou nutná pro nástěnné teplotní snímače prostorové teploty pro každou místnost, zásobník otopné vody a venkovní čidlo. Teplotní rozsah těchto čidel nemusí být tak vysoký jako u měření teplot na kouřovodech. Teplotní rozsah stačí v řádů desítek stupňů jak pro kladné, tak i záporné hodnoty teploty. %Vzhledem ke vzdálenostem teplotních čidel a centrální jednotky bude lepší zvolit digitální teplotní čidla, které výslednou změřenou teplotu zpracuje pošle po sběrnici v digitální podobě. Není pak nutná další elektronika pro zpracování hodnot teploty jako například u termočlánku či teplotně odporového čidla.
+Další teplotní senzory jsou nutné pro nástěnné teplotní snímače prostorové teploty pro každou místnost, zásobník otopné vody a venkovní čidlo. Teplotní rozsah těchto čidel nemusí být tak vysoký jako u měření teplot na kouřovodech. Teplotní rozsah stačí v řádů desítek stupňů. %Vzhledem ke vzdálenostem teplotních čidel a centrální jednotky bude lepší zvolit digitální teplotní čidla, které výslednou změřenou teplotu zpracuje pošle po sběrnici v digitální podobě. Není pak nutná další elektronika pro zpracování hodnot teploty jako například u termočlánku či teplotně odporového čidla.
 
 \subsection{Komunikační část}
 
-Komunikace mezi centrální řídicí jednotkou a bezdrátovými i kabelovými nástěnnými snímači prostorové teploty jsou zajištěny pomocí protokolu MQTT. Centrální jednotka dostává informace z jednotlivých nástěnných snímačů prostorové teploty, zároveň je možné některé parametry nastavovat přímo přes centrální jednotku, která následně dané nastavení pošle do daných zařízení.
-
-Indikátor stavů komunikuje s centrální jednotkou pomocí sběrnice I$^2$C pro zobrazení hodnot na LCD displeji. Zároveň je zde přímé připojení na vstupní/výstupní piny centrální jednotky pro ovládání indikačních LED diod.
-
-Spínací jednotka je přímo připojena s centrální jednotkou pro spínání daných čerpadel pro podlahové vytápění, čerpadel pro krbové výměníky a~kondenzačního plynového kotle.
-
-Zónový regulátor komunikuje s centrální jednotkou pomocí I$^2$C sběrnice, následné ovládání pohonů pro otopné okruhy je přímo zónovým regulátorem.
-
-Teplotní senzory umístěné v zásobníku otopné vody a na kouřovodech krbů komunikují s centrální jednotkou pomocí 1-Wire sběrnice.
-
-Výše popsaný komunikační koncept je nakreslen na obrázku \ref{fig:navrh-softwarove-casti}.
+Komunikační koncept je nakreslen na obrázku \ref{fig:navrh-softwarove-casti}, který je níže v textu popsán.
 
 \begin{figure}[H]
     \centering
@@ -74,6 +64,18 @@ Výše popsaný komunikační koncept je nakreslen na obrázku \ref{fig:navrh-so
     \caption{Návrh komunikační části systému.}
     \label{fig:navrh-softwarove-casti}
 \end{figure}
+
+Komunikace mezi centrální řídicí jednotkou a bezdrátovými i kabelovými nástěnnými snímači prostorové teploty je zajištěna pomocí protokolu MQTT. Centrální jednotka dostává informace z jednotlivých nástěnných snímačů prostorové teploty, zároveň je možné některé parametry nastavovat přímo přes centrální jednotku, která následně dané nastavení pošle do daných zařízení.
+
+Indikátor stavů komunikuje s centrální jednotkou pomocí sběrnice I$^2$C pro zobrazení hodnot na LCD displeji. Zároveň je zde připojení na vstupní/výstupní piny centrální jednotky pro ovládání indikačních LED diod.
+
+Spínací jednotka je propojena s centrální jednotkou pro ovládání čerpadel podlahové vytápění, čerpadel pro krbové výměníky a~kondenzačního plynového kotle.
+
+Zónový regulátor komunikuje s centrální jednotkou pomocí I$^2$C sběrnice, následné ovládání pohonů pro otopné okruhy je přímo zónovým regulátorem.
+
+Teplotní senzory umístěné v zásobníku otopné vody a na kouřovodech krbů komunikují s centrální jednotkou pomocí 1-Wire sběrnice.
+
+
 
 \subsubsection{MQTT protokol}
 \label{sec:mqtt-protokol}
