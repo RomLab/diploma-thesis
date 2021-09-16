@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{549.375bp}%
+    \setlength{\unitlength}{549.33bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,7 +50,7 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.71262799)%
+  \begin{picture}(1,0.68674567)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{navrh-softwarove-casti.pdf}}%
@@ -80,11 +80,11 @@
 	\put(0.39006487,0.11111111){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Čerpadlo\end{tabular}}}}%
     \put(0.39006487,0.08711111){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily 1\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=11]{navrh-softwarove-casti.pdf}}%
-	\put(0.48871153,0.11111111){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Čerpadlo\end{tabular}}}}%
+  	\put(0.48871153,0.11111111){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Čerpadlo\end{tabular}}}}%
     \put(0.48871153,0.08711111){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily N\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=12]{navrh-softwarove-casti.pdf}}%
     \put(0.21048999,0.15299793){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Krb\end{tabular}}}}%
-	\put(0.21048999,0.13099793){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily 2\end{tabular}}}}%
+	\put(0.21048999,0.13099793){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily 3\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=13]{navrh-softwarove-casti.pdf}}%
     \put(0.08350587,0.15299793){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Krb\end{tabular}}}}%
 	\put(0.08350587,0.13099793){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily 1\end{tabular}}}}%
@@ -111,7 +111,7 @@
     \put(0,0){\includegraphics[width=\unitlength,page=18]{navrh-softwarove-casti.pdf}}%
     \put(0.48965493,0.2455176){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Spínací jednotka\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=19]{navrh-softwarove-casti.pdf}}%
-    \put(0.3347136,0.45083851){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily MQTT\end{tabular}}}}%
+	\put(0.3347136,0.45083851){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily MQTT\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=20]{navrh-softwarove-casti.pdf}}%
     \put(0.66597654,0.45083851){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily MQTT\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=21]{navrh-softwarove-casti.pdf}}%
@@ -120,36 +120,39 @@
     \put(0.05694272,0.34047412){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Přímé\end{tabular}}}}%
 	\put(0.05694272,0.32047412){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily ovládání\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=23]{navrh-softwarove-casti.pdf}}%
-    \put(0.24071498,0.19772947){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily I²C\end{tabular}}}}%
+    \put(0.5446922,0.20896894){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Přímé\end{tabular}}}}%
+	\put(0.5446922,0.18772947){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily ovládání\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=24]{navrh-softwarove-casti.pdf}}%
+    \put(0.23871498,0.19501638){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily I²C\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=25]{navrh-softwarove-casti.pdf}}%
     \put(0.44507798,0.34047412){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Přímé\end{tabular}}}}%
     \put(0.44507798,0.32047412){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily ovládání\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=25]{navrh-softwarove-casti.pdf}}%
-    \put(0.86563561,0.33009386){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily I²C\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=26]{navrh-softwarove-casti.pdf}}%
     \put(0.8446922,0.20896894){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Přímé\end{tabular}}}}%
 	\put(0.8446922,0.18772947){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily ovládání\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=27]{navrh-softwarove-casti.pdf}}%
-    \put(0.43837405,0.20896894){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Přímé\end{tabular}}}}%
+     \put(0.43837405,0.20896894){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Přímé\end{tabular}}}}%
 	\put(0.43837405,0.18772947){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily ovládání\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=28]{navrh-softwarove-casti.pdf}}%
-    \put(0.54027398,0.20896894){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Přímé\end{tabular}}}}%
-	\put(0.54027398,0.18772947){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily ovládání\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=29]{navrh-softwarove-casti.pdf}}%
     \put(0.4889648,0.3908254){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Centrální jednotka\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=29]{navrh-softwarove-casti.pdf}}%
+	\put(0.86563561,0.33009386){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily I²C\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=30]{navrh-softwarove-casti.pdf}}%
-    \put(0.05052036,0.19772947){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily I²C\end{tabular}}}}%
+\put(0.14568806,0.2455176){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Indikátor stavů\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=31]{navrh-softwarove-casti.pdf}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=31]{navrh-softwarove-casti.pdf}}%
-    \put(0.14568806,0.2455176){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Indikátor stavů\end{tabular}}}}%
+    \put(0.1426738,0.08260062){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily * Přímé ovládání\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=32]{navrh-softwarove-casti.pdf}}%
-    \put(0.14637819,0.20896894){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Přímé\end{tabular}}}}%
-	\put(0.14637819,0.18772947){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily ovládání\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=33]{navrh-softwarove-casti.pdf}}%
-    \put(0.91808874,0.66324232){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Teplotní sensory\end{tabular}}}}%
-	\put(0.91808874,0.64324232){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily v zásobníku\end{tabular}}}}%
-	\put(0.91808874,0.62324232){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily otopné vody\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=34]{navrh-softwarove-casti.pdf}}%
+	\put(0.91808874,0.62324232){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Teplotní senzory\end{tabular}}}}%
     \put(0.87576792,0.48805461){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily 1-Wire\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=33]{navrh-softwarove-casti.pdf}}%
+    \put(0.14548999,0.15299793){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Krb\end{tabular}}}}%
+	\put(0.14548999,0.13099793){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily 2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=34]{navrh-softwarove-casti.pdf}}%
+    \put(0.11534509,0.19501638){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily I²C\end{tabular}}}}%
+    \put(0.17614887,0.19501638){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily I²C\end{tabular}}}}%
+    \put(0.07721703,0.19501638){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily *\end{tabular}}}}%
+    \put(0.1402126,0.19501638){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily *\end{tabular}}}}%
+    \put(0.20501638,0.19501638){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily *\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=35]{navrh-softwarove-casti.pdf}}%
   \end{picture}%
 \endgroup%

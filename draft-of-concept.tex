@@ -34,7 +34,7 @@ Bezdrátové nástěnné snímače prostorové teploty jsou napájeny z lokáln�
 
 Kabelové nástěnné snímače prostorové teploty jsou napájeny pomocí switche s  \acrshort{poe} (\textit{\acrlong{poe}}). Další části jsou obdobné jako u bezdrátového řešení. Komunikace s centrální jednotkou je zajištěna pomocí zmíněného switche.
 
-Indikátor stavů je propojen s centrální jednotkou, skládá z části indikující stavy pomocí \acrshort{led} (\textit{\acrlong{led}}) pro jednotlivé teploty naměřené v zásobníku otopné vody rozmístěné v jednotlivých částech nádrže. Dále je zde sběrnice pro komunikaci \acrshort{lcd} (\textit{\acrlong{lcd}}) displejem a~centrální jednotkou pro zobrazení teplot ze zásobníku, respektive dvou teplot ze spodní části. LED diody a LCD displej jsou umístěny u krbů.
+Indikátor stavů je propojen s centrální jednotkou, skládá z části indikující stavy pomocí \acrshort{led} (\textit{\acrlong{led}}) pro jednotlivé teploty naměřené v~zásobníku otopné vody rozmístěné v jednotlivých částech nádrže. Dále je zde sběrnice pro komunikaci \acrshort{lcd} (\textit{\acrlong{lcd}}) displejem a~centrální jednotkou pro zobrazení teplot ze zásobníku, respektive dvou teplot ze spodní části. Indikátory stavů jsou umístěny u krbů.
 
 Spínací jednotka se skládá z relé modulů pro ovládání jednotlivých čerpadel pro oběh otopné vody do otopných okruhů podlahové vytápění v jednotlivých patrech. Dále jsou zde ovládána čerpadla pro cirkulaci vody z krbových výměníků. V neposlední řadě je zde případné ovládání plynového kondenzačního kotle.
 
@@ -55,7 +55,7 @@ Další teplotní senzory jsou nutné pro nástěnné teplotní snímače prosto
 
 \subsection{Komunikační část}
 
-Komunikační koncept je nakreslen na obrázku \ref{fig:navrh-softwarove-casti}, který je níže v textu popsán.
+Na obrázku \ref{fig:navrh-softwarove-casti} je nakresle komunikační koncept, který je níže v textu popsán.
 
 \begin{figure}[H]
     \centering
@@ -67,13 +67,13 @@ Komunikační koncept je nakreslen na obrázku \ref{fig:navrh-softwarove-casti},
 
 Komunikace mezi centrální řídicí jednotkou a bezdrátovými i kabelovými nástěnnými snímači prostorové teploty je zajištěna pomocí protokolu MQTT. Centrální jednotka dostává informace z jednotlivých nástěnných snímačů prostorové teploty, zároveň je možné některé parametry nastavovat přímo přes centrální jednotku, která následně dané nastavení pošle do daných zařízení.
 
-Indikátor stavů komunikuje s centrální jednotkou pomocí sběrnice I$^2$C pro zobrazení hodnot na LCD displeji. Zároveň je zde připojení na vstupní/výstupní piny centrální jednotky pro ovládání indikačních LED diod.
+Indikátor stavů komunikuje s centrální jednotkou pomocí sběrnice I$^2$C pro zobrazení hodnot na LCD displeji. Indikační LED jsou připojeny  na vstupní/výstupní piny centrální jednotky.
 
 Spínací jednotka je propojena s centrální jednotkou pro ovládání čerpadel podlahové vytápění, čerpadel pro krbové výměníky a~kondenzačního plynového kotle.
 
 Zónový regulátor komunikuje s centrální jednotkou pomocí I$^2$C sběrnice, následné ovládání pohonů pro otopné okruhy je přímo zónovým regulátorem.
 
-Teplotní senzory umístěné v zásobníku otopné vody a na kouřovodech krbů komunikují s centrální jednotkou pomocí 1-Wire sběrnice.
+Teplotní senzory umístěné v zásobníku otopné vody, na kouřovodech krbů a venkovní senzor komunikují s centrální jednotkou pomocí 1-Wire sběrnice.
 
 
 
@@ -132,15 +132,6 @@ Podle verze sběrnice je frekvenci SCL 100 kHz, 400 kHz, 1 MHz nebo až 3,4 MHz.
 \label{sec:1-wire-sbernice}
 Jedná se o sériovou, asynchronní a poloduplexní sběrnici. Komunikace probíhá na jednom vodiči, dalšími vodiči jsou napájení (V$_{DD}$) a zem (GND) to je v~případě konfigurace pomocí tří vodičů (obrázek \ref{fig:1-wire-sbernice-tri-vodice}), další typ konfigurace sběrnice je pomocí jen dvou vodičů, kde napájení a komunikace probíhá na jednom vodiči, druhý vodič je zem (obrázek \ref{fig:1-wire-sbernice-dva-vodice}), během neutrálního stavu na sběrnici (log. 1) dochází k~nabíjení interního kondenzátoru, který se následně chová jako zdroj energie při log. 0 na sběrnici (komunikace), v~tomto režimu je nutné splnit vhodné podmínky pro napájení a časování pro správnou komunikaci. Sběrnice se skládá z řídícího obvodu master a jednoho či více připojených zařízení slave. Na vodiči data je připojen pull-up rezistor (R), v~neutrálním stavu je na vodiči log. 1. Připojená zařízení po sběrnici komunikují pomocí otevřeného kolektoru (mohou sběrnici stáhnout k zemi (log. 0), po odpojení je na sběrnici opět log. 1).
 
-Komunikaci zahajuje vždy master reset pulsem. Dojde ke vygenerování sestupné hrany na datovém vodiči na log. 0 po dobu minimálně 480 µs. Pak master sběrnici uvolní (opět se objeví log. 1) a naslouchá. Pokud je na sběrnici připojené zařízení, tak detekuje tuto vzestupnou hranu a po prodlevě (15–60~µs) vygeneruje na sběrnici po dobu 60–240 µs log. 0. Průběh komunikace je zobrazen na obrázku \ref{fig:1-wire-reset-vysilani-prijem-dat}a. Pokud se zařízení správně ohlásí, může master začít vysílat a přijímat data, která jsou vysílána v tzv. time slotech. Slot je dlouhý 60–120~µs a během jednoho slotu je vyslán nebo přijat jeden bit informace. Mezi jednotlivými sloty musí být minimálně 1 µs mezera, kdy je sběrnice v klidu. 
-
-Existují 4 ruhy slotů: zápis 1, zápis 0, čtení 1 a čtení 0. Sloty pro zápis slouží k tomu, aby master vyslal data do zařízení. Zápis 1 probíhá tak, že master vygeneruje na sběrnici log. 0 minimálně na 1 µs a nejpozději do 15 µs od začátku ji opět uvolní a ponechá volnou. Zápis 0 probíhá tak, že master vygeneruje na sběrnici log. 0 a ponechá ji tak po celý slot, tedy minimálně 60~µs. Zařízení vzorkuje stav na datovém vodiči zhruba 30 µs po začátek time slotu. Průběh komunikace je zobrazena na obrázku \ref{fig:1-wire-reset-vysilani-prijem-dat}b.
-
-Čtecí sloty inicializuje master, vygeneruje na sběrnici log. 0 na minimálně 1~µs a~opět ji uvolní. Po tomto zahájení může zařízení vyslat 1 bit, ponechá sběrnici v~klidu (log. 1) nebo je vygeneruje na log. 0. Průběh komunikace je zobrazena na obrázku \ref{fig:1-wire-reset-vysilani-prijem-dat}c.
-
-Každé zařízení má v sobě paměť \acrshort{rom} (\textit{\acrlong{rom}}), která obsahuje 64bitové unikátní číslo, které slouží k odlišení jednotlivých zařízení na sběrnici. Po RESET pulsu je třeba vyslat příkaz Match ROM, pak 64bitový kód zařízení, se kterým se má pracovat, a teprve poté se posílá příkaz.
-
-
 \begin{figure}[H]
     \centering
     \def\svgwidth{\columnwidth}
@@ -157,7 +148,12 @@ Každé zařízení má v sobě paměť \acrshort{rom} (\textit{\acrlong{rom}}),
     \label{fig:1-wire-sbernice-dva-vodice}
 \end{figure}
 
-\newpage
+Komunikaci zahajuje vždy master reset pulsem. Dojde ke vygenerování sestupné hrany na datovém vodiči na log. 0 po dobu minimálně 480 µs. Pak master sběrnici uvolní (opět se objeví log. 1) a naslouchá. Pokud je na sběrnici připojené zařízení, tak detekuje tuto vzestupnou hranu a po prodlevě (15–60~µs) vygeneruje na sběrnici po dobu 60–240 µs log. 0. Průběh komunikace je zobrazen na obrázku \ref{fig:1-wire-reset-vysilani-prijem-dat}a. Pokud se zařízení správně ohlásí, může master začít vysílat a přijímat data, která jsou vysílána v tzv. time slotech. Slot je dlouhý 60–120~µs a během jednoho slotu je vyslán nebo přijat jeden bit informace. Mezi jednotlivými sloty musí být minimálně 1 µs mezera, kdy je sběrnice v klidu. 
+
+Existují 4 ruhy slotů: zápis 1, zápis 0, čtení 1 a čtení 0. Sloty pro zápis slouží k tomu, aby master vyslal data do zařízení. Zápis 1 probíhá tak, že master vygeneruje na sběrnici log. 0 minimálně na 1 µs a nejpozději do 15 µs od začátku ji opět uvolní a ponechá volnou. Zápis 0 probíhá tak, že master vygeneruje na sběrnici log. 0 a ponechá ji tak po celý slot, tedy minimálně 60~µs. Zařízení vzorkuje stav na datovém vodiči zhruba 30 µs po začátek time slotu. Průběh komunikace je zobrazena na obrázku \ref{fig:1-wire-reset-vysilani-prijem-dat}b.
+
+Čtecí sloty inicializuje master, vygeneruje na sběrnici log. 0 na minimálně 1~µs a~opět ji uvolní. Po tomto zahájení může zařízení vyslat 1 bit, ponechá sběrnici v~klidu (log. 1) nebo je vygeneruje na log. 0. Průběh komunikace je zobrazena na obrázku \ref{fig:1-wire-reset-vysilani-prijem-dat}c.
+
 
 \begin{figure}[H]
     \centering
@@ -168,15 +164,18 @@ Každé zařízení má v sobě paměť \acrshort{rom} (\textit{\acrlong{rom}}),
     \label{fig:1-wire-reset-vysilani-prijem-dat}
 \end{figure}
 
+Každé zařízení má v sobě paměť \acrshort{rom} (\textit{\acrlong{rom}}), která obsahuje 64bitové unikátní číslo, které slouží k odlišení jednotlivých zařízení na sběrnici. Po RESET pulsu je třeba vyslat příkaz Match ROM, pak 64bitový kód zařízení, se kterým se má pracovat, a teprve poté se posílá příkaz.
+
 \section{Řídicí systém}
-V současné době existuje poměrně dost open-source projektů pro monitorování a ovládání domácí automatizaci. Do které lze zařadit inteligentní řízení vytápění. Mezi velké projekty lze jmenovat systém Home Assistant a OpenHab. Oba jsi jsou poměrně podobní, liší programovacím jazykem, který je použit pro jejich systémové jádro, dále syntaxí pro zápis automatizací, množstvím integrovatelných zařízení (vytvořené \acrshort{api} (\textit{\acrlong{api}}) pro snadné spárování), vydáváním aktualizací, složitostí vytváření či přidávání zařízení do systému, přehlednou a dostupnou dokumentací a uživatelskou základnou, případně dalšími vlastnostmi. Na základě zkušenosti se systémem Home Assistant jak z pohledu dobré zkušenosti ze strany komunity, široké nabídky možnosti nastavení a relativně rychlou tvorbou automatizace jsem tento systém zvolil pro řízení vytápění rodinného domu.
+
+Vybíral jsem primárně z nekomerčních systému. Cílem bylo snížit finanční náklady na pořízení a zejména problém s uzavřeností takového řešení. V~současné době existuje poměrně dost open-source projektů pro monitorování a ovládání domácí automatizaci. Do které lze zařadit inteligentní řízení vytápění. Mezi velké projekty lze jmenovat systém Home Assistant a OpenHab. Oba jsi jsou poměrně podobní, liší programovacím jazykem, který je použit pro jejich systémové jádro, dále syntaxí pro zápis automatizací, množstvím integrovatelných zařízení (vytvořené \acrshort{api} (\textit{\acrlong{api}}) pro snadné spárování), vydáváním aktualizací, složitostí vytváření či přidávání zařízení do systému, přehlednou a dostupnou dokumentací a uživatelskou základnou. Na základě zkušenosti se systémem Home Assistant jak z pohledu dobré zkušenosti ze strany komunity, široké nabídky možnosti nastavení a~relativně rychlou tvorbou automatizace jsem tento systém zvolil pro řízení vytápění rodinného domu.
 
 \subsection{Home Assistant}
 Home Assistant (dále jen \acrshort{ha}) je systém naprogramovaný v jazyce Python 3 a~podporuje mnoho technologií používaných v oblasti domácí automatizace. HA podporuje několik stovek zařízení či služeb (obecně komponent) od desítek velkých firem. Přesněji sdružuje jejich společné ovládání a vzájemnou propojenost automatizací. Vše je tak na jednom místě a možné ovládat přes jednoduché grafické rozhraní.
 
 Všechna data jsou uložena na vlastním úložišti, tedy vlastním počítači, nasu, Raspberry Pi apod. Není tedy potřeba zakládat účet pro využívání služeb (některé služby však potřebují internetové připojení pro stahování informací např. předpověď počasí) a posílat data třetím stranám.
 
-Systém se skládá ze samotné aplikace HA a z operačního systému na kterém HA běží. HA je možné nainstalovat na systém Linux, Windows, macOS. Též je přímá oficiální podpora pro Raspberry Pi, Asus Tinkerboard, Odroid a~Intel NUC, nicméně funkčnost lze najít i pro jiná zařízení. Existují čtyři varianty instalace systému, liší se nutnými zkušenostmi pro správu HA tak i~operačního systému, možnostmi správy aktualizací či obnovování, vracení nastavení, dále způsoby zálohování, možnostmi operačního systému (zda je předinstalován omezený OS nebo se jedná o plnohodnotnou verzi) v~neposlední řadě, zda je využit kontejner Docker či je HA nainstalován přímo v operačním systému, nebo lépe při využití virtuálního prostředí.
+Systém se skládá ze samotné aplikace HA a z operačního systému na kterém HA běží. HA je možné nainstalovat na systém Linux, Windows, macOS. Též je přímá oficiální podpora pro Raspberry Pi, Asus Tinkerboard, Odroid a~Intel NUC, nicméně funkčnost lze najít i pro jiná zařízení. Existují čtyři varianty instalace systému, liší se nutnými zkušenostmi pro správu HA tak i~operačního systému, možnostmi správy aktualizací či obnovování, vracení nastavení, dále způsoby zálohování, možnostmi operačního systému (zda je předinstalován omezený OS nebo se jedná o plnohodnotnou verzi) v~neposlední řadě, zda je využit kontejner Docker či je HA nainstalován jako operační systém, nebo využití virtuálního prostředí.
 
 \subsubsection{Architektura Home Assistantu}
 Obecně není stanoven otevřený standard pro komunikaci inteligentních zařízení. Tato skutečnost zamezuje vzájemnou komunikaci mezi zařízeními a~především většina zařízení není určena k řízení jiných zařízení. V HA se takové zařízení, která spravuje všechny ostatní nazývá \textbf{rozbočovač}.
@@ -216,18 +215,17 @@ Jádro HA odpovídá za řízení domácnosti. Skládá ze čtyř části, kter�
     \label{fig:ha-jadro-architektury}
 \end{figure}
 
-\subsubsection{Architektury komponent}
-HA je možné rozšiřovat přes tzv. komponenty. Každá komponenta odpovídá za určitou oblast v rámci HA. Komponenty mohou poslat spouštěcí události, nabízet služby a řídit/měnit stavy. Komponenty jsou napsány v Pythonu. Sám HA nabízí několik stovek takovýchto komponent k použití. Znázornění využití komponent je na obrázku \ref{fig:ha-architektura-komponent}.
+\subsubsection{Integrace}
+HA je možné rozšiřovat přes tzv. integrace. Každá integrace odpovídá za určitou oblast v rámci HA. Integrace mohou poslouchat nebo spouštět  události, nabízet služby a řídit/měnit stavy.  Integrace je složená ze dvou částí, komponenty a platformy. Komponenta obsahuje základní logiku prvku a platforma propojuje integraci s ostatními integracemi. Sám HA nabízí několik stovek takovýchto integrací k použití. Znázornění využití integrací je na obrázku \ref{fig:ha-integrace}.
 
 \begin{figure}[H]
     \centering
     \def\svgwidth{\columnwidth}
-    \input{images/svg/ha-architektura-komponent.pdf_tex}
-    \caption[Znázornění využití komponent v~HA.]{Znázornění využití komponent v HA. Upraveno z \cite{home-assistant-architektura}.}
-    \label{fig:ha-architektura-komponent}
+    \input{images/svg/ha-integrace.pdf_tex}
+    \caption[Znázornění využití integrací v~HA.]{Znázornění využití komponent v HA. Upraveno z \cite{home-assistant-architektura}.}
+    \label{fig:ha-integrace}
 \end{figure}
 
-Jsou zde dva typy komponent. První typ, které interagují se zařízeními „Internet of Things“ (například inteligentní žárovky). Druhý typem jsou komponenty, které reagují na událost ke kterým dojde v~HA (například nastavená automatizace).
 
 
 \subsection{Inteligentní část systému}
