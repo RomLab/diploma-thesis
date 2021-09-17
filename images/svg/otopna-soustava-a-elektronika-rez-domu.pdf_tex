@@ -89,12 +89,14 @@
     \put(0,0){\includegraphics[width=\unitlength,page=13]{otopna-soustava-a-elektronika-rez-domu.pdf}}%
     \put(0.41469144,0.28595011){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily I$^2$C\end{tabular}}}}%
 	\put(0.41469144,0.26595011){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily sběrnice\end{tabular}}}}%
-    \put(1.0,0.11822278){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Termost patro\end{tabular}}}}%
-    \put(1.01,0.03935912){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Termost přízemí\end{tabular}}}}%
+    \put(1.0,0.13022278){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Termost patro\end{tabular}}}}%
+	\put(1.0,0.11022278){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily (chodba)\end{tabular}}}}%
+    \put(1.01,0.04935912){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Termost přízemí\end{tabular}}}}%
+	\put(1.01,0.03035912){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily (chodba)\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=14]{otopna-soustava-a-elektronika-rez-domu.pdf}}%
     \put(0.60133545,0.13876444){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily 1-Wire\end{tabular}}}}%
 	\put(0.60133545,0.11876444){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily sběrnice\end{tabular}}}}%
-	\put(0.60133545,0.08376444){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily lokální\end{tabular}}}}%
+	\put(0.60133545,0.08376444){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily chodbové\end{tabular}}}}%
 	\put(0.60133545,0.06376444){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily termostaty\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=15]{otopna-soustava-a-elektronika-rez-domu.pdf}}%
     \put(0.65654001,0.9844087){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Signalizace\end{tabular}}}}%

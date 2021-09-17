@@ -1,6 +1,6 @@
-\chapter{Výběr komponent/zařízení}
+\chapter{Hardwarová část}
 
-Na obrázku \ref{fig:otopna-soustava-a-elektronika-rez-domu} je nákres otopné soustavy včetně jednotlivých zařízení pro ovládání této soustavy. Vzhledem k teoretické části, kdy popisuji princip zónové regulace vytápění, tak v samotné realizaci je pouze regulace vytápění na základě prostorové teploty z lokálních termostatů umístěných na chodbách. Nastíním vývoj realizace nástěnných snímačů prostorové teploty a software pro zónovou regulaci. Nyní popíši jednotlivá vybraná či navržená zařízení z~nákresu. 
+Na obrázku \ref{fig:otopna-soustava-a-elektronika-rez-domu} je nákres otopné soustavy včetně jednotlivých zařízení pro ovládání této soustavy. V textu dále popíši jednotlivá vybraná či navržená zařízení z~nákresu, které jsem realizoval nebo zakoupil hotové, případně je upravil. Dále uvedu popis pro zrealizované nástěnné snímače prostorové teploty.
 
 \newpage
 
@@ -8,14 +8,14 @@ Na obrázku \ref{fig:otopna-soustava-a-elektronika-rez-domu} je nákres otopné 
     \centering
     \def\svgwidth{\columnwidth}
     \input{images/svg/otopna-soustava-a-elektronika-rez-domu.pdf_tex}
-    \caption{Otopná soustava v domě včetně elektroniky pro řízení.}
+    \caption[Otopná soustava v domě včetně elektroniky pro řízení.]{Otopná soustava v domě včetně elektroniky pro řízení. V nákresu nejsou uvedeny nástěnné snímače prostorové teploty pro jednotlivé místnosti.}
     \label{fig:otopna-soustava-a-elektronika-rez-domu}
 \end{figure}
 
 
 \section{Centrální jednotka Raspberry Pi}
 
-Pro centrální řídicí jednotku jsem vybral jednodeskový počítač Raspberry Pi model 4. Důvodem pro vybraní byla přímá podpora HA, velká uživatelská základna, která toto zařízení používá (nejen s HA, ale i s jiným softwarem), nízká a relativně vysoký výkon. V neposlední řadě na pozadí HA běží linuxová distribuce, takže ovládání je stejné jak při použití běžných desktopových verzí. Přehled specifikace zařízení je v tabulce \ref{tab:prehled-vybaveni-raspberry-pi-4-model-b}. Samotné Raspberry Pi je na obrázku \ref{fig:raspberry-pi-4-model-b}. Samozřejmě může vzniknout úvaha nad odolností tohoto zařízení např. vůči vnějšímu rušení, samotného rušení zařízení apod. Co se týče nasazení takového zařízení, většinou výrobci uvádějí že se jedná o~vývojové zařízení, které není určeno do koncového zařízení nebo případně splňují  základní certifikace ochrany. Průmyslovou certifikaci nesplňují nebo se na trhu nacházejí zařízení, které se průmyslovou aplikací chlubí (zde je nutné důkladně pročíst všechnu technickou dokumentaci), pak dále skutečně stojí za zvážení o jakou certifikaci se jedná, v jaké části průmyslu lze toto zařízení nasadit, ale i tak to může být dost velký risk. Ve většině případů je však nutné provést hardwarovou úpravu pro vysokou odolnost proti rušení, robustnost běžícího real time systému, RTC, typ paměti pro ukládání dat (typ média), životnost, technická podpora a mnohé další. V domácích podmínkách nejsou nutné všechny požadavky jako v průmyslu, nicméně je nutné minimálně hledět na ESD ochranu připojených periferií především u sběrnic, které jsou na delší vzdálenosti a způsob ukládání dat z pohledu životnosti paměťového média. Pro ESD ochranu jak samotného Raspberry Pi, tak i koncových zařízení je nutné zapojit mezi kabely sběrnice a zařízení ESD ochrany (takové ochrany jsou navrženy a popsány níže). SD kartu pro ukládání a běh samotného systému je vhodné změnit za médium s vetší životností, lze využít například domácí NAS a data ukládat do databáze, SD kartu používat pouze pro systém či USB flash disk. Případně zajistit postup s předpřipravenou zálohou pro obnovu nefunkčního systému apod. 
+Pro centrální řídicí jednotku jsem vybral jednodeskový počítač Raspberry Pi model 4. Důvodem pro vybraní byla přímá podpora HA, velká uživatelská základna, která toto zařízení používá (nejen s HA, ale i s jiným softwarem), nízká a relativně vysoký výkon. Přehled specifikace zařízení je v tabulce \ref{tab:prehled-vybaveni-raspberry-pi-4-model-b}. Samotné Raspberry Pi je na obrázku \ref{fig:raspberry-pi-4-model-b}. Samozřejmě může vzniknout úvaha nad odolností tohoto zařízení např. vůči vnějšímu rušení, samotného rušení zařízení apod. Co se týče nasazení takového zařízení, většinou výrobci uvádějí že se jedná o~vývojové zařízení, které není určeno do koncového zařízení nebo případně splňují  základní certifikace ochrany. Průmyslovou certifikaci nesplňují nebo se na trhu nacházejí zařízení, které se průmyslovou aplikací chlubí (zde je nutné důkladně pročíst všechnu technickou dokumentaci), pak dále skutečně stojí za zvážení o jakou certifikaci se jedná, v jaké části průmyslu lze toto zařízení nasadit, ale i tak to může být dost velký risk. Ve většině případů je však nutné provést hardwarovou úpravu pro vysokou odolnost proti rušení, robustnost běžícího real time systému, RTC, typ paměti pro ukládání dat (typ média), životnost, technická podpora a mnohé další. V~domácích podmínkách nejsou nutné všechny požadavky jako v průmyslu, nicméně je nutné minimálně hledět na \acrshort{esd} (\textit{\acrlong{esd}}) ochranu připojených periferií především u sběrnic, které jsou na delší vzdálenosti a způsob ukládání dat z pohledu životnosti paměťového média. Pro ESD ochranu jak samotného Raspberry Pi, tak i koncových zařízení je nutné zapojit mezi kabely sběrnice a zařízení ESD ochrany (takové ochrany jsou navrženy a popsány níže). SD kartu pro ukládání a běh samotného systému je vhodné změnit za médium s~vetší životností, lze využít například domácí NAS a data ukládat do databáze, SD kartu používat pouze pro systém či USB flash disk. Případně zajistit postup s předpřipravenou zálohou pro obnovu nefunkčního systému apod. 
 
 \begin{center}
 \begin{table}[H]
@@ -32,8 +32,8 @@ quad-core Cortex-A72 (ARM v8)
 \makecell{2,4 GHz a 5,0 GHz IEEE 802.11b/g/n/ac \\
 LAN, Bluetooth 5.0, BLE \\
 Gigabit Ethernet \\
-2 × USB 3.0 ports \\
-2 × USB 2.0 ports} \\
+2 × USB 3.0  \\
+2 × USB 2.0 } \\
 \hline
 \thead{GPIO} & 2 × 20 pinový header \\ 
 \hline
@@ -80,7 +80,7 @@ Pro snímání teploty z kouřovodů u krbů slouží termočlánek typu K od v�
 
 \subsubsection{Teplotní senzory na 1-Wire sběrnici}
 Pro snímání teplot z centrálního zásobníku otopné vody, venkovní teploty a~prostorových teplot z jednotlivých místností slouží teplotní senzor DS18B20 od výrobce Maxim. Umožňuje měřit
-v teplotním rozsahu od -55 °C do +125~°C. V rozsahu od -10 °C do +85 °C měří s přesností ±0,5 °C. Senzor umožňuje měřit teplotu s přesností 12 bitů. Pro komunikaci využívá 1-Wire sběrnici (způsob komunikace je popsán v \ref{sec:1-wire-sbernice} v části 1-Wire sběrnice). Ve svém konkrétním řešením využívám senzory v pouzdře TO-92 pro nástěnné teplotní snímače prostorové teploty, pro centrální zásobník otopné vody a~venkovní teplotu je senzor zapouzdřen do ochranného pouzdra.
+v teplotním rozsahu od -55 °C do +125~°C. V rozsahu od -10 °C do +85 °C měří s přesností ±0,5 °C. Senzor umožňuje měřit teplotu s přesností 12 bitů. Pro komunikaci využívá 1-Wire sběrnici (způsob komunikace je popsán v \ref{sec:1-wire-sbernice} v části 1-Wire sběrnice). Ve svém konkrétním řešením využívám senzory v pouzdře TO-92 pro nástěnné snímače prostorové teploty, pro centrální zásobník otopné vody a~venkovní teplotu je senzor zapouzdřen do ochranného pouzdra.
 
 
 \input{pcb-with-inputs-outputs-for-raspberry-pi}
@@ -91,13 +91,13 @@ v teplotním rozsahu od -55 °C do +125~°C. V rozsahu od -10 °C do +85 °C mě
 
 \section{Digitální chodbové termostaty}
 \label{sec:digitalni-chodbove-termostaty}
-Pro snímání teplot z jednotlivých pater na chodbách slouží digitální termostat s označením W3230. Termostat disponuje jedním spínací výstupem (v případě potřeby vytápění se výstup sepne, jinak je rozepnut). Je možné nastavit hysterezi, časové zpoždění, kalibraci teploty a rozsah maximálních teplot. Lze také aktivovat signalizaci, která se spustí po dosažení maximální přípustné teploty. Pro napájení je potřeba stejnosměrné napětí 12 V. Pro snímání teploty slouží NTC termistor. Rozsah teplot je -40 °C až 120 °C. Přesnost měření je $\pm$ 0,1 °C. Termostat lze nahradit za jakýkoliv jiný, který disponuje spínacím výstupem.
+Pro snímání teplot z jednotlivých pater na chodbách slouží zakoupené digitální termostaty s označením W3230. Termostat disponuje jedním spínací výstupem (v případě potřeby vytápění se výstup sepne, jinak je rozepnut). Je možné nastavit hysterezi, časové zpoždění, kalibraci teploty a rozsah maximálních teplot. Lze také aktivovat signalizaci, která se spustí po dosažení maximální přípustné teploty. Pro napájení je potřeba stejnosměrné napětí 12 V. Pro snímání teploty slouží NTC termistor. Rozsah teplot je -40 °C až 120 °C. Přesnost měření je $\pm$ 0,1 °C. Termostat lze nahradit za jakýkoliv jiný, který disponuje spínacím výstupem.
 
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{images/digitalni-termostat-w3230.png}
-    \caption[Digitální termostat W3230.]{Digitální termostat W3230 \cite{digitalni-termostat-w3230}.}
+    \caption[Digitální chodbový termostat W3230.]{Digitální chodbový termostat W3230 \cite{digitalni-termostat-w3230}.}
     \label{fig:digitalni-termostat-w3230}
 \end{figure}
 
@@ -122,7 +122,7 @@ Pro spínání čerpadel a signalizačních LED slouží dva zakoupené relé mo
 
 \section{Realizovaný rozvaděč s~elektronikou}
 
-V realizovaném rozvaděči na obrázku \ref{fig:rozvadec-ve-sklepe-s-elektronikou} je umístěn 5 V zdroj pro napájení centrální jednotky, relé modulů, I$^2$C diferenciální sběrnice, napájení 1-Wire sběrnice, napájení elektroniky u krbů a napájení pro zónové regulátory. Dále je zde 12 V zdroj pro napájení dvou lokálních chodbových termostatů. Zdroj 24 V pro zónové regulátory, respektive pro napájení termoelektrických pohonů. V  neposlední době jsou zde jističe pro jednotlivé zdroje a čerpadla včetně proudového chrániče.
+V realizovaném rozvaděči na obrázku \ref{fig:rozvadec-ve-sklepe-s-elektronikou} je umístěn 5 V zdroj pro napájení centrální jednotky, relé modulů, I$^2$C diferenciální sběrnice, napájení 1-Wire sběrnice, napájení elektroniky u krbů a napájení pro zónové regulátory. Dále je zde 12 V zdroj pro napájení dvou chodbových termostatů. Zdroj 24 V pro zónové regulátory, respektive pro napájení termoelektrických pohonů. V  neposlední řadě jsou zde jističe pro jednotlivé zdroje a čerpadla včetně proudového chrániče.
 
 \begin{figure}[H]
     \centering
