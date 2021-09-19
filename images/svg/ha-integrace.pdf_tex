@@ -66,7 +66,7 @@
     \put(0.88936535,0.27186964){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily integrace\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{ha-integrace.pdf}}%
     \put(0.88593482,0.15694683){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Integrace\end{tabular}}}}%
-    \put(0.88593482,0.1329331){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily binárního čidla\end{tabular}}}}%
+    \put(0.88593482,0.1329331){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily binárního senzoru\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=6]{ha-integrace.pdf}}%
     \put(0.50857633,0.14665523){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Entity\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=7]{ha-integrace.pdf}}%
