@@ -1,0 +1,158 @@
+%% Creator: Inkscape 1.0 (4035a4fb49, 2020-05-01), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'blokove-schema-nastenny-snimac-prostorove-teploty-ethernet.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{548.25bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,1.01931332)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{blokove-schema-nastenny-snimac-prostorove-teploty-ethernet.pdf}}%
+	\put(0.76607387,0.39409444){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Indikace pro\end{tabular}}}}%
+    \put(0.76607387,0.37909444){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily změření \end{tabular}}}}%
+	\put(0.76607387,0.36409444){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily nové teploty\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{blokove-schema-nastenny-snimac-prostorove-teploty-ethernet.pdf}}%
+    \put(0.46511628,0.56556503){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Přerušení \end{tabular}}}}%
+	\put(0.46511628,0.54556503){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily  z tlačítek \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{blokove-schema-nastenny-snimac-prostorove-teploty-ethernet.pdf}}%
+    \put(0.46511628,0.38609444){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Přerušení \end{tabular}}}}%
+	\put(0.46511628,0.37209444){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily z časovačů \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{blokove-schema-nastenny-snimac-prostorove-teploty-ethernet.pdf}}%
+    \put(0.68399453,0.56556503){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Inkrementování/dekrementování \end{tabular}}}}%
+	\put(0.68399453,0.54556503){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily  požadované teploty \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{blokove-schema-nastenny-snimac-prostorove-teploty-ethernet.pdf}}%
+    \put(0.76607387,0.31248705){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Zhastnutí  \end{tabular}}}}%
+	\put(0.76607387,0.29248705){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily displeje \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{blokove-schema-nastenny-snimac-prostorove-teploty-ethernet.pdf}}%
+	\put(0.27359781,0.97228185){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Funguje \end{tabular}}}}%
+    \put(0.27359781,0.95228185){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily síťové \end{tabular}}}}%
+	\put(0.27359781,0.93228185){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily připojení \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{blokove-schema-nastenny-snimac-prostorove-teploty-ethernet.pdf}}%
+	\put(0.27359781,0.27644738){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Příjem zpráv \end{tabular}}}}%
+    \put(0.27359781,0.26144738){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily z centrální \end{tabular}}}}%
+	\put(0.27359781,0.24744738){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily jednotky \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{blokove-schema-nastenny-snimac-prostorove-teploty-ethernet.pdf}}%
+	\put(0.91655267,0.57056503){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Zobrazení \end{tabular}}}}%
+    \put(0.91655267,0.55556503){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily požadované teploty  \end{tabular}}}}%
+	\put(0.91655267,0.54056503){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily na displeji \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{blokove-schema-nastenny-snimac-prostorove-teploty-ethernet.pdf}}%
+	\put(0.91655267,0.48848568){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Restart časovače  \end{tabular}}}}%
+	\put(0.91655267,0.47348568){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily pro \end{tabular}}}}%
+    \put(0.91655267,0.45848568){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily zhasnutí displeje \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{blokove-schema-nastenny-snimac-prostorove-teploty-ethernet.pdf}}%
+	\put(0.27359781,0.15896858){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Zobrazení \end{tabular}}}}%
+    \put(0.27359781,0.14096858){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily požadované \end{tabular}}}}%
+	\put(0.27359781,0.12296858){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily teploty/zprávy \end{tabular}}}}%
+	\put(0.27359781,0.10496858){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily z centrální \end{tabular}}}}%
+	\put(0.27359781,0.08696858){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily jednotky  \end{tabular}}}}%
+	\put(0.27359781,0.06896858){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily na displej \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{blokove-schema-nastenny-snimac-prostorove-teploty-ethernet.pdf}}%
+	\put(0.27359781,0.54452535){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Kontrola \end{tabular}}}}%
+	\put(0.27359781,0.52952535){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily indikace\end{tabular}}}}%
+    \put(0.27359781,0.51452535){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily nové \end{tabular}}}}%
+	\put(0.27359781,0.49852535){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily naměřené  \end{tabular}}}}%
+	\put(0.27359781,0.48452535){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily teploty \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{blokove-schema-nastenny-snimac-prostorove-teploty-ethernet.pdf}}%
+	\put(0.09575923,0.59108486){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Zobrazení \end{tabular}}}}%
+    \put(0.09575923,0.57608486){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily teploty \end{tabular}}}}%
+	\put(0.09575923,0.56108486){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily na displeji \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{blokove-schema-nastenny-snimac-prostorove-teploty-ethernet.pdf}}%
+	\put(0.09575923,0.28912727){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Poslání teploty \end{tabular}}}}%
+    \put(0.09575923,0.27512727){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily do \end{tabular}}}}%
+	\put(0.09575923,0.26212727){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily centrální jednotky \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{blokove-schema-nastenny-snimac-prostorove-teploty-ethernet.pdf}}%
+	\put(0.48563611,0.89704245){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Obnova \end{tabular}}}}%
+    \put(0.48563611,0.87704245){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily síťového  \end{tabular}}}}%
+	\put(0.48563611,0.85704245){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily připojení \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{blokove-schema-nastenny-snimac-prostorove-teploty-ethernet.pdf}}%
+	\put(0.3994528,0.77708349){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Obnova \end{tabular}}}}%
+	\put(0.3994528,0.75708349){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily připojení \end{tabular}}}}%
+    \put(0.3994528,0.73708349){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily k MQTT \end{tabular}}}}%
+	\put(0.3994528,0.71708349){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily brokeru \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{blokove-schema-nastenny-snimac-prostorove-teploty-ethernet.pdf}}%
+	\put(0.67031464,0.89841044){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Indikace stavu\end{tabular}}}}%
+	\put(0.67031464,0.87841044){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily síťového \end{tabular}}}}%
+	\put(0.67031464,0.85841044){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily připojení (ikona)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{blokove-schema-nastenny-snimac-prostorove-teploty-ethernet.pdf}}%
+	\put(0.67031464,0.76208349){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Indikace pro \end{tabular}}}}%
+    \put(0.67031464,0.74708349){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily změření \end{tabular}}}}%
+	\put(0.67031464,0.73208349){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily nové teploty\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{blokove-schema-nastenny-snimac-prostorove-teploty-ethernet.pdf}}%
+    \put(0.61559508,0.38609444){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Inkrementování  \end{tabular}}}}%
+	\put(0.61559508,0.37209444){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily čítačů \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{blokove-schema-nastenny-snimac-prostorove-teploty-ethernet.pdf}}%
+    \put(0.25307798,0.90440224){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Ano\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{blokove-schema-nastenny-snimac-prostorove-teploty-ethernet.pdf}}%
+    \put(0.35294118,0.84968267){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Ne\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{blokove-schema-nastenny-snimac-prostorove-teploty-ethernet.pdf}}%
+    \put(0.25307798,0.78812317){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Ano\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=22]{blokove-schema-nastenny-snimac-prostorove-teploty-ethernet.pdf}}%
+    \put(0.34473324,0.96459375){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Ne\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=23]{blokove-schema-nastenny-snimac-prostorove-teploty-ethernet.pdf}}%
+    \put(0.25307798,0.33121482){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Ano\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=24]{blokove-schema-nastenny-snimac-prostorove-teploty-ethernet.pdf}}%
+    \put(0.35294118,0.39551031){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Ne\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=25]{blokove-schema-nastenny-snimac-prostorove-teploty-ethernet.pdf}}%
+    \put(0.06839945,0.42697405){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Ano\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=26]{blokove-schema-nastenny-snimac-prostorove-teploty-ethernet.pdf}}%
+	\put(0.09575923,0.39246243){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Připojeno \end{tabular}}}}%
+    \put(0.09575923,0.37746243){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily k  MQTT \end{tabular}}}}%
+	\put(0.09575923,0.36246243){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily brokeru? \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=27]{blokove-schema-nastenny-snimac-prostorove-teploty-ethernet.pdf}}%
+	\put(0.27359781,0.39583042){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Připojeno  \end{tabular}}}}%
+    \put(0.27359781,0.38283042){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily k síti a k \end{tabular}}}}%
+	\put(0.27359781,0.37083042){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily MQTT  \end{tabular}}}}%
+	\put(0.27359781,0.35983042){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily brokeru? \end{tabular}}}}%
+	%\put(0.27359781,0.38183042){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Připojeno k síti a k MQTT brokeru? \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=28]{blokove-schema-nastenny-snimac-prostorove-teploty-ethernet.pdf}}%
+	\put(0.27359781,0.85073876){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Připojeno \end{tabular}}}}%
+    \put(0.27359781,0.83573876){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily k MQTT \end{tabular}}}}%
+	\put(0.27359781,0.82073876){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily brokeru \end{tabular}}}}%
+  \end{picture}%
+\endgroup%
