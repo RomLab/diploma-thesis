@@ -10,6 +10,8 @@
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{tikz}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{arrows.meta,arrows}
 \usepackage[demo,abs]{overpic}
 % Pictures
 \usepackage{graphicx,import}
@@ -285,6 +287,9 @@ Prohlašuji, že jsem předloženou práci vypracoval samostatně a že jsem uve
 
 \input{choosing-of-components-devices}
 \input{software-part}
+
+\input{testing}
+\input{suggest-further-improvements}
 %\part{Your Party}
 
 %\blindmathtrue
@@ -352,6 +357,7 @@ Prohlašuji, že jsem předloženou práci vypracoval samostatně a že jsem uve
 
 \chapter{Obsah CD}
 \appcaption{G Obsah CD}
+\label{app:obsah-cd}
 \subimport{appendix}{content-of-cd.tex}
 
 %\bibliographystyle{amsalpha}
