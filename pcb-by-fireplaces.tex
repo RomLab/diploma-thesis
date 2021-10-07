@@ -31,17 +31,21 @@ Sběrnice I$^2$C je realizovaná pomocí zakoupeného modulu (obrázek \ref{fig:
 Výhodou PCA9615 je automatický výběr směru komunikace, není potřeba externího ovládání. Komunikace je možná až do rychlosti 1 MHz (přibližně pro 3 m), se zvýšenou délkou je však nutné rychlost snížit. Komunikace využívá standardního protokolu I$^2$C. Nezávislost napájení, je možné napájet koncová zařízení z jiného zdroje než Master. V neposlední řadě se jedná o jednoduché řešení bez nutných další zařízení na straně Slave, stačí pouze zapojit koncové zařízení s~podporou I$^2$C. Na obrázku \ref{fig:modul-pca9615-transily} jsou pro větší ochranu modulu přidány obousměrné transil diody (SM6T6V8CAY) připájené na vstupní piny konektoru RJ45 (obvod sám o sobě poskytuje vstupní ochranu pro ESD). Pro rozbočení I$^2$C sběrnice do jednotlivých pater slouží DPS s konektory RJ45 (schéma viz příloha \ref{app:schemata-ostatni}, obrázky viz příloha \ref{app:rozbocovac-i2c}).
 
 \begin{figure}[H]
+\centering
+\begin{subfigure}{.5\textwidth}
     \centering
     \includegraphics[width=0.7\textwidth]{images/krb/modul-pca9615-i2c-sbernice.png}
-    \caption[Modul s obvodem PCA9615.]{Modul s obvodem PCA9615.}
+    \caption{Modul s obvodem PCA9615 – vrchní strana.}
     \label{fig:modul-pca9615-i2c-sbernice}
-\end{figure}
-
-\begin{figure}[H]
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
     \centering
-    \includegraphics[width=0.6\textwidth]{images/krb/modul-pca9615-transily.png}
-    \caption[Modul s obvodem PCA9615 s transily.]{Modul s obvodem PCA9615 s ochrannými transily.}
+    \includegraphics[width=0.7\textwidth]{images/krb/modul-pca9615-transily.png}
+    \caption{Modul s obvodem PCA9615 a s ochrannými transily – spodní strana.}
     \label{fig:modul-pca9615-transily}
+\end{subfigure}
+\caption{Modul s obvodem PCA9615.}
+\label{fig:modul-pca9615}
 \end{figure}
 
 
@@ -88,14 +92,14 @@ Výše popsané části jsou realizované na DPS (obrázek \ref{fig:dps-led-ochr
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{images/krb/dps-led-ochrany-u-krbu-spodek.png}
+    \includegraphics[width=0.8\textwidth]{images/krb/dps-led-ochrany-u-krbu-spodek.png}
     \caption{Spodní část DPS pro signalizaci u krbu.}
     \label{fig:dps-led-ochrany-u-krbu-spodek}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{images/krb/dps-led-ochrany-u-krbu-vrsek.png}
+    \includegraphics[width=0.8\textwidth]{images/krb/dps-led-ochrany-u-krbu-vrsek.png}
     \caption{Horní část DPS pro signalizaci u krbu.}
     \label{fig:dps-led-ochrany-u-krbu-vrsek}
 \end{figure}

@@ -55,7 +55,7 @@ Programování nástěnných snímačů prostorové teploty jsem využil Arduino
 Nastavené QOS pro MQTT přenos zpráv mez WiFi a centrální jednotkou je 2, mezi Ethernetem nástěnným snímač prostorové teploty a centrální jednotkou je 1. Vzhledem k obsahu zpráv, tedy přenosu především naměřené teploty v 30 sekundovém intervalu, by stačilo QOS 0 (především u kabelového připojení). Zároveň pokud dojde přenastavení teploty v centrálním systému, daná změna se projeví i na příslušném nástěnném snímači prostorové teploty. Všechny zařízení mají staticky nastavené IP adresy. Software pro WiFi a Ethernet nástěnný snímač prostorové teploty se liší jen v síťové části. Verze ESP-32-WROVER-IE (M213EH2864UH3Q0) má dvě jádra. V současné verzi není striktně vymezené, které jádro se má používat pro co, dochází k přepínání mezi jádry. Software je udělán s prioritou pro změny uživatele (změna požadované teploty, rozsvícení displeje apod.), tedy aby během změn nedocházelo k prodlevám, které uživatel může registrovat, pokud by se na pozadí něco provádělo (např. odesílání teploty do centrální jednotky, obnova připojení apod.). Pro ověření, že zařízení je připojeno do sítě a komunikuje. Posílá každou minutu aktuální čas do centrální jednotky.
 
 
-
+\newpage
 
 \subsection{HA – Typy řízení vytápění}
 
@@ -157,7 +157,7 @@ Lokální termostaty jsou roztříděny do skupiny podle daného patra, kde se n
     \label{fig:prehled-lokalnich-termostaty-patro}
 \end{figure}
 
-Každý termostat má dále zobrazení, zda je koncový snímač prostorové teploty připojen k centrální jednotce, ověření probíhá na základě posílaní aktuálního času, který se porovnává s časem v centrální jednotce zpožděný o~minutu, pokud zařízení neposílá aktuální čas, dojde ke zpoždění a zařízení se vyhodnotí jako nepřipojené. Dále je zde detekce otevřeného okna, tato funkce je více popsána v části \ref{sec:detekce-otevreneho-okna}. 
+Každý termostat má dále zobrazení, zda je koncový snímač prostorové teploty připojen k centrální jednotce, ověření probíhá na základě posílaní aktuálního času, který se porovnává s časem v centrální jednotce zpožděný o~minutu, pokud zařízení neposílá aktuální čas, dojde ke zpoždění a zařízení se vyhodnotí jako nepřipojené. Pokud je zařízení nepřipojené, tak dojde k~zastavení vytápění pro danou místnost, dokud není spojení obnoveno. Dále je zde detekce otevřeného okna, tato funkce je více popsána v části \ref{sec:detekce-otevreneho-okna}. V~případě otevřeného okna je uživatel informován pomocí upozornění. 
 
 
 
