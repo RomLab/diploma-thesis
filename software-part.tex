@@ -202,6 +202,16 @@ Pro detekci otevřeného okna se vyhodnocuje gradient teploty. Tato funkce je ji
 \label{sec:teplotni-predikce}
 Na základě historický dat (7 dní) systém automaticky provádí pro každou místnost zvlášť takzvané „teplotní osahání místnosti“ spočívající v matematické metodě lineární regrese (aproximace naměřených hodnot metodou nejmenších čtverců). Podle vnitřní, venkovní teploty a doby zapnutí jednotlivých termoelektrických pohonů (doby vytápění) pro danou místnost se získá převodní charakteristika, závislost doby vytápění na rozdílu vnitřní a venkovní teploty. Tato jednoduchá aproximace se využívá pro definované teplotní plány (část \ref{sec:rizeni-vytapeni-podle-teplotnich-planu-s-upravou-podle-predpovedi-pocasi} Řízení vytápění podle teplotních plánů s úpravou podle předpovědi počasí). Z jednotlivých teplotních úseků se vezme jejich začátek a pro danou hodinu se vybere teplota z předpovědi počasí. Tato teplota se následně využívá v dané lineární aproximace a určí se v minutách, o kolik je nutné úsek posunout. Tím se zajistí, že v požadovaný čas bude v~místnosti požadovaná teplota. Každý týden se udělá nová lineární aproximace pro danou místnost.
 
+\subsection{Vizualizace aktuálních stavů}
+Pro každé patro je v levém menu půdorys daného patra. V každém půdorysu pro každou místnost se zobrazuje aktuální a požadováná teplota, zda se v dané místnosti topí, detekce otevřeného okna a v neposlední řadě, zda se topí v krbu. Půdorys pro patro je na obrázku \ref{fig:vizualizace-hodnot-patro-pudorys}. Jednotlivé stavy se dají rozkliknout a zobrazit jejich historii, případně změnit požadovanou teplotu. Půdorys v případě potřeby je snadno modifikovatelný.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{images/software-ha/vizualizace-hodnot-patro-pudorys.png}
+    \caption{Vizualizace aktuálních stavů pro patro.}
+    \label{fig:vizualizace-hodnot-patro-pudorys}
+\end{figure}
+
 
 \section{Zápis automatizace}
 Primárně pro zápis automatizace se využívá \acrshort{yaml} (\textit{\acrlong{yaml}}). Dále mezivrstvu mezi systémem HA a využití vlastních Python knihoven s návazností na objekty v HA využívám AppDaemon (externí modul). Appdaemon využívám pro obsluhu LCD displejů, zónových regulátorů, teplotních senzorů, pro čtení hodnoty z chodbových termostatů a pro předpřípravu dat pro „osahání teploty v místnosti“.. 
