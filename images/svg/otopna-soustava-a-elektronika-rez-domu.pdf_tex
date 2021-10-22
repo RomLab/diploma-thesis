@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{569.35693359bp}%
+    \setlength{\unitlength}{551.73193359bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,94 +50,123 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,1.44300255)%
+  \begin{picture}(1,1.46802905)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{otopna-soustava-a-elektronika-rez-domu.pdf}}%
-    \put(0.72225973,0.73598816){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily TUV\end{tabular}}}}%
+    \put(0.71525973,0.73598816){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily TUV\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{otopna-soustava-a-elektronika-rez-domu.pdf}}%
-	\put(0.72225973,0.64689342){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Zásobník\end{tabular}}}}%
-    \put(0.72225973,0.62689342){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily otopné\end{tabular}}}}%
-	\put(0.72225973,0.60689342){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily vody\end{tabular}}}}%
+    \put(0.72025973,0.64689342){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Zásobník\end{tabular}}}}%
+    \put(0.72025973,0.62689342){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily otopné\end{tabular}}}}%
+	\put(0.72025973,0.60689342){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily vody\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{otopna-soustava-a-elektronika-rez-domu.pdf}}%
-    \put(0.30890113,0.81927255){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Technická místnost\end{tabular}}}}%
+    \put(0.28890113,0.84927255){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\small \sffamily Technická místnost\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{otopna-soustava-a-elektronika-rez-domu.pdf}}%
-    \put(0.11238072,1.10927617){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\small \sffamily Přízemí\end{tabular}}}}%
+    \put(0.07572341,1.06927617){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\small \sffamily Přízemí\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{otopna-soustava-a-elektronika-rez-domu.pdf}}%
-    \put(0.10186557,1.39844294){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\small \sffamily Patro\end{tabular}}}}%
+    \put(0.06772341,1.27044294){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\small \sffamily Patro\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=6]{otopna-soustava-a-elektronika-rez-domu.pdf}}%
-    \put(0.12632391,0.52174187){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Čerpadlo\end{tabular}}}}%
+    \put(0.10032391,0.51174187){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Čerpadlo\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=7]{otopna-soustava-a-elektronika-rez-domu.pdf}}%
-    \put(0.14121027,0.37715848){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily TUV – \fontsize{8pt}{10pt}\selectfont \sffamily teplá užitková voda\end{tabular}}}}%
+    \put(0.1076383,0.45310927){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Krb\end{tabular}}}}%
+    \put(0.1076383,0.43310927){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily s výměníkem\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=8]{otopna-soustava-a-elektronika-rez-domu.pdf}}%
-	\put(0.1476383,0.48310927){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Krb\end{tabular}}}}%
-    \put(0.1476383,0.46310927){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily s výměníkem\end{tabular}}}}%
+    \put(0.14344134,0.37959031){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Manuální trojcestný\end{tabular}}}}%
+	\put(0.14344134,0.35959031){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily směšovací ventil\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=9]{otopna-soustava-a-elektronika-rez-domu.pdf}}%
-    \put(0.17344134,0.42659031){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Manuální trojcestný\end{tabular}}}}%
-	\put(0.17344134,0.40659031){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily směšovací ventil\end{tabular}}}}%
+    \put(0.86515751,0.21865842){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily 230 V\end{tabular}}}}%
+	\put(0.86515751,0.19965842){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily AC\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=10]{otopna-soustava-a-elektronika-rez-domu.pdf}}%
-    \put(0.87015751,0.20865842){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily 230 V\end{tabular}}}}%
-	\put(0.87015751,0.19365842){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily AC\end{tabular}}}}%
+    \put(0.17350197,1.1860262){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Rozdělovač\end{tabular}}}}%
+    \put(0.17350197,1.1660262){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily podlahového\end{tabular}}}}%
+	\put(0.17350197,1.1460262){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily vytápění\end{tabular}}}}%
+    \put(0.17350197,1.1260262){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily s pohony\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=11]{otopna-soustava-a-elektronika-rez-domu.pdf}}%
-	\put(0.19518757,1.2260262){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Rozdělovač\end{tabular}}}}%
-    \put(0.19518757,1.2060262){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily podlahového\end{tabular}}}}%
-	\put(0.19518757,1.1860262){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily vytápění\end{tabular}}}}%
-    \put(0.19518757,1.1660262){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily s pohony\end{tabular}}}}%
+    \put(0.41309296,0.11507884){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Centrální\end{tabular}}}}%
+	\put(0.41309296,0.09507884){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily jednotka\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=12]{otopna-soustava-a-elektronika-rez-domu.pdf}}%
-    \put(0.43309296,0.11507884){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Centrální\end{tabular}}}}%
-	\put(0.43309296,0.09507884){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily jednotka\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=13]{otopna-soustava-a-elektronika-rez-domu.pdf}}%
-    \put(0.41469144,0.28595011){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily I$^2$C\end{tabular}}}}%
-	\put(0.41469144,0.26595011){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily sběrnice\end{tabular}}}}%
+    \put(0.40069144,0.29095011){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily I$^2$C\end{tabular}}}}%
+	\put(0.40069144,0.27095011){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily sběrnice\end{tabular}}}}%
     \put(1.0,0.13022278){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Termost patro\end{tabular}}}}%
 	\put(1.0,0.11022278){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily (chodba)\end{tabular}}}}%
     \put(1.01,0.04935912){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Termost přízemí\end{tabular}}}}%
 	\put(1.01,0.03035912){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily (chodba)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{otopna-soustava-a-elektronika-rez-domu.pdf}}%
+    \put(0.59133545,0.13876444){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily 1-Wire\end{tabular}}}}%
+	\put(0.59133545,0.11876444){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily sběrnice\end{tabular}}}}%
+	\put(0.59133545,0.09076444){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Chodbové \end{tabular}}}}%
+	\put(0.59133545,0.07376444){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily termostaty\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=14]{otopna-soustava-a-elektronika-rez-domu.pdf}}%
-    \put(0.60133545,0.13876444){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily 1-Wire\end{tabular}}}}%
-	\put(0.60133545,0.11876444){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily sběrnice\end{tabular}}}}%
-	\put(0.60133545,0.08376444){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily chodbové\end{tabular}}}}%
-	\put(0.60133545,0.06376444){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily termostaty\end{tabular}}}}%
+	\put(0.6464001,1.23808229){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Signalizace\end{tabular}}}}%
+    \put(0.6464001,1.0194087){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Signalizace\end{tabular}}}}%
+
     \put(0,0){\includegraphics[width=\unitlength,page=15]{otopna-soustava-a-elektronika-rez-domu.pdf}}%
-    \put(0.65654001,0.9844087){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Signalizace\end{tabular}}}}%
-    \put(0.65259683,1.27488987){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Signalizace\end{tabular}}}}%
+    \put(0.131256,0.31798423){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Spojení I$^2$C\end{tabular}}}}%
+	\put(0.13181256,0.29498423){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily a 1-Wire sběrnice\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=16]{otopna-soustava-a-elektronika-rez-domu.pdf}}%
-    \put(0.14586557,0.27355239){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily I$^2$C sběrnice\end{tabular}}}}%
+    \put(0.59396423,0.43938955){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Jističe\end{tabular}}}}%
+    \put(0.59396423,0.41938955){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily a\end{tabular}}}}%
+	\put(0.59396423,0.40038955){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily proudová ochrana\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=17]{otopna-soustava-a-elektronika-rez-domu.pdf}}%
-    \put(0.60396423,0.42738955){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Jističe\end{tabular}}}}%
-    \put(0.60396423,0.40738955){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily a\end{tabular}}}}%
-	\put(0.60396423,0.38738955){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily proudová ochrana\end{tabular}}}}%
+    \put(0.45852479,0.43038955){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily 12 V\end{tabular}}}}%
+	\put(0.45852479,0.41038955){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily zdroj\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=18]{otopna-soustava-a-elektronika-rez-domu.pdf}}%
-    \put(0.47252479,0.41738955){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily 12 V\end{tabular}}}}%
-	\put(0.47252479,0.39738955){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily zdroj\end{tabular}}}}%
+    \put(0.38880507,0.43038955){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily 5 V\end{tabular}}}}%
+	\put(0.38880507,0.41038955){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily zdroj\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=19]{otopna-soustava-a-elektronika-rez-domu.pdf}}%
-    \put(0.40680507,0.41738955){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily 5 V\end{tabular}}}}%
-	\put(0.40680507,0.39738955){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily zdroj\end{tabular}}}}%
+  	\put(0.17350197,0.96685943){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Rozdělovač\end{tabular}}}}%
+    \put(0.17350197,0.94685943){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily podlahového\end{tabular}}}}%
+	\put(0.17350197,0.92685943){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily vytápění\end{tabular}}}}%
+	\put(0.17350197,0.90685943){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily s pohony\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=20]{otopna-soustava-a-elektronika-rez-domu.pdf}}%
-	\put(0.19650197,0.93685943){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Rozdělovač\end{tabular}}}}%
-    \put(0.19650197,0.91685943){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily podlahového\end{tabular}}}}%
-	\put(0.19650197,0.89685943){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily vytápění\end{tabular}}}}%
-	\put(0.19650197,0.87685943){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily s pohony\end{tabular}}}}%
+    \put(0.07437423,0.25855239){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily 3,3 V\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=21]{otopna-soustava-a-elektronika-rez-domu.pdf}}%
-    \put(0.11186557,0.30355239){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily 3,3 V\end{tabular}}}}%
+    \put(0.05437423,0.22014044){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\scriptsize \sffamily I$^2$C sběrnice\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=22]{otopna-soustava-a-elektronika-rez-domu.pdf}}%
-    \put(0.16181256,0.35298423){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Spojení I$^2$C\end{tabular}}}}%
-	\put(0.16181256,0.33298423){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily a 1-Wire sběrnice\end{tabular}}}}%
+    \put(0.09843619,0.17935976){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily UTP kabel\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=23]{otopna-soustava-a-elektronika-rez-domu.pdf}}%
-    \put(0.14026709,0.24966222){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily UTP kabel\end{tabular}}}}%
+    \put(0.48838465,0.29095011){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Relé\end{tabular}}}}%
+	\put(0.48838465,0.27095011){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily modul\end{tabular}}}}%
+    \put(0.06832341,0.84927255){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\small \sffamily Sklep\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=24]{otopna-soustava-a-elektronika-rez-domu.pdf}}%
-    \put(0.50538465,0.28595011){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Relé\end{tabular}}}}%
-	\put(0.50538465,0.26595011){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily modul\end{tabular}}}}%
-    \put(0.10472341,0.81927255){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\small \sffamily Sklep\end{tabular}}}}%
+    \put(0.08262706,0.79553336){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Signalizace\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=25]{otopna-soustava-a-elektronika-rez-domu.pdf}}%
-    \put(0.11262706,0.77053336){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Signalizace\end{tabular}}}}%
+    \put(0.64705336,0.29095011){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Relé\end{tabular}}}}%
+	\put(0.64705336,0.27095011){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily modul\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=26]{otopna-soustava-a-elektronika-rez-domu.pdf}}%
-    \put(0.65654001,0.28595011){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Relé\end{tabular}}}}%
-	\put(0.65654001,0.26595011){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily modul\end{tabular}}}}%
+  	\put(0.30621788,0.77970027){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Plynový \end{tabular}}}}%
+    \put(0.30621788,0.75970027){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily kondenzační\end{tabular}}}}%
+	\put(0.30621788,0.73970027){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily kotel\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=27]{otopna-soustava-a-elektronika-rez-domu.pdf}}%
-	\put(0.32621788,0.72970027){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Plynový \end{tabular}}}}%
-    \put(0.32621788,0.70970027){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily kondenzační\end{tabular}}}}%
-	\put(0.32621788,0.68970027){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily kotel\end{tabular}}}}%
+    \put(0.09651426,1.39546771){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Nástěnný snímač \end{tabular}}}}%
+	\put(0.09651426,1.37546771){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily prostor. teploty 1\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=28]{otopna-soustava-a-elektronika-rez-domu.pdf}}%
+    \put(0.27187116,1.39546771){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Nástěnný snímač \end{tabular}}}}%
+	\put(0.27187116,1.37546771){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily prostor. teploty N\end{tabular}}}}%
+    \put(0.18351303,1.42724838){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Ethernet \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=29]{otopna-soustava-a-elektronika-rez-domu.pdf}}%
+    \put(0.39557254,1.39546771){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily POE\end{tabular}}}}%
+	\put(0.39657254,1.37546771){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily switch\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=30]{otopna-soustava-a-elektronika-rez-domu.pdf}}%
+    \put(0.48393066,1.38646771){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily LAN\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=31]{otopna-soustava-a-elektronika-rez-domu.pdf}}%
+    \put(0.18587239,1.38890513){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily …\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=32]{otopna-soustava-a-elektronika-rez-domu.pdf}}%
+    \put(0.69463081,1.39546771){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Nástěnný snímač\end{tabular}}}}%
+	\put(0.69463081,1.37546771){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily prostor. teploty 1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=33]{otopna-soustava-a-elektronika-rez-domu.pdf}}%
+    \put(0.86998771,1.39546771){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Nástěnný snímač\end{tabular}}}}%
+	\put(0.86998771,1.37546771){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily prostor. teploty N\end{tabular}}}}%
+    \put(0.78298894,1.42724838){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily WiFi\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=34]{otopna-soustava-a-elektronika-rez-domu.pdf}}%
+    \put(0.57228879,1.39546771){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily WiFi\end{tabular}}}}%
+	\put(0.57228879,1.37546771){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily router\end{tabular}}}}%
+    \put(0.78398894,1.38890513){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily …\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=35]{otopna-soustava-a-elektronika-rez-domu.pdf}}%
+    \put(0.25284018,0.10867326){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily LAN\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=36]{otopna-soustava-a-elektronika-rez-domu.pdf}}%
+    \put(0.08048328,1.44084194){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily 1…N místností\end{tabular}}}}%
+    \put(0.67995918,1.44084194){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily 1…N místností\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=37]{otopna-soustava-a-elektronika-rez-domu.pdf}}%
   \end{picture}%
 \endgroup%
