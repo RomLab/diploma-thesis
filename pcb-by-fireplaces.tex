@@ -1,4 +1,12 @@
 \section{DPS u krbů}
+\begin{figure}[H]
+   \centering
+    \def\svgwidth{0.3\columnwidth}
+    \input{images/svg/otopna-soustava/vyrez-krb-signalizace.pdf_tex}
+    \caption{Signalizace u krbů.}
+    \label{fig:vyrez-krb-signalizace}
+\end{figure}
+
 \label{sec:dps-u-krbu}
 Navržená DPS se skládá z části elektronické pojistky TPS2600, zapojení je obdobné jako v \ref{sec:napajeni-1-wire-sbernice} (napájení 1-Wire sběrnice), navíc je na vstupu připojena transilová dioda (ESD9L5.0ST5G). Napěťové meze jsou nastaveny stejně, tedy minimální napětí je 4,75 V, maximální 5,25 V, proud je omezen na maximální hodnotu 100 mA. Dále je zde přivedena 1-Wire sběrnice přes konektor RJ45 s~obdobnými ochranami jako v \ref{sec:datova-cast-1-wire-sbernice} (datová část 1-Wire sběrnice) pro připojení MAX31850K přes svorkovnici. V neposlední řadě jsou zde vstupy pro ovládání třech LED pro signalizaci (obrázek \ref{fig:led-indikace}) naakumulovaného zásobníku otopné vody, modrá LED signalizuje stav horní části zásobníku, oranžová LED je pro střední část, červená je pro signalizaci spodní části. Vstupní část je chráněná přes DS9503 a transilovou diodou (ESD9L5.0ST5G). Sepnutí LED je přes tranzistor (BSS138P). Obdobně jsou řešeny oranžová a modrá LED. Celkové schéma zapojení je v~příloze \ref{app:schemata-ostatni}.
 
@@ -11,6 +19,15 @@ Navržená DPS se skládá z části elektronické pojistky TPS2600, zapojení j
 
 \subsubsection{I$^2$C sběrnice}
 \label{sec:i2c-sbernice}
+
+\begin{figure}[H]
+   \centering
+    \def\svgwidth{0.3\columnwidth}
+   \input{images/svg/otopna-soustava/vyrez-i2c-sbernice.pdf_tex}
+    \caption{I2C sběrnice.}
+    \label{fig:vyrez-i2c-sbernice}
+\end{figure}
+
 Sběrnice I$^2$C je realizovaná pomocí zakoupeného modulu (obrázek \ref{fig:modul-pca9615-i2c-sbernice}) s~obvodem PCA9615 do firmy  NXP Semiconductors. Vstupní signál SCL a~SDA je veden přímo z~centrální jednotky na vstupu obvodu PCA9615, napájení je s 3,3 V logikou. Výstup z PCA9615 je pomocí diferenciální veden. Napájení na této straně je 5 V. Sběrnice je realizovaná pomocí UTP kategorie 5e, výstup z~modulu je realizován pomocí konektoru RJ45. Vzhledem k použití UTP kabelu a diferenciálnímu přenosu je možné dosáhnout velké vzdálenosti sběrnice. Nejdelší bod dosahuje přibližně 30 m, je tedy možné použít I$^2$C sběrnici na vzdálenost, pro kterou není standartě dělána. Použitá frekvence je 100~kHz. Jedná se tedy o plnohodnotnou I$^2$C sběrnici. Důvodem pro zvolení této varianty bylo na základě výběru displeje s I$^2$C sběrnicí (jednoduché a~levné řešení), dále jedná se o klasické zapojení displeje jako by se nalézal v~krátké vzdálenosti od centrální jednotky a není tak nutný převod jako při využít např. RS485 na UART a následně na I$^2$C sběrnici, v neposlední řadě komunikace je definována podle protokolu I$^2$C.  Jeden modul se nalézá na straně centrální jednotky a pak na straně krbů. Napájení 5 V je realizováno pomocí samostatných kabelů, není tedy součástí UTP kabelu. Z důvodu omezení kabeláže je sběrnice realizována v jednom UTP kabelu s 1-Wire sběrnicí, tedy přesněji jsou využity volné vodiče 1,2 pro SCL a~7,~8 pro SDA. Zařízení lze zapojovat jak na straně před PCA9615, tak i~na diferenciální straně, je však výhodné připojené uzly udržet co v nejkratší vzdálenosti kvůli degradování signálu. Blokové schéma je na obrázku \ref{fig:blokove-schema-pca9615-i2c-sbernice} včetně napojení uzlů. Schéma zapojení modulu je na obrázku \ref{fig:zapojeni-pca9615-i2c-sbernice}.
 
 \begin{figure}[H]

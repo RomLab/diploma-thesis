@@ -1,0 +1,143 @@
+%% Creator: Inkscape 1.0 (4035a4fb49, 2020-05-01), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'vyrez-vstupy-vystupy-rpi.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{96.16384237bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,1.22466317)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{vyrez-vstupy-vystupy-rpi.pdf}}%
+    %\put(1.18782724,4.29363605){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}TUV\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{vyrez-vstupy-vystupy-rpi.pdf}}%
+    %\put(1.25801994,3.64630335){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Zásobník otop...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{vyrez-vstupy-vystupy-rpi.pdf}}%
+    %\put(-1.26111817,4.77718578){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Technická místnost\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{vyrez-vstupy-vystupy-rpi.pdf}}%
+    %\put(-2.4621933,6.03285524){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Přízemí\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{vyrez-vstupy-vystupy-rpi.pdf}}%
+    %\put(-2.53238601,7.21053281){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Patro\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{vyrez-vstupy-vystupy-rpi.pdf}}%
+    %\put(-2.39979979,2.86638443){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Čerpadlo\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{vyrez-vstupy-vystupy-rpi.pdf}}%
+    %\put(-2.3920006,2.48422416){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Krb s...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{vyrez-vstupy-vystupy-rpi.pdf}}%
+    %\put(-2.1736233,2.14885902){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Manuální trojcestný směšovací...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{vyrez-vstupy-vystupy-rpi.pdf}}%
+    %\put(2.06133643,1.13496443){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}230 V...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{vyrez-vstupy-vystupy-rpi.pdf}}%
+    %\put(-1.92404925,6.56320011){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Rozdělovač podlahov...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{vyrez-vstupy-vystupy-rpi.pdf}}%
+    %\put(-0.5201952,0.55002524){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Centrální...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{vyrez-vstupy-vystupy-rpi.pdf}}%
+    %\put(-0.62938384,1.56391983){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}I2C...\end{tabular}}}}%
+    %\put(2.73986589,0.62801713){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Termostat patro...\end{tabular}}}}%
+    %\put(2.77886183,0.16006578){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Termostat přízemí...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{vyrez-vstupy-vystupy-rpi.pdf}}%
+    \put(0.47810102,0.78222605){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily 1-Wire\end{tabular}}}}%
+	\put(0.47810102,0.70222605){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily sběrnice\end{tabular}}}}%
+	\put(0.47810102,0.38222605){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Lokální\end{tabular}}}}%
+	\put(0.47810102,0.30222605){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily termostaty\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{vyrez-vstupy-vystupy-rpi.pdf}}%
+    %\put(0.80566697,5.76768281){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Signal...\end{tabular}}}}%
+    %\put(0.80566697,7.03115146){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Signal...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{vyrez-vstupy-vystupy-rpi.pdf}}%
+    %\put(-2.18922168,1.71990362){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Spojení I2C sběrnice...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{vyrez-vstupy-vystupy-rpi.pdf}}%
+    %\put(0.4936994,2.34383875){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Jističe +...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{vyrez-vstupy-vystupy-rpi.pdf}}%
+    %\put(-0.28621952,2.34383875){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}12 V...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{vyrez-vstupy-vystupy-rpi.pdf}}%
+    %\put(-0.67617898,2.34383875){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}5 V...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{vyrez-vstupy-vystupy-rpi.pdf}}%
+    %\put(-1.92404925,5.30753065){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Rozdělovač podlahov...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{vyrez-vstupy-vystupy-rpi.pdf}}%
+    %\put(-2.48559087,1.09596848){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}3,3 V\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{vyrez-vstupy-vystupy-rpi.pdf}}%
+    %\put(-2.59477952,0.85419362){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}I2C sběrnice\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=22]{vyrez-vstupy-vystupy-rpi.pdf}}%
+    %\put(-2.37640222,0.62021794){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}UTP kabel\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=23]{vyrez-vstupy-vystupy-rpi.pdf}}%
+    %\put(-0.09123979,1.56391983){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Relé...\end{tabular}}}}%
+    %\put(-2.50898844,4.78498497){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Sklep\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=24]{vyrez-vstupy-vystupy-rpi.pdf}}%
+    %\put(-2.42319736,4.48861578){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Signal...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=25]{vyrez-vstupy-vystupy-rpi.pdf}}%
+    %\put(0.80566697,1.56391983){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Relé...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=26]{vyrez-vstupy-vystupy-rpi.pdf}}%
+    %\put(-1.15192952,4.13765227){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Plynový kond...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=27]{vyrez-vstupy-vystupy-rpi.pdf}}%
+    %\put(-2.35300466,7.88126308){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Nástěnný snímač pro...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=28]{vyrez-vstupy-vystupy-rpi.pdf}}%
+    %\put(-1.34690925,7.88126308){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Nástěnný snímač pro...\end{tabular}}}}%
+    %\put(-1.85385655,8.11523875){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Ethern...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=29]{vyrez-vstupy-vystupy-rpi.pdf}}%
+    %\put(-0.63718303,7.88126308){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}POE sw...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=30]{vyrez-vstupy-vystupy-rpi.pdf}}%
+    %\put(-0.13023574,7.88126308){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}LAN\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=31]{vyrez-vstupy-vystupy-rpi.pdf}}%
+    %\put(-1.84605736,7.91245984){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}…\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=32]{vyrez-vstupy-vystupy-rpi.pdf}}%
+    %\put(1.07863859,7.88126308){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Nástěnný snímač pro...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=33]{vyrez-vstupy-vystupy-rpi.pdf}}%
+    %\put(2.08473399,7.88126308){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Nástěnný snímač pro...\end{tabular}}}}%
+    %\put(1.58558589,8.11523875){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}WiFi\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=34]{vyrez-vstupy-vystupy-rpi.pdf}}%
+    %\put(0.37671156,7.88126308){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}WiFi r...\end{tabular}}}}%
+    %\put(1.58558589,7.91245984){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}…\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=35]{vyrez-vstupy-vystupy-rpi.pdf}}%
+    %\put(-1.4560979,0.55002524){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}LAN\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=36]{vyrez-vstupy-vystupy-rpi.pdf}}%
+    %\put(-2.4621933,8.19323065){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1…N místností\end{tabular}}}}%
+    %\put(0.97724913,8.19323065){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1…N místností\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=37]{vyrez-vstupy-vystupy-rpi.pdf}}%
+    %\put(-2.29061114,1.39233767){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Teplotní senzor\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=38]{vyrez-vstupy-vystupy-rpi.pdf}}%
+  \end{picture}%
+\endgroup%

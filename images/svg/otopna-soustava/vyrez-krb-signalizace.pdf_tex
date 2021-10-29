@@ -1,0 +1,140 @@
+%% Creator: Inkscape 1.0 (4035a4fb49, 2020-05-01), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'vyrez-krb-signalizace.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{75.66401164bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.84539783)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{vyrez-krb-signalizace.pdf}}%
+    %\put(0.9653171,-2.77591736){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}TUV\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{vyrez-krb-signalizace.pdf}}%
+    %\put(1.05452728,-3.59863345){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Zásobník otop...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{vyrez-krb-signalizace.pdf}}%
+    %\put(-2.14712691,-2.16135835){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Technická místnost\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{vyrez-krb-signalizace.pdf}}%
+    %\put(-3.67361219,-0.56548737){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Přízemí\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{vyrez-krb-signalizace.pdf}}%
+    %\put(-3.76282237,0.93126118){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Patro\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{vyrez-krb-signalizace.pdf}}%
+    %\put(-3.59431426,-4.58985766){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Čerpadlo\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{vyrez-krb-signalizace.pdf}}%
+    %\put(-3.58440202,-5.07555752){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Krb s...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{vyrez-krb-signalizace.pdf}}%
+    %\put(-3.30685924,-5.50178393){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Manuální trojcestný směšovací...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{vyrez-krb-signalizace.pdf}}%
+    %\put(2.07548821,-6.7903754){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}230 V...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{vyrez-krb-signalizace.pdf}}%
+    %\put(-2.98966749,0.10854509){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Rozdělovač podlahov...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{vyrez-krb-signalizace.pdf}}%
+    %\put(-1.20546392,-7.53379356){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Centrální...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{vyrez-krb-signalizace.pdf}}%
+    %\put(-1.34423531,-6.24520209){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}I2C...\end{tabular}}}}%
+    %\put(2.93785327,-7.43467113){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Termostat patro...\end{tabular}}}}%
+    %\put(2.98741448,-8.02940566){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Termostat přízemí...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{vyrez-krb-signalizace.pdf}}%
+    %\put(0.06330307,-7.5437058){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1-Wire...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{vyrez-krb-signalizace.pdf}}%
+    %\put(0.47961724,-0.9025036){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Signalizace\end{tabular}}}}%
+    \put(0.47961724,0.70327961){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Signalizace\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{vyrez-krb-signalizace.pdf}}%
+    %\put(-3.32668372,-6.04695724){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Spojení I2C sběrnice...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{vyrez-krb-signalizace.pdf}}%
+    %\put(0.08312755,-5.25397788){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Jističe +...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{vyrez-krb-signalizace.pdf}}%
+    %\put(-0.90809665,-5.25397788){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}12 V...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{vyrez-krb-signalizace.pdf}}%
+    %\put(-1.40370876,-5.25397788){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}5 V...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{vyrez-krb-signalizace.pdf}}%
+    %\put(-2.98966749,-1.48732589){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Rozdělovač podlahov...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{vyrez-krb-signalizace.pdf}}%
+    %\put(-3.70334892,-6.83993661){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}3,3 V\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{vyrez-krb-signalizace.pdf}}%
+    %\put(-3.84212031,-7.14721611){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}I2C sběrnice\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=22]{vyrez-krb-signalizace.pdf}}%
+    %\put(-3.56457753,-7.44458338){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}UTP kabel\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=23]{vyrez-krb-signalizace.pdf}}%
+    %\put(-0.6602906,-6.24520209){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Relé...\end{tabular}}}}%
+    %\put(-3.73308565,-2.15144611){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Sklep\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=24]{vyrez-krb-signalizace.pdf}}%
+    %\put(-3.62405098,-2.52811131){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Signal...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=25]{vyrez-krb-signalizace.pdf}}%
+    %\put(0.47961724,-6.24520209){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Relé...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=26]{vyrez-krb-signalizace.pdf}}%
+    %\put(-2.00835553,-2.9741622){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Plynový kond...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=27]{vyrez-krb-signalizace.pdf}}%
+    %\put(-3.53484081,1.783714){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Nástěnný snímač pro...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=28]{vyrez-krb-signalizace.pdf}}%
+    %\put(-2.25616158,1.783714){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Nástěnný snímač pro...\end{tabular}}}}%
+    %\put(-2.90045731,2.08108126){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Ethern...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=29]{vyrez-krb-signalizace.pdf}}%
+    %\put(-1.35414755,1.783714){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}POE sw...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=30]{vyrez-krb-signalizace.pdf}}%
+    %\put(-0.70985181,1.783714){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}LAN\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=31]{vyrez-krb-signalizace.pdf}}%
+    %\put(-2.89054507,1.82336297){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}…\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=32]{vyrez-krb-signalizace.pdf}}%
+    %\put(0.82654571,1.783714){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Nástěnný snímač pro...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=33]{vyrez-krb-signalizace.pdf}}%
+    %\put(2.10522494,1.783714){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Nástěnný snímač pro...\end{tabular}}}}%
+    %\put(1.47084144,2.08108126){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}WiFi\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=34]{vyrez-krb-signalizace.pdf}}%
+    %\put(-0.06555608,1.783714){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}WiFi r...\end{tabular}}}}%
+    %\put(1.47084144,1.82336297){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}…\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=35]{vyrez-krb-signalizace.pdf}}%
+    %\put(-2.39493297,-7.53379356){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}LAN\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=36]{vyrez-krb-signalizace.pdf}}%
+    %\put(-3.67361219,2.18020368){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1…N místností\end{tabular}}}}%
+    %\put(0.69768656,2.18020368){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1…N místností\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=37]{vyrez-krb-signalizace.pdf}}%
+    %\put(-3.45554287,-6.46327141){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Teplotní senzor\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=38]{vyrez-krb-signalizace.pdf}}%
+  \end{picture}%
+\endgroup%

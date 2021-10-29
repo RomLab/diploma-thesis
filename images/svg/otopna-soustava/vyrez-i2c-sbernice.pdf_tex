@@ -1,0 +1,141 @@
+%% Creator: Inkscape 1.0 (4035a4fb49, 2020-05-01), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'vyrez-i2c-sbernice.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{122.35268453bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.76970447)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{vyrez-i2c-sbernice.pdf}}%
+    %\put(2.11467759,2.46459194){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}TUV\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{vyrez-i2c-sbernice.pdf}}%
+    %\put(2.16984598,1.95581683){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Zásobník otop...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{vyrez-i2c-sbernice.pdf}}%
+    %\put(0.18991394,2.84464081){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Technická místnost\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{vyrez-i2c-sbernice.pdf}}%
+    %\put(-0.75407843,3.83154192){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Přízemí\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{vyrez-i2c-sbernice.pdf}}%
+    %\put(-0.80924681,4.75714482){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Patro\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{vyrez-i2c-sbernice.pdf}}%
+    %\put(-0.70503986,1.34283477){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Čerpadlo\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{vyrez-i2c-sbernice.pdf}}%
+    %\put(-0.69891004,1.04247357){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Krb s...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{vyrez-i2c-sbernice.pdf}}%
+    %\put(-0.52727507,0.77889128){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Manuální trojcestný směšovací...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{vyrez-i2c-sbernice.pdf}}%
+    %\put(2.80121749,-0.01798539){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}230 V...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{vyrez-i2c-sbernice.pdf}}%
+    %\put(-0.33112081,4.24836972){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Rozdělovač podlahov...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{vyrez-i2c-sbernice.pdf}}%
+    %\put(0.77224689,-0.47772193){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Centrální...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{vyrez-i2c-sbernice.pdf}}%
+    \put(0.6864294,0.34915474){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily I$^2$C\end{tabular}}}}%
+	\put(0.6864294,0.25915474){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily sběrnice\end{tabular}}}}%
+    %\put(3.33451188,-0.41642372){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Termostat patro...\end{tabular}}}}%
+    %\put(3.36516098,-0.78421296){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Termostat přízemí...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{vyrez-i2c-sbernice.pdf}}%
+    %\put(1.55686392,-0.48385175){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1-Wire...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{vyrez-i2c-sbernice.pdf}}%
+    %\put(1.81431638,3.62312802){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Signal...\end{tabular}}}}%
+    %\put(1.81431638,4.61615895){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Signal...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{vyrez-i2c-sbernice.pdf}}%
+    %\put(-0.53953471,0.44175115){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Spojení I2C sběrnice...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{vyrez-i2c-sbernice.pdf}}%
+    %\put(1.56912356,0.9321368){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Jističe +...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{vyrez-i2c-sbernice.pdf}}%
+    %\put(0.95614151,0.9321368){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}12 V...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{vyrez-i2c-sbernice.pdf}}%
+    %\put(0.64965048,0.9321368){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}5 V...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{vyrez-i2c-sbernice.pdf}}%
+    %\put(-0.33112081,3.26146861){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Rozdělovač podlahov...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{vyrez-i2c-sbernice.pdf}}%
+    %\put(-0.77246789,-0.04863449){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}3,3 V\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{vyrez-i2c-sbernice.pdf}}%
+    %\put(-0.85828538,-0.23865893){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}I2C sběrnice\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=22]{vyrez-i2c-sbernice.pdf}}%
+    %\put(-0.6866504,-0.42255354){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}UTP kabel\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=23]{vyrez-i2c-sbernice.pdf}}%
+    %\put(1.10938702,0.31915474){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Relé...\end{tabular}}}}%
+    %\put(-0.79085735,2.85077063){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Sklep\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=24]{vyrez-i2c-sbernice.pdf}}%
+    %\put(-0.72342932,2.61783745){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Signal...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=25]{vyrez-i2c-sbernice.pdf}}%
+    %\put(1.81431638,0.31915474){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Relé...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=26]{vyrez-i2c-sbernice.pdf}}%
+    %\put(0.27573143,2.34199552){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Plynový kond...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=27]{vyrez-i2c-sbernice.pdf}}%
+    %\put(-0.66826094,5.28430939){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Nástěnný snímač pro...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=28]{vyrez-i2c-sbernice.pdf}}%
+    %\put(0.12248591,5.28430939){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Nástěnný snímač pro...\end{tabular}}}}%
+    %\put(-0.27595242,5.468204){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Ethern...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=29]{vyrez-i2c-sbernice.pdf}}%
+    %\put(0.68029958,5.28430939){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}POE sw...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=30]{vyrez-i2c-sbernice.pdf}}%
+    %\put(1.07873792,5.28430939){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}LAN\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=31]{vyrez-i2c-sbernice.pdf}}%
+    %\put(-0.2698226,5.30882867){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}…\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=32]{vyrez-i2c-sbernice.pdf}}%
+    %\put(2.0288601,5.28430939){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Nástěnný snímač pro...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=33]{vyrez-i2c-sbernice.pdf}}%
+    %\put(2.81960695,5.28430939){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Nástěnný snímač pro...\end{tabular}}}}%
+    %\put(2.42729844,5.468204){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}WiFi\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=34]{vyrez-i2c-sbernice.pdf}}%
+    %\put(1.47717625,5.28430939){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}WiFi r...\end{tabular}}}}%
+    %\put(2.42729844,5.30882867){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}…\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=35]{vyrez-i2c-sbernice.pdf}}%
+    %\put(0.03666842,-0.47772193){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}LAN\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=36]{vyrez-i2c-sbernice.pdf}}%
+    %\put(-0.75407843,5.52950221){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1…N místností\end{tabular}}}}%
+    %\put(1.94917244,5.52950221){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1…N místností\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=37]{vyrez-i2c-sbernice.pdf}}%
+    %\put(-0.61922237,0.18429869){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Teplotní senzor\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=38]{vyrez-i2c-sbernice.pdf}}%
+  \end{picture}%
+\endgroup%

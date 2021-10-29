@@ -1,0 +1,140 @@
+%% Creator: Inkscape 1.0 (4035a4fb49, 2020-05-01), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'vyrez-teplotni-senzory-krb.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{153.88799516bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.56960598)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{vyrez-teplotni-senzory-krb.pdf}}%
+    %\put(0.48304873,-1.19919602){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}TUV\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{vyrez-teplotni-senzory-krb.pdf}}%
+    %\put(0.5269118,-1.60371101){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Zásobník otop...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{vyrez-teplotni-senzory-krb.pdf}}%
+    %\put(-1.04728507,-0.8970282){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Technická místnost\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{vyrez-teplotni-senzory-krb.pdf}}%
+    %\put(-1.79783095,-0.11236661){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Přízemí\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{vyrez-teplotni-senzory-krb.pdf}}%
+    %\put(-1.84169402,0.62355824){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Patro\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{vyrez-teplotni-senzory-krb.pdf}}%
+    %\put(-1.75884155,-2.09107846){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Čerpadlo\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{vyrez-teplotni-senzory-krb.pdf}}%
+    %\put(-1.75396787,-2.32988851){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Krb s...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{vyrez-teplotni-senzory-krb.pdf}}%
+    %\put(-1.61750499,-2.53945652){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Manuální trojcestný směšovací...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{vyrez-teplotni-senzory-krb.pdf}}%
+    %\put(1.02890027,-3.1730342){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}230 V...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{vyrez-teplotni-senzory-krb.pdf}}%
+    %\put(-1.4615474,0.21904326){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Rozdělovač podlahov...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{vyrez-teplotni-senzory-krb.pdf}}%
+    %\put(-0.58428599,-3.53855979){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Centrální...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{vyrez-teplotni-senzory-krb.pdf}}%
+    %\put(-0.65251743,-2.9049821){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}I2C...\end{tabular}}}}%
+    %\put(1.45290996,-3.48982305){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Termostat patro...\end{tabular}}}}%
+    %\put(1.47727833,-3.78224352){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Termostat přízemí...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{vyrez-teplotni-senzory-krb.pdf}}%
+    %\put(0.03954435,-3.54343347){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1-Wire...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{vyrez-teplotni-senzory-krb.pdf}}%
+    %\put(0.24423868,-0.27807154){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Signalizace\end{tabular}}}}%
+    \put(0.24423868,0.51146373){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Signalizace\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{vyrez-teplotni-senzory-krb.pdf}}%
+    %\put(-1.62725234,-2.80750861){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Spojení I2C sběrnice...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{vyrez-teplotni-senzory-krb.pdf}}%
+    %\put(0.0492917,-2.41761465){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Jističe +...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{vyrez-teplotni-senzory-krb.pdf}}%
+    %\put(-0.43807576,-2.41761465){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}12 V...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{vyrez-teplotni-senzory-krb.pdf}}%
+    %\put(-0.68175948,-2.41761465){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}5 V...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{vyrez-teplotni-senzory-krb.pdf}}%
+    %\put(-1.4615474,-0.56561834){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Rozdělovač podlaho...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{vyrez-teplotni-senzory-krb.pdf}}%
+    %\put(-1.81245197,-3.19740257){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}3,3 V\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{vyrez-teplotni-senzory-krb.pdf}}%
+    %\put(-1.88068341,-3.34848648){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}I2C sběrnice\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=22]{vyrez-teplotni-senzory-krb.pdf}}%
+    %\put(-1.74422053,-3.49469672){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}UTP kabel\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=23]{vyrez-teplotni-senzory-krb.pdf}}%
+    %\put(-0.31623389,-2.9049821){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Relé...\end{tabular}}}}%
+    %\put(-1.82707299,-0.89215453){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Sklep\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=24]{vyrez-teplotni-senzory-krb.pdf}}%
+    %\put(-1.77346257,-1.07735416){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Signal...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=25]{vyrez-teplotni-senzory-krb.pdf}}%
+    %\put(0.24423868,-2.9049821){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Relé...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=26]{vyrez-teplotni-senzory-krb.pdf}}%
+    %\put(-0.97905363,-1.29666951){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Plynový kon...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=27]{vyrez-teplotni-senzory-krb.pdf}}%
+    %\put(-1.7295995,1.04269425){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Nástěnný snímač pr...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=28]{vyrez-teplotni-senzory-krb.pdf}}%
+    %\put(-1.10089549,1.04269425){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Nástěnný snímač pr...\end{tabular}}}}%
+    %\put(-1.41768433,1.18890449){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Ethern...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=29]{vyrez-teplotni-senzory-krb.pdf}}%
+    %\put(-0.65739111,1.04269425){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}POE sw...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=30]{vyrez-teplotni-senzory-krb.pdf}}%
+    %\put(-0.34060227,1.04269425){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}LAN\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=31]{vyrez-teplotni-senzory-krb.pdf}}%
+    %\put(-1.41281066,1.06218895){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}…\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=32]{vyrez-teplotni-senzory-krb.pdf}}%
+    %\put(0.41481728,1.04269425){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Nástěnný snímač pr...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=33]{vyrez-teplotni-senzory-krb.pdf}}%
+    %\put(1.04839497,1.04269425){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Nástěnný snímač pro...\end{tabular}}}}%
+    %\put(0.73160613,1.18890449){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}WiFi\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=34]{vyrez-teplotni-senzory-krb.pdf}}%
+    %\put(-0.02381342,1.04269425){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}WiFi r...\end{tabular}}}}%
+    %\put(0.73160613,1.06218895){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}…\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=35]{vyrez-teplotni-senzory-krb.pdf}}%
+    %\put(-1.16912693,-3.53855979){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}LAN\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=36]{vyrez-teplotni-senzory-krb.pdf}}%
+    %\put(-1.79783095,1.23764123){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1…N místností\end{tabular}}}}%
+    %\put(0.35145952,1.23764123){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1…N místností\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=37]{vyrez-teplotni-senzory-krb.pdf}}%
+    %\put(-1.69061011,-3.01220294){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Teplotní senzor\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=38]{vyrez-teplotni-senzory-krb.pdf}}%
+  \end{picture}%
+\endgroup%

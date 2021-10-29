@@ -1,0 +1,144 @@
+%% Creator: Inkscape 1.0 (4035a4fb49, 2020-05-01), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'vyrez-zonovy-regulator.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{185.14159201bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.48935652)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{vyrez-zonovy-regulator.pdf}}%
+    %\put(1.95008108,-0.96707284){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}TUV\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{vyrez-zonovy-regulator.pdf}}%
+    %\put(1.98653966,-1.30330199){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Zásobník otop...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{vyrez-zonovy-regulator.pdf}}%
+    %\put(0.67808164,-0.71591371){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Technická místnost\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{vyrez-zonovy-regulator.pdf}}%
+    %\put(0.05423479,-0.06371018){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Přízemí\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{vyrez-zonovy-regulator.pdf}}%
+    %\put(0.01777621,0.54798381){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Patro\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{vyrez-zonovy-regulator.pdf}}%
+    %\put(0.08259146,-1.70839735){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Čerpadlo\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{vyrez-zonovy-regulator.pdf}}%
+    %\put(0.11094814,-1.90689407){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Krb s v...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{vyrez-zonovy-regulator.pdf}}%
+    %\put(0.20006912,-2.08108508){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Manuální trojcestný směšovací...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{vyrez-zonovy-regulator.pdf}}%
+    %\put(2.40378788,-2.60770905){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}230 V AC\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{vyrez-zonovy-regulator.pdf}}%
+    \put(0.33375059,0.29175466){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Rozdělovač\end{tabular}}}}%
+	\put(0.33375059,0.21175466){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily podlahového\end{tabular}}}}%
+	\put(0.33375059,0.13175466){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily topení\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{vyrez-zonovy-regulator.pdf}}%
+    %\put(1.06292224,-2.91153057){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Centrální...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{vyrez-zonovy-regulator.pdf}}%
+    %\put(1.00620889,-2.3849066){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}I2C...\end{tabular}}}}%
+    %\put(2.75622084,-2.87102103){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Termostat patro...\end{tabular}}}}%
+    %\put(2.77647561,-3.11407825){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Termostat přízemí...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{vyrez-zonovy-regulator.pdf}}%
+    %\put(1.5814443,-2.91558152){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1-Wire...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{vyrez-zonovy-regulator.pdf}}%
+    %\put(1.75158435,-0.2014426){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Signali...\end{tabular}}}}%
+    %\put(1.75158435,0.45481188){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Signali...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{vyrez-zonovy-regulator.pdf}}%
+    %\put(0.21627293,-2.30388753){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Spojení I2C sběrnice...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{vyrez-zonovy-regulator.pdf}}%
+    %\put(1.58954621,-1.97981124){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Jističe +...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{vyrez-zonovy-regulator.pdf}}%
+    %\put(1.18445085,-1.97981124){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}12 V...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{vyrez-zonovy-regulator.pdf}}%
+    %\put(0.98190316,-1.97981124){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}5 V...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{vyrez-zonovy-regulator.pdf}}%
+    %\put(0.33375059,-0.44044887){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Rozdělovač podlaho...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{vyrez-zonovy-regulator.pdf}}%
+    %\put(0.04208193,-2.76974719){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}3,3 V\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{vyrez-zonovy-regulator.pdf}}%
+    %\put(-0.01463142,-2.89532675){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}I2C sběrnice\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=22]{vyrez-zonovy-regulator.pdf}}%
+    %\put(0.09879528,-3.01685536){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}UTP kabel\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=23]{vyrez-zonovy-regulator.pdf}}%
+    %\put(1.28572469,-2.3849066){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Relé...\end{tabular}}}}%
+    %\put(0.02992907,-0.71186276){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Sklep\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=24]{vyrez-zonovy-regulator.pdf}}%
+    %\put(0.07448956,-0.865799){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Signali...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=25]{vyrez-zonovy-regulator.pdf}}%
+    %\put(1.75158435,-2.3849066){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Relé...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=26]{vyrez-zonovy-regulator.pdf}}%
+    %\put(0.73479499,-1.04809191){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Plynový kon...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=27]{vyrez-zonovy-regulator.pdf}}%
+    %\put(0.11094814,0.89636582){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Nástěnný snímač pr...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=28]{vyrez-zonovy-regulator.pdf}}%
+    %\put(0.63352115,0.89636582){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Nástěnný snímač pr...\end{tabular}}}}%
+    %\put(0.37020917,1.01789443){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Ethernet\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=29]{vyrez-zonovy-regulator.pdf}}%
+    %\put(1.00215793,0.89636582){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}POE swi...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=30]{vyrez-zonovy-regulator.pdf}}%
+    %\put(1.26546992,0.89636582){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}LAN\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=31]{vyrez-zonovy-regulator.pdf}}%
+    %\put(0.37426012,0.91256964){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}…\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=32]{vyrez-zonovy-regulator.pdf}}%
+    %\put(1.89336773,0.89636582){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Nástěnný snímač pr...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=33]{vyrez-zonovy-regulator.pdf}}%
+    %\put(2.41594074,0.89636582){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Nástěnný snímač pro...\end{tabular}}}}%
+    %\put(2.15667971,1.01789443){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}WiFi\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=34]{vyrez-zonovy-regulator.pdf}}%
+    %\put(1.5287819,0.89636582){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}WiFi ro...\end{tabular}}}}%
+    %\put(2.15667971,0.91256964){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}…\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=35]{vyrez-zonovy-regulator.pdf}}%
+    %\put(0.5768078,-2.91153057){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}LAN\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=36]{vyrez-zonovy-regulator.pdf}}%
+    %\put(0.05423479,1.05840397){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1…N místností\end{tabular}}}}%
+    %\put(1.84070533,1.05840397){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1…N místností\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=37]{vyrez-zonovy-regulator.pdf}}%
+    %\put(0.15550863,-2.61581095){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Teplotní senzor\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=38]{vyrez-zonovy-regulator.pdf}}%
+    %\put(0.16361054,-2.46592567){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Sdružení 1-Wire sběrni...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=39]{vyrez-zonovy-regulator.pdf}}%
+  \end{picture}%
+\endgroup%
