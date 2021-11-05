@@ -1,14 +1,13 @@
-\section{DPS u krbů}
+\section{Signalizace u krbů}
 \begin{figure}[H]
    \centering
     \def\svgwidth{0.3\columnwidth}
     \input{images/svg/otopna-soustava/vyrez-krb-signalizace.pdf_tex}
-    \caption{Signalizace u krbů.}
+    \caption[Umístění signalizace u krbu.]{Výřez z obrázku \ref{fig:otopna-soustava-a-elektronika-rez-domu}. Umístění signalizace u krbu.}
     \label{fig:vyrez-krb-signalizace}
 \end{figure}
 
-\label{sec:dps-u-krbu}
-Navržená DPS se skládá z části elektronické pojistky TPS2600, zapojení je obdobné jako v \ref{sec:napajeni-1-wire-sbernice} (napájení 1-Wire sběrnice), navíc je na vstupu připojena transilová dioda (ESD9L5.0ST5G). Napěťové meze jsou nastaveny stejně, tedy minimální napětí je 4,75 V, maximální 5,25 V, proud je omezen na maximální hodnotu 100 mA. Dále je zde přivedena 1-Wire sběrnice přes konektor RJ45 s~obdobnými ochranami jako v \ref{sec:datova-cast-1-wire-sbernice} (datová část 1-Wire sběrnice) pro připojení MAX31850K přes svorkovnici. V neposlední řadě jsou zde vstupy pro ovládání třech LED pro signalizaci (obrázek \ref{fig:led-indikace}) naakumulovaného zásobníku otopné vody, modrá LED signalizuje stav horní části zásobníku, oranžová LED je pro střední část, červená je pro signalizaci spodní části. Vstupní část je chráněná přes DS9503 a transilovou diodou (ESD9L5.0ST5G). Sepnutí LED je přes tranzistor (BSS138P). Obdobně jsou řešeny oranžová a modrá LED. Celkové schéma zapojení je v~příloze \ref{app:schemata-ostatni}.
+Na obrázku \ref{fig:vyrez-krb-signalizace} je výřez části z celkového nákresu (obrázek \ref{fig:otopna-soustava-a-elektronika-rez-domu}) systému znázorňující umístění signalizace u krbu. Navržená DPS se skládá z části elektronické pojistky TPS2600, zapojení je obdobné jako v \ref{sec:napajeni-1-wire-sbernice} (napájení 1-Wire sběrnice), navíc je na vstupu připojena transilová dioda (ESD9L5.0ST5G). Napěťové meze jsou nastaveny stejně, tedy minimální napětí je 4,75 V, maximální 5,25 V, proud je omezen na maximální hodnotu 100 mA. Dále je zde přivedena 1-Wire sběrnice přes konektor RJ45 s~obdobnými ochranami jako v \ref{sec:datova-cast-1-wire-sbernice} (datová část 1-Wire sběrnice) pro připojení MAX31850K přes svorkovnici. V neposlední řadě jsou zde vstupy pro ovládání třech LED pro signalizaci (obrázek \ref{fig:led-indikace}) naakumulovaného zásobníku otopné vody, modrá LED signalizuje stav horní části zásobníku, oranžová LED je pro střední část, červená je pro signalizaci spodní části. Vstupní část je chráněná přes DS9503 a transilovou diodou (ESD9L5.0ST5G). Sepnutí LED je přes tranzistor (BSS138P). Obdobně jsou řešeny oranžová a modrá LED. Celkové schéma zapojení je v~příloze \ref{app:schemata-ostatni}.
 
 \begin{figure}[H]
     \centering
@@ -17,68 +16,22 @@ Navržená DPS se skládá z části elektronické pojistky TPS2600, zapojení j
     \label{fig:led-indikace}
 \end{figure}
 
-\subsubsection{I$^2$C sběrnice}
-\label{sec:i2c-sbernice}
 
-\begin{figure}[H]
-   \centering
-    \def\svgwidth{0.3\columnwidth}
-   \input{images/svg/otopna-soustava/vyrez-i2c-sbernice.pdf_tex}
-    \caption{I2C sběrnice.}
-    \label{fig:vyrez-i2c-sbernice}
-\end{figure}
-
-Sběrnice I$^2$C je realizovaná pomocí zakoupeného modulu (obrázek \ref{fig:modul-pca9615-i2c-sbernice}) s~obvodem PCA9615 do firmy  NXP Semiconductors. Vstupní signál SCL a~SDA je veden přímo z~centrální jednotky na vstupu obvodu PCA9615, napájení je s 3,3 V logikou. Výstup z PCA9615 je pomocí diferenciální veden. Napájení na této straně je 5 V. Sběrnice je realizovaná pomocí UTP kategorie 5e, výstup z~modulu je realizován pomocí konektoru RJ45. Vzhledem k použití UTP kabelu a diferenciálnímu přenosu je možné dosáhnout velké vzdálenosti sběrnice. Nejdelší bod dosahuje přibližně 30 m, je tedy možné použít I$^2$C sběrnici na vzdálenost, pro kterou není standartě dělána. Použitá frekvence je 100~kHz. Jedná se tedy o plnohodnotnou I$^2$C sběrnici. Důvodem pro zvolení této varianty bylo na základě výběru displeje s I$^2$C sběrnicí (jednoduché a~levné řešení), dále jedná se o klasické zapojení displeje jako by se nalézal v~krátké vzdálenosti od centrální jednotky a není tak nutný převod jako při využít např. RS485 na UART a následně na I$^2$C sběrnici, v neposlední řadě komunikace je definována podle protokolu I$^2$C.  Jeden modul se nalézá na straně centrální jednotky a pak na straně krbů. Napájení 5 V je realizováno pomocí samostatných kabelů, není tedy součástí UTP kabelu. Z důvodu omezení kabeláže je sběrnice realizována v jednom UTP kabelu s 1-Wire sběrnicí, tedy přesněji jsou využity volné vodiče 1,2 pro SCL a~7,~8 pro SDA. Zařízení lze zapojovat jak na straně před PCA9615, tak i~na diferenciální straně, je však výhodné připojené uzly udržet co v nejkratší vzdálenosti kvůli degradování signálu. Blokové schéma je na obrázku \ref{fig:blokove-schema-pca9615-i2c-sbernice} včetně napojení uzlů. Schéma zapojení modulu je na obrázku \ref{fig:zapojeni-pca9615-i2c-sbernice}.
-
-\begin{figure}[H]
-    \centering
-    \def\svgwidth{\columnwidth}
-    \input{images/svg/blokove-schema-pca9615-i2c-sbernice.pdf_tex}
-    \caption[Blokové schéma zapojení obvodu PCA9615.]{Blokové schéma zapojení obvodu PCA9615 s impedančním zakončením sběrnice a možnostmi napojení uzlů. Upraveno z \cite{pca9615-schema-zapojeni}.}
-    \label{fig:blokove-schema-pca9615-i2c-sbernice}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=\textwidth]{images/svg/kicad/zapojeni-pca9615-i2c-sbernice.eps}
-    \caption[Zapojení PCA9615 v modulu.]{Zapojení PCA9615 v modulu. Upraveno z \cite{pca9615-schema-zapojeni}.}
-    \label{fig:zapojeni-pca9615-i2c-sbernice}
-\end{figure}
-
-Výhodou PCA9615 je automatický výběr směru komunikace, není potřeba externí ovládání. Komunikace je možná až do rychlosti 1 MHz (přibližně pro 3 m), se zvýšenou délkou je však nutné rychlost snížit. Komunikace využívá standardní protokol I$^2$C. Koncová zařízení je možné napájet z různých zdrojů. V neposlední řadě se jedná o jednoduché řešení bez nutných další zařízení na straně Slave, stačí pouze zapojit koncové zařízení s~podporou I$^2$C. Na obrázku \ref{fig:modul-pca9615-transily} jsou pro větší ochranu modulu přidány obousměrné transil diody (SM6T6V8CAY) připájené na vstupní piny konektoru RJ45 (obvod sám o sobě poskytuje vstupní ochranu pro ESD). Pro rozbočení I$^2$C sběrnice do jednotlivých pater slouží DPS s konektory RJ45 (schéma viz příloha \ref{app:schemata-ostatni}, obrázky viz příloha \ref{app:rozbocovac-i2c}).
-
-\begin{figure}[H]
-\centering
-\begin{subfigure}{.5\textwidth}
-    \centering
-    \includegraphics[width=0.7\textwidth]{images/krb/modul-pca9615-i2c-sbernice.png}
-    \caption{Modul s obvodem PCA9615 – vrchní strana.}
-    \label{fig:modul-pca9615-i2c-sbernice}
-\end{subfigure}%
-\begin{subfigure}{.5\textwidth}
-    \centering
-    \includegraphics[width=0.7\textwidth]{images/krb/modul-pca9615-transily.png}
-    \caption{Modul s obvodem PCA9615 a s ochrannými transily – spodní strana.}
-    \label{fig:modul-pca9615-transily}
-\end{subfigure}
-\caption{Modul s obvodem PCA9615.}
-\label{fig:modul-pca9615}
-\end{figure}
 
 
 \subsubsection{Měření teploty pomocí termočlánku a převodníku MAX31850K}
-Teplotní senzory připojené na kouřovody krbů jsou realizované pomocí termočlánku z \ref{sec:teplotni-senzory-pro-krby}. Termočlánek je připojený k zakoupenému modulu (obrázek~\ref{fig:modul-max31850k-1-wire-prevodnik-termoclanku}), hodnota napětí z termočlánku je převedena do digitální podoby včetně teplotní kompenzace studeného konce a~tato hodnota je poslána po 1-Wire sběrnici. Je možné připojit termočlánek typu K. Převodník umožňuje měřit teplotu s~převodem pomocí AD převodníku až na 14 bitů. Rozlišení teploty činí 0,25~°C. Při teplotách -200 °C až 700 °C činí přesnost měřené teploty ±2~°C. Obvod disponuje detekcí zkratu (na GND nebo napájení) na vstupu pro termočlánek. Dále je zde detekce odpojeného termočlánku. Schéma zapojení modulu je na obrázku \ref{fig:zapojeni-max31850k-1-wire-prevodnik-termoclanku}.
+Teplotní senzory připojené na kouřovody krbů jsou realizované pomocí termočlánku z \ref{sec:teplotni-senzory-pro-krby}. Termočlánek je připojený k zakoupenému modulu (obrázek~\ref{fig:modul-max31850k-1-wire-prevodnik-termoclanku}), hodnota napětí z termočlánku je převedena do digitální podoby včetně teplotní kompenzace studeného konce a~tato hodnota je poslána po 1-Wire sběrnici. Je možné připojit termočlánek typu K. Převodník umožňuje měřit teplotu s~převodem pomocí AD převodníku až na 14 bitů. Rozlišení teploty činí 0,25~°C. Při teplotách -200 °C až 700 °C činí přesnost měřené teploty ±2~°C. Obvod disponuje detekcí zkratu (na GND nebo napájení) na vstupu pro termočlánek. Dále je zde detekce odpojeného termočlánku. Schéma zapojení modulu je v příloze \ref{app:schemata-ostatni}, upraveno z \cite{prevodnik-max31850k}.
+
+%\begin{figure}[H]
+%    \centering
+%    \includegraphics[width=\textwidth]{images/svg/kicad/zapojeni-max31850k-1-wire-prevodnik-termoclanku.eps}
+%    \caption[Zapojení MAX31850K v modulu.]{Zapojení MAX31850K v modulu. Upraveno z \cite{prevodnik-max31850k}.}
+%    \label{fig:zapojeni-max31850k-1-wire-prevodnik-termoclanku}
+%\end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{images/svg/kicad/zapojeni-max31850k-1-wire-prevodnik-termoclanku.eps}
-    \caption[Zapojení MAX31850K v modulu.]{Zapojení MAX31850K v modulu. Upraveno z \cite{prevodnik-max31850k}.}
-    \label{fig:zapojeni-max31850k-1-wire-prevodnik-termoclanku}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.6\textwidth]{images/krb/modul-max31850k-1-wire-prevodnik-termoclanku.png}
+    \includegraphics[width=0.4\textwidth]{images/krb/modul-max31850k-1-wire-prevodnik-termoclanku.png}
     \caption[Modul s obvodem MAX31850K.]{Modul s obvodem MAX31850K \cite{prevodnik-max31850k}.}
     \label{fig:modul-max31850k-1-wire-prevodnik-termoclanku}
 \end{figure}
@@ -123,7 +76,7 @@ Výše popsané části jsou realizované na DPS (obrázek \ref{fig:dps-led-ochr
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.95\textwidth]{images/krb/dps-led-ochrany-u-krbu-kabely.png}
+    \includegraphics[width=0.8\textwidth]{images/krb/dps-led-ochrany-u-krbu-kabely.png}
     \caption{DPS včetně signalizačních LED.}
     \label{fig:dps-led-ochrany-u-krbu-kabely}
 \end{figure}
@@ -131,55 +84,47 @@ Výše popsané části jsou realizované na DPS (obrázek \ref{fig:dps-led-ochr
 \subsubsection{Instalační krabice}
 Všechna elektronika je umístěna do ochranné instalační krabice (obrázek \ref{fig:instalacni-krabice-vnitrek-krb}). Do krabice vstupují dva vodiče pro napětí 5 V a zem, tři kabely pro ovládání signalizačních LED, UTP kabel se sběrnicí 1-Wire pro teplotní senzor (termočlánek) a I$^2$C sběrnicí. Na obrázku \ref{fig:zadni-cast-krytu-vika-instalacni-krabice-krb} je zobrazena zadní část víka instalační krabice s uchycením signalizačních LED a LCD displeje. Na obrázku \ref{fig:predni-cast-krytu-vika-instalacni-krabice-krb} je přední část víka instalační krabice. Takto zkompletovaná instalační krabice je umístěna u krbu ve sklepě, v přízemí a v patře.
 
+%\begin{figure}[H]
+%    \centering
+%    \includegraphics[width=0.6\textwidth]{images/krb/instalacni-krabice-vnitrek-krb.png}
+%    \caption{Instalační krabice s jednotlivými moduly.}
+%    \label{fig:instalacni-krabice-vnitrek-krb}
+%\end{figure}
+
+%\begin{figure}[H]
+%    \centering
+%    \includegraphics[width=0.6\textwidth]{images/krb/zadni-cast-krytu-vika-instalacni-krabice-krb.png}
+%    \caption{Zadní část instalační krabice.}
+%    \label{fig:zadni-cast-krytu-vika-instalacni-krabice-krb}
+%\end{figure}
+
+
+
 \begin{figure}[H]
-    \centering
-    \includegraphics[width=0.6\textwidth]{images/krb/instalacni-krabice-vnitrek-krb.png}
-    \caption{Instalační krabice s jednotlivými moduly.}
-    \label{fig:instalacni-krabice-vnitrek-krb}
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.835\textwidth]{images/krb/instalacni-krabice-vnitrek-krb.png}
+  \caption{Instalační krabice s jednotlivými moduly.}
+  \label{fig:instalacni-krabice-vnitrek-krb}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=\textwidth]{images/krb/zadni-cast-krytu-vika-instalacni-krabice-krb.png}
+  \caption{Zadní část instalační krabice.}
+  \label{fig:zadni-cast-krytu-vika-instalacni-krabice-krb}
+\end{subfigure}
+\caption{Instalační krabice pro signalizaci.}
+\label{fig:instalacni-krabice}
 \end{figure}
+
+
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.6\textwidth]{images/krb/zadni-cast-krytu-vika-instalacni-krabice-krb.png}
-    \caption{Zadní část instalační krabice.}
-    \label{fig:zadni-cast-krytu-vika-instalacni-krabice-krb}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.6\textwidth]{images/krb/predni-cast-krytu-vika-instalacni-krabice-krb.png}
+    \includegraphics[width=0.55\textwidth]{images/krb/predni-cast-krytu-vika-instalacni-krabice-krb.png}
     \caption[Víko instalační krabice.]{Víko instalační krabice. Osazený LCD displej, signalizačních LED (zleva modrá, oranžová a červená) a LED pro aktivování elektronické pojistky (červená LED vlevo od displeje).}
     \label{fig:predni-cast-krytu-vika-instalacni-krabice-krb}
 \end{figure}
 
 
-\section{Realizace 1-Wire sběrnice u zásobníku otopné vody}
-Na obrázku \ref{fig:dps-1-wire-sbernice-u-zasobniku-otopne-vody} je realizovaná DPS pro teplotní senzory u zásobníku otopné vody. Deska byla vlastnoručně navržena, vyrobena a osazena. Je aplikován ochranný lak. Princip zapojení včetně ochrana na napájecí i datové části je popsán v~části \ref{sec:dps-se-vstupy-vystupy-pro-raspberry-pi} (datová část 1-Wire sběrnice). Na obrázku \ref{fig:instalacni-krabice-cidla-u-zasobniku-otopne-vody} je vidět horní část DPS vložená do instalační krabice. Celkově je zde k dispozici 6~pozic pro upevnění přes svorkovnice teplotní senzory. V současnosti jsou zde napojeny 3 teplotní senzory (pro snímání teplot z horní, střední a spodní části zásobníku otopné vody). Na obrázku \ref{fig:ds18b20-ochrana} je teplotní senzor DS18B20 v~pouzdře TO-92 připevněn na UTP kabel a zataven plastovou hmotou, na níž je následně nanesena smršťovací ochranná bužírka. Na obrázku \ref{fig:zasobnik-otopné-vody} jsou vyznačená místa s umístěním teplotních senzorů. Celkové schéma zapojení je v příloze \ref{app:schemata-ostatni}.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.6\textwidth]{images/zasobnik-otopne-vody/dps-1-wire-sbernice-u-zasobniku-otopne-vody.png}
-    \caption{Realizovaná DPS pro teplotní senzory 1-Wire sběrnice u zásobníku otopné vody.}
-    \label{fig:dps-1-wire-sbernice-u-zasobniku-otopne-vody}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.6\textwidth]{images/zasobnik-otopne-vody/instalacni-krabice-cidla-u-zasobniku-otopne-vody.png}
-    \caption{Horní část DPS umístěná do instalační krabice.}
-    \label{fig:instalacni-krabice-cidla-u-zasobniku-otopne-vody}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.6\textwidth]{images/zasobnik-otopne-vody/ds18b20-ochrana.png}
-    \caption{Teplotní senzor DS18B20 v~ochranném pouzdře.}
-    \label{fig:ds18b20-ochrana}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=\textwidth]{images/zasobnik-otopne-vody/zasobnik-otopné-vody.png}
-    \caption[Zásobník otopné vody.]{Zásobník otopné vody. Červené kroužky označují místa teplotních senzorů.}
-    \label{fig:zasobnik-otopné-vody}
-\end{figure}

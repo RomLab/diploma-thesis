@@ -1,0 +1,12 @@
+\section{Centrální jednotka Raspberry Pi}
+
+
+\begin{figure}[H]
+    \centering
+    \def\svgwidth{0.3\columnwidth}
+    \input{images/svg/otopna-soustava/vyrez-centralni-jednotka.pdf_tex}
+    \caption[Centrální jednotka.]{Výřez z obrázku \ref{fig:otopna-soustava-a-elektronika-rez-domu}. Centrální jednotka.}
+    \label{fig:vyrez-centralni-jednotka}
+\end{figure}
+
+Na obrázku \ref{fig:vyrez-centralni-jednotka} je výřez části z celkového nákresu (obrázek \ref{fig:otopna-soustava-a-elektronika-rez-domu}) systému znázorňující umístění centrální jednotky. Pro centrální řídicí jednotku jsem vybral jednodeskový počítač Raspberry Pi model 4 \cite{raspberry-pi}. Důvodem pro vybraní byla přímá podpora HA, velká uživatelská základna, která toto zařízení používá (nejen s HA, ale i s jiným softwarem), nízká cena a relativně vysoký výkon. Přehled specifikace zařízení je na stránkách výrobce \cite{raspberry-pi}. Samozřejmě může vzniknout úvaha nad odolností tohoto zařízení např. vůči vnějšímu rušení, samotného rušení zařízení apod. Co se týče nasazení takového zařízení, většinou výrobci uvádějí že se jedná o~vývojové zařízení, které není určeno do koncového zařízení nebo případně splňují  základní certifikace ochrany. Průmyslovou certifikaci nesplňují nebo se na trhu nacházejí zařízení, které se průmyslovou aplikací chlubí (zde je nutné důkladně pročíst všechnu technickou dokumentaci), pak dále skutečně stojí za zvážení o jakou certifikaci se jedná, v jaké části průmyslu lze toto zařízení nasadit, ale i tak to může být dost velký risk. Ve většině případů je však nutné provést hardwarovou úpravu pro vysokou odolnost proti rušení, robustnost běžícího real time systému, RTC, typ paměti pro ukládání dat (typ média), životnost, technická podpora a mnohé další. V~domácích podmínkách nejsou nutné všechny požadavky jako v průmyslu, nicméně je nutné minimálně hledět na \acrshort{esd} (\textit{\acrlong{esd}}) ochranu připojených periferií především u sběrnic, které jsou na delší vzdálenosti a~způsob ukládání dat z pohledu životnosti paměťového média. Pro ESD ochranu jak samotného Raspberry Pi, tak i koncových zařízení je nutné zapojit mezi kabely sběrnice a zařízení ESD ochrany (takové ochrany jsou navrženy a popsány níže). SD kartu pro ukládání a běh samotného systému je vhodné změnit za médium s~vetší životností, lze využít například domácí NAS a data ukládat do databáze, SD kartu používat pouze pro systém či USB flash disk. Případně zajistit postup s předpřipravenou zálohou pro obnovu nefunkčního systému apod. 

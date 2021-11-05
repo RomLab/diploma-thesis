@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name pca9615-i2-sbernice-rescue)(type Legacy)(uri ${KIPRJMOD}/pca9615-i2-sbernice-rescue.lib)(options "")(descr ""))
-)

@@ -82,7 +82,7 @@
     \put(0,0){\includegraphics[width=\unitlength,page=13]{vyrez-vstupy-vystupy-rpi.pdf}}%
     \put(0.47810102,0.78222605){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily 1-Wire\end{tabular}}}}%
 	\put(0.47810102,0.70222605){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily sběrnice\end{tabular}}}}%
-	\put(0.47810102,0.38222605){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Lokální\end{tabular}}}}%
+	\put(0.47810102,0.38222605){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Chodbové\end{tabular}}}}%
 	\put(0.47810102,0.30222605){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily termostaty\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=14]{vyrez-vstupy-vystupy-rpi.pdf}}%
     %\put(0.80566697,5.76768281){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Signal...\end{tabular}}}}%

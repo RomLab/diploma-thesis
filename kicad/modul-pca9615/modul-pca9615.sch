@@ -1,0 +1,671 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Modul PCA9615"
+Date ""
+Rev "v11.0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L modul-pca9615-rescue:PCA9615_RL-interface_i2c_rl-pca9615-i2-sbernice-rescue-pca9615-i2c-sbernice-rescue U1
+U 1 1 5FDFA46C
+P 2350 2450
+F 0 "U1" H 2350 2875 50  0000 C CNN
+F 1 "PCA9615" H 2350 2784 50  0000 C CNN
+F 2 "" H 2150 2850 50  0001 C CNN
+F 3 "https://www.nxp.com/docs/en/data-sheet/PCA9615.pdf" H 2150 2850 50  0001 C CNN
+F 4 "NXP Semiconductors" H 2350 2450 50  0001 C CNN "Manufacture"
+	1    2350 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L modul-pca9615-rescue:rj45_rl-connectors_rl-pca9615-i2-sbernice-rescue-pca9615-i2c-sbernice-rescue J1
+U 1 1 5FDFAE21
+P 9100 2450
+F 0 "J1" H 9150 1900 50  0000 R CNN
+F 1 "rj45" H 9200 2000 50  0000 R CNN
+F 2 "" H 9100 2450 50  0001 C CNN
+F 3 "" H 9100 2450 50  0001 C CNN
+	1    9100 2450
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5FDFE5E7
+P 6200 3050
+F 0 "#PWR0101" H 6200 2800 50  0001 C CNN
+F 1 "GND" H 6205 2877 50  0000 C CNN
+F 2 "" H 6200 3050 50  0001 C CNN
+F 3 "" H 6200 3050 50  0001 C CNN
+	1    6200 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 3050 6200 2950
+Wire Wire Line
+	6200 2650 6200 2600
+Wire Wire Line
+	6200 2250 6200 2200
+$Comp
+L power_rl:VDD_A #PWR0102
+U 1 1 5FDFEEBC
+P 6200 1750
+F 0 "#PWR0102" H 6200 1650 50  0001 C CNN
+F 1 "VDD_A" H 6200 1923 50  0000 C CNN
+F 2 "" H 6200 1750 50  0001 C CNN
+F 3 "" H 6200 1750 50  0001 C CNN
+	1    6200 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 1850 6200 1750
+$Comp
+L power:GND #PWR0103
+U 1 1 5FE0166E
+P 7150 3050
+F 0 "#PWR0103" H 7150 2800 50  0001 C CNN
+F 1 "GND" H 7155 2877 50  0000 C CNN
+F 2 "" H 7150 3050 50  0001 C CNN
+F 3 "" H 7150 3050 50  0001 C CNN
+	1    7150 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 3050 7150 2950
+Wire Wire Line
+	7150 2650 7150 2600
+Wire Wire Line
+	7150 2250 7150 2200
+Wire Wire Line
+	7150 1850 7150 1750
+$Comp
+L power_rl:VDD_B #PWR0104
+U 1 1 5FE033F3
+P 7150 1750
+F 0 "#PWR0104" H 7150 1700 50  0001 C CNN
+F 1 "VDD_B" H 7150 1923 50  0000 C CNN
+F 2 "" H 7150 1750 50  0001 C CNN
+F 3 "" H 7150 1750 50  0001 C CNN
+	1    7150 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power_rl:VDD_B #PWR0105
+U 1 1 5FE08C82
+P 2950 2200
+F 0 "#PWR0105" H 2950 2150 50  0001 C CNN
+F 1 "VDD_B" H 2950 2373 50  0000 C CNN
+F 2 "" H 2950 2200 50  0001 C CNN
+F 3 "" H 2950 2200 50  0001 C CNN
+	1    2950 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 2250 2950 2250
+Wire Wire Line
+	2950 2250 2950 2200
+$Comp
+L power_rl:VDD_A #PWR0106
+U 1 1 5FE094F5
+P 1750 2200
+F 0 "#PWR0106" H 1750 2100 50  0001 C CNN
+F 1 "VDD_A" H 1750 2373 50  0000 C CNN
+F 2 "" H 1750 2200 50  0001 C CNN
+F 3 "" H 1750 2200 50  0001 C CNN
+	1    1750 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 2250 1750 2250
+Wire Wire Line
+	1750 2250 1750 2200
+Wire Wire Line
+	2800 2350 2950 2350
+Wire Wire Line
+	2800 2450 2950 2450
+Wire Wire Line
+	2800 2550 2950 2550
+Wire Wire Line
+	2800 2650 2950 2650
+Text Label 2950 2350 0    50   ~ 0
+dsdam
+Text Label 2950 2450 0    50   ~ 0
+dsdap
+Text Label 2950 2550 0    50   ~ 0
+dsclp
+Text Label 2950 2650 0    50   ~ 0
+dsclm
+Wire Wire Line
+	1900 2350 1750 2350
+Wire Wire Line
+	1900 2450 1750 2450
+Wire Wire Line
+	1900 2550 1750 2550
+Wire Wire Line
+	1900 2650 1750 2650
+Text Label 1750 2350 2    50   ~ 0
+sda
+Text Label 1750 2450 2    50   ~ 0
+en
+Text Label 1750 2550 2    50   ~ 0
+scl
+$Comp
+L power:GND #PWR0107
+U 1 1 5FE0C727
+P 1750 2750
+F 0 "#PWR0107" H 1750 2500 50  0001 C CNN
+F 1 "GND" H 1755 2577 50  0000 C CNN
+F 2 "" H 1750 2750 50  0001 C CNN
+F 3 "" H 1750 2750 50  0001 C CNN
+	1    1750 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 2750 1750 2650
+Wire Wire Line
+	6200 2200 6050 2200
+Connection ~ 6200 2200
+Wire Wire Line
+	6200 2200 6200 2150
+Wire Wire Line
+	6200 2600 6050 2600
+Connection ~ 6200 2600
+Wire Wire Line
+	6200 2600 6200 2550
+Wire Wire Line
+	7150 2600 7000 2600
+Connection ~ 7150 2600
+Wire Wire Line
+	7150 2600 7150 2550
+Wire Wire Line
+	7150 2200 7000 2200
+Connection ~ 7150 2200
+Wire Wire Line
+	7150 2200 7150 2150
+Text Label 6050 2200 2    50   ~ 0
+dsclp
+Text Label 6050 2600 2    50   ~ 0
+dsclm
+Text Label 7000 2200 2    50   ~ 0
+dsdap
+Text Label 7000 2600 2    50   ~ 0
+dsdam
+$Comp
+L modul-pca9615-rescue:capacitor_rl-passive_components_rl-pca9615-i2-sbernice-rescue-pca9615-i2c-sbernice-rescue C1
+U 1 1 5FE0FF60
+P 3650 4200
+F 0 "C1" V 3604 4310 50  0000 L CNN
+F 1 "100n" V 3695 4310 50  0000 L CNN
+F 2 "" H 3650 4200 50  0001 C CNN
+F 3 "" H 3650 4200 50  0001 C CNN
+	1    3650 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L modul-pca9615-rescue:capacitor_rl-passive_components_rl-pca9615-i2-sbernice-rescue-pca9615-i2c-sbernice-rescue C2
+U 1 1 5FE10909
+P 4200 4200
+F 0 "C2" V 4154 4310 50  0000 L CNN
+F 1 "1u" V 4245 4310 50  0000 L CNN
+F 2 "" H 4200 4200 50  0001 C CNN
+F 3 "" H 4200 4200 50  0001 C CNN
+	1    4200 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L modul-pca9615-rescue:capacitor_rl-passive_components_rl-pca9615-i2-sbernice-rescue-pca9615-i2c-sbernice-rescue C3
+U 1 1 5FE1103A
+P 4750 4200
+F 0 "C3" V 4704 4310 50  0000 L CNN
+F 1 "100n" V 4795 4310 50  0000 L CNN
+F 2 "" H 4750 4200 50  0001 C CNN
+F 3 "" H 4750 4200 50  0001 C CNN
+	1    4750 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L modul-pca9615-rescue:capacitor_rl-passive_components_rl-pca9615-i2-sbernice-rescue-pca9615-i2c-sbernice-rescue C4
+U 1 1 5FE11A8F
+P 5300 4200
+F 0 "C4" V 5254 4310 50  0000 L CNN
+F 1 "1u" V 5345 4310 50  0000 L CNN
+F 2 "" H 5300 4200 50  0001 C CNN
+F 3 "" H 5300 4200 50  0001 C CNN
+	1    5300 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5FE12B89
+P 3650 4400
+F 0 "#PWR0108" H 3650 4150 50  0001 C CNN
+F 1 "GND" H 3655 4227 50  0000 C CNN
+F 2 "" H 3650 4400 50  0001 C CNN
+F 3 "" H 3650 4400 50  0001 C CNN
+	1    3650 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 4400 3650 4350
+$Comp
+L power:GND #PWR0109
+U 1 1 5FE133F2
+P 4200 4400
+F 0 "#PWR0109" H 4200 4150 50  0001 C CNN
+F 1 "GND" H 4205 4227 50  0000 C CNN
+F 2 "" H 4200 4400 50  0001 C CNN
+F 3 "" H 4200 4400 50  0001 C CNN
+	1    4200 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 5FE13EB0
+P 4750 4400
+F 0 "#PWR0110" H 4750 4150 50  0001 C CNN
+F 1 "GND" H 4755 4227 50  0000 C CNN
+F 2 "" H 4750 4400 50  0001 C CNN
+F 3 "" H 4750 4400 50  0001 C CNN
+	1    4750 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 5FE146DA
+P 5300 4400
+F 0 "#PWR0111" H 5300 4150 50  0001 C CNN
+F 1 "GND" H 5305 4227 50  0000 C CNN
+F 2 "" H 5300 4400 50  0001 C CNN
+F 3 "" H 5300 4400 50  0001 C CNN
+	1    5300 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 4400 4200 4350
+Wire Wire Line
+	4750 4350 4750 4400
+Wire Wire Line
+	5300 4350 5300 4400
+$Comp
+L power_rl:VDD_A #PWR0112
+U 1 1 5FE18859
+P 3650 4000
+F 0 "#PWR0112" H 3650 3900 50  0001 C CNN
+F 1 "VDD_A" H 3650 4173 50  0000 C CNN
+F 2 "" H 3650 4000 50  0001 C CNN
+F 3 "" H 3650 4000 50  0001 C CNN
+	1    3650 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power_rl:VDD_A #PWR0113
+U 1 1 5FE1911A
+P 4200 4000
+F 0 "#PWR0113" H 4200 3900 50  0001 C CNN
+F 1 "VDD_A" H 4200 4173 50  0000 C CNN
+F 2 "" H 4200 4000 50  0001 C CNN
+F 3 "" H 4200 4000 50  0001 C CNN
+	1    4200 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power_rl:VDD_B #PWR0114
+U 1 1 5FE197A8
+P 4750 4000
+F 0 "#PWR0114" H 4750 3950 50  0001 C CNN
+F 1 "VDD_B" H 4750 4173 50  0000 C CNN
+F 2 "" H 4750 4000 50  0001 C CNN
+F 3 "" H 4750 4000 50  0001 C CNN
+	1    4750 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power_rl:VDD_B #PWR0115
+U 1 1 5FE19F6F
+P 5300 4000
+F 0 "#PWR0115" H 5300 3950 50  0001 C CNN
+F 1 "VDD_B" H 5300 4173 50  0000 C CNN
+F 2 "" H 5300 4000 50  0001 C CNN
+F 3 "" H 5300 4000 50  0001 C CNN
+	1    5300 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 4050 3650 4000
+Wire Wire Line
+	4200 4000 4200 4050
+Wire Wire Line
+	4750 4000 4750 4050
+Wire Wire Line
+	5300 4000 5300 4050
+Text Label 8550 2150 2    50   ~ 0
+dsclm
+Wire Wire Line
+	8700 2150 8550 2150
+Wire Wire Line
+	8700 2250 8550 2250
+Wire Wire Line
+	8700 2850 8550 2850
+Wire Wire Line
+	8700 2750 8550 2750
+Text Label 8550 2250 2    50   ~ 0
+dsclp
+Text Label 8550 2750 2    50   ~ 0
+dsdam
+Text Label 8550 2850 2    50   ~ 0
+dsdap
+$Comp
+L power:GND #PWR0116
+U 1 1 5FE214F5
+P 2200 4600
+F 0 "#PWR0116" H 2200 4350 50  0001 C CNN
+F 1 "GND" H 2205 4427 50  0000 C CNN
+F 2 "" H 2200 4600 50  0001 C CNN
+F 3 "" H 2200 4600 50  0001 C CNN
+	1    2200 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 4450 2200 4600
+Wire Wire Line
+	2050 4250 2200 4250
+Wire Wire Line
+	2050 4150 2200 4150
+Wire Wire Line
+	2050 4050 2200 4050
+Text Label 2200 4250 0    50   ~ 0
+sda
+Text Label 2200 4150 0    50   ~ 0
+scl
+Text Label 2200 4050 0    50   ~ 0
+en
+$Comp
+L power_rl:VDD_A #PWR0118
+U 1 1 5FE289C1
+P 2650 950
+F 0 "#PWR0118" H 2650 850 50  0001 C CNN
+F 1 "VDD_A" H 2650 1123 50  0000 C CNN
+F 2 "" H 2650 950 50  0001 C CNN
+F 3 "" H 2650 950 50  0001 C CNN
+	1    2650 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power_rl:VDD_B #PWR0119
+U 1 1 5FE28FFF
+P 2950 950
+F 0 "#PWR0119" H 2950 900 50  0001 C CNN
+F 1 "VDD_B" H 2950 1123 50  0000 C CNN
+F 2 "" H 2950 950 50  0001 C CNN
+F 3 "" H 2950 950 50  0001 C CNN
+	1    2950 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 950  2650 1000
+Wire Wire Line
+	2950 1000 2950 950 
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5FE2C7C6
+P 3350 950
+F 0 "#FLG0101" H 3350 1025 50  0001 C CNN
+F 1 "PWR_FLAG" H 3350 1123 50  0000 C CNN
+F 2 "" H 3350 950 50  0001 C CNN
+F 3 "~" H 3350 950 50  0001 C CNN
+	1    3350 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 1000 3350 1000
+Wire Wire Line
+	3350 1000 3350 950 
+Connection ~ 2950 1000
+Wire Wire Line
+	2650 1000 2950 1000
+$Comp
+L modul-pca9615-rescue:1x2_screw_term_block-connectors_rl-pca9615-i2-sbernice-rescue-pca9615-i2c-sbernice-rescue J2
+U 1 1 5FE4995C
+P 4550 850
+F 0 "J2" V 4514 712 50  0000 R CNN
+F 1 "1x2_screw_term_block" V 4423 712 50  0000 R CNN
+F 2 "" H 4550 850 50  0001 C CNN
+F 3 "" H 4550 850 50  0001 C CNN
+	1    4550 850 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 5FE4B5A7
+P 4600 1150
+F 0 "#PWR0117" H 4600 900 50  0001 C CNN
+F 1 "GND" H 4605 977 50  0000 C CNN
+F 2 "" H 4600 1150 50  0001 C CNN
+F 3 "" H 4600 1150 50  0001 C CNN
+	1    4600 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 1150 4600 1050
+$Comp
+L power_rl:VDD_B #PWR0120
+U 1 1 5FE4CC51
+P 4200 900
+F 0 "#PWR0120" H 4200 850 50  0001 C CNN
+F 1 "VDD_B" H 4200 1073 50  0000 C CNN
+F 2 "" H 4200 900 50  0001 C CNN
+F 3 "" H 4200 900 50  0001 C CNN
+	1    4200 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 1050 4500 1100
+Wire Wire Line
+	4500 1100 4200 1100
+Wire Wire Line
+	4200 1100 4200 900 
+$Comp
+L modul-pca9615-rescue:1x5_pins_header_rl-connectors_rl-pca9615-i2-sbernice-rescue-pca9615-i2c-sbernice-rescue P1
+U 1 1 5FE5EC7F
+P 1900 4250
+F 0 "P1" V 2325 4181 50  0000 C CNN
+F 1 "1x5_pins_header" V 2234 4181 50  0000 C CNN
+F 2 "" H 1900 4250 50  0001 C CNN
+F 3 "" H 1900 4250 50  0001 C CNN
+	1    1900 4250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2050 4450 2200 4450
+$Comp
+L power_rl:VDD_A #PWR0121
+U 1 1 5FE639E2
+P 2500 3800
+F 0 "#PWR0121" H 2500 3700 50  0001 C CNN
+F 1 "VDD_A" H 2500 3973 50  0000 C CNN
+F 2 "" H 2500 3800 50  0001 C CNN
+F 3 "" H 2500 3800 50  0001 C CNN
+	1    2500 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 4350 2500 4350
+Wire Wire Line
+	2500 4350 2500 3800
+$Comp
+L Jumper:SolderJumper_2_Bridged JP1
+U 1 1 5FE67F8C
+P 3900 5750
+F 0 "JP1" H 3900 5850 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" V 3900 5200 50  0001 C CNN
+F 2 "" H 3900 5750 50  0001 C CNN
+F 3 "~" H 3900 5750 50  0001 C CNN
+	1    3900 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power_rl:VDD_A #PWR0122
+U 1 1 5FE6894C
+P 3600 5700
+F 0 "#PWR0122" H 3600 5600 50  0001 C CNN
+F 1 "VDD_A" H 3600 5873 50  0000 C CNN
+F 2 "" H 3600 5700 50  0001 C CNN
+F 3 "" H 3600 5700 50  0001 C CNN
+	1    3600 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 5700 3600 5750
+Wire Wire Line
+	3600 5750 3750 5750
+$Comp
+L power_rl:VDD_B #PWR0123
+U 1 1 5FE6A50E
+P 4200 5700
+F 0 "#PWR0123" H 4200 5650 50  0001 C CNN
+F 1 "VDD_B" H 4200 5873 50  0000 C CNN
+F 2 "" H 4200 5700 50  0001 C CNN
+F 3 "" H 4200 5700 50  0001 C CNN
+	1    4200 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 5750 4200 5750
+Wire Wire Line
+	4200 5750 4200 5700
+$Comp
+L Jumper:SolderJumper_3_Bridged123 JP2
+U 1 1 5FE6F19C
+P 5350 5750
+F 0 "JP2" H 5450 5650 50  0000 C CNN
+F 1 "SolderJumper_3_Bridged123" V 5350 6350 50  0001 C CNN
+F 2 "" H 5350 5750 50  0001 C CNN
+F 3 "~" H 5350 5750 50  0001 C CNN
+	1    5350 5750
+	-1   0    0    1   
+$EndComp
+$Comp
+L passive_component_rl:resistor_eu R7
+U 1 1 5FE6FFB2
+P 5000 6050
+F 0 "R7" V 4954 6118 50  0000 L CNN
+F 1 "4k7" V 5045 6118 50  0000 L CNN
+F 2 "" H 5000 6050 50  0001 C CNN
+F 3 "" H 5000 6050 50  0001 C CNN
+	1    5000 6050
+	0    1    1    0   
+$EndComp
+$Comp
+L passive_component_rl:resistor_eu R8
+U 1 1 5FE7108F
+P 5700 6050
+F 0 "R8" V 5654 6118 50  0000 L CNN
+F 1 "4k7" V 5745 6118 50  0000 L CNN
+F 2 "" H 5700 6050 50  0001 C CNN
+F 3 "" H 5700 6050 50  0001 C CNN
+	1    5700 6050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5000 5900 5000 5750
+Wire Wire Line
+	5000 5750 5150 5750
+Wire Wire Line
+	5550 5750 5700 5750
+Wire Wire Line
+	5700 5750 5700 5900
+Wire Wire Line
+	5000 6200 5000 6350
+Wire Wire Line
+	5700 6200 5700 6350
+Text Label 5000 6350 0    50   ~ 0
+scl
+Text Label 5700 6350 0    50   ~ 0
+sda
+$Comp
+L power_rl:VDD_A #PWR0124
+U 1 1 5FE796F1
+P 5350 5550
+F 0 "#PWR0124" H 5350 5450 50  0001 C CNN
+F 1 "VDD_A" H 5350 5723 50  0000 C CNN
+F 2 "" H 5350 5550 50  0001 C CNN
+F 3 "" H 5350 5550 50  0001 C CNN
+	1    5350 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 5600 5350 5550
+$Comp
+L passive_component_rl:resistor_eu R1
+U 1 1 5FE0C9DD
+P 6200 2000
+F 0 "R1" V 6250 1850 50  0000 L CNN
+F 1 "390R" V 6150 1750 50  0000 L CNN
+F 2 "" V 6130 2000 50  0001 C CNN
+F 3 "~" H 6200 2000 50  0001 C CNN
+	1    6200 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5FE0CE17
+P 6200 2400
+F 0 "R2" H 6270 2446 50  0000 L CNN
+F 1 "100R" H 6270 2355 50  0000 L CNN
+F 2 "" V 6130 2400 50  0001 C CNN
+F 3 "~" H 6200 2400 50  0001 C CNN
+	1    6200 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L passive_component_rl:resistor_eu R3
+U 1 1 5FE0D4F7
+P 6200 2800
+F 0 "R3" V 6250 2650 50  0000 L CNN
+F 1 "390R" V 6150 2550 50  0000 L CNN
+F 2 "" V 6130 2800 50  0001 C CNN
+F 3 "~" H 6200 2800 50  0001 C CNN
+	1    6200 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5FE0ED64
+P 7150 2000
+F 0 "R4" H 7220 2046 50  0000 L CNN
+F 1 "390R" H 7220 1955 50  0000 L CNN
+F 2 "" V 7080 2000 50  0001 C CNN
+F 3 "~" H 7150 2000 50  0001 C CNN
+	1    7150 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5FE0F4CA
+P 7150 2400
+F 0 "R5" H 7220 2446 50  0000 L CNN
+F 1 "100R" H 7220 2355 50  0000 L CNN
+F 2 "" V 7080 2400 50  0001 C CNN
+F 3 "~" H 7150 2400 50  0001 C CNN
+	1    7150 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5FE0FBA2
+P 7150 2800
+F 0 "R6" H 7220 2846 50  0000 L CNN
+F 1 "390R" H 7220 2755 50  0000 L CNN
+F 2 "" V 7080 2800 50  0001 C CNN
+F 3 "~" H 7150 2800 50  0001 C CNN
+	1    7150 2800
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

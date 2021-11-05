@@ -1,12 +1,12 @@
 \section{Zónový regulátor}
 \begin{figure}[H]
    \centering
-    \def\svgwidth{0.3\columnwidth}
+    \def\svgwidth{0.5\columnwidth}
    \input{images/svg/otopna-soustava/vyrez-zonovy-regulator.pdf_tex}
-    \caption{Zónový regulátor.}
+    \caption[Umístění zónového regulátoru.]{Výřez z obrázku \ref{fig:otopna-soustava-a-elektronika-rez-domu}. Umístění zónového regulátoru.}
     \label{fig:vyrez-zonovy-regulator}
 \end{figure}
-Zónový regulátor se skládá z modulu PCA9615 (viz část  \ref{sec:i2c-sbernice} (I$^2$C sběrnice)) pro realizaci I$^2$C sběrnice pomocí diferenciálních párů. Samotná sběrnice je realizovaná pomocí UTP kabelu kategorie 5e. Na tento modul je následně napojen obvod PCA9685 od firmy NXP Semiconductors. Výstupy z PCA9685 ovládají jednotlivé termoelektrické pohony (celkově 12 pohonů, každý je řízen samostatně), čímž dochází k regulaci otopné vody do otopných okruhů. Zónové regulátory jsou umístěny v rozdělovači otopných okruhů v přízemí a~patře domu.
+Na obrázku \ref{fig:vyrez-zonovy-regulator} je výřez části z celkového nákresu (obrázek \ref{fig:otopna-soustava-a-elektronika-rez-domu}) systému znázorňující umístění zónového regulátoru. Zónový regulátor se skládá z modulu PCA9615 (viz část  \ref{sec:i2c-sbernice} (I$^2$C sběrnice)) pro realizaci I$^2$C sběrnice pomocí diferenciálních párů. Samotná sběrnice je realizovaná pomocí UTP kabelu kategorie 5e. Na tento modul je následně napojen obvod PCA9685 od firmy NXP Semiconductors. Výstupy z PCA9685 ovládají jednotlivé termoelektrické pohony (celkově 12 pohonů, každý je řízen samostatně), čímž dochází k regulaci otopné vody do otopných okruhů. Zónové regulátory jsou umístěny v rozdělovači otopných okruhů v přízemí a~patře domu.
 
 \subsubsection{PCA9685}
 Obvod PCA9685 umožňuje pomocí I$^2$C sběrnice ovládat 16 výstupů se stejnou individuální hodnotou PWM (se střídou 0 \% až 100 \%), frekvence je programovatelná od 24 Hz do 1\,526 Hz. Každý kanál navíc může dodat 10~mA jako source, případně 25 mA jako sink (což je 160 mA respektive 400~mA celkově).
@@ -37,28 +37,46 @@ Termoelektrické pohony jsou ovládány na základě hodnoty PWM z modulu PCA968
 \end{figure}
 
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.95\textwidth]{images/zonovy-regulator/zonovy-regulator-spodni-strana.png}
-    \caption{Zadní část panelu zónového regulátoru.}
-    \label{fig:zonovy-regulator-spodni-strana}
-\end{figure}
+%\begin{figure}[H]
+%    \centering
+%    \includegraphics[width=0.95\textwidth]{images/zonovy-regulator/zonovy-regulator-spodni-strana.png}
+%    \caption{Zadní část panelu zónového regulátoru.}
+%    \label{fig:zonovy-regulator-spodni-strana}
+%\end{figure}
+
+%\begin{figure}[H]
+%    \centering
+%    \includegraphics[width=0.95\textwidth]{images/zonovy-regulator/zonovy-regulator-vrchni-strana.png}
+%    \caption[Čelní část panelu zónového regulátoru.]{Čelní část panelu zónového regulátoru se signalizačními LED a~manuálním ovládáním pomocí spínačů.}
+%    \label{fig:zonovy-regulator-vrchni-strana}
+%\end{figure}
+
+
 
 \begin{figure}[H]
-    \centering
-    \includegraphics[width=0.95\textwidth]{images/zonovy-regulator/zonovy-regulator-vrchni-strana.png}
-    \caption[Čelní část panelu zónového regulátoru.]{Čelní část panelu zónového regulátoru se signalizačními LED a~manuálním ovládáním pomocí spínačů.}
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=\textwidth]{images/zonovy-regulator/zonovy-regulator-spodni-strana.png}
+  \caption{Zadní část panelu zónového regulátoru. \newline \newline}
+  \label{fig:zonovy-regulator-spodni-strana}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=\textwidth]{images/zonovy-regulator/zonovy-regulator-vrchni-strana.png}
+  \caption[Čelní část panelu zónového regulátoru.]{Čelní část panelu zónového regulátoru se signalizačními LED a~manuálním ovládáním pomocí spínačů.}
     \label{fig:zonovy-regulator-vrchni-strana}
+\end{subfigure}
+\caption{Zónový regulátor.}
+\label{fig:zonovy-regulator}
 \end{figure}
-
-
 
 \subsubsection{Termoelektrické pohony Salus T30NC}  
 Termoelektrický pohon Salus T30NC slouží k ovládání ventilů pro jednotlivé otopné okruhy. Je napájen stejnosměrným napětí 24 V při maximálním proudovém odběru při zapnutí 250 mA. Provozní příkon jsou 2 W. Rozměr závitu je M30\,×\,1,5. Maximální délka zdvihu pro dřík ventilu činí 4 mm. Síla pohonu je 100 N ($\pm$10 \%). Čas pro otevření je přibližně 2 minuty. Jedná se o~typ \acrshort{nc} (\textit{\acrlong{nc}}). Při odpojení napájení je ventil zavřen. Pohon má funkci „First Open“, neboli je možné pomocí zarážky ventil instalovat jako otevřený bez nutnosti napájení (využít v případě, kdy není ještě instalovaná centrální jednotka). Pro každé patro je použito 12 těchto pohonů.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{images/termoelektricky-pohon-salus-t30nc-24-v.png}
+    \includegraphics[width=0.5\textwidth]{images/termoelektricky-pohon-salus-t30nc-24-v.png}
     \caption[Termoelektrický pohon Salus T30NC.]{Termoelektrický pohon Salus T30NC na stejnosměrné napětí 24~V \cite{termoelektricky-pohon-t30nc}.}
     \label{fig:termoelektricky-pohon-salus-t30nc-24-v}
 \end{figure}

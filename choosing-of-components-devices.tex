@@ -1,114 +1,23 @@
 \chapter{Hardwarová část}
 
-Na obrázku \ref{fig:otopna-soustava-a-elektronika-rez-domu} je nákres otopné soustavy včetně jednotlivých zařízení pro ovládání této soustavy. V textu dále popíši jednotlivá vybraná či navržená zařízení z~nákresu, které jsem realizoval nebo zakoupil hotové, případně je upravil. Dále uvedu popis pro zrealizované nástěnné snímače prostorové teploty.
+Na obrázku \ref{fig:otopna-soustava-a-elektronika-rez-domu} je nákres otopné soustavy včetně jednotlivých zařízení pro ovládání této soustavy. V~textu dále popíši jednotlivá vybraná či navržená zařízení z~nákresu (pro přehlednost jsou jednotlivé části uvozeny výřezem obrázku dané části z celkového nákresu), které jsem realizoval nebo zakoupil hotové, případně je upravil. Dále uvedu popis pro zrealizované nástěnné snímače prostorové teploty.
 
 \newpage
 
 \begin{figure}[H]
     \centering
-    \def\svgwidth{0.97\columnwidth}
-    \input{images/svg/otopna-soustava-a-elektronika-rez-domu.pdf_tex}
-    \caption[Otopná soustava v domě včetně elektroniky pro řízení.]{Otopná soustava v domě včetně elektroniky pro řízení. V nákresu nejsou uvedeny nástěnné snímače prostorové teploty pro jednotlivé místnosti.}
+    \def\svgwidth{\columnwidth}
+    \input{images/svg/otopna-soustava/otopna-soustava-a-elektronika-rez-domu1.pdf_tex}
+    \caption{Otopná soustava v domě včetně elektroniky pro řízení.}
     \label{fig:otopna-soustava-a-elektronika-rez-domu}
 \end{figure}
 
 
-\section{Centrální jednotka Raspberry Pi}
+\input{central-unit}
 
+\input{temperature-sensors}
 
-\begin{figure}[H]
-    \centering
-    \def\svgwidth{0.3\columnwidth}
-    \input{images/svg/otopna-soustava/vyrez-centralni-jednotka.pdf_tex}
-    \caption{Centrální jednotka.}
-    \label{fig:vyrez-centralni-jednotka}
-\end{figure}
-
-Pro centrální řídicí jednotku jsem vybral jednodeskový počítač Raspberry Pi model 4. Důvodem pro vybraní byla přímá podpora HA, velká uživatelská základna, která toto zařízení používá (nejen s HA, ale i s jiným softwarem), nízká cena a relativně vysoký výkon. Přehled specifikace zařízení je v tabulce \ref{tab:prehled-vybaveni-raspberry-pi-4-model-b}. Samotné Raspberry Pi je na obrázku \ref{fig:raspberry-pi-4-model-b}. Samozřejmě může vzniknout úvaha nad odolností tohoto zařízení např. vůči vnějšímu rušení, samotného rušení zařízení apod. Co se týče nasazení takového zařízení, většinou výrobci uvádějí že se jedná o~vývojové zařízení, které není určeno do koncového zařízení nebo případně splňují  základní certifikace ochrany. Průmyslovou certifikaci nesplňují nebo se na trhu nacházejí zařízení, které se průmyslovou aplikací chlubí (zde je nutné důkladně pročíst všechnu technickou dokumentaci), pak dále skutečně stojí za zvážení o jakou certifikaci se jedná, v jaké části průmyslu lze toto zařízení nasadit, ale i tak to může být dost velký risk. Ve většině případů je však nutné provést hardwarovou úpravu pro vysokou odolnost proti rušení, robustnost běžícího real time systému, RTC, typ paměti pro ukládání dat (typ média), životnost, technická podpora a mnohé další. V~domácích podmínkách nejsou nutné všechny požadavky jako v průmyslu, nicméně je nutné minimálně hledět na \acrshort{esd} (\textit{\acrlong{esd}}) ochranu připojených periferií především u sběrnic, které jsou na delší vzdálenosti a způsob ukládání dat z pohledu životnosti paměťového média. Pro ESD ochranu jak samotného Raspberry Pi, tak i koncových zařízení je nutné zapojit mezi kabely sběrnice a zařízení ESD ochrany (takové ochrany jsou navrženy a popsány níže). SD kartu pro ukládání a běh samotného systému je vhodné změnit za médium s~vetší životností, lze využít například domácí NAS a data ukládat do databáze, SD kartu používat pouze pro systém či USB flash disk. Případně zajistit postup s předpřipravenou zálohou pro obnovu nefunkčního systému apod. 
-
-\begin{center}
-\begin{table}[H]
-\begin{tabular}{|c||c|}
-\hline
-\thead{Procesor} &  
-\makecell{Broadcom BCM2711 \\ 
-quad-core Cortex-A72 (ARM v8)
-64-bit, 1,5 GHz} \\ 
-\hline
-\thead{RAM} & 4 GB LPDDR4 \\ 
-\hline
-\thead{Konektivita} & 
-\makecell{2,4 GHz a 5,0 GHz IEEE 802.11b/g/n/ac \\
-LAN, Bluetooth 5.0, BLE \\
-Gigabit Ethernet \\
-2 × USB 3.0  \\
-2 × USB 2.0 } \\
-\hline
-\thead{GPIO} & 2 × 20 pinový header \\ 
-\hline
-\thead{Video a zvuk} & 
-\makecell{
-2 × micro HDMI porty \\
- MIPI DSI displejový port \\
- MIPI CSI kamerový port \\
-čtyřpólový stereo audio a kompozitní video port} \\ 
-\hline
-\thead{Podpora SD karty} & Micro SD slot (pro systém a data) \\ 
-\hline
-\thead{Napájení} & 
-\makecell{
-5 V DC přes USB-C konektor (minimum 3 A) \\
-5 V DC přes GPIO header \\
-(minimum 3 A, bez vstupních ochran)} \\ 
-\hline
-\end{tabular}
-\caption[Přehled vybavení Raspberry Pi 4 modelu B.]{Přehled vybavení Raspberry Pi 4 modelu B \cite{raspberry-pi-4-model-b-specifikace}.}
-\label{tab:prehled-vybaveni-raspberry-pi-4-model-b} 
-\end{table}
-\end{center}
-
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=\textwidth]{images/raspberry-pi-4-model-b.png}
-    \caption[Raspberry Pi 4 model B.]{Raspberry Pi 4 model B. Upraveno z \cite{raspberry-pi-4-model-b}.}
-    \label{fig:raspberry-pi-4-model-b}
-\end{figure}
-
-\section{Teplotní senzory}
-
-\begin{figure}[H]
-\centering
-\begin{subfigure}{.5\textwidth}
-   	\centering
-   	\input{images/svg/otopna-soustava/vyrez-teplotni-senzory-zasobnik-otopne-vody.pdf_tex}
-     \caption{Teplotní senzory v zásobníku otopné vody.}
-    \label{fig:vyrez-teplotni-senzory-zasobnik-otopne-vody}
-\end{subfigure}%
-\begin{subfigure}{.5\textwidth}
-    \centering
-    \input{images/svg/otopna-soustava/vyrez-teplotni-senzory-krb.pdf_tex}
-    \caption{Teplotní senzor na kouřovodu krbu.}
-    \label{fig:vyrez-teplotni-senzory-krb}
-\end{subfigure}%
-\caption{Umístění teplotních senzorů.}
-\end{figure}
-
-\subsubsection{Teplotní senzory pro krby}
-\label{sec:teplotni-senzory-pro-krby}
-Pro snímání teploty z kouřovodů u krbů slouží termočlánek typu K od výrobce Guenther. Teplotní rozsah je od -100 °C do 400 °C, takže je dostatečná teplotní rezerva. Průměr kovové ochranné trubičky je 4 mm s délkou 60 mm. Přívodní kabel je dlouhý 3 m se skelným opletením. Termočlánek je zobrazen na obrázku \ref{fig:termoclanek-72-21301041-k}.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\textwidth]{images/termoclanek-72-21301041-k.png}
-    \caption[Termočlánek 72-21301041 typu K.]{Termočlánek 72-21301041 typu K \cite{termoclanek-k}.}
-    \label{fig:termoclanek-72-21301041-k}
-\end{figure}
-
-\subsubsection{Teplotní senzory na 1-Wire sběrnici}
-Pro snímání teplot z centrálního zásobníku otopné vody, venkovní teploty a~prostorových teplot z jednotlivých místností slouží teplotní senzor DS18B20 od výrobce Maxim. Umožňuje měřit
-v teplotním rozsahu od -55 °C do +125~°C. V rozsahu od -10 °C do +85 °C měří s přesností ±0,5 °C. Senzor umožňuje měřit teplotu s přesností 12 bitů. Pro komunikaci využívá 1-Wire sběrnici (způsob komunikace je popsán v \ref{sec:1-wire-sbernice} v části 1-Wire sběrnice). Ve svém konkrétním řešením využívám senzory v pouzdře TO-92 pro nástěnné snímače prostorové teploty, pro centrální zásobník otopné vody a~venkovní teplotu je senzor uložen do ochranného pouzdra.
-
+\input{i2c-bus}
 
 \input{pcb-with-inputs-outputs-for-raspberry-pi}
 
@@ -116,67 +25,11 @@ v teplotním rozsahu od -55 °C do +125~°C. V rozsahu od -10 °C do +85 °C mě
 
 \input{zone-controller}
 
-\section{Digitální chodbové termostaty}
-\label{sec:digitalni-chodbove-termostaty}
-\begin{figure}[H]
-   \centering
-   \def\svgwidth{0.4\columnwidth}
-   \input{images/svg/otopna-soustava/vyrez-lokalni-termostaty.pdf_tex}
-    \caption{Lokální termostaty.}
-    \label{fig:vyrez-lokalni-termostaty}
-\end{figure}
-Pro snímání teplot z jednotlivých pater na chodbách slouží zakoupené digitální termostaty s označením W3230. Termostat disponuje jedním spínací výstupem (v případě potřeby vytápění se výstup sepne, jinak je rozepnut). Je možné nastavit hysterezi, časové zpoždění, kalibraci teploty a rozsah maximálních teplot. Lze také aktivovat signalizaci, která se spustí po dosažení maximální přípustné teploty. Pro napájení je potřeba stejnosměrné napětí 12 V. Pro snímání teploty slouží NTC termistor. Rozsah teplot je -40 °C až 120 °C. Přesnost měření je $\pm$ 0,1 °C. Termostat lze nahradit za jakýkoliv jiný, který disponuje spínacím výstupem.
+\input{digital-corridor-thermostat}
 
+\input{switching-unit}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.6\textwidth]{images/digitalni-termostat-w3230.png}
-    \caption[Digitální chodbový termostat W3230.]{Digitální chodbový termostat W3230 \cite{digitalni-termostat-w3230}.}
-    \label{fig:digitalni-termostat-w3230}
-\end{figure}
-
-
-\section{Spínací jednotka}
-\begin{figure}[H]
-   \centering
-   \def\svgwidth{0.4\columnwidth}
-   \input{images/svg/otopna-soustava/vyrez-spinaci-jednotka.pdf_tex}
-    \caption{Spínací jednotka.}
-    \label{fig:vyrez-spinaci-jednotka}
-\end{figure}
-Pro spínání čerpadel a signalizačních LED slouží dva zakoupené relé moduly po čtyřech kanálech. Relé umožňují spínat výkony 250 VAC při max. 10~A a 30 V DC při max. 10~A. Jednotlivé kanály jsou oddělené galvanicky (dále je vyfrézovaná část DPS mezi výkonovou částí a spínací částí), též je možné využít různých zdrojů pro napájení spínací části a napájení relé. Zapojení jednoho kanálu je obrázku \ref{fig:rele-modul-jeden-kanal}. Celý relé modul je na obrázku \ref{fig:ctyr-kanalovy-rele-modul}. Pro spínání síťového napětí je použit jeden relé modul, pro spínání slaboproudého napětí (LED diody, kotel) je použit druhý relé modul.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=\textwidth]{images/svg/kicad/rele-modul-jeden-kanal.eps}
-    \caption{Zapojení jednoho kanálu relé modulu.}
-    \label{fig:rele-modul-jeden-kanal}
-\end{figure}
-
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{images/ctyr-kanalovy-rele-modul.png}
-    \caption[Čtyř kanálový relé modul.]{Čtyř kanálový relé modul \cite{ctyr-kanalovy-rele-modul}.}
-    \label{fig:ctyr-kanalovy-rele-modul}
-\end{figure}
-
-\section{Realizovaný rozvaděč s~elektronikou}
-\begin{figure}[H]
-   \centering
-   \def\svgwidth{0.4\columnwidth}
-   \input{images/svg/otopna-soustava/vyrez-rozvadec.pdf_tex}
-    \caption{Rozvaděč.}
-    \label{fig:vyrez-rozvadec}
-\end{figure}
-V realizovaném rozvaděči na obrázku \ref{fig:rozvadec-ve-sklepe-s-elektronikou} je umístěn 5 V zdroj pro napájení centrální jednotky, relé modulů, I$^2$C diferenciální sběrnice, napájení 1-Wire sběrnice, napájení elektroniky u krbů a napájení pro zónové regulátory. Dále je zde 12 V zdroj pro napájení dvou chodbových termostatů. Zdroj 24 V pro zónové regulátory, respektive pro napájení termoelektrických pohonů. V  neposlední řadě jsou zde jističe pro jednotlivé zdroje a čerpadla včetně proudového chrániče.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.9\textwidth]{images/rozvadec-ve-sklepe-s-elektronikou.png}
-    \caption{Realizovaný rozvaděč s~elektronikou.}
-    \label{fig:rozvadec-ve-sklepe-s-elektronikou}
-\end{figure}
+\input{switchboard-with-electronics}
 
 
 \input{wall-sensor-of-room-temperature}

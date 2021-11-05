@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name max31850k-1-wire-prevodnik-termoclanku-rescue)(type Legacy)(uri ${KIPRJMOD}/max31850k-1-wire-prevodnik-termoclanku-rescue.lib)(options "")(descr ""))
+  (lib (name modul-max31850k-rescue)(type Legacy)(uri ${KIPRJMOD}/modul-max31850k-rescue.lib)(options "")(descr ""))
+)

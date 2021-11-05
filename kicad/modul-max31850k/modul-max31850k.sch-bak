@@ -1,0 +1,657 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Modul MAX31850K"
+Date ""
+Rev "v1.0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L modul-max31850k-rescue:MAX31850K_rl-thermocouples_rl-max31850k-1-wire-prevodnik-termoclanku-rescue U2
+U 1 1 5FE095CF
+P 6450 3250
+F 0 "U2" H 6450 3675 50  0000 C CNN
+F 1 "MAX31850K" H 6450 3584 50  0000 C CNN
+F 2 "" H 6450 3250 50  0001 C CNN
+F 3 "" H 6450 3250 50  0001 C CNN
+	1    6450 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:XC6206PxxxMR U1
+U 1 1 5FE0A125
+P 4150 1800
+F 0 "U1" H 4150 2042 50  0000 C CNN
+F 1 "XC6206P332MR-G" H 4150 1951 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4150 2025 50  0001 C CIN
+F 3 "https://www.torexsemi.com/file/xc6206/XC6206.pdf" H 4150 1800 50  0001 C CNN
+	1    4150 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5FE0B831
+P 6450 3900
+F 0 "#PWR0101" H 6450 3650 50  0001 C CNN
+F 1 "GND" H 6455 3727 50  0000 C CNN
+F 2 "" H 6450 3900 50  0001 C CNN
+F 3 "" H 6450 3900 50  0001 C CNN
+	1    6450 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5FE0CBD5
+P 5450 3900
+F 0 "#PWR0102" H 5450 3650 50  0001 C CNN
+F 1 "GND" H 5455 3727 50  0000 C CNN
+F 2 "" H 5450 3900 50  0001 C CNN
+F 3 "" H 5450 3900 50  0001 C CNN
+	1    5450 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3050 5450 3050
+Wire Wire Line
+	5450 3050 5450 3900
+Wire Wire Line
+	6450 3600 6450 3900
+$Comp
+L modul-max31850k-rescue:capacitor_rl-passive_components_rl-max31850k-1-wire-prevodnik-termoclanku-rescue C5
+U 1 1 5FE0D623
+P 5000 2800
+F 0 "C5" V 4954 2910 50  0000 L CNN
+F 1 "DNP" V 5045 2910 50  0000 L CNN
+F 2 "" H 5000 2800 50  0001 C CNN
+F 3 "" H 5000 2800 50  0001 C CNN
+	1    5000 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L modul-max31850k-rescue:capacitor_rl-passive_components_rl-max31850k-1-wire-prevodnik-termoclanku-rescue C6
+U 1 1 5FE0E09B
+P 5000 3200
+F 0 "C6" V 4954 3310 50  0000 L CNN
+F 1 "100n" V 5045 3310 50  0000 L CNN
+F 2 "" H 5000 3200 50  0001 C CNN
+F 3 "" H 5000 3200 50  0001 C CNN
+	1    5000 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L modul-max31850k-rescue:capacitor_rl-passive_components_rl-max31850k-1-wire-prevodnik-termoclanku-rescue C7
+U 1 1 5FE0E717
+P 5000 3600
+F 0 "C7" V 4954 3710 50  0000 L CNN
+F 1 "DNP" V 5045 3710 50  0000 L CNN
+F 2 "" H 5000 3600 50  0001 C CNN
+F 3 "" H 5000 3600 50  0001 C CNN
+	1    5000 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5000 3450 5000 3400
+Wire Wire Line
+	5000 3050 5000 3000
+$Comp
+L power:GND #PWR0103
+U 1 1 5FE0F9BD
+P 5350 2550
+F 0 "#PWR0103" H 5350 2300 50  0001 C CNN
+F 1 "GND" H 5355 2377 50  0000 C CNN
+F 2 "" H 5350 2550 50  0001 C CNN
+F 3 "" H 5350 2550 50  0001 C CNN
+	1    5350 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 2650 5000 2500
+$Comp
+L power:GND #PWR0104
+U 1 1 5FE10086
+P 5000 3900
+F 0 "#PWR0104" H 5000 3650 50  0001 C CNN
+F 1 "GND" H 5005 3727 50  0000 C CNN
+F 2 "" H 5000 3900 50  0001 C CNN
+F 3 "" H 5000 3900 50  0001 C CNN
+	1    5000 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3900 5000 3750
+$Comp
+L Power_Protection:SZNUP2105L D1
+U 1 1 5FE10872
+P 4150 3650
+F 0 "D1" H 4350 3650 50  0000 L CNN
+F 1 "SZNUP2105LT3G" H 4200 3500 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4375 3600 50  0001 L CNN
+F 3 "http://www.onsemi.com/pub_link/Collateral/NUP2105L-D.PDF" H 4275 3775 50  0001 C CNN
+	1    4150 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3000 5350 3000
+Connection ~ 5000 3000
+Wire Wire Line
+	5000 3000 5000 2950
+Wire Wire Line
+	5000 3400 5350 3400
+Connection ~ 5000 3400
+Wire Wire Line
+	5000 3400 5000 3350
+Wire Wire Line
+	5350 3400 5350 3250
+Wire Wire Line
+	5350 3000 5350 3150
+Wire Wire Line
+	5350 3250 6000 3250
+Wire Wire Line
+	6000 3150 5350 3150
+Wire Wire Line
+	4050 3400 4050 3450
+Wire Wire Line
+	4250 3450 4250 3000
+Wire Wire Line
+	4250 3000 5000 3000
+$Comp
+L modul-max31850k-rescue:inductor_rl-passive_components_rl-max31850k-1-wire-prevodnik-termoclanku-rescue L1
+U 1 1 5FE1AEF9
+P 3750 3000
+F 0 "L1" H 3750 3190 50  0000 C CNN
+F 1 "470R/1A" H 3750 3099 50  0000 C CNN
+F 2 "" H 3750 3000 50  0001 C CNN
+F 3 "" H 3750 3000 50  0001 C CNN
+	1    3750 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L modul-max31850k-rescue:inductor_rl-passive_components_rl-max31850k-1-wire-prevodnik-termoclanku-rescue L2
+U 1 1 5FE1BFAF
+P 3750 3400
+F 0 "L2" H 3750 3590 50  0000 C CNN
+F 1 "470R/1A" H 3750 3499 50  0000 C CNN
+F 2 "" H 3750 3400 50  0001 C CNN
+F 3 "" H 3750 3400 50  0001 C CNN
+	1    3750 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3400 4050 3400
+Wire Wire Line
+	4050 3400 3900 3400
+Connection ~ 4050 3400
+Wire Wire Line
+	4250 3000 3900 3000
+Connection ~ 4250 3000
+$Comp
+L modul-max31850k-rescue:DG390-5.0_rl-connectors_rl-max31850k-1-wire-prevodnik-termoclanku-rescue J1
+U 1 1 5FE1FE3F
+P 3200 3200
+F 0 "J1" H 3200 2950 50  0000 C CNN
+F 1 "DG390-5.0" H 3250 3050 50  0000 C CNN
+F 2 "" H 3320 3240 50  0001 C CNN
+F 3 "" H 3320 3240 50  0001 C CNN
+	1    3200 3200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3600 3000 3450 3000
+Wire Wire Line
+	3450 3000 3450 3150
+Wire Wire Line
+	3450 3150 3400 3150
+Wire Wire Line
+	3400 3250 3450 3250
+Wire Wire Line
+	3450 3250 3450 3400
+Wire Wire Line
+	3450 3400 3600 3400
+Wire Wire Line
+	5000 2500 5350 2500
+Wire Wire Line
+	5350 2500 5350 2550
+$Comp
+L power:GND #PWR0105
+U 1 1 5FE2BC43
+P 4150 3900
+F 0 "#PWR0105" H 4150 3650 50  0001 C CNN
+F 1 "GND" H 4155 3727 50  0000 C CNN
+F 2 "" H 4150 3900 50  0001 C CNN
+F 3 "" H 4150 3900 50  0001 C CNN
+	1    4150 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 3900 4150 3850
+$Comp
+L modul-max31850k-rescue:capacitor_rl-passive_components_rl-max31850k-1-wire-prevodnik-termoclanku-rescue C8
+U 1 1 5FE31334
+P 5650 3600
+F 0 "C8" V 5604 3710 50  0000 L CNN
+F 1 "100n" V 5695 3710 50  0000 L CNN
+F 2 "" H 5650 3600 50  0001 C CNN
+F 3 "" H 5650 3600 50  0001 C CNN
+	1    5650 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5FE31BF0
+P 5650 3900
+F 0 "#PWR0106" H 5650 3650 50  0001 C CNN
+F 1 "GND" H 5655 3727 50  0000 C CNN
+F 2 "" H 5650 3900 50  0001 C CNN
+F 3 "" H 5650 3900 50  0001 C CNN
+	1    5650 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 3900 5650 3750
+Wire Wire Line
+	6000 3350 5650 3350
+Wire Wire Line
+	5650 3350 5650 3450
+Wire Wire Line
+	5650 3350 5650 2900
+Connection ~ 5650 3350
+Wire Wire Line
+	6000 3450 5850 3450
+Text Label 5850 3450 2    50   ~ 0
+dq
+$Comp
+L modul-max31850k-rescue:capacitor_rl-passive_components_rl-max31850k-1-wire-prevodnik-termoclanku-rescue C2
+U 1 1 5FE387C4
+P 3700 2000
+F 0 "C2" V 3654 2110 50  0000 L CNN
+F 1 "1u" V 3745 2110 50  0000 L CNN
+F 2 "" H 3700 2000 50  0001 C CNN
+F 3 "" H 3700 2000 50  0001 C CNN
+	1    3700 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L modul-max31850k-rescue:capacitor_rl-passive_components_rl-max31850k-1-wire-prevodnik-termoclanku-rescue C1
+U 1 1 5FE399C9
+P 3250 2000
+F 0 "C1" V 3204 2110 50  0000 L CNN
+F 1 "100n" V 3295 2110 50  0000 L CNN
+F 2 "" H 3250 2000 50  0001 C CNN
+F 3 "" H 3250 2000 50  0001 C CNN
+	1    3250 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3250 1850 3250 1800
+Wire Wire Line
+	3700 1850 3700 1800
+Connection ~ 3700 1800
+Wire Wire Line
+	3700 1800 3850 1800
+$Comp
+L modul-max31850k-rescue:capacitor_rl-passive_components_rl-max31850k-1-wire-prevodnik-termoclanku-rescue C3
+U 1 1 5FE3C738
+P 4600 2000
+F 0 "C3" V 4554 2110 50  0000 L CNN
+F 1 "100n" V 4645 2110 50  0000 L CNN
+F 2 "" H 4600 2000 50  0001 C CNN
+F 3 "" H 4600 2000 50  0001 C CNN
+	1    4600 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L modul-max31850k-rescue:capacitor_rl-passive_components_rl-max31850k-1-wire-prevodnik-termoclanku-rescue C4
+U 1 1 5FE3D2ED
+P 5000 2000
+F 0 "C4" V 4954 2110 50  0000 L CNN
+F 1 "1u" V 5045 2110 50  0000 L CNN
+F 2 "" H 5000 2000 50  0001 C CNN
+F 3 "" H 5000 2000 50  0001 C CNN
+	1    5000 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4450 1800 4600 1800
+Wire Wire Line
+	5000 1800 5000 1850
+Wire Wire Line
+	4600 1850 4600 1800
+Connection ~ 4600 1800
+Wire Wire Line
+	4600 1800 5000 1800
+$Comp
+L power:GND #PWR0107
+U 1 1 5FE3EC3C
+P 4150 2250
+F 0 "#PWR0107" H 4150 2000 50  0001 C CNN
+F 1 "GND" H 4155 2077 50  0000 C CNN
+F 2 "" H 4150 2250 50  0001 C CNN
+F 3 "" H 4150 2250 50  0001 C CNN
+	1    4150 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 2250 4150 2200
+Wire Wire Line
+	4600 2150 4600 2200
+Wire Wire Line
+	4600 2200 4150 2200
+Connection ~ 4150 2200
+Wire Wire Line
+	4150 2200 4150 2100
+Wire Wire Line
+	4600 2200 5000 2200
+Wire Wire Line
+	5000 2200 5000 2150
+Connection ~ 4600 2200
+Wire Wire Line
+	4150 2200 3700 2200
+Wire Wire Line
+	3700 2200 3700 2150
+Wire Wire Line
+	3250 2150 3250 2200
+Wire Wire Line
+	3250 2200 3700 2200
+Connection ~ 3700 2200
+Wire Wire Line
+	3250 1800 3700 1800
+Wire Wire Line
+	3100 1800 3250 1800
+Connection ~ 3250 1800
+Connection ~ 5000 1800
+Text Label 3100 1800 2    50   ~ 0
+vdd
+$Comp
+L Device:Q_NMOS_GSD Q1
+U 1 1 5FE4EC2F
+P 6450 2100
+F 0 "Q1" V 6699 2100 50  0000 C CNN
+F 1 "2N7002" V 6790 2100 50  0000 C CNN
+F 2 "" H 6650 2200 50  0001 C CNN
+F 3 "~" H 6450 2100 50  0001 C CNN
+	1    6450 2100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6250 2200 6100 2200
+Wire Wire Line
+	6100 2200 6100 2150
+Wire Wire Line
+	6650 2200 6800 2200
+Wire Wire Line
+	6800 2200 6800 2150
+Wire Wire Line
+	6100 1850 6100 1800
+Wire Wire Line
+	6100 1800 6450 1800
+Wire Wire Line
+	6450 1800 6450 1900
+Wire Wire Line
+	6100 1800 6100 1750
+Connection ~ 6100 1800
+Wire Wire Line
+	6800 1850 6800 1750
+Text Label 6800 1750 0    50   ~ 0
+vdd
+Wire Wire Line
+	6800 2200 6950 2200
+Connection ~ 6800 2200
+Text Label 6950 2200 0    50   ~ 0
+dqout
+Wire Wire Line
+	6100 2200 5950 2200
+Connection ~ 6100 2200
+Text Label 5950 2200 2    50   ~ 0
+dq
+Wire Wire Line
+	5000 1800 5000 1750
+$Comp
+L Jumper:SolderJumper_3_Bridged12 JP1
+U 1 1 5FE6F5DF
+P 3500 4750
+F 0 "JP1" V 3500 4817 50  0000 L CNN
+F 1 "SolderJumper_3_Bridged12" V 3545 4818 50  0001 L CNN
+F 2 "" H 3500 4750 50  0001 C CNN
+F 3 "~" H 3500 4750 50  0001 C CNN
+	1    3500 4750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_3_Bridged12 JP2
+U 1 1 5FE71B33
+P 4200 4750
+F 0 "JP2" V 4200 4817 50  0000 L CNN
+F 1 "SolderJumper_3_Bridged12" V 4245 4818 50  0001 L CNN
+F 2 "" H 4200 4750 50  0001 C CNN
+F 3 "~" H 4200 4750 50  0001 C CNN
+	1    4200 4750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_3_Bridged12 JP3
+U 1 1 5FE72EE2
+P 4950 4750
+F 0 "JP3" V 4950 4817 50  0000 L CNN
+F 1 "SolderJumper_3_Bridged12" V 4995 4818 50  0001 L CNN
+F 2 "" H 4950 4750 50  0001 C CNN
+F 3 "~" H 4950 4750 50  0001 C CNN
+	1    4950 4750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_3_Bridged12 JP4
+U 1 1 5FE73A01
+P 5700 4750
+F 0 "JP4" V 5700 4817 50  0000 L CNN
+F 1 "SolderJumper_3_Bridged12" V 5745 4818 50  0001 L CNN
+F 2 "" H 5700 4750 50  0001 C CNN
+F 3 "~" H 5700 4750 50  0001 C CNN
+	1    5700 4750
+	0    -1   -1   0   
+$EndComp
+Text Label 3750 4750 0    50   ~ 0
+ad3
+Text Label 4500 4750 0    50   ~ 0
+ad2
+Wire Wire Line
+	3650 4750 3750 4750
+Wire Wire Line
+	4350 4750 4500 4750
+Wire Wire Line
+	3500 4950 3500 5000
+Wire Wire Line
+	3500 5000 4200 5000
+Wire Wire Line
+	4200 5000 4200 4950
+Wire Wire Line
+	5100 4750 5250 4750
+Text Label 5250 4750 0    50   ~ 0
+ad1
+Wire Wire Line
+	5850 4750 6000 4750
+Text Label 6000 4750 0    50   ~ 0
+ad0
+Wire Wire Line
+	4200 5000 4950 5000
+Wire Wire Line
+	4950 5000 4950 4950
+Connection ~ 4200 5000
+Wire Wire Line
+	4950 5000 5700 5000
+Wire Wire Line
+	5700 5000 5700 4950
+Connection ~ 4950 5000
+Wire Wire Line
+	3500 4550 3500 4500
+Wire Wire Line
+	3500 4500 4200 4500
+Wire Wire Line
+	4200 4500 4200 4550
+Wire Wire Line
+	4200 4500 4950 4500
+Wire Wire Line
+	4950 4500 4950 4550
+Connection ~ 4200 4500
+Wire Wire Line
+	4950 4500 5700 4500
+Wire Wire Line
+	5700 4500 5700 4550
+Connection ~ 4950 4500
+Wire Wire Line
+	3500 4500 3500 4400
+Connection ~ 3500 4500
+Wire Wire Line
+	3500 4100 3500 4050
+$Comp
+L modul-max31850k-rescue:1x4_pins_grove_rl-connectors_rl-max31850k-1-wire-prevodnik-termoclanku-rescue J2
+U 1 1 5FEA3614
+P 8050 3300
+F 0 "J2" V 7750 3200 50  0000 L CNN
+F 1 "1x4_pins_grove" V 8300 2950 50  0000 L CNN
+F 2 "" H 7950 3300 50  0001 C CNN
+F 3 "" H 7950 3300 50  0001 C CNN
+	1    8050 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7850 3150 7700 3150
+Wire Wire Line
+	7850 3250 7700 3250
+Wire Wire Line
+	7850 3350 7700 3350
+Wire Wire Line
+	7850 3450 7700 3450
+Text Label 7700 3150 2    50   ~ 0
+dqout
+Text Label 7700 3250 2    50   ~ 0
+nc
+Text Label 7700 3350 2    50   ~ 0
+vdd
+Text Label 7700 3450 2    50   ~ 0
+gnd
+Wire Wire Line
+	6900 3150 7050 3150
+Wire Wire Line
+	6900 3250 7050 3250
+Wire Wire Line
+	6900 3350 7050 3350
+Wire Wire Line
+	6900 3450 7050 3450
+Text Label 7050 3150 0    50   ~ 0
+ad3
+Text Label 7050 3250 0    50   ~ 0
+ad2
+Text Label 7050 3350 0    50   ~ 0
+ad1
+Text Label 7050 3450 0    50   ~ 0
+ad0
+Text Notes 3000 3500 0    50   ~ 0
+Termočlánek
+Text Notes 7750 3700 0    50   ~ 0
+Vstup/výstup
+Text Notes 4450 4350 0    50   ~ 0
+Adresace
+$Comp
+L modul-max31850k-rescue:+3,3V-power_rl-max31850k-1-wire-prevodnik-termoclanku-rescue #PWR1
+U 1 1 5FEC5542
+P 5000 1750
+F 0 "#PWR1" H 5010 1690 50  0001 C CNN
+F 1 "+3,3V" H 5000 1923 50  0000 C CNN
+F 2 "" H 5000 1750 50  0001 C CNN
+F 3 "" H 5000 1750 50  0001 C CNN
+	1    5000 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5FEC63BE
+P 5400 1750
+F 0 "#FLG0101" H 5400 1825 50  0001 C CNN
+F 1 "PWR_FLAG" H 5400 1923 50  0000 C CNN
+F 2 "" H 5400 1750 50  0001 C CNN
+F 3 "~" H 5400 1750 50  0001 C CNN
+	1    5400 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 1800 5400 1750
+Wire Wire Line
+	5000 1800 5400 1800
+$Comp
+L modul-max31850k-rescue:+3,3V-power_rl-max31850k-1-wire-prevodnik-termoclanku-rescue #PWR3
+U 1 1 5FECC748
+P 6100 1750
+F 0 "#PWR3" H 6110 1690 50  0001 C CNN
+F 1 "+3,3V" H 6100 1923 50  0000 C CNN
+F 2 "" H 6100 1750 50  0001 C CNN
+F 3 "" H 6100 1750 50  0001 C CNN
+	1    6100 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L modul-max31850k-rescue:+3,3V-power_rl-max31850k-1-wire-prevodnik-termoclanku-rescue #PWR4
+U 1 1 5FECD33A
+P 3500 4050
+F 0 "#PWR4" H 3510 3990 50  0001 C CNN
+F 1 "+3,3V" H 3500 4223 50  0000 C CNN
+F 2 "" H 3500 4050 50  0001 C CNN
+F 3 "" H 3500 4050 50  0001 C CNN
+	1    3500 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L modul-max31850k-rescue:+3,3V-power_rl-max31850k-1-wire-prevodnik-termoclanku-rescue #PWR2
+U 1 1 5FECFF7B
+P 5650 2900
+F 0 "#PWR2" H 5660 2840 50  0001 C CNN
+F 1 "+3,3V" H 5650 3073 50  0000 C CNN
+F 2 "" H 5650 2900 50  0001 C CNN
+F 3 "" H 5650 2900 50  0001 C CNN
+	1    5650 2900
+	1    0    0    -1  
+$EndComp
+Text Notes 4100 1450 0    50   ~ 0
+LDO
+Text Notes 6350 1550 0    50   ~ 0
+Převodník log. úrovně
+$Comp
+L Device:R R3
+U 1 1 5FEFB788
+P 3500 4250
+F 0 "R3" H 3570 4296 50  0000 L CNN
+F 1 "4k7" H 3570 4205 50  0000 L CNN
+F 2 "" V 3430 4250 50  0001 C CNN
+F 3 "~" H 3500 4250 50  0001 C CNN
+	1    3500 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5FEFCA06
+P 6100 2000
+F 0 "R1" H 6170 2046 50  0000 L CNN
+F 1 "4k7" H 6170 1955 50  0000 L CNN
+F 2 "" V 6030 2000 50  0001 C CNN
+F 3 "~" H 6100 2000 50  0001 C CNN
+	1    6100 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5FEFD368
+P 6800 2000
+F 0 "R2" H 6870 2046 50  0000 L CNN
+F 1 "4k7" H 6870 1955 50  0000 L CNN
+F 2 "" V 6730 2000 50  0001 C CNN
+F 3 "~" H 6800 2000 50  0001 C CNN
+	1    6800 2000
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

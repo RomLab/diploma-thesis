@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name pca9615-i2-sbernice-rescue)(type Legacy)(uri ${KIPRJMOD}/pca9615-i2-sbernice-rescue.lib)(options "")(descr ""))
+  (lib (name pca9615-i2c-sbernice-rescue)(type Legacy)(uri ${KIPRJMOD}/pca9615-i2c-sbernice-rescue.lib)(options "")(descr ""))
+  (lib (name modul-pca9615-rescue)(type Legacy)(uri ${KIPRJMOD}/modul-pca9615-rescue.lib)(options "")(descr ""))
+)

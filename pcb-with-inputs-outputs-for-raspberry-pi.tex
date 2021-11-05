@@ -4,18 +4,20 @@
     \centering
     \def\svgwidth{0.3\columnwidth}
     \input{images/svg/otopna-soustava/vyrez-vstupy-vystupy-rpi.pdf_tex}
-    \caption{Část pro 1-Wire sběrnici a lokální termostaty připojené k centrální jednotce.}
+    \caption[Umístění 1-Wire sběrnici a lokálních termostatů připojených k centrální jednotce.]{Výřez z obrázku \ref{fig:otopna-soustava-a-elektronika-rez-domu}. Umístění 1-Wire sběrnici a lokálních termostatů připojených k centrální jednotce.}
     \label{fig:vyrez-vstupy-vystupy-rpi}
 \end{figure}
 
 \label{sec:dps-se-vstupy-vystupy-pro-raspberry-pi}
-Níže v textu je popsaná DPS slouží k připojení 1-Wire sběrnice, chodbových termostatů a ochrany napájení k centrální jednotce.
+
+Na obrázku \ref{fig:vyrez-vstupy-vystupy-rpi} je výřez části z celkového nákresu (obrázek \ref{fig:otopna-soustava-a-elektronika-rez-domu}) systému znázorňující umístění spojení 1-Wire sběrnice a chodbových termostatů.
+%Níže v textu je popsaná DPS slouží k připojení 1-Wire sběrnice, chodbových termostatů a ochrany napájení k centrální jednotce.
 
 \subsubsection{Datová část 1-Wire sběrnici}
 \label{sec:datova-cast-1-wire-sbernice}
-Pro zmíněnou 1-Wire sběrnici jsou realizované ESD ochrany spočívající použití Zenerovy diody a  5 $\Omega$ rezistorů, všechny součástky jsou zaintegrované v~jednom pouzdře TSOC, integrovaný obvod je od výrobce Maxim s označením DS9503. Integrovaná Zenerova dioda má nízkou kapacitu desítky pF, tím pádem nepřispívá k nadměrnému kapacitnímu zatěžování sběrnice. Omezovací rezistory slouží k omezení proudu při přepěťovém napěťovém impulzu pro ochranu Zenerovy diody (když je otevřena) před nadměrným proudem během ESD události, při běžné komunikace jsou zanedbatelné. Upínací napětí Zenerovy diody je 5,5 V při 0,9 A (průrazné napětí je přibližně 11 V) během ESD události. Dále je zde zařazena TVS dioda (ESD9L5.0ST5G) s upínacím napětí maximálně 9,8 V při 1 A, slouží jako sekundární ochrana, pokud by selhala část s DS9503. 
+Pro zmíněnou 1-Wire sběrnici jsou realizované ESD ochrany spočívající použití Zenerovy diody a  5~$\Omega$ rezistorů, všechny součástky jsou zaintegrované v~jednom pouzdře TSOC, integrovaný obvod je od výrobce Maxim s označením DS9503. Integrovaná Zenerova dioda má nízkou kapacitu desítky pF, tím pádem nepřispívá k nadměrnému kapacitnímu zatěžování sběrnice. Omezovací rezistory slouží k omezení proudu při přepěťovém napěťovém impulzu pro ochranu Zenerovy diody (když je otevřena) před nadměrným proudem během ESD události, při běžné komunikace jsou zanedbatelné. Upínací napětí Zenerovy diody je 5,5 V při 0,9 A (průrazné napětí je přibližně 11~V) během ESD události. Dále je zde zařazena TVS dioda (ESD9L5.0ST5G) s upínacím napětí maximálně 9,8 V při 1 A, slouží jako sekundární ochrana, pokud by selhala část s DS9503. 
 
-Další možností je použití galvanického oddělení především pomocí optočlenu. Zde však nastává problém s obousměrnou poloduplexní komunikací, je potřeba zajistit komunikaci oběma směry. Optočleny vkládají zpoždění, které by podle specifikace 1-Wire sběrnice nemělo přesáhnout 1 µs. Dále je potřeba oddělený převodník napětí či samotný zdroj pro napájení oddělených částí optočlenu a~další potřebné externí součástky. V neposlední řadě je nutné, alespoň podle výrobce Maxim,  použít převodník UART na 1-Wire či I$^2$C na 1-Wire sběrnici. Řešení pomocí galvanického oddělení ve výsledku zesložiťuje řešení a též prodražuje. Vzhledem k domácímu nasazení jsem se rozhodl zvolit variantu podle obrázku~\ref{fig:ochrany-1-wire}.
+Další možností je použití galvanického oddělení především pomocí optočlenu. Zde však nastává problém s obousměrnou poloduplexní komunikací, je potřeba zajistit komunikaci oběma směry. Optočleny vkládají zpoždění, které by podle specifikace 1-Wire sběrnice nemělo přesáhnout 1~µs. Dále je potřeba oddělený převodník napětí či samotný zdroj pro napájení oddělených částí optočlenu a~další potřebné externí součástky. V neposlední řadě je nutné, alespoň podle výrobce Maxim,  použít převodník UART na 1-Wire či I$^2$C na 1-Wire sběrnici. Řešení pomocí galvanického oddělení ve výsledku zesložiťuje řešení a též prodražuje. Vzhledem k domácímu nasazení jsem se rozhodl zvolit variantu podle obrázku~\ref{fig:ochrany-1-wire}.
 
 Napěťová tolerance pro piny Raspberry Pi je 3,3 V. Proto je použit obousměrný převodník napěťových úrovní z 3,3 V na 5~V a opačně, realizovaný pomocí MOSFET tranzistoru (BSS138P), pull-up rezistorů.
 
@@ -31,7 +33,7 @@ Na obrázku \ref{fig:ochrany-1-wire} jsou vidět dvě větve pro 1-Wire sběrnic
 
 \subsubsection{Napájení 1-Wire sběrnice}
 \label{sec:napajeni-1-wire-sbernice}
-Pro ochranu napájení 1-Wire sběrnice (5 V) jsou veškeré koncové teplotní senzory napájené přes elektronickou pojistku od Texas Instrumenst s označením TPS2600, schéma zapojení na obrázku \ref{fig:ochrana-napajeni-1-wire}. Obvod zajišťuje ochranu pro vstupní napětí, hlídá maximální hodnotu vstupního napětí do nastavené meze 5,25 V (maximální hranice je 60 V), minimální vstupní napětí do nastavené meze 4,75 V (minimální hranice je -60 V). Vstupní omezení napětí je pomocí rezistorů R5, R10, R11 a R12. Omezovací proud je nastaven na přibližně 73~mA (hodnotu lze změnit přes potenciometr R17), při jeho překročení dojde k~odpojení výstupu po dobu, dokud nedojde k odstranění závady. Kondenzátor C2 nastavuje rychlost náběhu výstupního napětí. Pro indikaci chyb napájení je červená LED.
+Pro ochranu napájení 1-Wire sběrnice (5 V) jsou veškeré koncové teplotní senzory napájené přes elektronickou pojistku od Texas Instrumenst s označením TPS2600, schéma zapojení na obrázku \ref{fig:ochrana-napajeni-1-wire}. Obvod zajišťuje ochranu pro vstupní napětí, hlídá maximální hodnotu vstupního napětí do nastavené meze 5,25 V (maximální hranice je 60 V), minimální vstupní napětí do nastavené meze 4,75 V (minimální hranice je -60 V). Vstupní omezení napětí je pomocí rezistorů R5, R10, R11 a~R12. Omezovací proud je nastaven na přibližně 73~mA (hodnotu lze změnit přes potenciometr R17), při jeho překročení dojde k~odpojení výstupu po dobu, dokud nedojde k odstranění závady. Kondenzátor C2 nastavuje rychlost náběhu výstupního napětí. Pro indikaci chyb napájení je červená LED.
 
 \begin{figure}[H]
     \centering
@@ -44,7 +46,7 @@ Pro ochranu napájení 1-Wire sběrnice (5 V) jsou veškeré koncové teplotní 
 Obdobně jako v části \ref{sec:datova-cast-1-wire-sbernice} (datová část 1-Wire sběrnice) je stejná ochrana pro snímání logické úrovně z~chodbových termostatů. Při sepnutí termostatu na daném patře je detekována log. 0 (požadavek na vytápění) v opačném případě je zde log. 1 (zastavení vytápění). Chodbové  termostaty jsou popsány v sekci \ref{sec:digitalni-chodbove-termostaty}.
 
 \subsubsection{Ochrana napájení 3,3 V}
-Přímo z Raspberry Pi je využito napětí 3,3 V pro převodník napětí, popsaný v~části \ref{sec:datova-cast-1-wire-sbernice} (datová část 1-Wire sběrnice). Zde je použita vratná pojistka polymerový PTC (RXEF005) se spínacím proudem 100 mA, pro omezení proudu v~případě poruchy, dále je zde transilová dioda (SM2T3V3A) pro ochranu při přepětí (s~upínacím napětí max. 6,5 V (při 25 A, 10/1000~µs), průrazné napětí 3,6 V). Na obrázku \ref{fig:ochrana-napajeni-3_3-v} je zobrazena popsaná ochrana.
+Přímo z Raspberry Pi je využito napětí 3,3 V pro převodník napětí, popsaný v~části \ref{sec:datova-cast-1-wire-sbernice} (datová část 1-Wire sběrnice). Zde je použita vratná pojistka polymerový PTC (RXEF005) se spínacím proudem 100 mA, pro omezení proudu v~případě poruchy, dále je zde transilová dioda (SM2T3V3A) pro ochranu při přepětí (s~upínacím napětí max. 6,5 V (při 25 A, 10/1000~µs), průrazné napětí 3,6~V). Na obrázku \ref{fig:ochrana-napajeni-3_3-v} je zobrazena popsaná ochrana.
 
 \begin{figure}[H]
     \centering
@@ -53,11 +55,9 @@ Přímo z Raspberry Pi je využito napětí 3,3 V pro převodník napětí, pops
     \label{fig:ochrana-napajeni-3_3-v}
 \end{figure}
 
-\subsubsection{Způsob realizace 1-Wire sběrnice}
-Samotná 1-Wire sběrnice je realizovaná pomocí UTP kabelu kategorie 5e. Na pinu číslo 4 jsou DATA, na pinu 5 je zem (GND) a na pinu 3 je napájení 5~V. Ze samotné DPS je sběrnice vyvedena pomocí konektorů RJ45, čtyři konektory pro teplotní senzory DS18B20 a čtyři pro termočlánky s MAX31850K.
 
 \subsubsection{Realizovaná DPS ochran pro centrální jednotku Raspberry Pi}
-Na obrázku \ref{fig:dps-rpi-1-wire-termostaty-ochrany-spodek} a \ref{fig:dps-rpi-1-wire-termostaty-ochrany-vrsek} je realizovaná DPS vstupů/výstupů pro centrální jednotku Raspberry Pi. Deska byla vlastnoručně navržena, vyrobena a osazena. Je aplikován ochranný lak. Celkové schéma zapojení je v příloze \ref{app:schemata-ostatni}. Tato DPS byla realizováno jednou a je umístěné v technické místnosti v rozvaděči.
+Na obrázku \ref{fig:dps-rpi-1-wire-termostaty-ochrany-spodek} a \ref{fig:dps-rpi-1-wire-termostaty-ochrany-vrsek} je realizovaná DPS vstupů/výstupů pro centrální jednotku Raspberry Pi. Ze samotné DPS je sběrnice vyvedena pomocí konektorů RJ45, čtyři konektory pro teplotní senzory DS18B20 a čtyři pro termočlánky s MAX31850K. Celkové schéma zapojení je v příloze \ref{app:schemata-ostatni}.
 
 \begin{figure}[H]
     \centering

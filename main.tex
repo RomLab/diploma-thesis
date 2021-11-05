@@ -107,7 +107,7 @@
 \fancypagestyle{includedpages}{%
   \fancyhf{}%
   \renewcommand{\headrulewidth}{0pt}%
-  \setlength{\footskip}{100pt}
+  \setlength{\footskip}{70pt}
   \fancyfoot[C]{\thepage}%
 }
 
@@ -170,8 +170,8 @@
 \theoremstyle{note}
 \newtheorem*{remark*}{Remark}
 \newtheorem{remark}[theorem]{Remark}
-
-\setlength{\parskip}{5ex plus 0.2ex minus 0.2ex}
+% Velikost mezery mezi odstavci
+\setlength{\parskip}{2.5ex plus 0.2ex minus 0.2ex}
 
 % Abstract in Czech
 \begin{abstract-czech}
@@ -277,38 +277,27 @@ Prohlašuji, že jsem předloženou práci vypracoval samostatně a že jsem uve
 
 
 
-
-
-\begin{figure}[H]
-   \centering
-   \def\svgwidth{0.4\columnwidth}
-   \input{images/svg/otopna-soustava/vyrez-nastenny-snimac-prostorove-teploty-ethernet.pdf_tex}
-    \caption{Nástěnný snímač prostorové teploty – verze Ethernet.}
-    \label{fig:vyrez-nastenny-snimac-prostorove-teploty-ethernet}
-\end{figure}
-
-
-%\input{introduction}
+\input{introduction}
 
 %\part{Teoretická část}
 
-%\input{search}
-%\input{draft-of-concept}
+\input{search}
+\input{draft-of-concept}
 
 %\part{Praktická část}
 
-%\input{choosing-of-components-devices}
+\input{choosing-of-components-devices}
 
-%\input{software-part}
+\input{software-part}
 
-%\input{testing}
-%\input{suggest-further-improvements}
+
+\input{suggest-further-improvements}
 
 %\blindmathtrue
 
 %\blinddocument
 
-%\input{conclusion}
+\input{conclusion}
 
 \input{bibliography}
 
@@ -319,16 +308,16 @@ Prohlašuji, že jsem předloženou práci vypracoval samostatně a že jsem uve
 
 \chapter{Schéma -- Nástěnný snímač prostorové teploty s Ethernetem}\appcaption{A Schéma -- Nástěnný snímač prostorové teploty s Ethernetem}
 \label{app:nastenny-snimac-prostorove-teploty-ethernet}
-%\includepdf[pages=-,angle=90,pagecommand={\thispagestyle{includedpages}}]{appendix/nastenny-snimac-prostorove-teploty-ethernet/esp32-periferie.pdf}
-%\includepdf[pages=-,angle=90,pagecommand={\thispagestyle{includedpages}}]{appendix/nastenny-snimac-prostorove-teploty-ethernet/ethernet.pdf}
-%\includepdf[pages=-,angle=90,pagecommand={\thispagestyle{includedpages}}]{appendix/nastenny-snimac-prostorove-teploty-ethernet/napajeni.pdf}
+\includepdf[pages=-,angle=90,pagecommand={\thispagestyle{includedpages}}]{appendix/nastenny-snimac-prostorove-teploty-ethernet/esp32-periferie.pdf}
+\includepdf[pages=-,angle=90,pagecommand={\thispagestyle{includedpages}}]{appendix/nastenny-snimac-prostorove-teploty-ethernet/ethernet.pdf}
+\includepdf[pages=-,angle=90,pagecommand={\thispagestyle{includedpages}}]{appendix/nastenny-snimac-prostorove-teploty-ethernet/napajeni.pdf}
 
 
 \chapter{Schéma -- Nástěnný snímač prostorové teploty s WiFi}
 \appcaption{B Schéma -- Nástěnný snímač prostorové teploty s WiFi}
 \label{app:nastenny-snimac-prostorove-teploty-wifi}
-%\includepdf[pages=-,angle=90,pagecommand={\thispagestyle{includedpages}}]{appendix/nastenny-snimac-prostorove-teploty-wifi/esp32-periferie.pdf}
-%\includepdf[pages=-,angle=90,pagecommand={\thispagestyle{includedpages}}]{appendix/nastenny-snimac-prostorove-teploty-wifi/napajeni.pdf}
+\includepdf[pages=-,angle=90,pagecommand={\thispagestyle{includedpages}}]{appendix/nastenny-snimac-prostorove-teploty-wifi/esp32-periferie.pdf}
+\includepdf[pages=-,angle=90,pagecommand={\thispagestyle{includedpages}}]{appendix/nastenny-snimac-prostorove-teploty-wifi/napajeni.pdf}
 
 
 
@@ -336,39 +325,48 @@ Prohlašuji, že jsem předloženou práci vypracoval samostatně a že jsem uve
 \chapter{Schéma -- Ostatní}
 \appcaption{C Schéma -- Ostatní}
 \label{app:schemata-ostatni}
-%\includepdf[pages=-,angle=90,pagecommand={\thispagestyle{includedpages}}]{appendix/vstupy-vystupy-rpi.pdf}
-%\includepdf[pages=-,angle=90,pagecommand={\thispagestyle{includedpages}}]{appendix/prevodnik-usb-uart.pdf}
-%\includepdf[pages=-,angle=90,pagecommand={\thispagestyle{includedpages}}]{appendix/krbova-indikace-1-wire-ochrana-napajeni.pdf}
-%\includepdf[pages=-,angle=90,pagecommand={\thispagestyle{includedpages}}]{appendix/rozbocovac-i2c.pdf}
+\includepdf[pages=-,angle=90,pagecommand={\thispagestyle{includedpages}}]{appendix/1-wire-koncove-zarizeni/1-wire-1-koncove-zarizeni.pdf}
+\includepdf[pages=-,angle=90,pagecommand={\thispagestyle{includedpages}}]{appendix/1-wire-koncove-zarizeni/1-wire-6-koncovych-zarizeni.pdf}
 
-%\includepdf[pages=-,angle=90,pagecommand={\thispagestyle{includedpages}}]{appendix/zonovy-regulator/ochrany-napajeni-24v-5v.pdf}
-%\includepdf[pages=-,angle=90,pagecommand={\thispagestyle{includedpages}}]{appendix/zonovy-regulator/svorkovnice-termoelektricke-pohony.pdf}
-%\includepdf[pages=-,angle=90,pagecommand={\thispagestyle{includedpages}}]{appendix/zonovy-regulator/pca9685.pdf}
+\includepdf[pages=-,angle=90,pagecommand={\thispagestyle{includedpages}}]{appendix/modul-pca9615.pdf}
+\includepdf[pages=-,angle=90,pagecommand={\thispagestyle{includedpages}}]{appendix/rozbocovac-i2c.pdf}
 
-%\includepdf[pages=-,angle=90,pagecommand={\thispagestyle{includedpages}}]{appendix/1-wire-koncove-zarizeni/1-wire-1-koncove-zarizeni.pdf}
-%\includepdf[pages=-,angle=90,pagecommand={\thispagestyle{includedpages}}]{appendix/1-wire-koncove-zarizeni/1-wire-6-koncovych-zarizeni.pdf}
+\includepdf[pages=-,angle=90,pagecommand={\thispagestyle{includedpages}}]{appendix/vstupy-vystupy-rpi.pdf}
+
+\includepdf[pages=-,angle=90,pagecommand={\thispagestyle{includedpages}}]{appendix/krbova-indikace-1-wire-ochrana-napajeni.pdf}
+\includepdf[pages=-,angle=90,pagecommand={\thispagestyle{includedpages}}]{appendix/modul-max31850k.pdf}
+
+\includepdf[pages=-,angle=90,pagecommand={\thispagestyle{includedpages}}]{appendix/zonovy-regulator/ochrany-napajeni-24v-5v.pdf}
+\includepdf[pages=-,angle=90,pagecommand={\thispagestyle{includedpages}}]{appendix/zonovy-regulator/svorkovnice-termoelektricke-pohony.pdf}
+\includepdf[pages=-,angle=90,pagecommand={\thispagestyle{includedpages}}]{appendix/zonovy-regulator/pca9685.pdf}
+
+\includepdf[pages=-,angle=90,pagecommand={\thispagestyle{includedpages}}]{appendix/rele-modul-jeden-kanal.pdf}
+
+\includepdf[pages=-,angle=90,pagecommand={\thispagestyle{includedpages}}]{appendix/prevodnik-usb-uart.pdf}
 
 
 
 \chapter{Krabička pro nástěnný snímač prostorové teploty}
 \appcaption{D Krabička pro nástěnný snímač prostorové teploty}
 \label{app:krabicka-pro-nastenny-snimac-prostorove-teploty}
-%\subimport{appendix}{box-wall-sensor-of-room-temperature.tex}
+\subimport{appendix}{box-wall-sensor-of-room-temperature.tex}
 
 \chapter{Rozdělovač podlahového vytápění}
 \appcaption{E Rozdělovač podlahového vytápění}
 \label{app:rozdelovac-podlahoveho-vytapeni}
-%\subimport{appendix}{distributor-first-floor.tex}
+\subimport{appendix}{distributor-first-floor.tex}
 
 \chapter{Ostatní}
 \appcaption{F Ostatní}
 \label{app:ostatni}
-%\subimport{appendix}{i2c-hub.tex}
+\subimport{appendix}{i2c-module.tex}
+\subimport{appendix}{i2c-hub.tex}
+
 
 \chapter{Obsah CD}
 \appcaption{G Obsah CD}
 \label{app:obsah-cd}
-%\subimport{appendix}{content-of-cd.tex}
+\subimport{appendix}{content-of-cd.tex}
 
 %\bibliographystyle{amsalpha}
 %\bibliography{ctutest}

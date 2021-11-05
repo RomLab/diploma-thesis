@@ -1,4 +1,4 @@
-update=22.07.2021 22:49:03
+update=04.11.2021 17:49:15
 version=1
 last_client=kicad
 [general]
@@ -34,7 +34,7 @@ LibDir=
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=D:/ČVUT/Magistr/Diplomová práce/Práce Tex/diploma_thesis/images/svg/kicad/
+PlotDirectoryName=../../appendix/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=
