@@ -196,7 +196,7 @@
     \put(0.10499491,0.1958343){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Teplotní senzor\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=38]{otopna-soustava-a-elektronika-rez-domu1.pdf}}%
     %\put(0.10755576,0.24321006){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Sdružení 1-Wire sběrni...\end{tabular}}}}%
-	\put(0.10755576,0.24821006){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Sdružení I$^2$C\end{tabular}}}}%
+	\put(0.10755576,0.24821006){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Sdružení\end{tabular}}}}%
 	\put(0.10755576,0.22821006){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily 1-Wire sběrnice\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=39]{otopna-soustava-a-elektronika-rez-domu1.pdf}}%
   \end{picture}%
