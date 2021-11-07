@@ -20,7 +20,7 @@ Na obrázku \ref{fig:vyrez-krb-signalizace} je výřez části z celkového nák
 
 
 \subsubsection{Měření teploty pomocí termočlánku a převodníku MAX31850K}
-Teplotní senzory připojené na kouřovody krbů jsou realizované pomocí termočlánku z \ref{sec:teplotni-senzory-pro-krby}. Termočlánek je připojený k zakoupenému modulu (obrázek~\ref{fig:modul-max31850k-1-wire-prevodnik-termoclanku}), hodnota napětí z termočlánku je převedena do digitální podoby včetně teplotní kompenzace studeného konce a~tato hodnota je poslána po 1-Wire sběrnici. Je možné připojit termočlánek typu K. Převodník umožňuje měřit teplotu s~převodem pomocí AD převodníku až na 14 bitů. Rozlišení teploty činí 0,25~°C. Při teplotách -200 °C až 700 °C činí přesnost měřené teploty ±2~°C. Obvod disponuje detekcí zkratu (na GND nebo napájení) na vstupu pro termočlánek. Dále je zde detekce odpojeného termočlánku. Schéma zapojení modulu je v příloze \ref{app:schemata-ostatni}, upraveno z \cite{prevodnik-max31850k}.
+Teplotní senzory připojené na kouřovody krbů jsou realizované pomocí termočlánku z \ref{sec:teplotni-senzory}. Termočlánek je připojený k zakoupenému modulu (obrázek~\ref{fig:modul-max31850k-1-wire-prevodnik-termoclanku}) s obvodem MAX31850K, hodnota napětí z termočlánku je převedena do digitální podoby včetně teplotní kompenzace studeného konce a~tato hodnota je poslána po 1-Wire sběrnici. Je možné připojit termočlánek typu K. Převodník umožňuje měřit teplotu s~převodem pomocí AD převodníku až na 14 bitů. Rozlišení teploty činí 0,25~°C. Při teplotách -200 °C až 700 °C činí přesnost měřené teploty ±2~°C. Obvod disponuje detekcí zkratu (na GND nebo napájení) na vstupu pro termočlánek. Dále je zde detekce odpojeného termočlánku. Schéma zapojení modulu je v příloze \ref{app:schemata-ostatni}, upraveno z \cite{prevodnik-max31850k}.
 
 %\begin{figure}[H]
 %    \centering
@@ -37,7 +37,7 @@ Teplotní senzory připojené na kouřovody krbů jsou realizované pomocí term
 \end{figure}
 
 \subsubsection{LCD displej}
-Pro zobrazování teplot ze střední a spodní části zásobníku otopné vody byl zvolen 16 znakový a 2 řádkový LCD displej s modrým podsvícením a~bílými písmeny (obrázek \ref{fig:lcd-displej}). Pro obsluhu displeje slouží řadič HD44780. K~řadiči je připojen I$^2$C expandér PCF8574 s osmi výstupy, které jsou připojeny na datovou sběrnici pro ovládání respektive zobrazování znaků na displeji. Displej je zapojen za modulem popsaným v části \ref{sec:i2c-sbernice} (I$^2$C sběrnice). Každý displej, respektive expandér PCF8574 umožňuje nastavit pomocí propojek A0, A1, A2 unikátní adresu zařízení na sběrnici.
+Pro zobrazování teplot ze střední a spodní části zásobníku otopné vody byl zvolen 16 znakový a 2 řádkový LCD displej s modrým podsvícením a~bílými písmeny (obrázek \ref{fig:lcd-displej}). Pro obsluhu displeje slouží řadič HD44780 \cite{hd44780u}. K~řadiči je připojen I$^2$C expandér PCF8574 \cite{pcf8574} s osmi výstupy, které jsou připojeny na datovou sběrnici pro ovládání respektive zobrazování znaků na displeji. Displej je zapojen za modulem popsaným v části \ref{sec:i2c-sbernice} (I$^2$C sběrnice). Každý displej, respektive expandér PCF8574  umožňuje nastavit pomocí propojek A0, A1, A2 unikátní adresu zařízení na sběrnici.
 
 \begin{figure}[H]
 \centering
