@@ -37,7 +37,7 @@ Teplotní senzory připojené na kouřovody krbů jsou realizované pomocí term
 \end{figure}
 
 \subsubsection{LCD displej}
-Pro zobrazování teplot ze střední a spodní části zásobníku otopné vody byl zvolen 16 znakový a 2 řádkový LCD displej s modrým podsvícením a~bílými písmeny (obrázek \ref{fig:lcd-displej}). Pro obsluhu displeje slouží řadič HD44780 \cite{hd44780u}. K~řadiči je připojen I$^2$C expandér PCF8574 \cite{pcf8574} s osmi výstupy, které jsou připojeny na datovou sběrnici pro ovládání respektive zobrazování znaků na displeji. Displej je zapojen za modulem popsaným v části \ref{sec:i2c-sbernice} (I$^2$C sběrnice). Každý displej, respektive expandér PCF8574  umožňuje nastavit pomocí propojek A0, A1, A2 unikátní adresu zařízení na sběrnici.
+Pro zobrazování teplot ze střední a spodní části zásobníku otopné vody byl zvolen 16 znakový a 2~řádkový LCD displej s modrým podsvícením a~bílými písmeny (obrázek \ref{fig:lcd-displej}). Pro obsluhu displeje slouží řadič HD44780 \cite{hd44780u}. K~řadiči je připojen I$^2$C expandér PCF8574 \cite{pcf8574} s osmi výstupy, které jsou připojeny na datovou sběrnici pro ovládání respektive zobrazování znaků na displeji. Displej je zapojen za modulem popsaným v části \ref{sec:i2c-sbernice} (I$^2$C sběrnice). Každý displej, respektive expandér PCF8574  umožňuje nastavit pomocí propojek A0, A1, A2 unikátní adresu zařízení na sběrnici.
 
 \begin{figure}[H]
 \centering
@@ -58,7 +58,7 @@ Pro zobrazování teplot ze střední a spodní části zásobníku otopné vody
 \end{figure}
 
 \subsubsection{Realizovaná DPS signalizace u krbů}
-Výše popsané části jsou realizované na DPS (obrázek \ref{fig:dps-led-ochrany-u-krbu-spodek}, \ref{fig:dps-led-ochrany-u-krbu-vrsek}, \ref{fig:dps-led-ochrany-u-krbu-kabely}). Deska byla vlastnoručně navržena, vyrobena a osazena. Je aplikován ochranný lak. Celkové schéma zapojení je v příloze \ref{app:schemata-ostatni}.
+Výše popsané části jsou realizované na DPS (obrázek \ref{fig:dps-led-ochrany-u-krbu-spodek}, \ref{fig:dps-led-ochrany-u-krbu-vrsek}, \ref{fig:dps-led-ochrany-u-krbu-kabely}). Celkové schéma zapojení je v příloze \ref{app:schemata-ostatni}.
 
 \begin{figure}[H]
     \centering
@@ -82,8 +82,7 @@ Výše popsané části jsou realizované na DPS (obrázek \ref{fig:dps-led-ochr
 \end{figure}
 
 \subsubsection{Instalační krabice}
-Všechna elektronika je umístěna do ochranné instalační krabice (obrázek \ref{fig:instalacni-krabice-vnitrek-krb}). Do krabice vstupují dva vodiče pro napětí 5 V a zem, tři kabely pro ovládání signalizačních LED, UTP kabel se sběrnicí 1-Wire pro teplotní senzor (termočlánek) a I$^2$C sběrnicí. Na obrázku \ref{fig:zadni-cast-krytu-vika-instalacni-krabice-krb} je zobrazena zadní část víka instalační krabice s uchycením signalizačních LED a LCD displeje. Na obrázku \ref{fig:predni-cast-krytu-vika-instalacni-krabice-krb} je přední část víka instalační krabice. Takto zkompletovaná instalační krabice je umístěna u krbu ve sklepě, v přízemí a v patře.
-
+Všechna elektronika je umístěna do ochranné instalační krabice (obrázek \ref{fig:instalacni-krabice-vnitrek-krb}). Do krabice vstupují dva vodiče pro napětí 5 V a zem, tři kabely pro ovládání signalizačních LED, UTP kabel se sběrnicí 1-Wire pro teplotní senzor (termočlánek) a I$^2$C sběrnicí. Na obrázku \ref{fig:zadni-cast-krytu-vika-instalacni-krabice-krb} je zobrazena zadní část víka instalační krabice s uchycením signalizačních LED a LCD displeje. Na obrázku \ref{fig:predni-cast-krytu-vika-instalacni-krabice-krb} je přední část víka instalační krabice.
 %\begin{figure}[H]
 %    \centering
 %    \includegraphics[width=0.6\textwidth]{images/krb/instalacni-krabice-vnitrek-krb.png}
