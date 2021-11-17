@@ -77,7 +77,8 @@
     \put(0.21622966,0.25255943){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Centrální\end{tabular}}}}%
 	\put(0.21622966,0.19255943){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily jednotka\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=12]{vyrez-rozvadec.pdf}}%
-    \put(0.16862568,0.66459635){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}I2C...\end{tabular}}}}%
+    \put(0.16862568,0.69459635){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily I$^2$C \end{tabular}}}}%
+	\put(0.16862568,0.63459635){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily sběrnice\end{tabular}}}}%
     %\put(1.63754837,0.25656227){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Termostat patro...\end{tabular}}}}%
     %\put(1.65454979,0.05254523){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Termostat přízemí...\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=13]{vyrez-rozvadec.pdf}}%
