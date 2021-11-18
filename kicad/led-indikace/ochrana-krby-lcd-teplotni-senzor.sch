@@ -91,9 +91,9 @@ Wire Wire Line
 Wire Wire Line
 	5850 2900 5500 2900
 Wire Wire Line
-	6150 2100 6150 2350
+	6150 2100 6150 2250
 Wire Wire Line
-	6150 2450 6150 2700
+	6150 2550 6150 2700
 Wire Wire Line
 	6150 3300 5500 3300
 Wire Wire Line
@@ -108,16 +108,8 @@ Wire Wire Line
 	4700 3300 5500 3300
 Connection ~ 4700 3300
 Connection ~ 5500 3300
-Text Notes 6250 2250 0    50   ~ 0
-Červená LED\nLTL-42NEW8D
 Text Notes 2950 2800 0    50   ~ 0
-Vstupní řídicí signál
-Text Notes 2300 3200 0    50   ~ 0
-Modrá LED
-Text Notes 2200 3050 0    50   ~ 0
-Oranžová LED
-Text Notes 2250 2900 0    50   ~ 0
-Červená LED
+Vstupní řídicí signál \nz centrální jednotky
 Wire Wire Line
 	3000 2900 3800 2900
 Wire Wire Line
@@ -162,14 +154,16 @@ F 3 "" H 4100 3000 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L ochrana-krby-lcd-teplotni-senzor-rescue:1x2_pins_header_rl-connectors_rl P1
-U 1 1 5F44F2DA
-P 6300 2400
-F 0 "P1" V 6258 2460 50  0000 L CNN
-F 1 "1x2_pins_header" V 6349 2460 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6350 2400 50  0001 C CNN
-F 3 "" H 6350 2400 50  0001 C CNN
-	1    6300 2400
-	0    1    1    0   
+L diode_rl:LED D1
+U 1 1 6196867E
+P 6150 2400
+F 0 "D1" V 6189 2282 50  0000 R CNN
+F 1 "LTL-42NEW8D" V 6098 2282 50  0000 R CNN
+F 2 "" H 6150 2400 50  0001 C CNN
+F 3 "~" H 6150 2400 50  0001 C CNN
+	1    6150 2400
+	0    -1   -1   0   
 $EndComp
+Text Notes 6250 2300 0    50   ~ 0
+Červená LED
 $EndSCHEMATC

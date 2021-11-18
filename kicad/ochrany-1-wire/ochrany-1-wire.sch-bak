@@ -347,7 +347,7 @@ F 3 "~" H 4650 4100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text Notes 4100 3200 0    50   ~ 0
-Posuvník log. úrovně
+Převodník log. úrovně
 $Comp
 L ochrany-1-wire-rescue:+3,3V-power_rl #PWR?
 U 1 1 5FE0F44B
@@ -392,4 +392,8 @@ F 3 "" H 6150 4300 50  0001 C CNN
 	1    6150 4300
 	1    0    0    -1  
 $EndComp
+Text Notes 3400 2950 0    50   ~ 0
+Připojení k \ncentrální jednotce
+Text Notes 3400 4550 0    50   ~ 0
+Připojení k \ncentrální jednotce
 $EndSCHEMATC

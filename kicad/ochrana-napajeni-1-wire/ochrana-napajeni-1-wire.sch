@@ -177,25 +177,6 @@ Wire Wire Line
 	7050 3000 7050 2900
 Connection ~ 7050 2900
 Wire Wire Line
-	6950 3350 6950 3100
-Wire Wire Line
-	6950 3100 5750 3100
-$Comp
-L ochrana-napajeni-1-wire-rescue:1x2_pins_header_rl-connectors_rl P3
-U 1 1 5F29F6AB
-P 7000 3500
-F 0 "P3" H 6750 3500 50  0000 L CNN
-F 1 "1x2_pins_header" H 6600 3600 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7050 3500 50  0001 C CNN
-F 3 "" H 7050 3500 50  0001 C CNN
-	1    7000 3500
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	7050 3300 7050 3350
-Text Notes 7000 3850 0    50   ~ 0
-Červená LED\nLTL-42NEW8D
-Wire Wire Line
 	6100 3400 6100 3650
 Wire Wire Line
 	6100 3950 6100 4050
@@ -371,4 +352,25 @@ $EndComp
 NoConn ~ 5750 3500
 NoConn ~ 4850 3500
 NoConn ~ 4850 3400
+$Comp
+L diode_rl:LED D1
+U 1 1 619687DC
+P 7050 3500
+F 0 "D1" V 7050 3400 50  0000 C CNN
+F 1 "LTL-42NEW8D" V 6800 3200 50  0000 C CNN
+F 2 "" H 7050 3500 50  0001 C CNN
+F 3 "~" H 7050 3500 50  0001 C CNN
+	1    7050 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7050 3300 7050 3350
+Wire Wire Line
+	7050 3650 7050 3700
+Wire Wire Line
+	7050 3700 6800 3700
+Wire Wire Line
+	6800 3700 6800 3100
+Wire Wire Line
+	5750 3100 6800 3100
 $EndSCHEMATC

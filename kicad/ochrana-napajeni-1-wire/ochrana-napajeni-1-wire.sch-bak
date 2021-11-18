@@ -193,8 +193,8 @@ F 3 "" H 7050 3500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7050 3300 7050 3350
-Text Notes 7000 3750 0    50   ~ 0
-Červená LED
+Text Notes 7000 3850 0    50   ~ 0
+Červená LED\nLTL-42NEW8D
 Wire Wire Line
 	6100 3400 6100 3650
 Wire Wire Line

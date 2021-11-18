@@ -392,4 +392,8 @@ F 3 "" H 6150 4300 50  0001 C CNN
 	1    6150 4300
 	1    0    0    -1  
 $EndComp
+Text Notes 3600 2950 0    50   ~ 0
+Připojení k \ncentrální jednotce
+Text Notes 3600 4550 0    50   ~ 0
+Připojení k \ncentrální jednotce
 $EndSCHEMATC
