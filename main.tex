@@ -45,7 +45,9 @@
 % Importovani text souboru z podslozek
 \usepackage{import}
 
-
+% Rotace obrázku pro blokové schéma HA
+\usepackage{rotating}
+%\usepackage{tikz}
 
 
 
@@ -299,6 +301,8 @@ Prohlašuji, že jsem předloženou práci vypracoval samostatně a že jsem uve
 
 \input{suggest-further-improvements}
 
+
+
 %\blindmathtrue
 
 %\blinddocument
@@ -368,6 +372,7 @@ Prohlašuji, že jsem předloženou práci vypracoval samostatně a že jsem uve
 \label{app:ostatni}
 \subimport{appendix}{i2c-module.tex}
 \subimport{appendix}{i2c-hub.tex}
+\subimport{appendix/software}{block-scheme-wall-sensor-of-room-temperature.tex}
 
 
 \chapter{Obsah CD}

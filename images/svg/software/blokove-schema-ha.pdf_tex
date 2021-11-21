@@ -1,0 +1,295 @@
+%% Creator: Inkscape 1.0 (4035a4fb49, 2020-05-01), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'blokove-schema-ha.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{1149.75bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.93998695)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{blokove-schema-ha.pdf}}%
+    \put(0.05222505,0.4357469){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Mimo hlavní smyčku\end{tabular}}}}%
+    \put(0.07175473,0.3072407){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Ano\end{tabular}}}}%
+    \put(0.1826484,0.3072407){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Ne\end{tabular}}}}%
+    \put(0.07827789,0.40117417){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Ano\end{tabular}}}}%
+    \put(0.17612524,0.40117417){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Ne\end{tabular}}}}%
+    \put(0.07827789,0.23091977){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Ano\end{tabular}}}}%
+    \put(0.17612524,0.23091977){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Ne\end{tabular}}}}%
+    \put(0.07827789,0.06001305){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Ano\end{tabular}}}}%
+    \put(0.17612524,0.06001305){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Ne\end{tabular}}}}%
+    \put(0.07827789,0.12915851){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Ano\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{blokove-schema-ha.pdf}}%
+    \put(0.06523157,0.0248741){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Rozsvícení \end{tabular}}}}%
+	\put(0.06523157,0.0158741){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily LED \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{blokove-schema-ha.pdf}}%
+    \put(0.18917156,0.0248741){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Zhasnutí \end{tabular}}}}%
+	\put(0.18917156,0.0158741){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily LED \end{tabular}}}}%
+    \put(0.34038617,0.36529354){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily  Pro každou místnost – \end{tabular}}}}%
+	\put(0.36638617,0.35529354){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily  jednotlivé termoelektrické ventily\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{blokove-schema-ha.pdf}}%
+    \put(0.80234834,0.13176778){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Ano\end{tabular}}}}%
+    \put(0.94019896,0.13111546){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Ne\end{tabular}}}}%
+    \put(0.59686888,0.12981083){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Ne\end{tabular}}}}%
+    \put(0.53816047,0.2159165){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Ne\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{blokove-schema-ha.pdf}}%
+
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{blokove-schema-ha.pdf}}%
+
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{blokove-schema-ha.pdf}}%
+	\put(0.50554468,0.90802348){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Hlavní smyčka\end{tabular}}}}%
+    \put(0.12720157,0.39804175){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Je zásobník\end{tabular}}}}%
+	\put(0.12720157,0.39104175){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily otopné vody\end{tabular}}}}%
+	\put(0.12720157,0.38304175){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily nahřán?\end{tabular}}}}%
+
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{blokove-schema-ha.pdf}}%
+    \put(0.18917156,0.27175408){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Zapnutí \end{tabular}}}}%
+	\put(0.18917156,0.26275408){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily kotle\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{blokove-schema-ha.pdf}}%
+    \put(0.07175473,0.36007828){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Vypnutí kotle\end{tabular}}}}%
+    \put(0.12654925,0.76581866){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Ano\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{blokove-schema-ha.pdf}}%
+	\put(0.19221461,0.76999087){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Je \end{tabular}}}}%
+	\put(0.19221461,0.75999087){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily požadavek na vytápění \end{tabular}}}}%
+	\put(0.19221461,0.74999087){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily v prvním/druhém\end{tabular}}}}%
+    \put(0.19221461,0.73999087){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily patře?\end{tabular}}}}%
+	
+
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{blokove-schema-ha.pdf}}%
+    \put(0.12328767,0.65083562){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Zapnutí čerpadla na\end{tabular}}}}%
+	\put(0.12328767,0.64383562){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily prvním/druhém \end{tabular}}}}%
+    \put(0.12328767,0.63583562){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily patře\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{blokove-schema-ha.pdf}}%
+	\put(0.25875082,0.72259035){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Vypnutí čerpadla na\end{tabular}}}}%
+	\put(0.25875082,0.71459035){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily prvním/druhém\end{tabular}}}}%
+	\put(0.25875082,0.70659035){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily patře\end{tabular}}}}%
+	
+
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{blokove-schema-ha.pdf}}%
+	\put(0.12654925,0.23074429){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Topí se v\end{tabular}}}}%
+	\put(0.12654925,0.22174429){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily jakém\end{tabular}}}}%
+	\put(0.12654925,0.21174429){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily krbu?\end{tabular}}}}%
+    \put(0.06523157,0.10467515){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Zapnutí čer-\end{tabular}}}}%
+	\put(0.06523157,0.09467515){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily padla u krbu\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{blokove-schema-ha.pdf}}%
+    \put(0.18917156,0.19547619){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Vypnutí čer-\end{tabular}}}}%
+	\put(0.18917156,0.18547619){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily padla u krbu\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{blokove-schema-ha.pdf}}%
+    \put(0.44422701,0.72424266){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Je potřeba topit\end{tabular}}}}%
+	\put(0.44422701,0.71624266){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily pro danou místnost\end{tabular}}}}%
+	\put(0.44422701,0.70824266){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily v přízemí/patře\end{tabular}}}}%
+    \put(0.50554468,0.7221135){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Ne\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{blokove-schema-ha.pdf}}%
+    \put(0.37181996,0.59838878){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Zapnutí okruhů pro\end{tabular}}}}%
+	\put(0.37181996,0.58838878){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily danou místnost \end{tabular}}}}%
+	\put(0.37181996,0.57838878){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily v přízemí/patře\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{blokove-schema-ha.pdf}}%
+    \put(0.52250489,0.68971298){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Vypnutí okruhů pro\end{tabular}}}}%
+	\put(0.52250489,0.67971298){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily danou místnost \end{tabular}}}}%
+	\put(0.52250489,0.66971298){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily v přízemí/patře \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{blokove-schema-ha.pdf}}%
+    \put(0.18330072,0.36594586){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Upozornění\end{tabular}}}}%
+	\put(0.18330072,0.35594586){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily uživate, aby\end{tabular}}}}%
+	\put(0.18330072,0.34594586){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily zatopil v krbu\end{tabular}}}}%
+	\put(0.18330072,0.33594586){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily do určité doby\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{blokove-schema-ha.pdf}}%
+    \put(0.06457926,0.27175408){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Vypnutí\end{tabular}}}}%
+	\put(0.06457926,0.26275408){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily notifikace\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{blokove-schema-ha.pdf}}%
+    \put(0.67188519,0.74715982){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Nastavení požadované \end{tabular}}}}%
+	\put(0.67188519,0.73815982){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily teploty do nástěnných \end{tabular}}}}%
+	\put(0.67188519,0.72915982){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily snímačů prostorové \end{tabular}}}}%
+	\put(0.67188519,0.72015982){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily teploty\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{blokove-schema-ha.pdf}}%
+    \put(0.06523157,0.17864514){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Je nahřán\end{tabular}}}}%
+	\put(0.06523157,0.16864514){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily zásobník otopné\end{tabular}}}}%
+	%\put(0.06523157,0.16564514){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily vody pro\end{tabular}}}}%
+	\put(0.06523157,0.15964514){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily vody pro vytá-\end{tabular}}}}%
+	\put(0.06523157,0.14764514){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily pění?\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=22]{blokove-schema-ha.pdf}}%
+    \put(0.81669928,0.6570972){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Aktualizování \end{tabular}}}}%
+	\put(0.81669928,0.6470972){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily teplotní predikce pro\end{tabular}}}}%
+	\put(0.81669928,0.6370972){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily jednotlivé místnosti\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=23]{blokove-schema-ha.pdf}}%
+    \put(0.81669928,0.60456425){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Posuv časového \end{tabular}}}}%
+	\put(0.81669928,0.59556425){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily úseku pro\end{tabular}}}}%
+	\put(0.81669928,0.58656425){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily danou místnost\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=24]{blokove-schema-ha.pdf}}%
+    \put(0.76125245,0.49275669){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Požadavek na\end{tabular}}}}%
+	\put(0.76125245,0.48375669){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily povolení\end{tabular}}}}%
+	\put(0.76125245,0.47575669){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily vytápění dané\end{tabular}}}}%
+	\put(0.76125245,0.46675669){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily místnosti\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=25]{blokove-schema-ha.pdf}}%
+    \put(0.83365949,0.45031311){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Požadavek na \end{tabular}}}}%
+	\put(0.83365949,0.44031311){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily zákaz vytápění \end{tabular}}}}%
+	\put(0.83365949,0.43031311){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily dané místnosti \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=26]{blokove-schema-ha.pdf}}%
+    \put(0.33333333,0.07718852){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Zapnutí \end{tabular}}}}%
+	\put(0.33333333,0.06718852){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily termoelekt. ventilu  \end{tabular}}}}%
+	\put(0.33333333,0.05718852){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily pro danou místnost\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=27]{blokove-schema-ha.pdf}}%
+    \put(0.543379,0.13263536){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Je požadavek\end{tabular}}}}%
+	\put(0.543379,0.12463536){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily na topení z\end{tabular}}}}%
+	\put(0.543379,0.11463536){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily teplotní\end{tabular}}}}%
+	\put(0.543379,0.10663536){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily predikce?\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=28]{blokove-schema-ha.pdf}}%
+    \put(0.46444879,0.22674103){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Je požadavek na\end{tabular}}}}%
+	\put(0.46444879,0.21774103){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily topení z nástěnných\end{tabular}}}}%
+	\put(0.46444879,0.20774103){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily snímač prostorové\end{tabular}}}}%
+	\put(0.46444879,0.19774103){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily teploty nebo\end{tabular}}}}%
+	\put(0.46444879,0.18774103){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily teplotních\end{tabular}}}}%
+	\put(0.46444879,0.17874103){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily plánů?\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=29]{blokove-schema-ha.pdf}}%
+    \put(0.40182648,0.30054207){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Je požadavek na \end{tabular}}}}%
+	\put(0.40182648,0.29254207){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily topení z chodbových \end{tabular}}}}%
+	\put(0.40182648,0.28354207){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily termostatů? \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=30]{blokove-schema-ha.pdf}}%
+    \put(0.66231572,0.07718852){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Vypnutí \end{tabular}}}}%
+	\put(0.66231572,0.06718852){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily termoelekt. ventilu\end{tabular}}}}%
+	\put(0.66231572,0.05718852){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily pro danou místnost\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=31]{blokove-schema-ha.pdf}}%
+    \put(0.88105675,0.14654925){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Není\end{tabular}}}}%
+	\put(0.88105675,0.13654925){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily požadavek\end{tabular}}}}%
+	\put(0.88105675,0.12654925){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily na topení\end{tabular}}}}%
+	\put(0.88105675,0.11654925){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily z teplotní\end{tabular}}}}%
+	\put(0.88105675,0.10654925){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily  predikce?\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=32]{blokove-schema-ha.pdf}}%
+	\put(0.79777886,0.22674103){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Není požadavek \end{tabular}}}}%
+	\put(0.79777886,0.21774103){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily na topení z \end{tabular}}}}%
+	\put(0.79777886,0.20774103){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily nástěnných snímačů prostorové\end{tabular}}}}%
+	\put(0.79777886,0.19774103){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily teploty nebo\end{tabular}}}}%
+	\put(0.79777886,0.18774103){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily teplotních\end{tabular}}}}%
+	\put(0.79777886,0.17874103){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily plánů?\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=33]{blokove-schema-ha.pdf}}%
+	\put(0.72754729,0.30054207){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Není požadavek na \end{tabular}}}}%
+	\put(0.72754729,0.29254207){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily topení z chodbových \end{tabular}}}}%
+	\put(0.72754729,0.28354207){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily termostatů? \end{tabular}}}}%
+    \put(0.79625571,0.30136986){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Ne\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=34]{blokove-schema-ha.pdf}}%
+    \put(0.12654925,0.30615134){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Zatopil \end{tabular}}}}%
+	\put(0.12654925,0.29715134){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily uživatel v dané\end{tabular}}}}%
+	\put(0.12654925,0.28815134){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily intervalu?\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=35]{blokove-schema-ha.pdf}}%
+    \put(0.12720157,0.05892368){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Je potřeba \end{tabular}}}}%
+	\put(0.12720157,0.05192368){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily rozsvítit danou \end{tabular}}}}%
+	\put(0.12720157,0.04392368){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily signalizační \end{tabular}}}}%
+	\put(0.12720157,0.03592368){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily LED \end{tabular}}}}%
+    \put(0.34572733,0.30006523){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Ano\end{tabular}}}}%
+    \put(0.46379648,0.2987606){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Ne\end{tabular}}}}%
+    \put(0.38551859,0.21656882){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Ano\end{tabular}}}}%
+    \put(0.48271363,0.13111546){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Ano\end{tabular}}}}%
+    \put(0.65883888,0.30136986){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Ano\end{tabular}}}}%
+    \put(0.70950098,0.2159165){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Ano\end{tabular}}}}%
+    \put(0.87453359,0.2159165){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Ne\end{tabular}}}}%
+    \put(0.20960861,0.80039139){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Ano\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=36]{blokove-schema-ha.pdf}}%
+    \put(0.18851924,0.84526875){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Řízení podle\end{tabular}}}}%
+	\put(0.18851924,0.83626875){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily chodbových \end{tabular}}}}%
+	\put(0.18851924,0.82726875){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily termostatů\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=37]{blokove-schema-ha.pdf}}%
+    \put(0.12328767,0.71354403){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Je nahřán\end{tabular}}}}%
+	\put(0.12328767,0.70654403){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily zásobník\end{tabular}}}}%
+	\put(0.12328767,0.70054403){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily otopné vody pro\end{tabular}}}}%
+	\put(0.12328767,0.69254403){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily vytápění?\end{tabular}}}}%
+    \put(0.24722766,0.76581866){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Ne\end{tabular}}}}%
+    \put(0.14002935,0.66992825){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Ano\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=38]{blokove-schema-ha.pdf}}%
+    \put(0.44422701,0.80512981){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Řízení podle \end{tabular}}}}%
+	\put(0.44422701,0.79712981){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily nástěnných snímačů\end{tabular}}}}%
+	\put(0.44422701,0.78912981){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily prostorové \end{tabular}}}}%
+	\put(0.44422701,0.78112981){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily teploty\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=39]{blokove-schema-ha.pdf}}%
+    \put(0.67318982,0.80217286){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Řízení podle \end{tabular}}}}%
+	\put(0.67318982,0.79517286){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily teplotních\end{tabular}}}}%
+	\put(0.67318982,0.78717286){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily plánů? \end{tabular}}}}%
+    \put(0.38225701,0.72341813){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Ano\end{tabular}}}}%
+    \put(0.38225701,0.6183953){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Ano\end{tabular}}}}%
+    \put(0.68688845,0.76581866){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Ano\end{tabular}}}}%
+    \put(0.43052838,0.76190476){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Ano\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=40]{blokove-schema-ha.pdf}}%
+    \put(0.81669928,0.7236334){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Je pondělí\end{tabular}}}}%
+	\put(0.81669928,0.7136334){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily pro aktualizování\end{tabular}}}}%
+	\put(0.81669928,0.7036334){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily predikce?\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=41]{blokove-schema-ha.pdf}}%
+	\put(0.8173516,0.8114775){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Řízení podle \end{tabular}}}}%
+	\put(0.8173516,0.8024775){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily teplotních plánů s \end{tabular}}}}%
+	\put(0.8173516,0.7944775){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily úpravou podle \end{tabular}}}}%
+	\put(0.8173516,0.7864775){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily předpovědí \end{tabular}}}}%
+	\put(0.8173516,0.7784775){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily počasí? \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=42]{blokove-schema-ha.pdf}}%
+    \put(0.81669928,0.54485584){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Došlo\end{tabular}}}}%
+	\put(0.81669928,0.53685584){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily k posuvu\end{tabular}}}}%
+	\put(0.81669928,0.52785584){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily dopředu\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=43]{blokove-schema-ha.pdf}}%
+    \put(0.88845401,0.50702153){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Došlo\end{tabular}}}}%
+	\put(0.88845401,0.49902153){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily k posuvu\end{tabular}}}}%
+	\put(0.88845401,0.49002153){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily dozadu\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=44]{blokove-schema-ha.pdf}}%
+    \put(0.95238095,0.46201174){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Nedošlo\end{tabular}}}}%
+	\put(0.95238095,0.45301174){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily k žádné\end{tabular}}}}%
+	\put(0.95238095,0.44501174){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily změně \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=45]{blokove-schema-ha.pdf}}%
+    \put(0.89823875,0.40786954){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Vypnutí\end{tabular}}}}%
+	\put(0.89823875,0.39986954){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily teplotní\end{tabular}}}}%
+	\put(0.89823875,0.39186954){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily predikci\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=46]{blokove-schema-ha.pdf}}%
+    \put(0.83365949,0.75277234){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Ano\end{tabular}}}}%
+    \put(0.83365949,0.67840835){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Ano\end{tabular}}}}%
+    \put(0.76908023,0.54468363){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Ano\end{tabular}}}}%
+    \put(0.84279191,0.50684932){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Ano\end{tabular}}}}%
+    \put(0.9047619,0.46118721){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Ano\end{tabular}}}}%
+    \put(0.86888454,0.54468363){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Ne\end{tabular}}}}%
+    \put(0.93737769,0.50684932){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Ne\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=47]{blokove-schema-ha.pdf}}%
+    \put(0.37312459,0.67014351){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Je nahřán \end{tabular}}}}%
+	\put(0.37312459,0.66114351){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily zásobník\end{tabular}}}}%
+	\put(0.37312459,0.65404351){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily otopné vody pro\end{tabular}}}}%
+	\put(0.37312459,0.64414351){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily vytápění?\end{tabular}}}}%
+    \put(0.99282453,0.46118721){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Ne\end{tabular}}}}%
+  \end{picture}%
+\endgroup%
