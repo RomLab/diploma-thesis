@@ -57,18 +57,22 @@ Přímo z Raspberry Pi je využito napětí 3,3 V pro převodník napětí, pops
 
 
 \subsubsection{Realizovaná DPS ochran pro centrální jednotku Raspberry Pi}
-Na obrázku \ref{fig:dps-rpi-1-wire-termostaty-ochrany-spodek} a \ref{fig:dps-rpi-1-wire-termostaty-ochrany-vrsek} je realizovaná DPS vstupů/výstupů pro centrální jednotku Raspberry Pi. Ze samotné DPS je sběrnice vyvedena pomocí konektorů RJ45, čtyři konektory pro teplotní senzory DS18B20 a čtyři pro termočlánky s MAX31850K. Celkové schéma zapojení je v příloze \ref{app:schemata-ostatni}.
+Na obrázku \ref{fig:dps-pro-ochranu-vstupu-vystupu-pro-raspberry-pi} je realizovaná DPS vstupů/výstupů pro centrální jednotku Raspberry Pi. Ze samotné DPS je sběrnice vyvedena pomocí konektorů RJ45, čtyři konektory pro teplotní senzory DS18B20 a čtyři pro termočlánky s MAX31850K. Celkové schéma zapojení je v příloze \ref{app:schemata-ostatni}.
 
 \begin{figure}[H]
+\centering
+\begin{subfigure}{.5\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{images/vstupy-vystupu-rpi/dps-rpi-1-wire-termostaty-ochrany-spodek.png}
-    \caption{Spodní část DPS pro ochranu vstupů/výstupů pro centrální jednotku Raspberry Pi.}
+    \includegraphics[width=0.6\textwidth]{images/vstupy-vystupu-rpi/dps-rpi-1-wire-termostaty-ochrany-spodek.png}
+    \caption{Spodní část.}
     \label{fig:dps-rpi-1-wire-termostaty-ochrany-spodek}
-\end{figure}
-
-\begin{figure}[H]
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{images/vstupy-vystupu-rpi/dps-rpi-1-wire-termostaty-ochrany-vrsek.png}
-    \caption{Vrchní část DPS pro ochranu vstupů/výstupů pro Raspberry Pi.}
+    \includegraphics[width=0.7\textwidth]{images/vstupy-vystupu-rpi/dps-rpi-1-wire-termostaty-ochrany-vrsek.png}
+    \caption{Vrchní část.}
     \label{fig:dps-rpi-1-wire-termostaty-ochrany-vrsek}
+\end{subfigure}
+\caption{DPS pro ochranu vstupů/výstupů pro Raspberry Pi.}
+\label{fig:dps-pro-ochranu-vstupu-vystupu-pro-raspberry-pi}
 \end{figure}
