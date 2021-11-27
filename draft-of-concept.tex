@@ -3,7 +3,7 @@
 \section{Popis celkového konceptu}
 \label{sec:popis-celkoveho-konceptu}
 
-Otopná soustava domu je zobrazena na obrázku \ref{fig:otopna-soustava-rez-domu}. Zdrojem tepla je krb ve sklepě, v přízemí a~v~patře s teplovodním výměníkem. Krby s teplovodním výměníkem slouží k ohřevu otopné vody proudící skrz vložku krbu, které dobíjí zásobník otopné vody. V přízemí a v patře je rozdělovač podlahového topení s 12 otopnými okruhy. Každý okruh se dá ovládat zvlášť. Dále je zde čerpadlo a manuální trojcestný směšovací ventil pro nastavení optimální teploty do podlahového vytápění. Druhým zdrojem tepla je plynový kondenzační kotel, který není v~současnosti pořízen, nicméně se s ním počítá do budoucna. Bude sloužit k~ohřívání otopné vody, pokud nebudou využity krby s teplovodním výměníkem, zejména v letním období pro ohřev TUV. Oba zdroje tepla jsou pro ohřívání otopné vody do centrálního zásobníku (objem je 1 500 l). V jedné horní třetině výšky zásobníku umístěna nádoba TUV (objem je 120 l). Navržený systém řídí ovládání čerpadel u~rozdělovačů podlahového vytápění, čerpadel pro krby s~výměníkem a pohonů pro jednotlivé okruhy podlahového vytápění. K ovládání čerpadel otopných okruhů dochází při požadavku topení v dané místnosti. V případě zatopení v krbu dojde k sepnutí daného čerpadla.
+Otopná soustava domu je zobrazena na obrázku \ref{fig:otopna-soustava-rez-domu}. Zdrojem tepla je krb ve sklepě, v přízemí a~v~patře s teplovodním výměníkem. Krby s teplovodním výměníkem slouží k ohřevu otopné vody proudící skrz vložku krbu, které dobíjí \acrshort{zov}. V přízemí a v patře je rozdělovač podlahového topení s 12 otopnými okruhy. Každý okruh se dá ovládat zvlášť. Dále je zde čerpadlo a manuální trojcestný směšovací ventil pro nastavení optimální teploty do podlahového vytápění. Druhým zdrojem tepla je plynový kondenzační kotel, který není v~současnosti pořízen, nicméně se s ním počítá do budoucna. Bude sloužit k~ohřívání otopné vody, pokud nebudou využity krby s teplovodním výměníkem, zejména v letním období pro ohřev TUV. Oba zdroje tepla jsou pro ohřívání otopné vody do centrálního zásobníku (objem je 1 500 l). V jedné horní třetině výšky zásobníku umístěna nádoba TUV (objem je 120 l). Navržený systém řídí ovládání čerpadel u~rozdělovačů podlahového vytápění, čerpadel pro krby s~výměníkem a pohonů pro jednotlivé okruhy podlahového vytápění. K ovládání čerpadel otopných okruhů dochází při požadavku topení v dané místnosti. V případě zatopení v krbu dojde k sepnutí daného čerpadla.
 
 
 \begin{figure}[H]
@@ -34,7 +34,7 @@ Bezdrátové nástěnné snímače prostorové teploty jsou napájeny z lokáln�
 
 Kabelové nástěnné snímače prostorové teploty jsou napájeny pomocí switche s  \acrshort{poe} (\textit{\acrlong{poe}}). Další části jsou obdobné jako u bezdrátového řešení. Komunikace s centrální jednotkou je zajištěna pomocí zmíněného switche.
 
-Indikátor stavů je propojen s centrální jednotkou, skládá z části indikující stavy pomocí \acrshort{led} (\textit{\acrlong{led}}) pro jednotlivé teploty naměřené v~zásobníku otopné vody rozmístěné v~jednotlivých částech nádrže. Dále je zde sběrnice pro komunikaci \acrshort{lcd} (\textit{\acrlong{lcd}}) displejem a~centrální jednotkou pro zobrazení teplot ze zásobníku, respektive dvou teplot ze spodní části. Indikátory stavů jsou umístěny u krbů.
+Indikátor stavů je propojen s centrální jednotkou, skládá z části indikující stavy pomocí \acrshort{led} (\textit{\acrlong{led}}) pro jednotlivé teploty naměřené v~\acrshort{zov} rozmístěné v~jednotlivých částech nádrže. Dále je zde sběrnice pro komunikaci \acrshort{lcd} (\textit{\acrlong{lcd}}) displejem a~centrální jednotkou pro zobrazení teplot ze zásobníku, respektive dvou teplot ze spodní části. Indikátory stavů jsou umístěny u krbů.
 
 Spínací jednotka se skládá z relé modulů pro ovládání jednotlivých čerpadel pro oběh otopné vody do otopných okruhů podlahové vytápění v jednotlivých patrech. Dále jsou zde ovládána čerpadla pro cirkulaci vody z krbových výměníků. V neposlední řadě je zde případné ovládání plynového kondenzačního kotle.
 
@@ -42,7 +42,7 @@ Zónový regulátor je umístěn v přízemí a v patře v rozdělovači pro jed
 
 Síťové prvky se skládají z centrálního switche, switche s POE a domácího WiFi routeru. Centrální switch sdružuje veškerou komunikaci jak z kabelových nástěnných snímačů prostorové teploty (pomocí POE switche), tak i bezdrátových (pomocí WiFi routeru). 
 
-Teplotní senzory v zásobníku otopné vody jsou rozmístěné ve třech částech zásobníku v horní, střední a spodní části. Dále jsou teplotní senzory na kouřovodech u jednotlivých krbů pro detekci zatopení. Všechny senzory jsou napojeny na jednu sběrnici.
+Teplotní senzory v \acrshort{zov} jsou rozmístěné ve třech částech zásobníku v horní, střední a spodní části. Dále jsou teplotní senzory na kouřovodech u jednotlivých krbů pro detekci zatopení. Všechny senzory jsou napojeny na jednu sběrnici.
 
 
 
@@ -51,7 +51,7 @@ Jak bylo zmíněno výše, teplotní senzory jsou potřebná na snímání teplo
 
 %Princip termočlánku spočívá v Seebeckově efektu, jsou-li spojeny dva vodiče z různých kovů, tak v místě spojení je generováno napětí. Velikost napětí je závislá na vnější teplotě a materiálu článku. Linearita výstupního napětí článku je závislá na typu termočlánku a rozsahu teplot.
 
-Další teplotní senzory jsou nutné pro nástěnné teplotní snímače prostorové teploty pro každou místnost, zásobník otopné vody a venkovní senzor. Teplotní rozsah těchto čidel nemusí být tak vysoký jako u měření teplot na kouřovodech. Teplotní rozsah stačí v řádů desítek stupňů. %Vzhledem ke vzdálenostem teplotních čidel a centrální jednotky bude lepší zvolit digitální teplotní čidla, které výslednou změřenou teplotu zpracuje pošle po sběrnici v digitální podobě. Není pak nutná další elektronika pro zpracování hodnot teploty jako například u termočlánku či teplotně odporového čidla.
+Další teplotní senzory jsou nutné pro nástěnné teplotní snímače prostorové teploty pro každou místnost, \acrshort{zov} a venkovní senzor. Teplotní rozsah těchto čidel nemusí být tak vysoký jako u měření teplot na kouřovodech. Teplotní rozsah stačí v řádů desítek stupňů. %Vzhledem ke vzdálenostem teplotních čidel a centrální jednotky bude lepší zvolit digitální teplotní čidla, které výslednou změřenou teplotu zpracuje pošle po sběrnici v digitální podobě. Není pak nutná další elektronika pro zpracování hodnot teploty jako například u termočlánku či teplotně odporového čidla.
 
 \subsection{Komunikační část}
 
@@ -73,7 +73,7 @@ Spínací jednotka je propojena s centrální jednotkou pro ovládání čerpade
 
 Zónový regulátor komunikuje s centrální jednotkou pomocí I$^2$C sběrnice, následné ovládání pohonů pro otopné okruhy je přímo zónovým regulátorem.
 
-Teplotní senzory umístěné v zásobníku otopné vody, na kouřovodech krbů a venkovní senzor komunikují s centrální jednotkou pomocí 1-Wire sběrnice.
+Teplotní senzory umístěné v \acrshort{zov}, na kouřovodech krbů a venkovní senzor komunikují s centrální jednotkou pomocí 1-Wire sběrnice.
 
 
 
@@ -169,5 +169,5 @@ Co se týče nastavení teplot pro vytápění, jsou zde dvě možnosti, využit
 
 Další nutná funkce pro řízení je dobíjení TUV. Tato volba se hlavně týká teplých měsíců. Proto je nutné mít podobné režimy pro dobíjení jako výše popsané pro vytápění.
 
-Pokud je v domě více zdrojů tepla, pak je nutné přihlédnout k provozní ceně těchto zdrojů, zejména tedy použitého paliva. V mém případě se jedná o plynový kondenzační kotel (zatím ještě nepořízen) a krby s teplovodním výměníkem. Je nutné optimalizovat, kdy se jaký zdroj má použít. Primárním cílem je použití krbů, kvůli současné cenně dřeva. Proto je nutné upozorňovat uživatele, zda je nutné topit, například podle teplotních plánů či naopak přestat topit kvůli naakumulovaní celého zásobníku otopné vody. V případech, kdy uživatel nezačal topit (z důvodu, že není přítomen nebo se jedná o noc), pak systém by měl rozhodnout, zda použije plynový kondenzační kotel, který je samoobslužný.
+Pokud je v domě více zdrojů tepla, pak je nutné přihlédnout k provozní ceně těchto zdrojů, zejména tedy použitého paliva. V mém případě se jedná o plynový kondenzační kotel (zatím ještě nepořízen) a krby s teplovodním výměníkem. Je nutné optimalizovat, kdy se jaký zdroj má použít. Primárním cílem je použití krbů, kvůli současné cenně dřeva. Proto je nutné upozorňovat uživatele, zda je nutné topit, například podle teplotních plánů či naopak přestat topit kvůli naakumulovaní celého \acrshort{zov}. V případech, kdy uživatel nezačal topit (z důvodu, že není přítomen nebo se jedná o noc), pak systém by měl rozhodnout, zda použije plynový kondenzační kotel, který je samoobslužný.
 

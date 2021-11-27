@@ -27,25 +27,25 @@ Na obrázku \ref{fig:vyrez-teplotni-senzory-krb} je výřez části z celkového
     \label{fig:termoclanek-72-21301041-k}
 \end{figure}
 
-Na obrázku \ref{fig:vyrez-teplotni-senzory-zasobnik-otopne-vody} je výřez části z celkového nákresu (obrázek \ref{fig:otopna-soustava-a-elektronika-rez-domu}) pro umístění teplotních senzorů v zásobníku otopné vody. Pro snímání teplot z centrálního zásobníku otopné vody, venkovní teploty a~prostorových teplot z jednotlivých místností slouží teplotní senzor DS18B20 \cite{vyrobce-ds18b20} od výrobce Maxim. Umožňuje měřit v teplotním rozsahu od -55 °C do +125~°C. V~rozsahu od -10~°C do +85~°C měří s přesností ±0,5 °C. Senzor umožňuje měřit teplotu s přesností 12 bitů. Pro komunikaci využívá 1-Wire sběrnici (způsob komunikace je popsán v \ref{sec:1-wire-sbernice} v části 1-Wire sběrnice). Ve svém konkrétním řešením využívám senzory v pouzdře TO-92 pro nástěnné snímače prostorové teploty, pro centrální zásobník otopné vody a~venkovní teplotu je senzor uložen do ochranného pouzdra.
+Na obrázku \ref{fig:vyrez-teplotni-senzory-zasobnik-otopne-vody} je výřez části z celkového nákresu (obrázek \ref{fig:otopna-soustava-a-elektronika-rez-domu}) pro umístění teplotních senzorů v \acrshort{zov}. Pro snímání teplot z centrálního \acrshort{zov}, venkovní teploty a~prostorových teplot z jednotlivých místností slouží teplotní senzor DS18B20 \cite{vyrobce-ds18b20} od výrobce Maxim. Umožňuje měřit v teplotním rozsahu od -55 °C do +125~°C. V~rozsahu od -10~°C do +85~°C měří s přesností ±0,5 °C. Senzor umožňuje měřit teplotu s přesností 12 bitů. Pro komunikaci využívá 1-Wire sběrnici (způsob komunikace je popsán v \ref{sec:1-wire-sbernice} v části 1-Wire sběrnice). Ve svém konkrétním řešením využívám senzory v pouzdře TO-92 pro nástěnné snímače prostorové teploty, pro \acrshort{zov} vody a~venkovní teplotu je senzor uložen do ochranného pouzdra.
 
 \subsection{Realizace 1-Wire sběrnice u zásobníku otopné vody}
 \begin{figure}[H]
    \centering
    \def\svgwidth{0.2\columnwidth}
    \input{images/svg/otopna-soustava/vyrez-1-wire-sbernice-u-zasobniku-otopne-vody.pdf_tex}
-   \caption[Výřez pro umístění sdružení 1-Wire sběrnice u zásobníku otopné vody.]{Výřez z obrázku \ref{fig:otopna-soustava-a-elektronika-rez-domu} – umístění sdružení 1-Wire sběrnice u zásobníku otopné vody.}
+   \caption[Výřez pro umístění sdružení 1-Wire sběrnice u \acrshort{zov}.]{Výřez z obrázku \ref{fig:otopna-soustava-a-elektronika-rez-domu} – umístění sdružení 1-Wire sběrnice u \acrshort{zov}.}
     \label{fig:vyrez-1-wire-sbernice-u-zasobniku-otopne-vody}
 \end{figure}
 
-Na obrázku \ref{fig:vyrez-1-wire-sbernice-u-zasobniku-otopne-vody} je výřez části z celkového nákresu (obrázek \ref{fig:otopna-soustava-a-elektronika-rez-domu}) pro sdružení 1-Wire sběrnice u~zásobníku otopné vody. Na obrázku \ref{fig:dps-1-wire-sbernice-u-zasobniku-otopne-vody} je realizovaná DPS pro teplotní senzory u zásobníku otopné vody. Princip zapojení včetně ochrana na napájecí i datové části je popsán v~části \ref{sec:dps-se-vstupy-vystupy-pro-raspberry-pi} (datová část 1-Wire sběrnice). Na obrázku \ref{fig:instalacni-krabice-cidla-u-zasobniku-otopne-vody} je vidět horní část DPS vložená do instalační krabice. Celkově je zde k dispozici 6~pozic pro upevnění přes svorkovnice teplotní senzory. V~současnosti jsou zde napojeny 3 teplotní senzory pro snímání teplot z horní, střední a~spodní části zásobníku otopné vody. Umístění senzorů je dáno výrobcem zásobníku a senzory jsou vloženy do dutiny. Samotná 1-Wire sběrnice je realizovaná pomocí \acrshort{utp} (\textit{\acrlong{utp}}) kabelu kategorie 5e. Na pinu číslo 4 jsou DATA, na pinu 5 je zem (GND) a na pinu 3 je napájení 5~V. Pro měření venkovní teploty je senzor DS18B20 v~pouzdře TO-92 připevněn na UTP kabel a zataven plastovou hmotou, na níž je následně nanesena smršťovací ochranná bužírka. Na obrázku \ref{fig:zasobnik-otopné-vody} jsou vyznačená místa s~umístěním teplotních senzorů. Celkové schéma zapojení je v příloze \ref{app:schemata-ostatni}.
+Na obrázku \ref{fig:vyrez-1-wire-sbernice-u-zasobniku-otopne-vody} je výřez části z celkového nákresu (obrázek \ref{fig:otopna-soustava-a-elektronika-rez-domu}) pro sdružení 1-Wire sběrnice u~\acrshort{zov}. Na obrázku \ref{fig:dps-1-wire-sbernice-u-zasobniku-otopne-vody} je realizovaná DPS pro teplotní senzory u \acrshort{zov}. Princip zapojení včetně ochrana na napájecí i datové části je popsán v~části \ref{sec:dps-se-vstupy-vystupy-pro-raspberry-pi} (datová část 1-Wire sběrnice). Na obrázku \ref{fig:instalacni-krabice-cidla-u-zasobniku-otopne-vody} je vidět horní část DPS vložená do instalační krabice. Celkově je zde k dispozici 6~pozic pro upevnění přes svorkovnice teplotní senzory. V~současnosti jsou zde napojeny 3 teplotní senzory pro snímání teplot z horní, střední a~spodní části \acrshort{zov}. Umístění senzorů je dáno výrobcem zásobníku a senzory jsou vloženy do dutiny. Samotná 1-Wire sběrnice je realizovaná pomocí \acrshort{utp} (\textit{\acrlong{utp}}) kabelu kategorie 5e. Na pinu číslo 4 jsou DATA, na pinu 5 je zem (GND) a na pinu 3 je napájení 5~V. Pro měření venkovní teploty je senzor DS18B20 v~pouzdře TO-92 připevněn na UTP kabel a zataven plastovou hmotou, na níž je následně nanesena smršťovací ochranná bužírka. Na obrázku \ref{fig:zasobnik-otopné-vody} jsou vyznačená místa s~umístěním teplotních senzorů. Celkové schéma zapojení je v příloze \ref{app:schemata-ostatni}.
 
 \begin{figure}[H]
 \centering
 \begin{subfigure}{.5\textwidth}
     \centering
     \includegraphics[width=\textwidth]{images/zasobnik-otopne-vody/dps-1-wire-sbernice-u-zasobniku-otopne-vody.png}
-    \caption{Realizovaná DPS pro teplotní senzory 1-Wire sběrnice u zásobníku otopné vody.}
+    \caption{Realizovaná DPS pro teplotní senzory 1-Wire sběrnice u \acrshort{zov}.}
     \label{fig:dps-1-wire-sbernice-u-zasobniku-otopne-vody}
 \end{subfigure}%
 \begin{subfigure}{.5\textwidth}
@@ -54,7 +54,7 @@ Na obrázku \ref{fig:vyrez-1-wire-sbernice-u-zasobniku-otopne-vody} je výřez �
     \caption{Horní část DPS umístěná do instalační krabice.}
     \label{fig:instalacni-krabice-cidla-u-zasobniku-otopne-vody}
 \end{subfigure}%
-\caption{Sdružení 1-Wire sběrnice u zásobníku otopné vody}
+\caption{Sdružení 1-Wire sběrnice u \acrshort{zov}.}
 \end{figure}
 
 %\begin{figure}[H]
@@ -67,6 +67,6 @@ Na obrázku \ref{fig:vyrez-1-wire-sbernice-u-zasobniku-otopne-vody} je výřez �
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.85\textwidth]{images/zasobnik-otopne-vody/zasobnik-otopné-vody.png}
-    \caption[Zásobník otopné vody.]{Zásobník otopné vody. Červené kroužky označují místa teplotních senzorů.}
+    \caption[Zásobník otopné vody.]{\acrshort{zov} – červené kroužky označují místa teplotních senzorů.}
     \label{fig:zasobnik-otopné-vody}
 \end{figure}
