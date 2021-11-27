@@ -30,9 +30,9 @@ Na obrázku \ref{fig:navrh-hardwarove-casti} je nakreslen hardwarový koncept, k
 
 Centrální jednotka je jednodeskový počítač s periferiemi jako ethernetový port, \acrshort{usb} (\textit{\acrlong{usb}}), univerzálními vstupy/výstupy, případně s alternativní funkcí pinů jako sběrnice \acrshort{i2c} (\textit{\acrlong{i2c}}) nebo dalšími typy periferií. Dále by měla disponovat dostatečnou velikostí \acrshort{ram} (\textit{\acrlong{ram}}) pamětí a relativně výkonným procesorem pro snadné zpracování vstupních/výstupních dat či povelů.
 
-Bezdrátové nástěnné snímače prostorové teploty jsou napájeny z lokálních síťových adaptérů, každý modul má své napájení. Nástěnný snímač prostorové teploty se skládá z displeje pro zobrazení aktuální a požadované teploty a~dalších nastavení. Dále ze tří tlačítek pro vstup do menu a tlačítek pro zvýšení/snížení požadované teploty a teplotního senzoru. Komunikace s~centrální jednotkou je zajištěna pomocí WiFi modulu komunikující s WiFi routerem.
+Bezdrátové \acrshort{nspt} jsou napájeny z lokálních síťových adaptérů, každý modul má své napájení. Nástěnný snímač prostorové teploty se skládá z displeje pro zobrazení aktuální a požadované teploty a~dalších nastavení. Dále ze tří tlačítek pro vstup do menu a tlačítek pro zvýšení/snížení požadované teploty a teplotního senzoru. Komunikace s~centrální jednotkou je zajištěna pomocí WiFi modulu komunikující s WiFi routerem.
 
-Kabelové nástěnné snímače prostorové teploty jsou napájeny pomocí switche s  \acrshort{poe} (\textit{\acrlong{poe}}). Další části jsou obdobné jako u bezdrátového řešení. Komunikace s centrální jednotkou je zajištěna pomocí zmíněného switche.
+Kabelové \acrshort{nspt} jsou napájeny pomocí switche s  \acrshort{poe} (\textit{\acrlong{poe}}). Další části jsou obdobné jako u bezdrátového řešení. Komunikace s centrální jednotkou je zajištěna pomocí zmíněného switche.
 
 Indikátor stavů je propojen s centrální jednotkou, skládá z části indikující stavy pomocí \acrshort{led} (\textit{\acrlong{led}}) pro jednotlivé teploty naměřené v~\acrshort{zov} rozmístěné v~jednotlivých částech nádrže. Dále je zde sběrnice pro komunikaci \acrshort{lcd} (\textit{\acrlong{lcd}}) displejem a~centrální jednotkou pro zobrazení teplot ze zásobníku, respektive dvou teplot ze spodní části. Indikátory stavů jsou umístěny u krbů.
 
@@ -51,7 +51,7 @@ Jak bylo zmíněno výše, teplotní senzory jsou potřebná na snímání teplo
 
 %Princip termočlánku spočívá v Seebeckově efektu, jsou-li spojeny dva vodiče z různých kovů, tak v místě spojení je generováno napětí. Velikost napětí je závislá na vnější teplotě a materiálu článku. Linearita výstupního napětí článku je závislá na typu termočlánku a rozsahu teplot.
 
-Další teplotní senzory jsou nutné pro nástěnné teplotní snímače prostorové teploty pro každou místnost, \acrshort{zov} a venkovní senzor. Teplotní rozsah těchto čidel nemusí být tak vysoký jako u měření teplot na kouřovodech. Teplotní rozsah stačí v řádů desítek stupňů. %Vzhledem ke vzdálenostem teplotních čidel a centrální jednotky bude lepší zvolit digitální teplotní čidla, které výslednou změřenou teplotu zpracuje pošle po sběrnici v digitální podobě. Není pak nutná další elektronika pro zpracování hodnot teploty jako například u termočlánku či teplotně odporového čidla.
+Další teplotní senzory jsou nutné pro \acrshort{nspt} pro každou místnost, \acrshort{zov} a venkovní senzor. Teplotní rozsah těchto čidel nemusí být tak vysoký jako u měření teplot na kouřovodech. Teplotní rozsah stačí v řádů desítek stupňů. %Vzhledem ke vzdálenostem teplotních čidel a centrální jednotky bude lepší zvolit digitální teplotní čidla, které výslednou změřenou teplotu zpracuje pošle po sběrnici v digitální podobě. Není pak nutná další elektronika pro zpracování hodnot teploty jako například u termočlánku či teplotně odporového čidla.
 
 \subsection{Komunikační část}
 
