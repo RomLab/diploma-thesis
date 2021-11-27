@@ -21,11 +21,11 @@ Další možností je použití galvanického oddělení především pomocí op
 
 Napěťová tolerance pro piny Raspberry Pi je 3,3 V. Proto je použit obousměrný převodník napěťových úrovní z 3,3 V na 5~V a opačně, realizovaný pomocí MOSFET tranzistoru (BSS138P \cite{bss138p}), pull-up rezistorů.
 
-Na obrázku \ref{fig:ochrany-1-wire} jsou vidět dvě větve pro 1-Wire sběrnici, je to z důvodu dvou typů zařízení, teplotních čidel DS18B20 a zesilovače/převodníku MAX31850K \cite{max31850k} s termočlánkem , které mají různé časování, popsáno více níže. Sběrnici, lze sdružit do jedné pomocí propojky P6.
+Na obrázku \ref{fig:ochrany-1-wire} jsou vidět dvě větve pro 1-Wire sběrnici, je to z důvodu dvou typů zařízení, teplotních čidel DS18B20 a zesilovače/převodníku MAX31850K \cite{max31850k} s termočlánkem , které mají různé časování, sběrnice je popsána v \ref{sec:1-wire-sbernice}. Sběrnici, lze sdružit do jedné pomocí propojky P6.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{images/svg/kicad/ochrany-1-wire.eps}
+    \includegraphics[width=0.9\textwidth]{images/svg/kicad/ochrany-1-wire.eps}
     \caption[ESD ochrany pro 1-Wire sběrnici s~převodníkem log. úrovní.]{ESD ochrany pro 1-Wire sběrnici s převodním log. úrovní. Kolíková lišta P1, P5 je připojena na Raspberry Pi.}
     \label{fig:ochrany-1-wire}
 \end{figure}
@@ -46,7 +46,7 @@ Pro ochranu napájení 1-Wire sběrnice (5 V) jsou veškeré koncové teplotní 
 Obdobně jako v části \ref{sec:datova-cast-1-wire-sbernice} (datová část 1-Wire sběrnice) je stejná ochrana pro snímání logické úrovně z~chodbových termostatů. Při sepnutí termostatu na daném patře je detekována log. 0 (požadavek na vytápění) v opačném případě je zde log. 1 (zastavení vytápění). Chodbové  termostaty jsou popsány v sekci \ref{sec:digitalni-chodbove-termostaty}.
 
 \subsubsection{Ochrana napájení 3,3 V}
-Přímo z Raspberry Pi je využito napětí 3,3 V pro převodník napětí, popsaný v~části \ref{sec:datova-cast-1-wire-sbernice} (datová část 1-Wire sběrnice). Zde je použita vratná pojistka polymerový \acrshort{ptc} (\textit{\acrlong{ptc}}) (RXEF005 \cite{rxef005}) se spínacím proudem 100 mA, pro omezení proudu v~případě poruchy, dále je zde transilová dioda (SM2T3V3A \cite{sm2t3v3a}) pro ochranu při přepětí (s~upínacím napětí max. 6,5 V (při 25 A, 10/1000~µs), průrazné napětí 3,6~V). Na obrázku \ref{fig:ochrana-napajeni-3_3-v} je zobrazena popsaná ochrana.
+Přímo z Raspberry Pi je využito napětí 3,3 V pro převodník napětí, popsaný v~části \ref{sec:datova-cast-1-wire-sbernice} (datová část 1-Wire sběrnice). Zde je použita vratná pojistka polymerový \acrshort{ptc} (\textit{\acrlong{ptc}}) (RXEF005 \cite{rxef005}) se spínacím proudem 100 mA, pro omezení proudu v~případě poruchy, dále je zde transilová dioda (SM2T3V3A \cite{sm2t3v3a}) pro ochranu při přepětí (s~upínacím napětí max. 6,5~V (při 25 A, 10/1000~µs), průrazné napětí 3,6~V). Na obrázku \ref{fig:ochrana-napajeni-3_3-v} je zobrazena popsaná ochrana.
 
 \begin{figure}[H]
     \centering

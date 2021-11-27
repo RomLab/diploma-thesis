@@ -22,16 +22,9 @@ Na obrázku \ref{fig:vyrez-krb-signalizace} je výřez části z celkového nák
 \subsubsection{Měření teploty pomocí termočlánku a převodníku MAX31850K}
 Teplotní senzory připojené na kouřovody krbů jsou realizované pomocí termočlánku z \ref{sec:teplotni-senzory}. Termočlánek je připojený k zakoupenému modulu (obrázek~\ref{fig:modul-max31850k-1-wire-prevodnik-termoclanku}) s obvodem MAX31850K, hodnota napětí z termočlánku je převedena do digitální podoby včetně teplotní kompenzace studeného konce a~tato hodnota je poslána po 1-Wire sběrnici. Je možné připojit termočlánek typu K. Převodník umožňuje měřit teplotu s~převodem pomocí AD převodníku až na 14 bitů. Rozlišení teploty činí 0,25~°C. Při teplotách -200 °C až 700 °C činí přesnost měřené teploty ±2~°C. Obvod disponuje detekcí zkratu (na GND nebo napájení) na vstupu pro termočlánek. Dále je zde detekce odpojeného termočlánku. Schéma zapojení modulu je v příloze \ref{app:schemata-ostatni}, upraveno z \cite{prevodnik-max31850k}.
 
-%\begin{figure}[H]
-%    \centering
-%    \includegraphics[width=\textwidth]{images/svg/kicad/zapojeni-max31850k-1-wire-prevodnik-termoclanku.eps}
-%    \caption[Zapojení MAX31850K v modulu.]{Zapojení MAX31850K v modulu. Upraveno z \cite{prevodnik-max31850k}.}
-%    \label{fig:zapojeni-max31850k-1-wire-prevodnik-termoclanku}
-%\end{figure}
-
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.4\textwidth]{images/krb/modul-max31850k-1-wire-prevodnik-termoclanku.png}
+    \includegraphics[width=0.25\textwidth]{images/krb/modul-max31850k-1-wire-prevodnik-termoclanku.png}
     \caption[Modul s obvodem MAX31850K.]{Modul s obvodem MAX31850K \cite{prevodnik-max31850k}.}
     \label{fig:modul-max31850k-1-wire-prevodnik-termoclanku}
 \end{figure}

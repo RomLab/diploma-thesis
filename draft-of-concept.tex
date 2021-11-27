@@ -30,7 +30,7 @@ Na obrázku \ref{fig:navrh-hardwarove-casti} je nakreslen hardwarový koncept, k
 
 Centrální jednotka je jednodeskový počítač s periferiemi jako ethernetový port, \acrshort{usb} (\textit{\acrlong{usb}}), univerzálními vstupy/výstupy, případně s alternativní funkcí pinů jako sběrnice \acrshort{i2c} (\textit{\acrlong{i2c}}) nebo dalšími typy periferií. Dále by měla disponovat dostatečnou velikostí \acrshort{ram} (\textit{\acrlong{ram}}) pamětí a relativně výkonným procesorem pro snadné zpracování vstupních/výstupních dat či povelů.
 
-Bezdrátové \acrshort{nspt} jsou napájeny z lokálních síťových adaptérů, každý modul má své napájení. Nástěnný snímač prostorové teploty se skládá z displeje pro zobrazení aktuální a požadované teploty a~dalších nastavení. Dále ze tří tlačítek pro vstup do menu a tlačítek pro zvýšení/snížení požadované teploty a teplotního senzoru. Komunikace s~centrální jednotkou je zajištěna pomocí WiFi modulu komunikující s WiFi routerem.
+Bezdrátové \acrshort{nspt} jsou napájeny z lokálních síťových adaptérů, každý modul má své napájení. \acrshort{nspt} se skládá z displeje pro zobrazení aktuální a požadované teploty a~dalších nastavení. Dále ze tří tlačítek pro vstup do menu a tlačítek pro zvýšení/snížení požadované teploty a teplotního senzoru. Komunikace s~centrální jednotkou je zajištěna pomocí WiFi modulu komunikující s WiFi routerem.
 
 Kabelové \acrshort{nspt} jsou napájeny pomocí switche s  \acrshort{poe} (\textit{\acrlong{poe}}). Další části jsou obdobné jako u bezdrátového řešení. Komunikace s centrální jednotkou je zajištěna pomocí zmíněného switche.
 
@@ -40,7 +40,7 @@ Spínací jednotka se skládá z relé modulů pro ovládání jednotlivých če
 
 Zónový regulátor je umístěn v přízemí a v patře v rozdělovači pro jednotlivé otopné okruhy. Komunikace mezi zónovým regulátorem a centrální jednotkou je pomocí sběrnice. Zónový regulátor ovládá jednotlivé pohony, ty následně jednotlivé otopné okruhy. Pohony jsou přímo připojené na zónový regulátor.
 
-Síťové prvky se skládají z centrálního switche, switche s POE a domácího WiFi routeru. Centrální switch sdružuje veškerou komunikaci jak z kabelových nástěnných snímačů prostorové teploty (pomocí POE switche), tak i bezdrátových (pomocí WiFi routeru). 
+Síťové prvky se skládají z centrálního switche, switche s POE a domácího WiFi routeru. Centrální switch sdružuje veškerou komunikaci jak z kabelových \acrshort{nspt} (pomocí POE switche), tak i bezdrátových (pomocí WiFi routeru). 
 
 Teplotní senzory v \acrshort{zov} jsou rozmístěné ve třech částech zásobníku v horní, střední a spodní části. Dále jsou teplotní senzory na kouřovodech u jednotlivých krbů pro detekci zatopení. Všechny senzory jsou napojeny na jednu sběrnici.
 
@@ -65,7 +65,7 @@ Na obrázku \ref{fig:navrh-softwarove-casti} je zobrazen komunikační koncept, 
     \label{fig:navrh-softwarove-casti}
 \end{figure}
 
-Komunikace mezi centrální řídicí jednotkou a bezdrátovými i kabelovými nástěnnými snímači prostorové teploty je zajištěna pomocí protokolu MQTT. Centrální jednotka dostává informace z~jednotlivých nástěnných snímačů prostorové teploty, zároveň je možné některé parametry nastavovat přímo přes centrální jednotku, která následně dané nastavení pošle do daných zařízení.
+Komunikace mezi centrální řídicí jednotkou a bezdrátovými i kabelovými \acrshort{nspt} je zajištěna pomocí protokolu MQTT. Centrální jednotka dostává informace z~jednotlivých \acrshort{nspt}, zároveň je možné některé parametry nastavovat přímo přes centrální jednotku, která následně dané nastavení pošle do daných zařízení.
 
 Indikátor stavů komunikuje s centrální jednotkou pomocí sběrnice I$^2$C pro zobrazení hodnot na LCD displeji. Indikační LED jsou připojeny  na vstupní/výstupní piny centrální jednotky.
 
@@ -169,5 +169,5 @@ Co se týče nastavení teplot pro vytápění, jsou zde dvě možnosti, využit
 
 Další nutná funkce pro řízení je dobíjení TUV. Tato volba se hlavně týká teplých měsíců. Proto je nutné mít podobné režimy pro dobíjení jako výše popsané pro vytápění.
 
-Pokud je v domě více zdrojů tepla, pak je nutné přihlédnout k provozní ceně těchto zdrojů, zejména tedy použitého paliva. V mém případě se jedná o plynový kondenzační kotel (zatím ještě nepořízen) a krby s teplovodním výměníkem. Je nutné optimalizovat, kdy se jaký zdroj má použít. Primárním cílem je použití krbů, kvůli současné cenně dřeva. Proto je nutné upozorňovat uživatele, zda je nutné topit, například podle teplotních plánů či naopak přestat topit kvůli naakumulovaní celého \acrshort{zov}. V případech, kdy uživatel nezačal topit (z důvodu, že není přítomen nebo se jedná o noc), pak systém by měl rozhodnout, zda použije plynový kondenzační kotel, který je samoobslužný.
+Pokud je v domě více zdrojů tepla, pak je nutné přihlédnout k provozní ceně těchto zdrojů, zejména tedy použitého paliva. V mém případě se jedná o plynový kondenzační kotel (zatím ještě nepořízen) a krby s teplovodním výměníkem. Je nutné optimalizovat, kdy se jaký zdroj má použít. Primárním cílem je použití krbů, kvůli současné cenně dřeva (ceny stanoveny ke dni 26. 11. 2020). Proto je nutné upozorňovat uživatele, zda je nutné topit, například podle teplotních plánů či naopak přestat topit kvůli naakumulovaní celého \acrshort{zov}. V případech, kdy uživatel nezačal topit (z důvodu, že není přítomen nebo se jedná o noc), pak systém by měl rozhodnout, zda použije plynový kondenzační kotel, který je samoobslužný.
 
