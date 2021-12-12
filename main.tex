@@ -58,7 +58,7 @@
 	mainlanguage = czech,
 	otherlanguages = {slovak,english},
 	title-czech = {Systém pro podlahové vytápění rodinného domu pomocí zónové regulace},
-	%title-english = {System for underfloor heating of a family house using zone control},
+	title-english = {System for underfloor heating of a family house using zone control},
 %	subtitle-czech = {Cesta do tajů kdovíčeho},
 %	subtitle-english = {Journey to the who-knows-what wondeland},
 	doctype = M,
@@ -67,15 +67,15 @@
 	department-english = {Department of Microelectronics},
 	author = {Bc. Roman Labovský},
 	supervisor = {Ing. Vladimír Janíček, Ph.D.},
-	supervisor-address = {České vysoké učení technické v Praze, Elektrotechnická fakulta, Katedra mikroelektroniky\\ Technická 2, \\ Praha 6},
+	supervisor-address = {České vysoké učení technické v Praze, Fakulta elektrotechnická, Katedra mikroelektroniky\\ Technická 2, \\ Praha 6 \\ 166 27},
 %	supervisor-specialist = {John Doe},
 	fieldofstudy-english = {Electronics},
 	subfieldofstudy-english = {Electronics and Communication},
 	fieldofstudy-czech = {Elektronika},
 	subfieldofstudy-czech = {Elektronika a komunikace},
-	%keywords-czech = {slovo, klíč},
-	%keywords-english = {word, key},
-	day = 10,
+	keywords-czech = {termostat, Home Assistant, zónová regulace vytápění, podlahové vytápění, Power over Ethernet, ESP32 },
+	keywords-english = {thermostat, Home Assistant, zone heating control, floor heating, Power over Ethernet, ESP32},
+	day = 1,
 	month = 1,
 	year = 2022,
 	specification-file = {zadani-dp.pdf},
@@ -177,25 +177,19 @@
 
 % Abstract in Czech
 \begin{abstract-czech}
-%Tys honí až nevrlí komise omylem kontor město sbírku a koutě, pán nu lež, slzy, nemají zasvé šťasten. Tetě veselá. Vem lépe ty jí cíp vrhá. Novinám prachy kabát. Býti čaj via pakujte přeli, dyť do chuť kroutí kolínský bába odkrouhnul. Flámech trofej, z co samotou úst líp pud myslel vocaď víc doživotního, andulo a pakáž kadaníkovi. Čímž protiva v žába vězí duní.
-
-%Jé ní ticho vzoru. Lepší zburcují učil nepořádku zboží ní mučedník obdivem! Bas nemožné postele bys cítíte ať února. Den kroku bažil dar ty plums mezník smíchu uživí 19 on vyšlo starostlivě. Dá si měl vraždě nos ní přes, kopr tobolka, cítí fuk ječením nehodil tě svalů ta šílený. Uf teď jaké 19 divným.
+Tato diplomová práce se zabývá problematikou regulace zónového podlahového vytápění domácnosti. Pro řízení se využívá systém Home Assistant fungující na Raspberry Pi, který je ovladatelný přes webové rozhraní. V rámci systému jsou vybraná nebo zhotovená zařízení pro ovládání jednotlivých částí zónové regulace vytápění a lokální snímače prostorové teploty. Následně je celý řídicí systém testován a používán v reálném prostředí.
 \end{abstract-czech}
 
 % Abstract in English
 \begin{abstract-english}
-% Let us suppose we are given a modulus $d$.  In \cite{cite:10}, the main result was the extension of Newton random variables.  We show that ${\Gamma_{\mathfrak{{r}},b}} ( {Z_{\beta,f}} ) \sim \bar{E}$.  The work in \cite{cite:20} did not consider the infinite, hyper-reversible, local case. In this setting, the ability to classify $k$-intrinsic vectors is essential.
- 
-%Let us suppose $\mathfrak{{a}} > \mathfrak{{c}}''$.  Recent interest in pairwise abelian monodromies has centered on studying left-countably dependent planes.  We show that $\Delta \ge 0$.  It was Brouwer who first asked whether classes can be described. B. Artin \cite{cite:30} improved upon the results of M. Bernoulli by deriving nonnegative classes.
-
-%x\par x\par x\par x\par x\par x\par x\par x\par x\par x\par x\par x\par x
-
-
+This thesis deals with a system for regulation of zone heating of every household. Proposed control system is based on Raspberry Pi with the Home Assistant system. The unit is fully controllable via web. Within the system was selected or made a device for controlling the individual parts of the heating zone control and local room temperature sensors.  The programmed system was eventually tested in real environment.
 \end{abstract-english}
 
 % Acknowledgements / Podekovani
 \begin{thanks}
-%Děkuji ČVUT, že mi je tak dobrou \emph{alma mater}.
+V prvé řadě bych chtěl poděkovat svému vedoucímu Ing. Vladimíru Janíčkovi, Ph.D. za odborné vedení práce, věcné připomínky a~vstřícnost při konzultacích.
+
+Dále bych chtěl poděkovat svému kamarádovi Ing. Tomáši Janouškovi a jeho rodině za možnost aplikovat svou práci na jejich rodinném domě a především za trpělivost během nasazování systému.
 \end{thanks}
 
 % Declaration / Prohlaseni
@@ -203,7 +197,7 @@
 Prohlašuji, že jsem předloženou práci vypracoval samostatně a že jsem uvedl veškeré použité informační zdroje v souladu s Metodickým pokynem o dodržování etických principů při přípravě vysokoškolských závěrečných prací.
 
 
-%V Praze, \ctufield{day}.~\monthinlanguage{title}~\ctufield{year}
+V Praze, \ctufield{day}.~\monthinlanguage{title}~\ctufield{year}
 
 % Podpis pod prohlasenim
 \begin{flushright}
