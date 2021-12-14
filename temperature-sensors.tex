@@ -29,7 +29,7 @@ Na obrázku \ref{fig:vyrez-teplotni-senzory-krb} je výřez části z celkového
 
 Na obrázku \ref{fig:vyrez-teplotni-senzory-zasobnik-otopne-vody} je výřez části z celkového nákresu (obrázek \ref{fig:otopna-soustava-a-elektronika-rez-domu}) pro umístění teplotních senzorů v \acrshort{zov}. Pro snímání teplot z centrálního \acrshort{zov}, venkovní teploty a~prostorových teplot z~jednotlivých místností slouží teplotní senzor DS18B20 \cite{vyrobce-ds18b20} od výrobce Maxim. Umožňuje měřit v teplotním rozsahu od -55 °C do +125~°C. V~rozsahu od -10~°C do +85~°C měří s přesností ±0,5~°C. Senzor umožňuje měřit teplotu s přesností 12 bitů. Pro komunikaci využívá 1-Wire sběrnici (způsob komunikace je popsán v \ref{sec:1-wire-sbernice} v části 1-Wire sběrnice). Ve svém konkrétním řešením využívám senzory v pouzdře TO-92 pro \acrshort{nspt}, pro \acrshort{zov} vody a~venkovní teplotu je senzor uložen do ochranného pouzdra.
 
-\subsection{Realizace 1-Wire sběrnice u zásobníku otopné vody}
+\subsubsection{Realizace 1-Wire sběrnice u zásobníku otopné vody}
 \begin{figure}[H]
    \centering
    \def\svgwidth{0.2\columnwidth}

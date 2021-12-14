@@ -3,7 +3,7 @@
    \centering
     \def\svgwidth{0.5\columnwidth}
    \input{images/svg/otopna-soustava/vyrez-zonovy-regulator.pdf_tex}
-    \caption[Výřez pro umístění zónového regulátoru v rozdělovači podlahového topení.]{Výřez z obrázku \ref{fig:otopna-soustava-a-elektronika-rez-domu} – umístění zónového regulátoru v rozdělovači podlahového topení.}
+    \caption[Umístění zónového regulátoru v rozdělovači podlahového vytápění.]{Výřez z obrázku \ref{fig:otopna-soustava-a-elektronika-rez-domu} – umístění zónového regulátoru v rozdělovači podlahového vytápění.}
     \label{fig:vyrez-zonovy-regulator}
 \end{figure}
 Na obrázku \ref{fig:vyrez-zonovy-regulator} je výřez části z celkového nákresu (obrázek \ref{fig:otopna-soustava-a-elektronika-rez-domu}) systému znázorňující umístění zónového regulátoru. Zónový regulátor se skládá z modulu PCA9615 (viz část  \ref{sec:i2c-sbernice} (I$^2$C sběrnice)) pro realizaci I$^2$C sběrnice pomocí diferenciálních párů. Samotná sběrnice je realizovaná pomocí UTP kabelu kategorie 5e. Na tento modul je následně napojen obvod PCA9685 \cite{pca9685} od firmy NXP Semiconductors. Výstupy z PCA9685 ovládají jednotlivé termoelektrické pohony (celkově 12~pohonů, každý je řízen samostatně), čímž dochází k regulaci otopné vody do otopných okruhů. Zónové regulátory jsou umístěny v rozdělovači otopných okruhů v přízemí a~patře domu.
