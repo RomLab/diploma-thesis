@@ -74,7 +74,7 @@
     \put(0,0){\includegraphics[width=\unitlength,page=10]{vyrez-zonovy-regulator.pdf}}%
     \put(0.33375059,0.29175466){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Rozdělovač\end{tabular}}}}%
 	\put(0.33375059,0.21175466){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily podlahového\end{tabular}}}}%
-	\put(0.33375059,0.13175466){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily topení\end{tabular}}}}%
+	\put(0.33375059,0.13175466){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily vytápění\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=11]{vyrez-zonovy-regulator.pdf}}%
     %\put(1.06292224,-2.91153057){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Centrální...\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=12]{vyrez-zonovy-regulator.pdf}}%
