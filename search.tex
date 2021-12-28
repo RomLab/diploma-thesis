@@ -1,7 +1,7 @@
 
 %!TEX ROOT=ctutest.tex
 
-\chapter{Rešerše}
+\chapter{Současný stav řešené problematiky}
 
 
 \section{Podlahové vytápění}
@@ -153,7 +153,7 @@ Na českém trhu se nachází poměrně velké množství výrobců se zařízen
 
 
 \subsubsection{Elektrobock}
-Česká firma Elektrobock \cite{elektrobock-stranky} nabízí bezdrátové řešení pro řízení podlahové vytápění. Systém řízení je zastřešený pod aplikací PocketHome \cite{pockethome-stranky}. Jednotlivá zařízení mohou fungovat samostatně bez nebo s centrální řídicí jednotkou. Tato centrální jednotka je zastřešená pod aplikací PocketHome. Řídicí systém se skládá z centrální jednotky, \acrshort{nspt} pro jednotlivé místnosti a zónového regulátoru pro ovládání jednotlivých otopných okruhů a oběhového čerpadla, dále je k dispozici zařízení pro zapínání/vypínání kotle nebo komunikace pomocí protokolu OpenTherm. Na obrázku \ref{fig:elektrobock-pocket-home} jsou zobrazena jednotlivá zařízení. Komunikace je bezdrátová na frekvenci 433,92 MHz. Jednotlivé prvky mohou pracovat samostatně bez centrální jednotky, na druhou stranu se tímto ztrácí přehled o celém systému a komfortu nastavování z jednoho místa. Systém se může spravovat pomocí PC (systém Windows) nebo pomocí chytrého telefonu/tabletu (systém Android, iOS). Systém počítá s jedním zdrojem tepla, tedy kotlem (elektrickým, plynovým, automatickým), neuvažuje se s~otopnou soustavou, kde je začleněn např. krb s~tepelným výměníkem, jak z pohledu řízení čerpadel, tak i případnou indikaci o stavu  naakumulovaní \acrshort{zov}. \acrshort{nspt} jsou napájeny z baterií.
+Česká firma Elektrobock \cite{elektrobock-stranky} nabízí bezdrátové řešení pro řízení podlahové vytápění. Systém řízení je zastřešený pod aplikací PocketHome \cite{pockethome-stranky}. Jednotlivá zařízení mohou fungovat samostatně bez nebo s centrální řídicí jednotkou. Tato centrální jednotka je zastřešená pod aplikací PocketHome. Řídicí systém se skládá z centrální jednotky, \acrshort{nspt} pro jednotlivé místnosti a zónového regulátoru pro ovládání jednotlivých otopných okruhů a oběhového čerpadla, dále je k dispozici zařízení pro zapínání/vypínání kotle nebo komunikace pomocí protokolu OpenTherm. Na obrázku \ref{fig:elektrobock-pocket-home} jsou zobrazena jednotlivá zařízení. Komunikace je bezdrátová na frekvenci 433,92 MHz. Jednotlivé prvky mohou pracovat samostatně bez centrální jednotky, na druhou stranu se tímto ztrácí přehled o celém systému a komfortu nastavování z jednoho místa. Systém se může spravovat pomocí PC (systém Windows) nebo pomocí chytrého telefonu/tabletu (systém Android, iOS). Systém počítá s jedním zdrojem tepla, tedy kotlem (elektrickým, plynovým, automatickým na tuhá paliva), neuvažuje se s~otopnou soustavou, kde je začleněn např. krb s~tepelným výměníkem, jak z pohledu řízení čerpadel, tak i případnou indikaci o stavu  naakumulovaní \acrshort{zov}. \acrshort{nspt} jsou napájeny z~baterií.
 
 
 \begin{figure}[H]
@@ -173,7 +173,7 @@ Na českém trhu se nachází poměrně velké množství výrobců se zařízen
 \end{figure}
 
 \subsubsection{Honeywell}
-Honeywell nabízí bezdrátový systém regulace podlahového vytápění. Systém řízení je zastřešená pod aplikací Evohome \cite{honeywell-evohome-stranky}. Skládá se z centrální jednotky s~dotykovým displejem, \acrshort{nspt} pro jednotlivé místnosti, zónového regulátoru pro ovládání jednotlivých otopných okruhů. Systém je možné rozšířit o dobíjení \acrshort{tuv} (\textit{\acrlong{tuv}}), pro sledování teploty na zásobníku je možné umístit teplotní senzor, ze kterého je teplota odesílaná do centrální jednotky. Na obrázku \ref{fig:honeywell-evohome} jsou zobrazena jednotlivá zařízení systému. Systém však při dobíjení zásobníku TUV počítá se zdrojem tepla pouze s kotlem, takže v případě využití krbů s výměníkem nastává problém. V neposlední řadě umožňuje zapojit směšovací ventil pro optimální teplotu do podlahového topení. Systém je možné ovládat lokálně nebo řídit vzdáleně odkudkoliv, je zapotřebí zaregistrovat si účet a spárovat ho s  centrální jednotkou. Vzdálený server přijímá požadavky na změny režimů či nastavení teplot a zasílá je do řídicí jednotky. Server průběžně shromažďuje různá data o chování soustavy a může je na základě žádosti poskytnout. Z~toho vyplývá, že pro lepší řízení a nastavení vytápění je nutné zřídit vzdálený přístup a samotné vyhodnocení a provedení povelů, pak dochází na vzdálením serveru, nemáme moc pod kontrolou data a životnost takového systému do budoucnosti. Otázka je i při využití pouze lokálního režimu, zda regulace nepřichází o~výhody cloudového řešení. Komunikace mezi zařízeními probíhá na frekvenci 868 MHz, připojení k centrální jednotce pomocí mobilní aplikace je pomocí WiFi. \acrshort{nspt} a řízení dobíjení TUV jsou napájeny z baterií.
+Honeywell nabízí bezdrátový systém regulace podlahového vytápění. Systém řízení je zastřešená pod aplikací Evohome \cite{honeywell-evohome-stranky}. Skládá se z centrální jednotky s~dotykovým displejem, \acrshort{nspt} pro jednotlivé místnosti, zónového regulátoru pro ovládání jednotlivých otopných okruhů. Systém je možné rozšířit o dobíjení \acrshort{tuv} (\textit{\acrlong{tuv}}), pro sledování teploty na zásobníku je možné umístit teplotní senzor, ze kterého je teplota odesílaná do centrální jednotky. Na obrázku \ref{fig:honeywell-evohome} jsou zobrazena jednotlivá zařízení systému. Systém však při dobíjení zásobníku TUV počítá se zdrojem tepla pouze s kotlem, takže v případě využití krbů s výměníkem nastává problém. V~neposlední řadě umožňuje zapojit směšovací ventil pro optimální teplotu do podlahového topení. Systém je možné ovládat lokálně nebo řídit vzdáleně odkudkoliv, je zapotřebí zaregistrovat si účet a~spárovat ho s  centrální jednotkou. Vzdálený server přijímá požadavky na změny režimů či nastavení teplot a zasílá je do řídicí jednotky. Server průběžně shromažďuje různá data o chování soustavy a~může je na základě žádosti poskytnout. Z~toho vyplývá, že pro lepší řízení a nastavení vytápění je nutné zřídit vzdálený přístup a samotné vyhodnocení a provedení povelů, pak dochází na vzdálením serveru, nemáme moc pod kontrolou data a životnost takového systému do budoucnosti. Otázka je i při využití pouze lokálního režimu, zda regulace nepřichází o~výhody cloudového řešení. Komunikace mezi zařízeními probíhá na frekvenci 868 MHz, připojení k centrální jednotce pomocí mobilní aplikace je pomocí WiFi. \acrshort{nspt} a řízení dobíjení TUV jsou napájeny z baterií.
 
 
 
@@ -239,16 +239,17 @@ Mezi hlavní nedostatky zmíněných systémů pro řízení podlahového vytáp
 \hline
 \makecell{Centrální \\ řídicí jednotka} & \makecell{(PH-CJ39-WIFI, 1×) \\ 3\,678 Kč}  & \makecell{(ATC928G3026,  1×) \\ 5\,994 Kč } & \makecell{(014G0288, 1×) \\ 8\,694 Kč }\\
 Zónový regulátor & \makecell{(PH-BP1-P9, 2×) \\ 3\,388 Kč} & \makecell{(HCE80, 2×) \\ 5\,622 Kč} & \makecell{(088U1031, 2×) \\ 4\,299 Kč} \\
-\makecell{\acrshort{nspt} } & \makecell{(PH-BP7-V, 13×) \\ 9\,036 Kč} & \makecell{(T87RF2083, 13×) \\ 12\,141 Kč} & \makecell{(088U1081, 13×) \\ 19\,476 Kč} \\
+\makecell{\acrshort{nspt} } & \makecell{(PH-BP7-V, 11×) \\ 695 Kč} & \makecell{(T87RF2083, 11×) \\ 934 Kč} & \makecell{(088U1081, 11×) \\ 1\,498 Kč} \\
 Spínací jednotka kotle & \makecell{(PH-PK20, 1×) \\ 1\,498 Kč} & \makecell{(BDR91A1000, 1×) \\ 1\,100 Kč} & \makecell{(014G0272, 1×) \\ 2\,190 Kč}\\
 Řízení dobíjení TUV & -- & \makecell{(ATF500DHW, 1×) \\ 3\,818 K}  & -- \\
 \makecell{Rozšiřující modul \\ pro zónový regulátor}  & -- & \makecell{(HCS80, 1×) \\ 1 897 Kč} & -- \\
-\thead{Celková cena \\ včetně DPH \tnote{a}} & 25\,004 Kč & 41\,590 Kč & 47\,614 Kč\\ 
+\thead{Celková cena \\ včetně DPH \tnote{a}} & 19\,597 Kč & 34\,327 Kč & 35\,960 Kč\\ 
 \hline
 \end{tabular}
 
 	\begin{tablenotes}
     	\item[a] Ceny stanoveny ke dni 26. 11. 2020.
+    	\item Ceny uvedeny za kus včetně DPH.
 	\end{tablenotes}
 
 \end{threeparttable}

@@ -84,7 +84,7 @@
     \put(0,0){\includegraphics[width=\unitlength,page=13]{vyrez-rozvadec.pdf}}%
     \put(0.65146601,0.30915914){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily 1-Wire\end{tabular}}}}%
 	\put(0.65146601,0.25915914){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily sběrnice\end{tabular}}}}%
-	\put(0.65146601,0.16915914){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Lokální\end{tabular}}}}%
+	\put(0.65146601,0.16915914){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Chodbové\end{tabular}}}}%
 	\put(0.65146601,0.12915914){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily termostaty\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=14]{vyrez-rozvadec.pdf}}%
     %\put(0.79427794,2.49734942){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Signali...\end{tabular}}}}%
@@ -92,7 +92,7 @@
     \put(0,0){\includegraphics[width=\unitlength,page=15]{vyrez-rozvadec.pdf}}%
     %\put(-0.4944297,0.73260203){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Spojení I2C sběrnice...\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=16]{vyrez-rozvadec.pdf}}%
-    \put(0.65826658,1.02862475){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Jističe +\end{tabular}}}}%
+    \put(0.65826658,1.02862475){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily Jističe a\end{tabular}}}}%
 	\put(0.65826658,0.97062475){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily proudový chránič\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=17]{vyrez-rozvadec.pdf}}%
     \put(0.31823818,1.02862475){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\normalsize \sffamily 12 V\end{tabular}}}}%

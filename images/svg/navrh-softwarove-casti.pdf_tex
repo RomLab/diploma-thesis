@@ -71,7 +71,7 @@
     \put(0.89131125,0.09111111){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily N\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=8]{navrh-softwarove-casti.pdf}}%
     \put(0.84800207,0.07280193){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Podlahový rozdělovač pro\end{tabular}}}}%
-    \put(0.84800207,0.0501677){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily jednotlivé topné okruhy \end{tabular}}}}%
+    \put(0.84800207,0.0501677){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily jednotlivé otopné okruhy \end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=9]{navrh-softwarove-casti.pdf}}%
     \put(0.5971746,0.1282098){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Plynový \end{tabular}}}}%
     \put(0.5971746,0.1042098){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily kodenzační \end{tabular}}}}%

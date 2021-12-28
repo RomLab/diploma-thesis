@@ -106,7 +106,7 @@
     %\put(0.55826562,0.39686114){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Jističe +...\end{tabular}}}}%
 	\put(0.55826562,0.41438955){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Jističe\end{tabular}}}}%
     \put(0.55826562,0.39538955){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily a\end{tabular}}}}%
-	\put(0.55826562,0.37538955){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily proudová ochrana\end{tabular}}}}%
+	\put(0.55826562,0.37538955){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily proudový chránič\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=17]{otopna-soustava-a-elektronika-rez-domu1.pdf}}%
     %\put(0.43022305,0.39686114){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}12 V...\end{tabular}}}}%
 	\put(0.43022305,0.40538955){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily 12 V\end{tabular}}}}%
