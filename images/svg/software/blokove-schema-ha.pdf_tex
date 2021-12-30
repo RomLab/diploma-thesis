@@ -264,15 +264,15 @@
     \put(0,0){\includegraphics[width=\unitlength,page=42]{blokove-schema-ha.pdf}}%
     \put(0.81669928,0.54485584){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Došlo\end{tabular}}}}%
 	\put(0.81669928,0.53685584){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily k posuvu\end{tabular}}}}%
-	\put(0.81669928,0.52785584){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily dopředu\end{tabular}}}}%
+	\put(0.81669928,0.52785584){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily dopředu?\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=43]{blokove-schema-ha.pdf}}%
     \put(0.88845401,0.50702153){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Došlo\end{tabular}}}}%
 	\put(0.88845401,0.49902153){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily k posuvu\end{tabular}}}}%
-	\put(0.88845401,0.49002153){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily dozadu\end{tabular}}}}%
+	\put(0.88845401,0.49002153){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily dozadu?\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=44]{blokove-schema-ha.pdf}}%
     \put(0.95238095,0.46201174){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Nedošlo\end{tabular}}}}%
 	\put(0.95238095,0.45301174){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily k žádné\end{tabular}}}}%
-	\put(0.95238095,0.44501174){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily změně \end{tabular}}}}%
+	\put(0.95238095,0.44501174){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily změně? \end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=45]{blokove-schema-ha.pdf}}%
     \put(0.89823875,0.40786954){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily Vypnutí\end{tabular}}}}%
 	\put(0.89823875,0.39986954){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily teplotní\end{tabular}}}}%

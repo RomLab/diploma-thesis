@@ -212,5 +212,5 @@ NoConn ~ 11900 5950
 Text Notes 12700 7150 0    50   ~ 0
 PE
 Text Notes 11400 5550 0    50   ~ 0
-Termoelektrický ventil
+Termoelektrický pohon
 $EndSCHEMATC

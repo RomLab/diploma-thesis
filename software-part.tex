@@ -209,13 +209,12 @@ Pro každé patro je v levém menu půdorys daného patra. V každém půdorysu 
 
 
 \section{Zápis automatizace}
-Primárně pro zápis automatizace se využívá \acrshort{yaml} (\textit{\acrlong{yaml}}). Dále mezivrstvu mezi systémem HA a využití vlastních Python knihoven s návazností na objekty v HA využívám AppDaemon (externí modul). Appdaemon využívám pro obsluhu LCD displejů, zónových regulátorů, teplotních senzorů, pro čtení hodnoty z chodbových termostatů a pro předpřípravu dat pro „osahání teploty v místnosti“.. 
+Primárně pro zápis automatizace se využívá \acrshort{yaml} (\textit{\acrlong{yaml}}). Dále mezivrstvu mezi systémem HA a využití vlastních Python knihoven s návazností na objekty v HA se využívá AppDaemon (externí modul). AppDaemon slouží pro obsluhu LCD displejů, zónových regulátorů, teplotních senzorů, pro čtení hodnoty z chodbových termostatů a pro předpřípravu dat pro „osahání teploty v místnosti“.. 
 
 \subsection{Přidání grafických komponent}
-Obecně u komponent jsou povinné a nepovinné položky (mají svojí výchozí hodnotu). Mezi ty povinné tedy patří výběr komponenty, kterou chceme (input$\_$text, input$\_$select, input$\_$boolean apod.), dále název komponenty (lze volitelně zvolit), přes který dále s komponentou pracujeme například v~automatizaci. O tom, co je a není povinné, se dozvíme v dokumentaci každé komponenty na webu HA.
+Obecně u komponent jsou povinné a nepovinné položky (mají svojí výchozí hodnotu). Mezi ty povinné patří výběr komponenty, která je požadovaná (input$\_$text, input$\_$select, input$\_$boolean apod.), dále název komponenty (lze volitelně zvolit). O tom, co je a není povinné, je v dokumentaci každé komponenty na webu HA.
 
-Příklad přidání komponenty input$\_$text. Input$\_$text nám říká jakou komponentu chceme, dále následuje název této komponenty, přes tento název dále v programu přistupujme k této komponentě. Dále je zde řádek s name,
-jedná se o název, který se zobrazí uživateli. Initial je počáteční text, který se zobrazí. Min definuje minimální délku řetězce. Max definuje maximální délku řetězce. Pattern validuje vstup, jaké znaky jsou povoleny.
+Příklad přidání komponenty \textit{input$\_$text}. Každá komponenta má název pro její přístup v~automatizaci. Dále je zde řádek s \textit{name}, jedná se o název, který se zobrazí uživateli. \textit{Initial} je počáteční text, který se zobrazí. \textit{Min} definuje minimální délku řetězce. \textit{Max} definuje maximální délku řetězce. \textit{Pattern} validuje vstup, jaké znaky jsou povoleny.
 
 \begin{lstlisting}
 input_text:

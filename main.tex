@@ -6,6 +6,7 @@
 % and a couple more: draft and oneside
 \documentclass[twoside]{ctuthesis}
 
+
 \usepackage[utf8]{inputenc}
 \usepackage{caption}
 \usepackage{subcaption}
@@ -48,6 +49,7 @@
 % Rotace obrázku pro blokové schéma HA
 \usepackage{rotating}
 %\usepackage{tikz}
+
 
 
 
@@ -190,6 +192,8 @@ This thesis deals with a system for regulation of zone heating of family house. 
 V prvé řadě bych chtěl poděkovat svému vedoucímu Ing. Vladimíru Janíčkovi, Ph.D. za odborné vedení práce, věcné připomínky a~vstřícnost při konzultacích.
 
 Dále bych chtěl poděkovat svému kamarádovi Ing. Tomáši Janouškovi a jeho rodině za možnost aplikovat svou práci na jejich rodinném domě a především za trpělivost během nasazování systému.
+
+Děkuji studentskému klubu Silicon Hill a~projektu „MacGyver – Bastlíři SH“ za umožnění přístupu k měřicímu vybavení, pájecí a~osazovací technice.
 \end{thanks}
 
 % Declaration / Prohlaseni
@@ -274,6 +278,14 @@ V Praze, \ctufield{day}.~\monthinlanguage{title}~\ctufield{year}
 \clubpenalty=10000
 \widowpenalty=10000
 \raggedbottom
+
+% PDF informace
+\hypersetup{pdfauthor   = Roman Labovský,
+            pdftitle    = Systém pro podlahové vytápění rodinného domu pomocí zónové regulace,
+            pdfsubject  = Diplomová práce,
+            pdfkeywords = {termostat, Home Assistant, zónová regulace vytápění, podlahové vytápění, Power over Ethernet, ESP32},
+            pdfproducer = Texmaker 5.0.4,
+            pdfcreator  = LaTeX editor}
 
 \begin{document}
 
