@@ -2,7 +2,7 @@
 
 Testování bylo zaměřené jak na hardware, tak software. K testování docházelo postupně s rozvojem celého systému, jak dílčích částí, tak i celku. V následujícím textu jsou popsány jednotlivé softwarové části pro automatizovaný provoz a jejich výsledky při testování.
 
-\subsection{Naměřená data pro řízení podle teplotních plánů}
+\subsection{Naměřená data pro řízení vytápění podle teplotních plánů}
 
 Bylo provedeno měření teplotních plánů. Cílem bylo zjistit, jak dochází ke zpoždění vytápění na požadovanou teplotu vůči nastavenému časovému plánu. Měření bylo provedeno pro období od 4.~12.~2021, 00:00 do 6. 12. 2021, 21:00 pro teplotní plán místnosti „Ložnice rodičů“ (obrázek~\ref{fig:teplotni-plan-loznice-rodicu}). Teplotní úseky pro tento teplotní plán jsou od 00:00–15:00, 15:00–20:00 a 20:00–00:00.
 
@@ -38,7 +38,7 @@ Na následujících grafech je průběh pro aktuální teplotu (modrá křivka),
 
 Z grafů je tedy patrné, že dojde k vytápění dané místnosti na požadovanou teplotu s~časovým zpožděním. Jednou z možností je časové plány posunout o zpoždění a dosáhnout tak v~požadovaný čas požadované tepoty, nicméně vzhledem ke změnám venkovní teploty, která má vliv na zpoždění, se nemusí dosáhnout přesně požadovaného efektu. Způsob, jak toho dosáhnout, je popsán v~textu \ref{sec:namerena-data-pro-rizeni-podle-teplotnich-planu-s-upravou-predpovedi-pocasi}. Po vypnutí vytápění místnosti dojde k jejímu přetopení v tomto případě o 0,8 °C vůči požadované teplotě 23 °C. To je způsobené setrvačností podlahového vytápění (po vypnutí ventilu je stále nahřátá voda v potrubí podlahového vytápění, dále okolní vzduch ohřívají sálající a osálané plochy v místnosti).
 
-\subsection{Naměřená data pro řízení podle teplotních plánů s úpravou předpovědi počasí}
+\subsection{Naměřená data pro řízení vytápění podle teplotních plánů s úpravou podle předpovědi počasí}
 \label{sec:namerena-data-pro-rizeni-podle-teplotnich-planu-s-upravou-predpovedi-pocasi}
 Na obrázku \ref{fig:linearni-predikce} je graf lineární predikce pro místnost „Ložnice rodičů“. Jedná se o časový posuv vytápění v minutách (D) v závislosti na rozdílu vnitřní a venkovní teploty (t). Data v grafu jsou naměřená z období 6.–12. 12. 2021 a jsou proložena přímkou. Na základě této lineární predikce se určí časový posuv pro daný časový úsek z teplotního plánu a určí se následné posunutí vytápění, aby v požadovaný čas byla dosažena požadovaná teplota. Do predikce vstupuje předpověď počasí pro začátek daného úseku z teplotního plánu. Výsledná naměřená teplota pro místnost „Ložnice rodičů“ je vidět na grafu \ref{fig:teplotni-predikce-loznice-rodicu}, průběh pro aktuální teplotu je znázorněn modrou křivkou a požadovanou teplotu znázorňuje fialová křivka. Naměřená data jsou pro období 13.–15. 12. 2021. Požadovaná teplota je tedy dosažena v požadovaný čas podle teplotního plánu. Na obrázku \ref{fig:teplotni-predikce-ventil-loznice-rodicu} jsou stavy pro termoelektrický pohon (ventil), který ovládá teplovodní smyčku pro tuto místnost. Je vidět, že k~otevření ventilu dochází přibližně o 2,5 hodině dříve (zelená část), než je nastavený teplotní plán na 15:00.  
 
