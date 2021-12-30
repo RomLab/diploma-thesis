@@ -130,7 +130,7 @@
     \put(0,0){\includegraphics[width=\unitlength,page=20]{navrh-hardwarove-casti.pdf}}%
     \put(0.85714286,0.44565562){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily 1\end{tabular}}}}%
 	\put(0.94133885,0.44565562){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily N\end{tabular}}}}%
-	\put(0.90131125,0.52003451){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Teplotní sensory\end{tabular}}}}%
+	\put(0.90131125,0.52003451){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Teplotní senzory\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=21]{navrh-hardwarove-casti.pdf}}%
     \put(0.21394065,0.15299793){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Krb\end{tabular}}}}%
 	\put(0.21394065,0.13299793){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily 3\end{tabular}}}}%
