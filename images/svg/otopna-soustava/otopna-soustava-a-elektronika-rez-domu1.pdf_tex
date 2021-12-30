@@ -87,9 +87,9 @@
     \put(0,0){\includegraphics[width=\unitlength,page=12]{otopna-soustava-a-elektronika-rez-domu1.pdf}}%
 	\put(0.37388432,0.28095011){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily I$^2$C\end{tabular}}}}%
 	\put(0.37388432,0.26095011){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\tiny \sffamily sběrnice\end{tabular}}}}%
-    \put(0.93702824,0.13022278){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Termost patro\end{tabular}}}}%
+    \put(0.93702824,0.13022278){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Termostat patro\end{tabular}}}}%
 	\put(0.93702824,0.11022278){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily (chodba)\end{tabular}}}}%
-    \put(0.94343037,0.04935912){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Termost přízemí\end{tabular}}}}%
+    \put(0.94343037,0.04935912){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily Termostat přízemí\end{tabular}}}}%
 	\put(0.94343037,0.03035912){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily (chodba)\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=13]{otopna-soustava-a-elektronika-rez-domu1.pdf}}%
 	\put(0.55570477,0.13876444){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\scriptsize \sffamily 1-Wire\end{tabular}}}}%
